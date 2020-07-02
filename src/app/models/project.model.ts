@@ -1,5 +1,4 @@
 export class Project {
-
   title: string;
   description: string;
   link: string;
@@ -28,4 +27,29 @@ export enum ProgrammingLanguage {
   JAVASCRIPT = "JavaScript",
   SWIFT = "Swift",
   SQL = "SQL",
+  CPLUSPLUS = "C++",
+  ASSEMBLY = "Assembly",
+  APPLESCRIPT = "AppleScript",
+}
+
+export function getClassIcon(language: ProgrammingLanguage) {
+  let selector = '';
+  switch (language) {
+    case ProgrammingLanguage.CPLUSPLUS:
+      selector = 'cplusplus';
+      break;
+    case ProgrammingLanguage.SQL:
+      selector = 'mysql';
+      break;
+    case ProgrammingLanguage.ASSEMBLY:
+      selector = 'devicon';
+      break;
+    case ProgrammingLanguage.APPLESCRIPT:
+      selector = 'apple';
+      break;
+    default:
+      selector = language.toLowerCase();
+      break;
+  }
+  return `devicon-${selector}-plain`;
 }

@@ -1,4 +1,27 @@
 .card:hover {
-  transform: translateY(-0.5%) scale(0.9, 0.9);
-  box-shadow: 0 4rem 8rem rgba(0, 0, 0, 0.2);
+  transform: scale(1.02, 1.02);
+  //box-shadow: 0 4rem 8rem rgba(0, 0, 0, 0.2);
+}
+.card__btn {
+  display: block;
+  width: 100%;
+  padding: 0.5rem;
+  font-size: 1rem;
+  text-align: center;
+  color: #3363ff;
+  background-color: #e6ecff;
+  border: none;
+  border-radius: 0.4rem;
+  transition: 0.2s;
+  cursor: pointer;
+}
+.card__btn span {
+  margin-left: 0.2rem;
+  transition: 0.2s;
+}
+.card__btn:hover, .card__btn:active {
+  background-color: #dce4ff;
+}
+.card__btn:hover span, .card__btn:active span {
+  margin-left: 0.5rem;
 }
