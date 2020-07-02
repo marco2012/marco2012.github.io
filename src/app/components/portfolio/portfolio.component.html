@@ -1,0 +1,8 @@
+<!--https://dev.to/maurogarcia_19/3-reusable-components-with-angular-and-tailwindcss-45md-->
+<div class="flex flex-wrap mt-2 mx-2">
+  <app-card *ngFor="let p of projects"
+            [project]="p"
+            class="w-full sm:w-1/2 md:w-1/2 lg:w-1/2">
+  </app-card>
+</div>
+
