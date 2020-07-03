@@ -14,6 +14,33 @@ export class Project {
     this.date = date;
     this.image = image;
   }
+
+  static getClassIcon(language: ProgrammingLanguage) {
+    let selector = '';
+    switch (language) {
+      case ProgrammingLanguage.CPLUSPLUS:
+        selector = 'cplusplus';
+        break;
+      case ProgrammingLanguage.SQL:
+        selector = 'mysql';
+        break;
+      case ProgrammingLanguage.ASSEMBLY:
+        selector = 'devicon';
+        break;
+      case ProgrammingLanguage.APPLESCRIPT:
+        selector = 'apple';
+        break;
+      default:
+        selector = language.toLowerCase();
+        break;
+    }
+    return `devicon-${selector}-plain`;
+  }
+
+  static getImagePath(image: string){
+
+  }
+
 }
 
 export enum ProgrammingLanguage {
@@ -27,24 +54,4 @@ export enum ProgrammingLanguage {
   APPLESCRIPT = "AppleScript",
 }
 
-export function getClassIcon(language: ProgrammingLanguage) {
-  let selector = '';
-  switch (language) {
-    case ProgrammingLanguage.CPLUSPLUS:
-      selector = 'cplusplus';
-      break;
-    case ProgrammingLanguage.SQL:
-      selector = 'mysql';
-      break;
-    case ProgrammingLanguage.ASSEMBLY:
-      selector = 'devicon';
-      break;
-    case ProgrammingLanguage.APPLESCRIPT:
-      selector = 'apple';
-      break;
-    default:
-      selector = language.toLowerCase();
-      break;
-  }
-  return `devicon-${selector}-plain`;
-}
+

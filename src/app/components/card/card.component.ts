@@ -1,5 +1,5 @@
 import {Component, Input, OnInit} from '@angular/core';
-import {getClassIcon, Project} from "../../models/project.model";
+import {Project} from "../../models/project.model";
 
 @Component({
   selector: 'app-card',
@@ -14,7 +14,7 @@ export class CardComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
-    this.classIcon = getClassIcon(this.project.language);
+    this.classIcon = Project.getClassIcon(this.project.language);
   }
 
 }

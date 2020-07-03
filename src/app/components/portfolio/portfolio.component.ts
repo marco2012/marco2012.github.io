@@ -1,8 +1,6 @@
 import {Component, OnInit} from '@angular/core';
 import {ProgrammingLanguage, Project} from "../../models/project.model";
-import {HttpClient} from "@angular/common/http";
-import {map} from "rxjs/operators";
-import {Observable} from "rxjs";
+import {onlyUnique, PortfolioService} from "../../services/portfolio.service";
 
 @Component({
   selector: 'app-portfolio',
@@ -11,20 +9,17 @@ import {Observable} from "rxjs";
 })
 export class PortfolioComponent implements OnInit {
   projects: Project[];
+  languages: string[];
+
   searchText = '';
 
-  constructor(private httpClient: HttpClient) { }
+  constructor(private portfolioService: PortfolioService) { }
 
   ngOnInit() {
-    this.getProjects().subscribe(data => {
+    this.portfolioService.getProjects().subscribe(data => {
       this.projects = data
+      this.languages = data.map(p=>p.language).filter(onlyUnique);
     });
-  }
-
-  getProjects(): Observable<Project[]> {
-    return this.httpClient.get<{projects: Project[]}>("/assets/projects.json").pipe(
-      map(res => res.projects)
-    );
   }
 
   onSearchTextChanged(text: string) {
