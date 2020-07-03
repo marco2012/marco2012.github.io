@@ -7,7 +7,10 @@ import { PortfolioComponent } from './components/portfolio/portfolio.component';
 import { CardComponent } from './components/card/card.component';
 import { HeaderComponent } from './components/header/header.component';
 import {RouterModule, Routes} from "@angular/router";
-import { CardBigComponent } from './components/card-big/card-big.component';
+import {FilterPipe} from "./utils/filter.pipe";
+import { SearchComponent } from './components/search/search.component';
+import {FormsModule} from "@angular/forms";
+import {HttpClientModule} from "@angular/common/http";
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -22,11 +25,14 @@ const routes: Routes = [
     PortfolioComponent,
     CardComponent,
     HeaderComponent,
-    CardBigComponent
+    FilterPipe,
+    SearchComponent
   ],
   imports: [
     BrowserModule,
-    RouterModule.forRoot(routes)
+    RouterModule.forRoot(routes),
+    FormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
