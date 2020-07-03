@@ -8,13 +8,17 @@ import {Project} from "../../models/project.model";
 })
 export class CardComponent implements OnInit {
 
-  @Input() project: Project;
+  @Input()
+  project: Project;
+
   classIcon: string;
+  imagePath: string;
 
   constructor() { }
 
   ngOnInit() {
     this.classIcon = Project.getClassIcon(this.project.language);
+    this.imagePath = '/assets/images/'+this.project.image;
   }
 
 }

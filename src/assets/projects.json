@@ -1,28 +1,85 @@
 {
   "projects": [
     {
-      "title": "Instabot library",
-      "description": "Fork of a popular Instagram API library with additional features <a href=\"https://github.com/instagrambot/instabot/pull/876\">implemented</a>.\n                                                            <ul>\n                                                                <li> Stories download </li>\n                                                                <li> Stories upload </li>\n                                                                <li> Like users that viewed your story </li>\n                                                                <li> Like users based on location feed </li>\n                                                                <li> Approve or reject pending follow requests for private accounts</li>\n                                                            </ul>",
+      "title": "Instabot Library",
+      "description": "Fork of a popular Instagram API library with additional features implemented, including: stories download and upload, Like users that viewed your story, Like users based on location feed, Approve or reject pending follow requests for private accounts.",
       "link": "https://github.com/marco2012/instabot",
       "language": "Python",
       "date": "1554123661",
-      "image": "instabot_library.png"
+      "image": "instabot_library.png",
+      "skills": "REST APIs"
     },
     {
-      "title": "Instabot library",
-      "description": "Fork of a popular Instagram API library with additional features <a href=\"https://github.com/instagrambot/instabot/pull/876\">implemented</a>.\n                                                            <ul>\n                                                                <li> Stories download </li>\n                                                                <li> Stories upload </li>\n                                                                <li> Like users that viewed your story </li>\n                                                                <li> Like users based on location feed </li>\n                                                                <li> Approve or reject pending follow requests for private accounts</li>\n                                                            </ul>",
-      "link": "https://github.com/marco2012/instabot",
-      "language": "JavaScript",
-      "date": "1554123661",
-      "image": "instabot_library.png"
-    },
-    {
-      "title": "Instabot library",
-      "description": "Fork of a popular Instagram API library with additional features <a href=\"https://github.com/instagrambot/instabot/pull/876\">implemented</a>.\n                                                            <ul>\n                                                                <li> Stories download </li>\n                                                                <li> Stories upload </li>\n                                                                <li> Like users that viewed your story </li>\n                                                                <li> Like users based on location feed </li>\n                                                                <li> Approve or reject pending follow requests for private accounts</li>\n                                                            </ul>",
-      "link": "https://github.com/marco2012/instabot",
+      "title": "Instabot Script",
+      "description": "Completely autonomous Instagram bot capable of performing all kinds of instagram-related tasks, including:  <br>- Post random photos, videos, stories, with random captions that include correlated quotes and emojis <br>- Like timeline and users based on position, hashtag, media, and more <br>- Follow and unfollow users based on certain conditions <br>- Download photos or stories <br>- Approve pending follow requests for private accounts <br>- Generate statistics with plots to visualize the growth of the account",
+      "link": "#instabot_script",
       "language": "Python",
       "date": "1554123661",
-      "image": "instabot_library.png"
+      "image": "instabot_script.png",
+      "skills": "REST APIs"
+    },
+    {
+      "title": "Xerosploit",
+      "description": "Man in the middle penetration testing tool. Originally developed for linux, has been ported on MacOS. Can be used to test the security of your network. It allows to perform simple MITM attacks like html/javascript injection, traffick sniffing, image replacing and more.",
+      "link": "https://github.com/marco2012/xerosploit",
+      "language": "Python",
+      "date": "1553795061",
+      "image": "xerosploit.png",
+      "skills": "Bash"
+    },
+    {
+      "title": "Inflation Calculator",
+      "description": "Calculate the purchasing power over the centuries. Inflation rates are available for US dollar starting from 1774, british pound starting from 1751 and Italian lira starting from 1861. For example, a hamburger from McDonald's in 1956 dollars costs $0.15, which corresponds to \u20ac1.39 in current currency. ",
+      "link": "https://github.com/marco2012/InflationCalc#inflation-calculator",
+      "language": "Swift",
+      "date": "1546347661",
+      "image": "inflation_calculator.png",
+      "skills": "REST APIs, iOS"
+    },
+    {
+      "title": "BookShare",
+      "description": " Buy and sell books. Once a user logs in, the data are stored on Firebase database. Every user can sell a book by scanning the barcode. Using Google Books API, all the details are retrieved. The user can then add a picture, insert his location thanks to Google Places API and sell it. When someone wants to buy a book, he can send an email to the seller, get directions for that book or purchase it. In the Map controller the user can see a 2D map of the available books, and by going to the AR button, he can see the position of the books in space using Augmented Reality. ",
+      "link": "https://github.com/marco2012/BookShare",
+      "language": "Swift",
+      "date": "1546347661",
+      "image": "bookshare.jpg",
+      "skills": "REST APIs, iOS, Firebase, Database, Maps, AR"
+    },
+    {
+      "title": "Currency Convert",
+      "description": " Simple foreign currency exchange rate calculator with bank fee, tax and tip. Useful when traveling abroad, as credit card companies apply a fee on purchases in foreign currency. ",
+      "link": "https://github.com/marco2012/CurrencyConvert",
+      "language": "Swift",
+      "date": "1556041461",
+      "image": "currencyconvert.jpg",
+      "skills": "REST APIs, iOS"
+    },
+    {
+      "title": "Led Convert",
+      "description": " Calculate the equivalence, in terms of perceived brightness, between various technologies and LED devices. Moreover it shows how much money can be saved using newer technologies. The formulas used were taken from the studies of the scientists of the Lawrence Berkeley Laboratory For example a 50W incandescent light bulb can be replaced with a 8W LED light, saving about \u20ac280 annually in energy cost. ",
+      "link": "https://github.com/marco2012/LedConvert",
+      "language": "Swift",
+      "date": "1552067061",
+      "image": "led_convert.png",
+      "skills": "REST APIs, iOS"
+    },
+    {
+      "title": "Wallpapers",
+      "description": " Download great wallpapers for your iPhone. ",
+      "link": "https://github.com/marco2012/Wallpapers",
+      "language": "Swift",
+      "date": "1537465461",
+      "image": "wallpapers.jpg",
+      "skills": "REST APIs, iOS"
+    },
+    {
+      "title": "Secrets",
+      "description": " Best anonymous place to find good secrets. Various categories are available. Secrets can be searched by keyword and can be filtered by male/female. ",
+      "link": "https://github.com/marco2012/Secrets",
+      "language": "Swift",
+      "date": "1537465461",
+      "image": "secrets.jpg",
+      "skills": "REST APIs, iOS"
     }
   ]
 }

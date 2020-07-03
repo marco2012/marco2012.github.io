@@ -5,14 +5,16 @@ export class Project {
   language: ProgrammingLanguage;
   date: string;
   image: string;
+  skills: string;
 
-  constructor(title: string, description: string, link: string, language: ProgrammingLanguage, date: string, image: string) {
+  constructor(title: string, description: string, link: string, language: ProgrammingLanguage, date: string, image: string, skills: string) {
     this.title = title;
     this.description = description;
     this.link = link;
     this.language = language;
     this.date = date;
     this.image = image;
+    this.skills = skills;
   }
 
   static getClassIcon(language: ProgrammingLanguage) {
@@ -35,10 +37,6 @@ export class Project {
         break;
     }
     return `devicon-${selector}-plain`;
-  }
-
-  static getImagePath(image: string){
-
   }
 
 }

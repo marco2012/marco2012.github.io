@@ -8,7 +8,7 @@ import {onlyUnique, PortfolioService} from "../../services/portfolio.service";
   styleUrls: ['./portfolio.component.scss']
 })
 export class PortfolioComponent implements OnInit {
-  projects: Project[];
+  projects: Project[] = [];
   languages: string[];
 
   searchText = '';

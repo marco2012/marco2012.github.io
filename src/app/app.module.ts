@@ -13,6 +13,8 @@ import {FormsModule} from "@angular/forms";
 import {HttpClientModule} from "@angular/common/http";
 
 import "reflect-metadata";
+import { PillComponent } from './components/pill/pill.component';
+import { FooterComponent } from './components/footer/footer.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -28,7 +30,9 @@ const routes: Routes = [
     CardComponent,
     HeaderComponent,
     FilterPipe,
-    SearchComponent
+    SearchComponent,
+    PillComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
