@@ -11,7 +11,7 @@
             <i class="{{classIcon}} mr-1"></i>{{project.language}}
           </p>
           <div class="text-xl text-gray-800 font-medium mr-auto mb-2 ml-1">{{project.title}}</div>
-          <p class="text-gray-700 text-base text-justify ml-1 mr-1">{{project.description}}</p>
+          <p class="text-gray-700 text-base text-justify ml-1 mr-1" [innerHTML]="project.description"></p>
         </div>
         <div class="flex items-center">
           <!--      <img class="w-10 h-10 rounded-full mr-4" src="/img/jonathan.jpg" alt="Avatar of Jonathan Reinink">-->

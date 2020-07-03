@@ -12,6 +12,8 @@ import { SearchComponent } from './components/search/search.component';
 import {FormsModule} from "@angular/forms";
 import {HttpClientModule} from "@angular/common/http";
 
+import "reflect-metadata";
+
 const routes: Routes = [
   { path: '', component: HomeComponent },
   { path: 'portfolio', component: PortfolioComponent },
