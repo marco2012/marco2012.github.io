@@ -6,31 +6,36 @@ export class Project {
   date: string;
   image: string;
   skills: string;
+  category: string;
 
-  constructor(title: string, description: string, link: string, language: ProgrammingLanguage, date: string, image: string, skills: string) {
-    this.title = title;
-    this.description = description;
-    this.link = link;
-    this.language = language;
-    this.date = date;
-    this.image = image;
-    this.skills = skills;
-  }
+  // constructor(title: string, description: string, link: string, language: ProgrammingLanguage, date: string, image: string, skills: string, category: string) {
+  //   this.title = title;
+  //   this.description = description;
+  //   this.link = link;
+  //   this.language = language;
+  //   this.date = date;
+  //   this.image = image;
+  //   this.skills = skills;
+  //   this.category = category;
+  // }
 
-  static getClassIcon(language: ProgrammingLanguage) {
+  static getClassIcon(language: string) {
     let selector = '';
     switch (language) {
-      case ProgrammingLanguage.CPLUSPLUS:
+      case "C++":
         selector = 'cplusplus';
         break;
-      case ProgrammingLanguage.SQL:
+      case "SQL":
         selector = 'mysql';
         break;
-      case ProgrammingLanguage.ASSEMBLY:
+      case "Assembly":
         selector = 'devicon';
         break;
-      case ProgrammingLanguage.APPLESCRIPT:
+      case "AppleScript":
         selector = 'apple';
+        break;
+      case "Dart":
+        selector = 'flutter';
         break;
       default:
         selector = language.toLowerCase();

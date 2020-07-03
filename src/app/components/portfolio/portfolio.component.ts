@@ -9,7 +9,7 @@ import {onlyUnique, PortfolioService} from "../../services/portfolio.service";
 })
 export class PortfolioComponent implements OnInit {
   projects: Project[] = [];
-  languages: string[];
+  categories: string[];
 
   searchText = '';
 
@@ -17,8 +17,8 @@ export class PortfolioComponent implements OnInit {
 
   ngOnInit() {
     this.portfolioService.getProjects().subscribe(data => {
-      this.projects = data
-      this.languages = data.map(p=>p.language).filter(onlyUnique);
+      this.projects = data.sort((a, b) => parseFloat(b.date) - parseFloat(a.date));
+      this.categories = data.map(p=>p.category).filter(onlyUnique).sort();
     });
   }
 
