@@ -1,6 +1,66 @@
 /* You can add global styles to this file, and also import other style files */
 @tailwind base;
-
 @tailwind components;
-
 @tailwind utilities;
+
+@font-face {
+  font-family: 'Avenir Next Rounded Pro Regular';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Avenir Next Rounded Pro Regular'), url('/assets/font/avenir/AvenirNextRoundedProRegular.woff') format('woff');
+}
+@font-face {
+  font-family: 'Avenir Next Rounded Pro Italic';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Avenir Next Rounded Pro Italic'), url('/assets/font/avenir/AvenirNextRoundedProRegularIt.woff') format('woff');
+}
+@font-face {
+  font-family: 'Avenir Next Rounded Pro Medium';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Avenir Next Rounded Pro Medium'), url('/assets/font/avenir/AvenirNextRoundedProMedium.woff') format('woff');
+}
+@font-face {
+  font-family: 'Avenir Next Rounded Pro Medium Italic';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Avenir Next Rounded Pro Medium Italic'), url('/assets/font/avenir/AvenirNextRoundedProMediumIt.woff') format('woff');
+}
+@font-face {
+  font-family: 'Avenir Next Rounded Pro Demi';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Avenir Next Rounded Pro Demi'), url('/assets/font/avenir/AvenirNextRoundedProDemi.woff') format('woff');
+}
+@font-face {
+  font-family: 'Avenir Next Rounded Pro DemiItalic';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Avenir Next Rounded Pro DemiItalic'), url('/assets/font/avenir/AvenirNextRoundedProDemiIt.woff') format('woff');
+}
+@font-face {
+  font-family: 'Avenir Next Rounded Pro Bold';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Avenir Next Rounded Pro Bold'), url('/assets/font/avenir/AvenirNextRoundedProBold.woff') format('woff');
+}
+@font-face {
+  font-family: 'Avenir Next Rounded Pro Bold Italic';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Avenir Next Rounded Pro Bold Italic'), url('/assets/font/avenir/AvenirNextRoundedProBoldIt.woff') format('woff');
+}
+
+.avenir-regular {
+  font-family: 'Avenir Next Rounded Pro Regular',sans-serif
+}
+.avenir-medium {
+  font-family: 'Avenir Next Rounded Pro Medium',sans-serif
+}
+.avenir-demi {
+  font-family: 'Avenir Next Rounded Pro Demi',sans-serif
+}
+.avenir-bold {
+  font-family: 'Avenir Next Rounded Pro Bold',sans-serif
+}

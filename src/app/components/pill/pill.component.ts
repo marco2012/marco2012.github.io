@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, Input, OnInit} from '@angular/core';
 
 @Component({
   selector: 'app-pill',
@@ -6,6 +6,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./pill.component.scss']
 })
 export class PillComponent implements OnInit {
+
+  @Input()
+  categories: string[] = []
 
   constructor() { }
 

@@ -17,6 +17,8 @@ import { PillComponent } from './components/pill/pill.component';
 import { FooterComponent } from './components/footer/footer.component';
 import {ProjectsResolverService} from "./services/projects-resolver.service";
 import {CustomReuseStrategy} from "./shared/routing";
+import {CustomPreloadingStrategy} from "./shared/preloading";
+import { ResumeComponent } from './components/resume/resume.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -35,15 +37,19 @@ const routes: Routes = [
     SearchComponent,
     PillComponent,
     FooterComponent,
+    ResumeComponent,
   ],
   imports: [
     BrowserModule,
-    RouterModule.forRoot(routes, { preloadingStrategy: PreloadAllModules }),
+    RouterModule.forRoot(routes, { preloadingStrategy: CustomPreloadingStrategy }),
     FormsModule,
     HttpClientModule
   ],
   exports: [RouterModule],
-  providers: [{ provide: RouteReuseStrategy, useClass: CustomReuseStrategy },],
+  providers: [
+    { provide: RouteReuseStrategy, useClass: CustomReuseStrategy },
+    CustomPreloadingStrategy
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
