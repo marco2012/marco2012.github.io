@@ -6,7 +6,7 @@ import { HomeComponent } from './components/home/home.component';
 import { PortfolioComponent } from './components/portfolio/portfolio.component';
 import { CardComponent } from './components/card/card.component';
 import { HeaderComponent } from './components/header/header.component';
-import {RouterModule, Routes} from "@angular/router";
+import {PreloadAllModules, RouteReuseStrategy, RouterModule, Routes} from "@angular/router";
 import {FilterPipe} from "./utils/filter.pipe";
 import { SearchComponent } from './components/search/search.component';
 import {FormsModule} from "@angular/forms";
@@ -15,11 +15,13 @@ import {HttpClientModule} from "@angular/common/http";
 import "reflect-metadata";
 import { PillComponent } from './components/pill/pill.component';
 import { FooterComponent } from './components/footer/footer.component';
+import {ProjectsResolverService} from "./services/projects-resolver.service";
+import {CustomReuseStrategy} from "./shared/routing";
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
-  { path: 'portfolio', component: PortfolioComponent },
-  { path: '**',   redirectTo: '', pathMatch: 'full' }, // redirect to `first-component`
+  { path: 'portfolio', component: PortfolioComponent, resolve: [ProjectsResolverService], data: { preload: true } },
+  { path: '**',   redirectTo: '', pathMatch: 'full' },
 ];
 
 @NgModule({
@@ -32,15 +34,16 @@ const routes: Routes = [
     FilterPipe,
     SearchComponent,
     PillComponent,
-    FooterComponent
+    FooterComponent,
   ],
   imports: [
     BrowserModule,
-    RouterModule.forRoot(routes),
+    RouterModule.forRoot(routes, { preloadingStrategy: PreloadAllModules }),
     FormsModule,
     HttpClientModule
   ],
-  providers: [],
+  exports: [RouterModule],
+  providers: [{ provide: RouteReuseStrategy, useClass: CustomReuseStrategy },],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
