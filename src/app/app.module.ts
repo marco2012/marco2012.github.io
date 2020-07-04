@@ -2,8 +2,8 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
-import { HomeComponent } from './components/home/home.component';
-import { PortfolioComponent } from './components/portfolio/portfolio.component';
+import { HomeComponent } from './pages/home/home.component';
+import { PortfolioComponent } from './pages/portfolio/portfolio.component';
 import { CardComponent } from './components/card/card.component';
 import { HeaderComponent } from './components/header/header.component';
 import {PreloadAllModules, RouteReuseStrategy, RouterModule, Routes} from "@angular/router";
@@ -18,10 +18,11 @@ import { FooterComponent } from './components/footer/footer.component';
 import {ProjectsResolverService} from "./services/projects-resolver.service";
 import {CustomReuseStrategy} from "./shared/routing";
 import {CustomPreloadingStrategy} from "./shared/preloading";
-import { ResumeComponent } from './components/resume/resume.component';
+import { ResumeComponent } from './pages/resume/resume.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
+  { path: 'resume', component: ResumeComponent },
   { path: 'portfolio', component: PortfolioComponent, resolve: [ProjectsResolverService], data: { preload: true } },
   { path: '**',   redirectTo: '', pathMatch: 'full' },
 ];
