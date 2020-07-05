@@ -11,7 +11,8 @@ export class AppComponent {
   title = 'MarLup';
   loading = false;
 
-  constructor(private router: Router, private spinner: NgxSpinnerService) {
+  constructor(private router: Router,
+              private spinner: NgxSpinnerService) {
     this.router.events.subscribe((e : RouterEvent) => {
       this.navigationInterceptor(e);
     })

@@ -1,4 +1,4 @@
-import {Component, OnDestroy, OnInit, Output} from '@angular/core';
+import {AfterViewInit, Component, ElementRef, OnDestroy, OnInit, Output} from '@angular/core';
 import {Project} from "../../models/project.model";
 import {onlyUnique, PortfolioService} from "../../services/portfolio.service";
 import {Subscription} from "rxjs";
@@ -8,14 +8,14 @@ import {Subscription} from "rxjs";
   templateUrl: './portfolio.component.html',
   styleUrls: ['./portfolio.component.scss']
 })
-export class PortfolioComponent implements OnInit, OnDestroy {
+export class PortfolioComponent implements OnInit, OnDestroy, AfterViewInit {
   subscription: Subscription;
   projects: Project[] = [];
   categoriesCount = {};
 
   searchText = '';
 
-  constructor(private portfolioService: PortfolioService) { }
+  constructor(private portfolioService: PortfolioService, private elementRef: ElementRef) { }
 
   ngOnInit() {
       // this.subscription = this.portfolioService.projectsChanged
@@ -27,6 +27,11 @@ export class PortfolioComponent implements OnInit, OnDestroy {
     this.projects = this.portfolioService.getProjects();
     // this.categories = this.projects.map(p=>p.category).filter(onlyUnique).sort();
     this.countCategories()
+  }
+
+  ngAfterViewInit(){
+    this.elementRef.nativeElement.ownerDocument.body.style.backgroundColor = 'white';
+    this.elementRef.nativeElement.ownerDocument.body.style.backgroundImage = '';
   }
 
   ngOnDestroy() {
