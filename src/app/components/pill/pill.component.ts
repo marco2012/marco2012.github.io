@@ -8,7 +8,7 @@ import {Component, Input, OnInit} from '@angular/core';
 export class PillComponent implements OnInit {
 
   @Input()
-  categories: string[] = []
+  categoriesCount = {};
 
   constructor() { }
 

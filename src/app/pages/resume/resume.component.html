@@ -1,10 +1,105 @@
-<div class="">
-  <h2 class="mb-4 profile">
-    <img src="/src/assets/icons/icon-profile.svg" alt="" style="max-width: 40px; filter: invert(1);">
-    <a href="#profile">Profile</a>
-  </h2>
-  <h5 class="mb-4" style="text-align: justify;"> I'm a computer engineer graduated at Sapienza University of Rome. I'm
-    really passionate about developing exciting things. A great design is where I start.
-    Always looking for new challenges.
-  </h5>
+<app-header></app-header>
+<div class="flex flex-col avenir-medium pb-8 px-10 sm:px-24 md:px-24 lg:px-32 xl:px-48">
+  <div class="flex items-center justify-center pb-8">
+    <p class="text-4xl avenir-bold">Resume</p>
+    <br>
+  </div>
+  <div class="resume-profile pb-6">
+    <div class="mb-4 flex flex-row">
+      <img class="mr-4" width="32px" src="/assets/icons/icon-profile.svg" alt="">
+      <p class="text-2xl avenir-demi">Profile</p>
+    </div>
+    <p class="mb-4 text-lg text-justify text-gray-700"> I'm a computer engineer graduated at Sapienza University of Rome. I'm
+      really passionate about developing exciting things. A great design is where I start.
+      Always looking for new challenges.
+    </p>
+  </div>
+  <hr class="pb-10" style="border-top: 1px solid #F1F1F1;">
+  <div class="resume-skills pb-6">
+    <div class="mb-4 flex flex-row">
+      <img class="mr-4" width="32px" src="/assets/icons/icon-code.svg" alt="">
+      <p class="text-2xl avenir-demi">Professional Skills</p>
+    </div>
+    <div class="py-2">
+      <p class="text-xl mb-2">Programming Languages</p>
+      <ul class="skills-list">
+        <li><i class="opacity-icon mr-2 devicon-python-plain"></i> Python</li>
+        <li><i class="opacity-icon mr-2 devicon-java-plain"></i> Java</li>
+        <li><i class="opacity-icon mr-2 devicon-javascript-plain"></i> Javascript</li>
+        <li><i class="opacity-icon mr-2 devicon-typescript-plain"></i> TypeScript</li>
+        <li><i class="opacity-icon mr-2 devicon-swift-plain"></i> Swift</li>
+        <li><i class="opacity-icon mr-2 devicon-c-plain"></i> C</li>
+        <li class="flex flex-row"><img class="mr-2" src="/assets/icons/icon-scala.svg" alt="" width="16px"/>Scala</li>
+        <li><i class="opacity-icon  mr-2 devicon-mysql-plain"></i> SQL</li>
+        <li><i class="opacity-icon  mr-2 devicon-ruby-plain"></i> Ruby</li>
+        <li><i class="opacity-icon  mr-2 devicon-devicon-plain"></i> Assembly</li>
+        <li><i class="opacity-icon  mr-2 devicon-apple-plain"></i> AppleScript</li>
+      </ul>
+    </div>
+    <div class="py-2">
+      <p class="text-xl mb-2">Frameworks</p>
+      <ul class="skills-list">
+        <li class="custom-programming-list"><img class="opacity-icon mr-2" src="/assets/icons/icon-spring.png" alt="" style="max-width: 20px;"> Spring</li>
+        <li class="custom-programming-list"><img class="opacity-icon mr-2" src="/assets/icons/icon-ibernate.png" alt="" style="max-width: 20px;"> Hibernate</li>
+        <li class="custom-programming-list"><i class="opacity-icon mr-2 devicon-angularjs-plain"></i> Angular</li>
+        <li class="custom-programming-list"><i class="opacity-icon mr-2 devicon-nodejs-plain"></i> Node.js</li>
+        <li class="custom-programming-list"><i class="opacity-icon mr-2 devicon-bootstrap-plain"></i> Bootstrap</li>
+        <li class="custom-programming-list"><img class="opacity-icon mr-2" src="/assets/icons/icon-flutter.svg" alt="" style="max-width: 20px;"> Flutter</li>
+        <li class="custom-programming-list"><img class="opacity-icon mr-2" src="/assets/icons/icon-opencl.png" alt="" style="max-width: 20px;"> OpenCL</li>
+        <li class="custom-programming-list"><i class="opacity-icon mr-2 devicon-rails-plain"></i> Ruby on Rails</li>
+      </ul>
+    </div>
+    <div class="py-2">
+      <p class="text-xl mb-2">Other</p>
+      <ul style="list-style-type: none;">
+        <li class="custom-programming-list"><img class="opacity-icon mr-2" src="/assets/icons/icon-app.svg" alt="" style="max-width: 20px;"> iOS/Android/Hybrid app development</li>
+        <li class="custom-programming-list"><img class="opacity-icon mr-2" src="/assets/icons/icon-db.svg" alt="" style="max-width: 20px;"> Database (SQL/MySQL/PostgreSQL/NoSQL)</li>
+        <li class="custom-programming-list"><img class="opacity-icon mr-2" src="/assets/icons/icon-web.svg" alt="" style="max-width: 20px;"> HTML/CSS/jQuery, Front-end/Back-end development</li>
+        <li class="custom-programming-list"><img class="opacity-icon mr-2" src="/assets/icons/icon-patterns.svg" alt="" style="max-width: 20px;"> Agile (Scrum), Waterfall methodologies; REST, SOAP web services; MVC design pattern</li>
+        <li class="custom-programming-list"><img class="opacity-icon mr-2" src="/assets/icons/icon-network.svg" alt="" style="max-width: 20px;"> Network administration (Cisco Packet Tracer/Wireshark)</li>
+        <li class="custom-programming-list"><img class="opacity-icon mr-2" src="/assets/icons/icon-diagram.svg" alt="" style="max-width: 20px;"> LaTeX, Entity-Relationship (ER), Unified Modeling Language (UML)</li>
+        <li class="custom-programming-list"><img class="opacity-icon mr-2" src="/assets/icons/icon-more.svg" alt="" style="max-width: 20px;"> Docker, Git, Gradle, Maven, Apache, Virtualbox, Adobe Creative Suite</li>
+      </ul>
+    </div>
+  </div>
+  <hr class="pb-10" style="border-top: 1px solid #F1F1F1;">
+  <div class="resume-skills pb-6">
+    <div class="mb-4 flex flex-row">
+      <img class="mr-4" width="32px" src="/assets/icons/icon-education.svg" alt="">
+      <p class="text-2xl avenir-demi">Education</p>
+    </div>
+    <div class="py-4">
+      <p class="text-xl">Master of Science in Engineering in Computer Science</p>
+      <p class="text-lg">Sapienza Università di Roma</p>
+      <p class="text-sm">2018 - 2020</p>
+      <p class="text-justify text-gray-700">
+        Algorithm Design, Artificial Intelligence, Computer and Network Security, Cyber
+        and Computer Law, Data Management, Distributed Systems, Formal Methods, Human
+        Computer Interaction, Laboratory of Network Design and Configuration (Cisco
+        Packet Tracer), Mobile Applications and Cloud Computing (Java/Swift), Neural
+        Networks (Python), Process Management and Mining, Software Engineering, Visual
+        Analytics (Javascript)
+      </p>
+    </div>
+    <div class="py-4">
+      <p class="text-xl">Bachelor of Science in Ingegneria Informatica e Automatica</p>
+      <p class="text-lg">Sapienza Università di Roma</p>
+      <p class="text-sm">2015 - 2018</p>
+      <p class="text-justify text-gray-700">
+        Algoritmi e Strutture Dati, Basi di Dati, Linguaggi e Tecnologie per il Web,
+        Modelli, Progettazione del Software, Programmazione Funzionale e Parallela,
+        Programmazione orientata agli Oggetti, Python, Reti di Calcolatori, Sistemi di
+        Calcolo I & II, Tecniche di Programmazione, Telecomunicazioni <br>
+        Analisi Matematica I & II, Calcolo delle Probabilità e Statistica, Controlli
+        Automatici, Economia e Organizzazione Aziendale, Elettronica, Geometria,
+        Management, Ricerca Operativa, Teoria dei Sistemi
+      </p>
+    </div>
+    <div class="py-4">
+      <p class="text-xl">Diploma Liceo Scientifico</p>
+      <p class="text-lg">Renato Cartesio</p>
+      <p class="text-sm">2010 - 2015</p>
+    </div>
+  </div>
 </div>
+<app-footer></app-footer>

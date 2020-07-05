@@ -247,12 +247,12 @@
       "language": "Java",
       "date": "1499026222",
       "image": "aisee.jpg",
-      "skills": "Android",
+      "skills": "Android, AI",
       "category": "App"
     },
     {
       "title": "Cups",
-      "description": "Small android game written in Java",
+      "description": "Small android game written in Java to play with cards.",
       "link": "https://github.com/marco2012/Cups",
       "language": "Java",
       "date": "1529439022",

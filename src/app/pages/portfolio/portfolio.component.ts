@@ -11,30 +11,38 @@ import {Subscription} from "rxjs";
 export class PortfolioComponent implements OnInit, OnDestroy {
   subscription: Subscription;
   projects: Project[] = [];
-  categories: string[];
+  categoriesCount = {};
 
   searchText = '';
 
   constructor(private portfolioService: PortfolioService) { }
 
   ngOnInit() {
-      this.subscription = this.portfolioService.projectsChanged
-      .subscribe(
-        (projects: Project[]) => {
-          this.projects = projects;
-        }
-      );
+      // this.subscription = this.portfolioService.projectsChanged
+      // .subscribe(
+      //   (projects: Project[]) => {
+      //     this.projects = projects;
+      //   }
+      // );
     this.projects = this.portfolioService.getProjects();
-    this.categories = this.projects.map(p=>p.category).filter(onlyUnique).sort();
+    // this.categories = this.projects.map(p=>p.category).filter(onlyUnique).sort();
+    this.countCategories()
   }
 
-
   ngOnDestroy() {
-    this.subscription.unsubscribe();
+    // this.subscription.unsubscribe();
   }
 
   onSearchTextChanged(text: string) {
     this.searchText = text;
+  }
+
+  countCategories() {
+    const categories = this.projects.map(p=>p.category);
+    categories.reduce((countMap, word) => {
+      countMap[word] = ++countMap[word] || 1;
+      return countMap;
+    }, this.categoriesCount);
   }
 
 }

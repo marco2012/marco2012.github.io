@@ -1,22 +1,25 @@
 <div class="flex items-center justify-center w-full">
   <div class="max-w-md md:max-w-2xl px-2">
     <div class="max-w-sm p-2 card" data-aos="fade-up">
-      <div class="shadow-lg h-48 flex-none bg-cover rounded-t text-center overflow-hidden" [style.background-image]="'url(' + imagePath + ')'" style="background-position: top center; background-size:     cover;"></div>
-      <div class="shadow-lg hover:bg-gray-100 bg-white rounded-b lg:rounded-b-none lg:rounded-r p-4 flex flex-col justify-between leading-normal">
+      <div class="shadow-lg h-48 flex-none bg-cover rounded-t text-center overflow-hidden"
+           [style.background-image]="'url(' + imagePath + ')'"
+           style="background-position: top center; background-size: cover; min-height: 220px"></div>
+      <div class="shadow-lg hover:bg-gray-100 bg-white rounded-b lg:rounded-b-none lg:rounded-r p-4 flex flex-col justify-between leading-normal"
+           style="min-height: 380px;">
         <div class="mb-8">
           <p class="text-base text-gray-600 flex items-center">
             <img class="mr-2" width="16" src="{{classIcon}}" style="opacity: 50%" />
-            <!--            <i class="{{classIcon}} mr-1"></i>-->
             {{project.language}}
           </p>
-          <div class="text-2xl text-gray-800 font-medium mr-auto mb-2 ml-1 avenir-medium">{{project.title}}</div>
-          <p class="text-gray-700 text-base text-justify ml-1 mr-1" [innerHTML]="project.description"></p>
+          <div class="text-2xl text-gray-800 font-medium mr-auto mb-3 mt-3 ml-1 avenir-medium">{{project.title}}</div>
+          <p class="text-gray-700 text-base text-justify ml-1 mr-1 avenir-regular" [innerHTML]="project.description"></p>
         </div>
         <div class="flex items-center">
           <!--      <img class="w-10 h-10 rounded-full mr-4" src="/img/jonathan.jpg" alt="Avatar of Jonathan Reinink">-->
           <div class="text-sm">
             <p class="text-sm text-gray-700 flex items-center leading-none" *ngIf="project.skills">
-              <i class="devicon-devicon-plain mr-1" style="opacity: 0.5;"></i>{{project.skills}}
+              <img class="mr-2" width="16" src="/assets/icons/icon-more.svg" style="opacity: 50%" />
+              {{project.skills}}
             </p>
             <p class="text-gray-600 mt-2 mb-2">{{project.date * 1000 | date:'MMMM yyyy'}}</p>
 <!--            <a class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2"-->

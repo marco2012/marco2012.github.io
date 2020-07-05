@@ -1,0 +1,16 @@
+.skills-list {
+  list-style-type: none;
+  columns: 2;
+  -webkit-columns: 2;
+  -moz-columns: 2;
+}
+
+.custom-programming-list {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 4px;
+}
+
+.opacity-icon {
+  opacity: 75%;
+}
