@@ -19,6 +19,9 @@ import {ProjectsResolverService} from "./services/projects-resolver.service";
 import {CustomReuseStrategy} from "./shared/routing";
 import {CustomPreloadingStrategy} from "./shared/preloading";
 import { ResumeComponent } from './pages/resume/resume.component';
+import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
+import {NgxSpinnerModule} from "ngx-spinner";
+import {MatProgressBarModule} from "@angular/material/progress-bar";
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -42,9 +45,11 @@ const routes: Routes = [
   ],
   imports: [
     BrowserModule,
-    RouterModule.forRoot(routes, { preloadingStrategy: CustomPreloadingStrategy }),
+    RouterModule.forRoot(routes, { preloadingStrategy: PreloadAllModules }),
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
+    BrowserAnimationsModule,
+    NgxSpinnerModule,
   ],
   exports: [RouterModule],
   providers: [

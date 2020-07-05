@@ -13,7 +13,6 @@ export class ProjectsResolverService implements Resolve<Project[]> {
 
   resolve(route: ActivatedRouteSnapshot, state: RouterStateSnapshot): Observable<Project[]> | Promise<Project[]> | Project[] {
     const projects = this.portfolioService.getProjects();
-    console.log(projects.length)
     if (projects.length === 0) {
       return this.portfolioService.fetchProjects();
     } else {
