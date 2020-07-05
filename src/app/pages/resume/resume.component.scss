@@ -3,6 +3,7 @@
   columns: 2;
   -webkit-columns: 2;
   -moz-columns: 2;
+  font-size: 1.125rem;
 }
 
 .custom-programming-list {
@@ -13,4 +14,15 @@
 
 .opacity-icon {
   opacity: 75%;
+}
+
+.resume-block {
+  padding: 20px;
+}
+.resume-block:hover, .resume-block:active {
+  background-color: #fafafa;
+  border-radius: 16px;
+  -moz-box-shadow:    inset 0 0 2px #e8e8e8;
+  -webkit-box-shadow: inset 0 0 2px #e8e8e8;
+  box-shadow:         inset 0 0 2px #e8e8e8;
 }

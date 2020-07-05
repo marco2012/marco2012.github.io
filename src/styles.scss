@@ -65,26 +65,28 @@
   font-family: 'Avenir Next Rounded Pro Bold',sans-serif
 }
 
-body::-webkit-scrollbar-track {
-  overflow: auto;
-  -webkit-box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.3);
-  //background-color: #1a222c;
-  border-radius: 10px;
-}
+//body::-webkit-scrollbar-track {
+//  overflow: auto;
+//  -webkit-box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.3);
+//  //background-color: #1a222c;
+//  border-radius: 10px;
+//}
+//
+//body::-webkit-scrollbar {
+//  overflow: auto;
+//  width: 18px;
+//  //background-color: #1a222c;
+//}
+//
+//body::-webkit-scrollbar-thumb {
+//  border-radius: 10px;
+//  background-image: -webkit-gradient(
+//      linear,
+//      left bottom,
+//      left top,
+//      color-stop(0.86, #ca3660),
+//      color-stop(0.44, #ef8a37)
+//  );
+//}
+//
 
-body::-webkit-scrollbar {
-  overflow: auto;
-  width: 18px;
-  //background-color: #1a222c;
-}
-
-body::-webkit-scrollbar-thumb {
-  border-radius: 10px;
-  background-image: -webkit-gradient(
-      linear,
-      left bottom,
-      left top,
-      color-stop(0.86, #ca3660),
-      color-stop(0.44, #ef8a37)
-  );
-}

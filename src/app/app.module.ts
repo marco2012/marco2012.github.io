@@ -16,13 +16,13 @@ import "reflect-metadata";
 import { PillComponent } from './components/pill/pill.component';
 import { FooterComponent } from './components/footer/footer.component';
 import {ProjectsResolverService} from "./services/projects-resolver.service";
-import {CustomReuseStrategy} from "./shared/routing";
 import {CustomPreloadingStrategy} from "./shared/preloading";
 import { ResumeComponent } from './pages/resume/resume.component';
 import {BrowserAnimationsModule, NoopAnimationsModule} from "@angular/platform-browser/animations";
 import {NgxSpinnerModule} from "ngx-spinner";
 import { ResumeRowComponent } from './pages/resume/resume-row/resume-row.component';
 import { CertificateRowComponent } from './pages/resume/certificate-row/certificate-row.component';
+import {CustomReuseStrategy} from "./shared/routing";
 
 const routes: Routes = [
   { path: '', component: HomeComponent },

@@ -1,9 +1,11 @@
 <app-header></app-header>
-<div class="flex flex-col avenir-medium pb-8 px-10 sm:px-24 md:px-24 lg:px-32 xl:px-48">
-  <div class="flex items-center justify-center pb-8">
+<div class="flex flex-col avenir-medium pb-8 px-12 sm:px-24 md:px-32 lg:px-48 xl:px-64">
+
+  <div class="flex items-center justify-center py-6">
     <p class="text-4xl avenir-bold">Resume</p>
   </div>
-  <div class="resume-profile pb-6">
+
+  <div class="resume-profile pb-6 resume-block">
     <div class="mb-4 flex flex-row">
       <img class="mr-4" width="32px" src="/assets/icons/icon-profile.svg" alt="">
       <p class="text-2xl avenir-demi">Profile</p>
@@ -13,13 +15,26 @@
       Always looking for new challenges.
     </p>
   </div>
-  <hr class="pb-10" style="border-top: 1px solid #F1F1F1;">
+<!--  <hr class="py-6" style="border-top: 1px solid #F1F1F1;">-->
+<!--  <div class="resume-skills pb-6">-->
+<!--    <div class="mb-4 flex flex-row">-->
+<!--      <img class="mr-4" width="32px" src="/assets/icons/icon-resume.svg" alt="">-->
+<!--      <p class="text-2xl avenir-demi">Experience</p>-->
+<!--    </div>-->
+<!--    <app-resume-row-->
+<!--      title="Software Engineer"-->
+<!--      subtitle="Department of Computer, Control, Management Engineering - Sapienza Università di Roma"-->
+<!--      year="Sep - Dec 2020"-->
+<!--      description="Developer of SmartRPA, a Python tool to train Robotic Process Automation routines."-->
+<!--    ></app-resume-row>-->
+<!--  </div>-->
+  <hr class="py-6" style="border-top: 1px solid #F1F1F1;">
   <div class="resume-skills pb-6">
     <div class="mb-4 flex flex-row">
       <img class="mr-4" width="32px" src="/assets/icons/icon-code.svg" alt="">
       <p class="text-2xl avenir-demi">Professional Skills</p>
     </div>
-    <div class="py-2">
+    <div class="py-2 resume-block">
       <p class="text-xl mb-2">Programming Languages</p>
       <ul class="skills-list">
         <li><i class="opacity-icon mr-2 devicon-python-plain"></i> Python</li>
@@ -35,7 +50,7 @@
         <li><i class="opacity-icon  mr-2 devicon-apple-plain"></i> AppleScript</li>
       </ul>
     </div>
-    <div class="py-2">
+    <div class="py-2 resume-block">
       <p class="text-xl mb-2">Frameworks</p>
       <ul class="skills-list">
         <li class="custom-programming-list"><img class="opacity-icon mr-2" src="/assets/icons/icon-spring.png" alt="" style="max-width: 20px;"> Spring</li>
@@ -48,9 +63,9 @@
         <li class="custom-programming-list"><i class="opacity-icon mr-2 devicon-rails-plain"></i> Ruby on Rails</li>
       </ul>
     </div>
-    <div class="py-2">
+    <div class="py-2 resume-block">
       <p class="text-xl mb-2">Other</p>
-      <ul style="list-style-type: none;">
+      <ul class="text-lg" style="list-style-type: none;">
         <li class="custom-programming-list"><img class="opacity-icon mr-2" src="/assets/icons/icon-app.svg" alt="" style="max-width: 20px;"> iOS/Android/Hybrid app development</li>
         <li class="custom-programming-list"><img class="opacity-icon mr-2" src="/assets/icons/icon-db.svg" alt="" style="max-width: 20px;"> Database (SQL/MySQL/PostgreSQL/NoSQL)</li>
         <li class="custom-programming-list"><img class="opacity-icon mr-2" src="/assets/icons/icon-web.svg" alt="" style="max-width: 20px;"> HTML/CSS/jQuery, Front-end/Back-end development</li>
@@ -61,8 +76,27 @@
       </ul>
     </div>
   </div>
-  <hr class="pb-10" style="border-top: 1px solid #F1F1F1;">
-  <div class="resume-skills pb-6">
+  <hr class="py-6" style="border-top: 1px solid #F1F1F1;">
+  <div class="resume-skills pb-6 resume-block">
+    <div class="mb-4 flex flex-row">
+      <img class="mr-4" width="32px" src="/assets/icons/icon-skills.svg" alt="">
+      <p class="text-2xl avenir-demi">Personal skills</p>
+    </div>
+    <app-resume-row
+      title="Comunicative Skills"
+      description="Confident, articulate, and professional speaking abilities. Great communication
+                  skills in a development environment where teamwork prevails, acquired during
+                  years of team projects and team study at university."
+    ></app-resume-row>
+    <app-resume-row
+      title="Organisational and management skills"
+      description="Dynamic, results-oriented problem solver skilled at evaluating options and
+                  generating solutions. Ability to work in stressful situations respecting
+                  expiration dates. Enjoy working as a team member as well as independently."
+    ></app-resume-row>
+  </div>
+  <hr class="py-6" style="border-top: 1px solid #F1F1F1;">
+  <div class="resume-skills pb-6 resume-block">
     <div class="mb-4 flex flex-row">
       <img class="mr-4" width="32px" src="/assets/icons/icon-education.svg" alt="">
       <p class="text-2xl avenir-demi">Education</p>
@@ -85,7 +119,7 @@
       description="Algoritmi e Strutture Dati, Basi di Dati, Linguaggi e Tecnologie per il Web,
         Modelli, Progettazione del Software, Programmazione Funzionale e Parallela,
         Programmazione orientata agli Oggetti, Python, Reti di Calcolatori, Sistemi di
-        Calcolo I & II, Tecniche di Programmazione, Telecomunicazioni <br>
+        Calcolo I & II, Tecniche di Programmazione, Telecomunicazioni,
         Analisi Matematica I & II, Calcolo delle Probabilità e Statistica, Controlli
         Automatici, Economia e Organizzazione Aziendale, Elettronica, Geometria,
         Management, Ricerca Operativa, Teoria dei Sistemi"
@@ -96,27 +130,8 @@
       year="2010 - 2025"
     ></app-resume-row>
   </div>
-  <hr class="pb-10" style="border-top: 1px solid #F1F1F1;">
-  <div class="resume-skills pb-6">
-    <div class="mb-4 flex flex-row">
-      <img class="mr-4" width="32px" src="/assets/icons/icon-skills.svg" alt="">
-      <p class="text-2xl avenir-demi">Personal skills</p>
-    </div>
-    <app-resume-row
-      title="Comunicative Skills"
-      description="Confident, articulate, and professional speaking abilities. Great communication
-                  skills in a development environment where teamwork prevails, acquired during
-                  years of team projects and team study at university."
-    ></app-resume-row>
-    <app-resume-row
-      title="Organisational and management skills"
-      description="Dynamic, results-oriented problem solver skilled at evaluating options and
-                  generating solutions. Ability to work in stressful situations respecting
-                  expiration dates. Enjoy working as a team member as well as independently."
-    ></app-resume-row>
-  </div>
-  <hr class="pb-10" style="border-top: 1px solid #F1F1F1;">
-  <div class="resume-skills pb-6">
+  <hr class="py-6" style="border-top: 1px solid #F1F1F1;">
+  <div class="resume-skills pb-6 resume-block">
     <div class="mb-4 flex flex-row">
       <img class="mr-4" width="32px" src="/assets/icons/icon-certificate.svg" alt="">
       <p class="text-2xl avenir-demi">Certificates</p>

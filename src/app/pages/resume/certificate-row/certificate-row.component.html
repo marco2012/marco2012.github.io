@@ -1,0 +1,10 @@
+<div class="flex justify-between py-3">
+  <div class="pr-2">
+    <a *ngIf="link" class="text-lg xl:text-xl" href="{{link}}" target="_blank">{{title}} </a>
+    <a *ngIf="!link" class="text-lg xl:text-xl" target="_blank">{{title}} </a>
+    <p class="text-base lg:text:lg xl:text:lg text-gray-700">{{subtitle}}</p>
+  </div>
+  <div class="pl-2">
+    <p class="text-base">{{date}}</p>
+  </div>
+</div>
