@@ -132,7 +132,7 @@
     },
     {
       "title": "Cydia Repo",
-      "description": "Cydia Repository with useful packages. ",
+      "description": "Cydia Repository with useful packages for jailbroken iOS devices.",
       "link": "https://marco2012.github.io/cydia/",
       "language": "Web",
       "date": "1519839861",
@@ -262,7 +262,7 @@
     },
     {
       "title": "TetherFree",
-      "description": "Root android app to enable hotspot.",
+      "description": "Android application written in Java that allows you to enable hotspot using root.",
       "link": "https://github.com/marco2012/TetherFree",
       "language": "Java",
       "date": "1495656622",
@@ -287,7 +287,7 @@
       "language": "JavaScript",
       "date": "1516479022",
       "image": "cobspreadbot.png",
-      "skills": "REST APIs, Telegram bot, Cryptocurrency, Node.js, , Firebase, Databse",
+      "skills": "REST APIs, Telegram bot, Cryptocurrency, Node.js, Firebase, Databse",
       "category": "JavaScript"
     },
     {
@@ -354,7 +354,7 @@
       "title": "APS Progetto Cratere",
       "description": "Website made with Bootstrap 4 for an association.",
       "link": "https://www.progettocratere.org/",
-      "language": "HTML/CSS/JS",
+      "language": "HTML/CSS/JavaScript",
       "date": "1572610166",
       "image": "progetto_cratere.jpg",
       "skills": "Bootstrap",

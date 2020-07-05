@@ -15,7 +15,7 @@ export class PortfolioService {
   constructor(private httpClient: HttpClient) { }
 
   getProjects(){
-    return this.projects.slice()//.sort((a, b) => parseInt(b.date) - parseInt(a.date));
+    return this.projects.slice().sort((a, b) => parseInt(b.date) - parseInt(a.date));
   }
 
   setProjects(projects: Project[]) {

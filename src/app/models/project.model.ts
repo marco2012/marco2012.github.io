@@ -22,26 +22,29 @@ export class Project {
   static getClassIcon(language: string) {
     let selector = '';
     switch (language) {
-      case "C++":
-        selector = 'cplusplus';
-        break;
-      case "SQL":
-        selector = 'mysql';
-        break;
-      case "Assembly":
-        selector = 'devicon';
-        break;
-      case "AppleScript":
-        selector = 'apple';
-        break;
       case "Dart":
-        selector = 'flutter';
-        break;
+        selector = "flutter"
+        break
+      case "HTML/CSS/JavaScript":
+        selector = "javascript"
+        break
+      case "Web":
+        selector = "html5"
+        break
+      case "Rails":
+        selector = "rubyonrails"
+        break
+      case "AppleScript":
+        selector = "apple"
+        break
+      case "Objective C":
+        selector = "apple"
+        break
       default:
         selector = language.toLowerCase();
         break;
     }
-    return `devicon-${selector}-plain`;
+    return `https://unpkg.com/simple-icons@v3/icons/${selector}.svg`;
   }
 
 }
