@@ -1,4 +1,3 @@
-
 .card__btn {
   width: 140px;
   padding: 0.5rem;
@@ -28,3 +27,62 @@
   background-color: #dcdcdc;
   user-select: none;
 }
+
+.thumb {
+  transform: rotate( -33deg) skew(20deg);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.divider {
+  width: 100%;
+}
+
+.left {
+  border-right: 20px solid grey;
+  border-top: 20px solid transparent;
+}
+
+.bottom {
+  height: 20px;
+  width: 60%;
+  max-width: 220px;
+  border-top: 20px solid grey;
+  border-right: 20px solid transparent;
+  box-sizing: border-box;
+}
+
+#cover {
+  width: 60%;
+  max-width: 200px;
+  max-height: 300px;
+  box-shadow: -19px 19px 0px 0 grey, -19px 19px 0px 0 grey;
+}
+
+@media only screen and (max-width: 768px) {
+  .logo {
+    visibility: hidden;
+  }
+}
+
+@media only screen and (max-width : 320px) {
+  .home-class {
+    padding-top: 40px;
+    padding-left: 4%;
+  }
+}
+
+@media only screen and (max-width : 640px) {
+  .home-class {
+    padding-top: 40px;
+    padding-left: 10%;
+  }
+}
+
+//@media (min-width : 321px) {
+//  .home-class {
+//    padding-top: 40px;
+//    padding-left: 14px;
+//  }
+//}

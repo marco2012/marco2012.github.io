@@ -23,6 +23,7 @@ import {NgxSpinnerModule} from "ngx-spinner";
 import { ResumeRowComponent } from './pages/resume/resume-row/resume-row.component';
 import { CertificateRowComponent } from './pages/resume/certificate-row/certificate-row.component';
 import {CustomReuseStrategy} from "./shared/routing";
+import {NgxGoogleAnalyticsModule, NgxGoogleAnalyticsRouterModule} from "ngx-google-analytics";
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -52,8 +53,9 @@ const routes: Routes = [
     FormsModule,
     HttpClientModule,
     BrowserAnimationsModule,
-    NoopAnimationsModule,
     NgxSpinnerModule,
+    NgxGoogleAnalyticsModule.forRoot('UA-77899408-14'),
+    NgxGoogleAnalyticsRouterModule
   ],
   exports: [RouterModule],
   providers: [

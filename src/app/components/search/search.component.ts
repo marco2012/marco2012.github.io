@@ -14,10 +14,9 @@ export class SearchComponent {
   constructor() { }
 
   onSearchChanged(event) {
-    this.searchTextEvent.emit(this.searchText);
-    // if ((event.type === "input" && event.target.value === "") || (event.type === "change")) {
-    //   this.searchTextEvent.emit(this.searchText);
-    // }
+    if ((event.type === "input" && event.target.value === "") || (event.type === "change")) {
+      this.searchTextEvent.emit(this.searchText);
+    }
   }
 
 }
