@@ -46,7 +46,7 @@
     },
     {
       "title":"BookShare",
-      "description":" Buy and sell books. Once a user logs in, the data are stored on Firebase database. Every user can sell a book by scanning the barcode. Using Google Books API, all the details are retrieved. The user can then add a picture, insert his location thanks to Google Places API and sell it. When someone wants to buy a book, he can send an email to the seller, get directions for that book or purchase it. In the Map controller the user can see a 2D map of the available books, and by going to the AR button, he can see the position of the books in space using Augmented Reality. ",
+      "description":"iOS Swift app to exchange books. Features user login, Firebase database, barcode scanning with Google Books API, map with augmented reality to see the location of the book in real life using the camera of the phone.",
       "link":"https://github.com/marco2012/BookShare",
       "language":"Swift",
       "date":"1546347661",
@@ -167,7 +167,7 @@
     },
     {
       "title":"Smart Gas Station",
-      "description":" Ruby on Rails project to find the cheapest gas stations closest to you. The data are taken from Ministero dello Sviluppo Economico and imported in a SQLite database using a custom script. The web application uses a multitude of RoR gems including Devise for user authentication, Geocoder for location, Cucumber and RSpec to write tests. A number of APIs are implemented like OpenWeatherMap, Qwant images, Google Charts, Google Maps. ",
+      "description":" Ruby on Rails web-app to find the cheapest gas stations nearby. SQL database is used to store prices data taken from a public API. Several RoR gems including Devise for user authentication, Geocoder for location, Cucumber and RSpec for testing. A number of APIs are implemented like OpenWeatherMap, Qwant images, Google Charts, Google Maps. ",
       "link":"https://github.com/marco2012/SmartGasStation",
       "language":"Rails",
       "date":"1527878551",
@@ -178,12 +178,12 @@
     },
     {
       "title":"Eventi Storici",
-      "description":" The project uses the APIs provided by muffinlabs.com to search for all the historical events that occurred on a particular day. Once obtained, these historical events are saved, with links to the relative wikipedia page, in a file on Dropbox accessed via Oauth. Moreover the events are saved on CouchDB through working queue provided by RabbitMQ running on Docker. A random event is published on Twitter and Telegram with link wikipedia, youtube video link, image with relative description provided by Microsoft artificial intelligence. ",
+      "description":"Website to display historical events occurred on a particular day, using different APIs. External services are integrated like Wikipedia and Dropbox accessed via Oauth. Moreover the events are saved on a NoSQL database CouchDB through working queue provided by RabbitMQ running on Docker. A random event is published on Twitter and Telegram through APIs including a wikipedia link, youtube video link, image with relative description provided by Microsoft artificial intelligence.",
       "link":"https://github.com/marco2012/Eventi-Storici#-eventi-storici",
       "language":"HTML/CSS/JavaScript",
       "date":"1518120622",
       "image":"eventistorici.jpg",
-      "skills":"REST APIs, Database, AI",
+      "skills":"REST APIs, Database, AI, Docker",
       "category":"Web",
       "id":17
     },
@@ -409,7 +409,7 @@
     },
     {
       "title":"SmartRPA",
-      "description":"Python tool to train Robotic Process Automation routines in order to automatically find the best way to perform a specific user task. Includes cross-platform action logger supporting a wide range of application, high-level event abstraction, generation of abstract process diagrams, selection of the most frequent user behaviour, ability to change editable fields, generation of executable RPA script.",
+      "description":"Python tool to train Robotic Process Automation routines to automatically find the best way to perform a specific user task. Includes cross-platform action logger, high-level event abstraction, generation of abstract process diagrams, selection of the most frequent user behaviour, ability to change editable fields, generation of executable RPA script.",
       "link":"https://github.com/bpm-diag/smartRPA",
       "language":"Python",
       "date":"1582156800",
