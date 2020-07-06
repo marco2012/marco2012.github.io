@@ -14,6 +14,7 @@ export class CardComponent implements OnInit {
 
   classIcon: string;
   imagePath: string;
+  date: Date;
 
   constructor() { }
 
@@ -23,6 +24,7 @@ export class CardComponent implements OnInit {
     });
     this.classIcon = Project.getClassIcon(this.project.language);
     this.imagePath = '/assets/images/'+this.project.image;
+    this.date = new Date(+this.project.date * 1000)
   }
 
 }
