@@ -382,7 +382,7 @@
       "date":"1564661592",
       "image":"bomba_anarchica.png",
       "skills":"Alexa",
-      "category":"Other",
+      "category":"Python",
       "id":35
     },
     {
@@ -399,7 +399,7 @@
     {
       "title":"Prontuario Guardie Zoofile",
       "description":"Flutter app with laws used by animal keeper association. Uses firebase database.",
-      "link":"",
+      "link":"https://github.com/marco2012/Prontuario",
       "language":"Dart",
       "date":"1588000930",
       "image":"prontuario.jpeg",
@@ -412,7 +412,7 @@
       "description":"Python tool to train Robotic Process Automation routines to automatically find the best way to perform a specific user task. Includes cross-platform action logger, high-level event abstraction, generation of abstract process diagrams, selection of the most frequent user behaviour, ability to change editable fields, generation of executable RPA script.",
       "link":"https://github.com/bpm-diag/smartRPA",
       "language":"Python",
-      "date":"1582156800",
+      "date":"1585699200",
       "image":"computerlogger.png",
       "skills":"RPA, Flask, Process Discovery",
       "category":"Python",
@@ -425,9 +425,31 @@
       "language":"TypeScript",
       "date":"1593366057",
       "image":"ecommerce.png",
-      "skills":"REST APIs, Database, Angular, Java Spring, Full-stack",
+      "skills":"Full-stack, REST APIs, Database, Angular, Spring Boot, Maven",
       "category":"Web",
       "id":39
+    },
+    {
+      "title":"Marco2012 website",
+      "description":"Static website built with Bootstrap and JavaScript",
+      "link":"https://marco2012.github.io/website-static/",
+      "language":"HTML/CSS/JavaScript",
+      "date":"1546300800",
+      "image":"marco2012-website-static.png",
+      "skills":"",
+      "category":"Web",
+      "id":40
+    },
+    {
+      "title":"Prezzi Carburante Bot",
+      "description":"Telegram bot to find the prices of nearby gas stations.",
+      "link":"https://github.com/marco2012/prezzi_carburante_bot",
+      "language":"HTML/CSS/JavaScript",
+      "date":"1517443200",
+      "image":"gas-station.png",
+      "skills":"Telegram bot, Node JS, Database",
+      "category":"Web",
+      "id":41
     }
   ]
 }

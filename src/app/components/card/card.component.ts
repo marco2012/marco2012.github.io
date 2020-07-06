@@ -20,7 +20,7 @@ export class CardComponent implements OnInit {
 
   ngOnInit() {
     AOS.init({
-      duration: 300
+      duration: 250
     });
     this.classIcon = Project.getClassIcon(this.project.language);
     this.imagePath = '/assets/images/'+this.project.image;

@@ -19,7 +19,7 @@ import {ProjectsResolverService} from "./services/projects-resolver.service";
 import {CustomPreloadingStrategy} from "./shared/preloading";
 import { ResumeComponent } from './pages/resume/resume.component';
 import {BrowserAnimationsModule, NoopAnimationsModule} from "@angular/platform-browser/animations";
-import {NgxSpinnerModule} from "ngx-spinner";
+import {NgxSpinnerModule, NgxSpinnerService} from "ngx-spinner";
 import { ResumeRowComponent } from './pages/resume/resume-row/resume-row.component';
 import { CertificateRowComponent } from './pages/resume/certificate-row/certificate-row.component';
 import {CustomReuseStrategy} from "./shared/routing";
@@ -57,7 +57,8 @@ const routes: Routes = [
   exports: [RouterModule],
   providers: [
     { provide: RouteReuseStrategy, useClass: CustomReuseStrategy },
-    CustomPreloadingStrategy
+    CustomPreloadingStrategy,
+    NgxSpinnerService
   ],
   bootstrap: [AppComponent]
 })
