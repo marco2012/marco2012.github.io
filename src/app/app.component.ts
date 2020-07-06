@@ -2,6 +2,8 @@ import { Component } from '@angular/core';
 import {NavigationCancel, NavigationEnd, NavigationError, NavigationStart, Router, RouterEvent} from "@angular/router";
 import {NgxSpinnerService} from "ngx-spinner";
 
+declare let gtag: Function;
+
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -27,6 +29,11 @@ export class AppComponent {
     if (event instanceof NavigationEnd) {
       this.loading = false
       this.spinner.hide();
+      // google analytics
+      gtag('config', 'UA-77899408-14', {
+          'page_path': event.urlAfterRedirects
+        }
+      );
     }
     // Set loading state to false in both of the below events to hide the spinner in case a request fails
     if (event instanceof NavigationCancel) {

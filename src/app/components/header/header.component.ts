@@ -9,10 +9,9 @@ import {Router} from "@angular/router";
 export class HeaderComponent implements OnInit {
   open = false;
 
-  constructor(private router: Router) { }
+  constructor() { }
 
   ngOnInit() {
-    console.log(this.router.url);
   }
 
   onClick(){

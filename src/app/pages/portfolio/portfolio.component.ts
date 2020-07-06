@@ -1,4 +1,4 @@
-import {AfterViewInit, Component, ElementRef, OnDestroy, OnInit, Output} from '@angular/core';
+import {AfterViewInit, Component, ElementRef, Input, OnDestroy, OnInit, Output} from '@angular/core';
 import {Project} from "../../models/project.model";
 import {onlyUnique, PortfolioService} from "../../services/portfolio.service";
 import {Subscription} from "rxjs";
@@ -49,12 +49,6 @@ export class PortfolioComponent implements OnInit, AfterViewInit {
         this.category = params.category || "";
         this.projects = this.portfolioService.filterCategory(this.category);
     })
-  }
-
-  trackByFn(index, item) {
-    if (!item) return null;
-    console.log( 'TrackBy:', item.id, 'at index', index );
-    return( item.id );
   }
 
 }
