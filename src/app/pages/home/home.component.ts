@@ -13,7 +13,7 @@ export class HomeComponent implements OnInit, AfterViewInit {
   }
 
   ngAfterViewInit() {
-    // this.elementRef.nativeElement.ownerDocument.body.style.background = 'linear-gradient(120deg, rgba(217,217,217,1) 0%, rgba(255,255,255,1) 100%)';
+    // this.elementRef.nativeElement.ownerDocument.body.style.background = 'linear-gradient(45deg, rgba(205,205,205,1) 0%, rgba(255,255,255,1) 100%);';
     // this.elementRef.nativeElement.ownerDocument.body.style.display = 'block';
     // this.elementRef.nativeElement.ownerDocument.body.style.backgroundSize = '100% 100%';
     // this.elementRef.nativeElement.ownerDocument.body.style.backgroundRepeat = 'no-repeat';
