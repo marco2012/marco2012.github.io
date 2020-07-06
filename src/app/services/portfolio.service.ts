@@ -15,16 +15,19 @@ export class PortfolioService {
   constructor(private httpClient: HttpClient) { }
 
   getProjects(){
-    return this.projects.slice().sort((a, b) => parseInt(b.date) - parseInt(a.date));
+    return this.projects;
+  }
+
+  sortedProjects(projects: Project[]){
+    return projects.sort((a, b) => parseInt(b.date) - parseInt(a.date))
   }
 
   setProjects(projects: Project[]) {
-    this.projects = projects;
+    this.projects = this.sortedProjects(projects);
     this.projectsChanged.next(this.projects.slice());
   }
 
   fetchProjects(): Observable<Project[]> {
-    console.log("fetching projects")
     return this.httpClient
       .get<{projects: Project[]}>("/assets/projects.json")
       .pipe(
@@ -33,11 +36,18 @@ export class PortfolioService {
     );
   }
 
-  // setProjectss() {
-  //   this.fetchProjects().subscribe(data => {
-  //     this.projects = data.sort((a, b) => parseFloat(b.date) - parseFloat(a.date));
-  //   });
-  // }
+  filterProjects(searchText: string) {
+    return this.projects.filter(proj => {
+      return (JSON.stringify(proj).toLocaleLowerCase().includes(searchText));
+    });
+  }
+
+  filterCategory(category:string){
+    if (typeof category === "undefined" || category==="" || category.toLowerCase() === "all") {
+      return this.projects;
+    }
+     return this.sortedProjects(this.projects.filter(proj => proj.category.toLowerCase() === category.toLowerCase()))
+  }
 
 }
 

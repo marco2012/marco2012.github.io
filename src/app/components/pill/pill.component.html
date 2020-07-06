@@ -1,9 +1,13 @@
 <ul class="flex flex-wrap items-center justify-center p-6">
-  <li class="mr-3">
-    <a class="inline-block border border-blue-650 rounded py-1 px-3 bg-blue-650 text-white" href="#">All</a>
-  </li>
   <li class="mr-3" *ngFor="let category of categoriesCount | keyvalue">
-    <a class="inline-block border border-white rounded hover:border-gray-200 text-blue-650 hover:bg-gray-200 py-1 px-3" href="#">
+    <a
+      class="avenir-medium px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg
+      md:mt-0 md:ml-4 hover:text-gray-900 hover:bg-gray-200 outline-none"
+      routerLink="/portfolio"
+      [queryParams]="{category: category.key.toLowerCase()}"
+      routerLinkActive="text-gray-900 bg-gray-200 outline-none"
+      [ngClass]="{'text-gray-900 bg-gray-200 outline-none': (category.key === 'All' && categoryType === '')}"
+      >
       {{category.key}} ({{category.value}})
     </a>
   </li>

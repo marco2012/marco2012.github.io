@@ -14,9 +14,7 @@ export class SearchComponent {
   constructor() { }
 
   onSearchChanged(event) {
-    if ((event.type === "input" && event.target.value === "") || (event.type === "change")) {
-      this.searchTextEvent.emit(this.searchText);
-    }
+    this.searchTextEvent.emit(this.searchText);
   }
 
 }
