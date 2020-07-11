@@ -1,8 +1,15 @@
-<div class="py-3">
-  <p class="text-xl">{{title}}</p>
-  <p class="text-lg">{{subtitle}}</p>
-  <p class="text-sm">{{year}}</p>
-  <p class="avenir-regular text-justify text-gray-700 text-base">
-    {{description}}
-  </p>
+<div class="flex justify-between items-center py-3">
+  <div class="pr-2">
+    <a *ngIf="link" class="text-lg xl:text-xl" href="{{link}}" target="_blank">{{title}} </a>
+    <p *ngIf="!link" class="text-lg xl:text-xl">{{title}} </p>
+    <p *ngIf="subtitle" class="text-base lg:text:lg xl:text:lg text-gray-700">{{subtitle}}</p>
+    <p *ngIf="year" class="text-sm">{{year}}</p>
+    <p *ngIf="description" class="avenir-regular text-justify text-gray-700 text-base">
+      {{description}}
+    </p>
+  </div>
+  <div *ngIf="date" class="pl-2">
+    <p class="text-base" style="min-width: 80px">{{date}}</p>
+  </div>
 </div>
+

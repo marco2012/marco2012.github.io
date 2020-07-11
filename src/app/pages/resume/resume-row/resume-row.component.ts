@@ -7,17 +7,12 @@ import {Component, Input, OnInit} from '@angular/core';
 })
 export class ResumeRowComponent implements OnInit {
 
-  @Input()
-  title: string;
-
-  @Input()
-  subtitle?: string;
-
-  @Input()
-  year?: string;
-
-  @Input()
-  description?: string;
+  @Input() title: string;
+  @Input() subtitle?: string;
+  @Input() year?: string;
+  @Input() description?: string;
+  @Input() date?: string;
+  @Input() link?: string;
 
   constructor() { }
 
