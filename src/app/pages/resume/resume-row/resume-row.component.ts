@@ -11,6 +11,7 @@ export class ResumeRowComponent implements OnInit {
   @Input() subtitle?: string;
   @Input() year?: string;
   @Input() description?: string;
+  @Input() small_description?: boolean;
   @Input() date?: string;
   @Input() link?: string;
   @Input() thesis?: string;
