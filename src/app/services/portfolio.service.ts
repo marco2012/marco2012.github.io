@@ -49,6 +49,13 @@ export class PortfolioService {
      return this.sortedProjects(this.projects.filter(proj => proj.category.toLowerCase() === category.toLowerCase()))
   }
 
+  filterTitle(title:string){
+    if (typeof title === "undefined" || title==="" || title.toLowerCase() === "all") {
+      return this.projects;
+    }
+    return this.sortedProjects(this.projects.filter(proj => proj.title.toLowerCase() === title.toLowerCase()))
+  }
+
 }
 
 export function onlyUnique(value, index, self) {

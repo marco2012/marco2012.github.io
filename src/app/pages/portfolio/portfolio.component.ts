@@ -14,6 +14,7 @@ export class PortfolioComponent implements OnInit, AfterViewInit {
   categoriesCount = {};
   searchText: string = "";
   category: string = "";
+  query: string = "";
 
   constructor(private portfolioService: PortfolioService,
               private route: ActivatedRoute,
@@ -46,8 +47,15 @@ export class PortfolioComponent implements OnInit, AfterViewInit {
 
   onQueryParamChange() {
     this.route.queryParams.subscribe((params: Params) => {
+      this.query = "";
+      if (params.category) {
         this.category = params.category || "";
         this.projects = this.portfolioService.filterCategory(this.category);
+      }
+      if (params.query) {
+        this.query = params.query || "";
+        this.projects = this.portfolioService.filterTitle(this.query);
+      }
     })
   }
 

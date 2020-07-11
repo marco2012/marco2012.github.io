@@ -166,7 +166,7 @@
       "id":15
     },
     {
-      "title":"Smart Gas Station",
+      "title":"SmartGasStation",
       "description":" Ruby on Rails web-app to find the cheapest gas stations nearby. SQL database is used to store prices data taken from a public API. Several RoR gems including Devise for user authentication, Geocoder for location, Cucumber and RSpec for testing. A number of APIs are implemented like OpenWeatherMap, Qwant images, Google Charts, Google Maps. ",
       "link":"https://github.com/marco2012/SmartGasStation",
       "language":"Rails",

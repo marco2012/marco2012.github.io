@@ -1,7 +1,10 @@
 <!--https://dev.to/maurogarcia_19/3-reusable-components-with-angular-and-tailwindcss-45md-->
 <div class="select-none flex flex-col items-center justify-center">
   <p class="text-4xl avenir-bold">Portfolio</p>
-  <p class="text-xl avenir-medium py-4">Check out my {{projects.length}} <span *ngIf="category.toLowerCase()!=='all'">{{category}}</span> projects</p>
+  <p *ngIf="query" class="text-xl avenir-medium py-4">Check out {{query}}</p>
+  <p *ngIf="!query" class="text-xl avenir-medium py-4">
+    Check out my {{projects.length}} <span *ngIf="category.toLowerCase()!=='all'">{{category}}</span> projects
+  </p>
 </div>
 
 <app-search (searchTextEvent)="onSearchTextChanged($event)"></app-search>
