@@ -1,5 +1,6 @@
 import {AfterViewInit, Component, ElementRef, OnInit} from '@angular/core';
 import {ResumeItem} from "../../models/resumeItem.model";
+import {ActivatedRoute} from "@angular/router";
 
 @Component({
   selector: 'app-resume',
@@ -16,14 +17,22 @@ export class ResumeComponent implements OnInit, AfterViewInit {
     new ResumeItem("DELF - A2","Conseil International d'Études Francophones (CIEF)","Jul 2011"),
   ];
 
-  constructor(private elementRef: ElementRef) { }
+  constructor(private elementRef: ElementRef,
+              private route: ActivatedRoute) { }
 
-  ngOnInit() {
+  ngOnInit(){
   }
 
   ngAfterViewInit(){
-    this.elementRef.nativeElement.ownerDocument.body.style.backgroundColor = 'white';
-    this.elementRef.nativeElement.ownerDocument.body.style.backgroundImage = '';
+    // this.elementRef.nativeElement.ownerDocument.body.style.backgroundColor = 'white';
+    // this.elementRef.nativeElement.ownerDocument.body.style.backgroundImage = '';
+    this.route.fragment.subscribe((fragment: string) => {
+      if (fragment) {
+        setTimeout(() => {
+          document.querySelector('#' + fragment).scrollIntoView({behavior: 'smooth'});
+        }, 100)
+      }
+    })
   }
 
 }

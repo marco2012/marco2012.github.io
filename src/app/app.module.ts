@@ -46,7 +46,7 @@ const routes: Routes = [
   ],
   imports: [
     BrowserModule,
-    RouterModule.forRoot(routes, { preloadingStrategy: PreloadAllModules }),
+    RouterModule.forRoot(routes, { anchorScrolling: 'enabled'}),
     FormsModule,
     HttpClientModule,
     BrowserAnimationsModule,
