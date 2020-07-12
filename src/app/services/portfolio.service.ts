@@ -42,18 +42,11 @@ export class PortfolioService {
     });
   }
 
-  filterCategory(category:string){
-    if (typeof category === "undefined" || category==="" || category.toLowerCase() === "all") {
+  filterAttribute(param: string, attr:string){
+    if (typeof param === "undefined" || param==="" || param.toLowerCase() === "all") {
       return this.projects;
     }
-     return this.sortedProjects(this.projects.filter(proj => proj.category.toLowerCase() === category.toLowerCase()))
-  }
-
-  filterTitle(title:string){
-    if (typeof title === "undefined" || title==="" || title.toLowerCase() === "all") {
-      return this.projects;
-    }
-    return this.sortedProjects(this.projects.filter(proj => proj.title.toLowerCase() === title.toLowerCase()))
+    return this.sortedProjects(this.projects.filter(proj => proj[attr].toLowerCase() === param.toLowerCase()))
   }
 
 }

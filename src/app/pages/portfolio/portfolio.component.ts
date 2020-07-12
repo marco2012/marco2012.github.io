@@ -12,6 +12,7 @@ import {ActivatedRoute, Params} from "@angular/router";
 export class PortfolioComponent implements OnInit, AfterViewInit {
   projects: Project[] = [];
   categoriesCount = {};
+  languagesCount = {};
   searchText: string = "";
   category: string = "";
   query: string = "";
@@ -22,7 +23,8 @@ export class PortfolioComponent implements OnInit, AfterViewInit {
 
   ngOnInit() {
     this.onSearchTextChanged("");
-    this.countCategories()
+    this.countObjects('category', this.categoriesCount)
+    // this.countObjects('language', this.languagesCount)
     this.onQueryParamChange()
   }
 
@@ -31,13 +33,13 @@ export class PortfolioComponent implements OnInit, AfterViewInit {
     this.elementRef.nativeElement.ownerDocument.body.style.backgroundImage = '';
   }
 
-  countCategories() {
-    const categories = this.projects.map(p=>p.category);
+  countObjects(object:string, saveDict) {
+    const categories = this.projects.map(p=>p[object]);
     categories.reduce((countMap, word) => {
       countMap[word] = ++countMap[word] || 1;
       return countMap;
-    }, this.categoriesCount);
-    this.categoriesCount['All'] = this.projects.length;
+    }, saveDict);
+    saveDict['All'] = this.projects.length;
   }
 
   onSearchTextChanged(searchText: string) {
@@ -48,13 +50,17 @@ export class PortfolioComponent implements OnInit, AfterViewInit {
   onQueryParamChange() {
     this.route.queryParams.subscribe((params: Params) => {
       this.query = "";
+      // console.log(Object.keys(params)[0])
       if (params.category) {
         this.category = params.category || "";
-        this.projects = this.portfolioService.filterCategory(this.category);
+        this.projects = this.portfolioService.filterAttribute(this.category, 'category');
       }
       if (params.query) {
         this.query = params.query || "";
-        this.projects = this.portfolioService.filterTitle(this.query);
+        this.projects = this.portfolioService.filterAttribute(this.query, 'title');
+      }
+      if (params.language) {
+        this.projects = this.portfolioService.filterAttribute(params.language, 'language');
       }
     })
   }

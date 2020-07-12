@@ -8,8 +8,7 @@ import {ActivatedRoute, Params} from "@angular/router";
 })
 export class PillComponent implements OnInit {
 
-  @Input()
-  categoriesCount = {};
+  @Input() categoriesCount = {};
 
   categoryType: string = "";
 

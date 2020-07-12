@@ -22,6 +22,7 @@ import {BrowserAnimationsModule, NoopAnimationsModule} from "@angular/platform-b
 import {NgxSpinnerModule, NgxSpinnerService} from "ngx-spinner";
 import { ResumeRowComponent } from './pages/resume/resume-row/resume-row.component';
 import {CustomReuseStrategy} from "./shared/routing";
+import { DropdownComponent } from './components/dropdown/dropdown.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -43,6 +44,7 @@ const routes: Routes = [
     FooterComponent,
     ResumeComponent,
     ResumeRowComponent,
+    DropdownComponent,
   ],
   imports: [
     BrowserModule,
