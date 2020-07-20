@@ -8,6 +8,8 @@ module.exports = {
       md: '768px',
       lg: '1024px',
       xl: '1280px',
+      hd: '1920px',
+      fourk: '2560px',
     },
     colors: {
       transparent: 'transparent',

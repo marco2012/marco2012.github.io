@@ -7,6 +7,7 @@
     <a *ngIf="link && !icon" class="text-lg xl:text-xl" href="{{link}}" target="_blank">{{title}} </a>
     <p *ngIf="!link && !icon" class="text-lg xl:text-xl">{{title}} </p>
     <p *ngIf="subtitle" class="text-base lg:text:lg xl:text:lg text-gray-700">{{subtitle}}</p>
+    <p *ngIf="subtitle2" class="text-base lg:text:lg xl:text:lg text-gray-700 italic">{{subtitle2}}</p>
     <p *ngIf="year" class="text-sm text-gray-600">{{year}}</p>
     <p *ngIf="description"
        class="avenir-regular text-justify text-gray-700 py-2"

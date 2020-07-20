@@ -9,6 +9,7 @@ export class ResumeRowComponent implements OnInit {
 
   @Input() title: string;
   @Input() subtitle?: string;
+  @Input() subtitle2?: string;
   @Input() year?: string;
   @Input() description?: string;
   @Input() small_description?: boolean;

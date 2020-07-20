@@ -409,12 +409,12 @@
     },
     {
       "title":"SmartRPA",
-      "description":"Python tool to train Robotic Process Automation routines to automatically find the best way to perform a specific user task. Includes cross-platform action logger, high-level event abstraction, generation of abstract process diagrams, selection of the most frequent user behaviour, ability to change editable fields, generation of executable RPA script.",
+      "description":"Tool to automatically develop software robots directly from the user’s observed behavior, without the manual intervention of human users. Automatically find the best way to perform a specific user task. Includes cross-platform action logger, high-level event abstraction, generation of abstract process diagrams, selection of the most frequent user behaviour, ability to change editable fields, generation of executable RPA script.",
       "link":"https://github.com/bpm-diag/smartRPA",
       "language":"Python",
       "date":"1585699200",
       "image":"computerlogger.png",
-      "skills":"RPA, Flask, Process Discovery",
+      "skills":"Robotic Process Automation, Process Mining",
       "category":"Python",
       "id":38
     },
