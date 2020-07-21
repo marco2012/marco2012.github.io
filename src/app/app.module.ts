@@ -27,8 +27,11 @@ import { DropdownComponent } from './components/dropdown/dropdown.component';
 const routes: Routes = [
   { path: '', component: HomeComponent },
   { path: 'resume', component: ResumeComponent },
+  { path: 'curriculum', redirectTo: 'resume' },
+  { path: 'cv', redirectTo: 'resume' },
+  { path: 'profile', redirectTo: 'resume' },
   { path: 'portfolio', component: PortfolioComponent, resolve: [ProjectsResolverService], data: { preload: true } },
-  { path: '**',   redirectTo: '', pathMatch: 'full' },
+  { path: '**', redirectTo: '', pathMatch: 'full' },
 ];
 
 @NgModule({
