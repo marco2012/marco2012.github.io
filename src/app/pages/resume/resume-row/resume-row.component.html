@@ -1,7 +1,7 @@
 <div
   class="flex flex-row justify-between py-2"
-  (click)="divClick()"
   [ngClass]="[ link ? 'cursor-pointer' : '', single_highlight ? 'resume-block' : '' ]"
+  (click)="divClick()"
 >
   <div class="flex">
     <div *ngIf="icon" class="flex content-center px-2">
