@@ -18,10 +18,18 @@ export class ResumeRowComponent implements OnInit {
   @Input() thesis?: string;
   @Input() thesis_link?: string;
   @Input() icon?: string;
+  @Input() credential_id?: string;
+  @Input() single_highlight?: boolean = false;
 
-  constructor() { }
+  constructor() {
+  }
 
   ngOnInit() {
   }
 
+  divClick() {
+    if (this.link) {
+      window.open(this.link, "_blank");
+    }
+  }
 }
