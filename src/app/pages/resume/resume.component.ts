@@ -25,14 +25,14 @@ export class ResumeComponent implements OnInit, AfterViewInit {
       "XG7 Q85 4C7",
       "icon-google_light.svg"),
     new ResumeItem(
-      "EF Standard English Test – Level C2",
+      "EF Standard English Test – CEFR Level C2",
       "EF Standard English Test",
       "Jun 2019",
       "https://www.efset.org/cert/hrVnQr",
       "hrVnQr",
       "icon-language_light.svg"),
     new ResumeItem(
-      "Cambridge English: Advanced (CAE) – CEFR level C1",
+      "Cambridge C1 Advanced – CEFR Level C1",
       "Cambridge School of English",
       "Jun 2015",
       "",
