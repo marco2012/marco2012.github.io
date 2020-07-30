@@ -23,6 +23,7 @@ import {NgxSpinnerModule, NgxSpinnerService} from "ngx-spinner";
 import {ResumeRowComponent} from './pages/resume/resume-row/resume-row.component';
 import {CustomReuseStrategy} from "./shared/routing";
 import {DropdownComponent} from './components/dropdown/dropdown.component';
+import { ConnectionsComponent } from './components/connections/connections.component';
 
 const routes: Routes = [
   {path: '', component: HomeComponent},
@@ -50,6 +51,7 @@ const routes: Routes = [
     ResumeComponent,
     ResumeRowComponent,
     DropdownComponent,
+    ConnectionsComponent,
   ],
   imports: [
     BrowserModule,
