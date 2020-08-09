@@ -20,6 +20,7 @@ export class ResumeRowComponent implements OnInit {
   @Input() icon?: string;
   @Input() credential_id?: string;
   @Input() single_highlight?: boolean = false;
+  @Input() expanded_description?: boolean = false;
 
   constructor() {
   }

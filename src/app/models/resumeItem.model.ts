@@ -16,3 +16,13 @@ export class ResumeItem {
   }
 }
 
+export class SkillItem {
+  title: string;
+  icon: string;
+
+  constructor(title: string, icon: string) {
+    this.title = title;
+    this.icon = icon;
+  }
+}
+

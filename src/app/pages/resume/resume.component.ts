@@ -1,5 +1,5 @@
 import {AfterViewInit, Component, ElementRef, OnInit} from '@angular/core';
-import {ResumeItem} from "../../models/resumeItem.model";
+import {ResumeItem, SkillItem} from "../../models/resumeItem.model";
 import {ActivatedRoute} from "@angular/router";
 
 @Component({
@@ -59,6 +59,57 @@ export class ResumeComponent implements OnInit, AfterViewInit {
       "",
       "",
       "icon-language_light.svg"),
+  ];
+  other_skills: SkillItem[] = [
+    new SkillItem(
+      "iOS, Android, Hybrid application development",
+      "icon-app_symbol.svg"
+    ),
+    new SkillItem(
+      "Database (SQL / MySQL / PostgreSQL / OracleDB / NoSQL)",
+      "icon-db.svg"
+    ),
+    new SkillItem(
+      "HTML / CSS / jQuery, Full Stack Web Development",
+      "icon-web.svg"
+    ),
+    new SkillItem(
+      "Agile (Scrum), Waterfall methodologies",
+      "icon-circular_arrows.svg"
+    ),
+    new SkillItem(
+      "REST, SOAP web services",
+      "icon-rest_api.svg"
+    ),
+    new SkillItem(
+      "MVC design pattern",
+      "icon-patterns.svg"
+    ),
+    new SkillItem(
+      "Object-Oriented Programming",
+      "icon-oop.svg"
+    ),
+    new SkillItem(
+      "LaTeX, Entity-Relationship (ER), Unified Modeling Language (UML)",
+      "icon-diagram.svg"
+    ),
+    new SkillItem(
+      "Network administration (Cisco Packet Tracer/Wireshark)",
+      "icon-ethernet.svg"
+    ),
+    new SkillItem(
+      "IntelliJ IDEA, WebStorm, PyCharm, Visual Studio Code, Eclipse, NetBeans, Android Studio, XCode",
+      "icon-intellij_idea.svg"
+    ),
+    new SkillItem(
+      "Business Process Management, Robotic Process Automation",
+      "icon-robot.svg"
+    ),
+    new SkillItem(
+      "Docker, Git, Gradle, Maven, Apache, Firebase, Virtual Machines, Adobe Creative Suite",
+      "icon-more.svg"
+    ),
+
   ];
 
   constructor(private elementRef: ElementRef,
