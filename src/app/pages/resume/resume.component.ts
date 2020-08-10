@@ -9,7 +9,79 @@ import {ActivatedRoute} from "@angular/router";
 })
 export class ResumeComponent implements OnInit, AfterViewInit {
 
+  other_skills: SkillItem[] = [
+    new SkillItem(
+      "iOS, Android, Hybrid application development",
+      "icon-app_symbol.svg"
+    ),
+    new SkillItem(
+      "Database (SQL / MySQL / PostgreSQL / Oracle / NoSQL)",
+      "icon-db.svg"
+    ),
+    new SkillItem(
+      "HTML / CSS / jQuery, Full Stack Web Development",
+      "icon-web.svg"
+    ),
+    new SkillItem(
+      "Agile (Scrum), Waterfall methodologies",
+      "icon-circular_arrows.svg"
+    ),
+    new SkillItem(
+      "REST, SOAP web services",
+      "icon-rest_api.svg"
+    ),
+    new SkillItem(
+      "MVC, Observer, Facade design patterns",
+      "icon-patterns.svg"
+    ),
+    new SkillItem(
+      "Object-Oriented Programming",
+      "icon-oop.svg"
+    ),
+    new SkillItem(
+      "LaTeX, Entity-Relationship (ER), Unified Modeling Language (UML)",
+      "icon-diagram.svg"
+    ),
+    new SkillItem(
+      "Network administration (Cisco Packet Tracer/Wireshark)",
+      "icon-ethernet.svg"
+    ),
+    new SkillItem(
+      "IntelliJ IDEA, WebStorm, PyCharm, Visual Studio Code, Eclipse, NetBeans, Android Studio, XCode",
+      "icon-intellij_idea.svg"
+    ),
+    new SkillItem(
+      "Business Process Management, Robotic Process Automation",
+      "icon-robot.svg"
+    ),
+    new SkillItem(
+      "Docker, Git, Gradle, Maven, Apache, Firebase, Virtual Machines, Adobe Creative Suite",
+      "icon-more.svg"
+    ),
+
+  ];
   resumeItems: ResumeItem[] = [
+    new ResumeItem(
+      "Advanced Java Programming",
+      "LinkedIn",
+      "August 2020",
+      "https://www.dropbox.com/s/x6i8b65k4nr5tc3/Advanced%20Java%20Programming.pdf?dl=0",
+      "ASZDLZil45dQME8xWHmxCYyNdFP5",
+      "icon-linkedin_light.svg"),
+    new ResumeItem(
+      "Building Full-Stack Apps with React and Spring",
+      "LinkedIn",
+      "August 2020",
+      "https://www.dropbox.com/s/c8tkvt4tza1eprp/Building%20Full-Stack%20Apps%20with%20React%20and%20Spring.pdf?dl=0",
+      "AYveozIdvWtIC9lokyyDrlGixyL0",
+      "icon-linkedin_light.svg"),
+    new ResumeItem(
+      "Ethical Hacking with JavaScript",
+      "LinkedIn",
+      "August 2020",
+      "https://www.dropbox.com/s/vbuhdvknu4jgarh/Ethical%20Hacking%20with%20JavaScript.pdf?dl=0",
+      "ASL1iyQQt7EvJ9KPkOYSW4Il8u33",
+      "icon-linkedin_light.svg"),
     new ResumeItem(
       "REST API",
       "HackerRank",
@@ -59,57 +131,6 @@ export class ResumeComponent implements OnInit, AfterViewInit {
       "",
       "",
       "icon-language_light.svg"),
-  ];
-  other_skills: SkillItem[] = [
-    new SkillItem(
-      "iOS, Android, Hybrid application development",
-      "icon-app_symbol.svg"
-    ),
-    new SkillItem(
-      "Database (SQL / MySQL / PostgreSQL / OracleDB / NoSQL)",
-      "icon-db.svg"
-    ),
-    new SkillItem(
-      "HTML / CSS / jQuery, Full Stack Web Development",
-      "icon-web.svg"
-    ),
-    new SkillItem(
-      "Agile (Scrum), Waterfall methodologies",
-      "icon-circular_arrows.svg"
-    ),
-    new SkillItem(
-      "REST, SOAP web services",
-      "icon-rest_api.svg"
-    ),
-    new SkillItem(
-      "MVC design pattern",
-      "icon-patterns.svg"
-    ),
-    new SkillItem(
-      "Object-Oriented Programming",
-      "icon-oop.svg"
-    ),
-    new SkillItem(
-      "LaTeX, Entity-Relationship (ER), Unified Modeling Language (UML)",
-      "icon-diagram.svg"
-    ),
-    new SkillItem(
-      "Network administration (Cisco Packet Tracer/Wireshark)",
-      "icon-ethernet.svg"
-    ),
-    new SkillItem(
-      "IntelliJ IDEA, WebStorm, PyCharm, Visual Studio Code, Eclipse, NetBeans, Android Studio, XCode",
-      "icon-intellij_idea.svg"
-    ),
-    new SkillItem(
-      "Business Process Management, Robotic Process Automation",
-      "icon-robot.svg"
-    ),
-    new SkillItem(
-      "Docker, Git, Gradle, Maven, Apache, Firebase, Virtual Machines, Adobe Creative Suite",
-      "icon-more.svg"
-    ),
-
   ];
 
   constructor(private elementRef: ElementRef,
