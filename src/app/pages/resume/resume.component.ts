@@ -39,8 +39,8 @@ export class ResumeComponent implements OnInit, AfterViewInit {
       "icon-oop.svg"
     ),
     new SkillItem(
-      "LaTeX, Entity-Relationship (ER), Unified Modeling Language (UML)",
-      "icon-diagram.svg"
+      "LaTeX, Entity-Relationship (ER), Unified Modeling Language (UML), XML",
+      "icon-oop.svg"
     ),
     new SkillItem(
       "Network administration (Cisco Packet Tracer/Wireshark)",
