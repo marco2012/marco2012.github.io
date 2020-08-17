@@ -14,7 +14,7 @@
     {
       "title": "Instabot Script",
       "description": "Completely autonomous Instagram bot capable of performing all kinds of instagram-related tasks, including:  <br>- Post random photos, videos, stories, with random captions that include correlated quotes and emojis <br>- Like timeline and users based on position, hashtag, media, and more <br>- Follow and unfollow users based on certain conditions <br>- Download photos or stories <br>- Approve pending follow requests for private accounts <br>- Generate statistics with plots to visualize the growth of the account",
-      "link": "#instabot_script",
+      "link": "",
       "language": "Python",
       "date": "1554123661",
       "image": "instabot_script.png",
@@ -414,7 +414,7 @@
       "language": "Python",
       "date": "1585699200",
       "image": "computerlogger.png",
-      "skills": "Robotic Process Automation, Process Mining",
+      "skills": "Business Process Management, Robotic Process Automation, Process Mining",
       "category": "Python",
       "id": 38
     },
