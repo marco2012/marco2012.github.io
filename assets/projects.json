@@ -2,7 +2,7 @@
   "projects": [
     {
       "title": "Instabot Library",
-      "description": "Fork of a popular Instagram API library with additional features implemented, including: stories download and upload, Like users that viewed your story, Like users based on location feed, Approve or reject pending follow requests for private accounts.",
+      "description": "Fork of a popular Instagram API library with additional features implemented, including:<br>- Stories download and upload, <br>- Like users that viewed your story, <br>- Like users based on location feed, <br>- Approve or reject pending follow requests for private accounts.",
       "link": "https://github.com/marco2012/instabot",
       "language": "Python",
       "date": "1554123661",
@@ -13,8 +13,8 @@
     },
     {
       "title": "Instabot Script",
-      "description": "Completely autonomous Instagram bot capable of performing all kinds of instagram-related tasks, including:  <br>- Post random photos, videos, stories, with random captions that include correlated quotes and emojis <br>- Like timeline and users based on position, hashtag, media, and more <br>- Follow and unfollow users based on certain conditions <br>- Download photos or stories <br>- Approve pending follow requests for private accounts <br>- Generate statistics with plots to visualize the growth of the account",
-      "link": "#instabot_script",
+      "description": "Instagram bot to automate redundant tasks (upload media, follow, like, comment), generate statistics and gain visibility. Features:<br>- Post random photos, videos, stories, with quotes and emojis automatically selected based on content <br>- Like timeline and users based on position, hashtag, media <br>- Follow and unfollow users based on certain conditions <br>- Download photos or stories <br>- Approve/Reject pending follow requests<br>- Generate statistics to visualize growth",
+      "link": "",
       "language": "Python",
       "date": "1554123661",
       "image": "instabot_script.png",
@@ -35,7 +35,7 @@
     },
     {
       "title": "Inflation Calculator",
-      "description": "Calculate the purchasing power over the centuries. Inflation rates are available for US dollar starting from 1774, british pound starting from 1751 and Italian lira starting from 1861. For example, a hamburger from McDonald's in 1956 dollars costs $0.15, which corresponds to \u20ac1.39 in current currency. ",
+      "description": "Calculate the purchasing power of US dollar, British pound and Italian Lira over the centurie. For example, a hamburger from McDonald's in 1956 dollars costs $0.15, which corresponds to \u20ac1.39 in current currency. ",
       "link": "https://github.com/marco2012/InflationCalc#inflation-calculator",
       "language": "Swift",
       "date": "1546347661",
@@ -68,7 +68,7 @@
     },
     {
       "title": "Led Convert",
-      "description": " Calculate the equivalence, in terms of perceived brightness, between various technologies and LED devices. Moreover it shows how much money can be saved using newer technologies. The formulas used were taken from the studies of the scientists of the Lawrence Berkeley Laboratory For example a 50W incandescent light bulb can be replaced with a 8W LED light, saving about \u20ac280 annually in energy cost. ",
+      "description": " Calculate the equivalence, in terms of perceived brightness, between various technologies and LED devices. Moreover it shows how much money can be saved using newer technologies. For example a 50W incandescent light bulb can be replaced with a 8W LED light, saving about \u20ac280 annually in energy cost. ",
       "link": "https://github.com/marco2012/LedConvert",
       "language": "Swift",
       "date": "1552067061",
@@ -156,18 +156,18 @@
     },
     {
       "title": "Global terrorism",
-      "description": " Visual Analytics project on terrorism attacks worldwide since 1975. The Global Terrorism Database is an open-source database including information on more than 180,000 terrorist attacks around the world from 1975 through 2017. It uses d3.js javascript library to create dynamic graphs and jvectormap to build an interactive map of the world with the number of victims divided by year. It is possible to see the number of victims by year, which type of weapons are used per month, and a lot of other charts showing interesting informations. ",
+      "description": " Visual Analytics project on terrorism attacks worldwide since 1975. It uses d3.js javascript library to create dynamic graphs and jvectormap to build an interactive map of the world with the number of victims divided by year. It is possible to see the number of victims by year, which type of weapons are used per month, and a lot of other charts showing interesting informations. ",
       "link": "https://github.com/marco2012/GlobalTerrorism",
       "language": "Web",
       "date": "1527878551   ",
       "image": "globalterrorism.jpg",
-      "skills": "Javascript, D3.js",
+      "skills": "JavaScript, D3.js",
       "category": "Web",
       "id": 15
     },
     {
       "title": "SmartGasStation",
-      "description": " Ruby on Rails web-app to find the cheapest gas stations nearby. SQL database is used to store prices data taken from a public API. Several RoR gems including Devise for user authentication, Geocoder for location, Cucumber and RSpec for testing. A number of APIs are implemented like OpenWeatherMap, Qwant images, Google Charts, Google Maps. ",
+      "description": "Ruby on Rails web-app to find the cheapest gas stations nearby. Key aspects include: SQL database, OAuth user login authentication, geolocation, Cucumber and RSpec for testing and multiple REST APIs like OpenWeatherMap, Qwant images, Google Charts, Google Maps.",
       "link": "https://github.com/marco2012/SmartGasStation",
       "language": "Rails",
       "date": "1527878551",
@@ -178,7 +178,7 @@
     },
     {
       "title": "Eventi Storici",
-      "description": "Website to display historical events occurred on a particular day, using different APIs. External services are integrated like Wikipedia and Dropbox accessed via Oauth. Moreover the events are saved on a NoSQL database CouchDB through working queue provided by RabbitMQ running on Docker. A random event is published on Twitter and Telegram through APIs including a wikipedia link, youtube video link, image with relative description provided by Microsoft artificial intelligence.",
+      "description": "Node.js project to find all the historical events that occurred on a particular date in the past. Events are stored in NoSQL database (CouchDB) through a RabbitMQ queue running on Docker and they can be automatically shared to Dropbox, Twitter and Telegram using different APIs.",
       "link": "https://github.com/marco2012/Eventi-Storici#-eventi-storici",
       "language": "HTML/CSS/JavaScript",
       "date": "1518120622",
@@ -238,7 +238,7 @@
       "language": "HTML/CSS/JavaScript",
       "date": "1454352151",
       "image": "frimm.jpg",
-      "skills": "",
+      "skills": "Wordpress",
       "category": "Web",
       "id": 22
     },
@@ -299,7 +299,7 @@
     },
     {
       "title": "AutoWiFi",
-      "description": "This AppleScript allows you to automatically login to WiFi, without manually inserting credentials each time. It opens the network page on Google Chrome, fills the login form and connects automatically, saving a lot of time. Supported networks:",
+      "description": "AppleScript to automatically login to WiFi, without manually inserting credentials each time.",
       "link": "https://github.com/marco2012/AutoWiFi",
       "language": "AppleScript",
       "date": "1554235822",
@@ -414,7 +414,7 @@
       "language": "Python",
       "date": "1585699200",
       "image": "computerlogger.png",
-      "skills": "Robotic Process Automation, Process Mining",
+      "skills": "Business Process Management, Robotic Process Automation, Process Mining",
       "category": "Python",
       "id": 38
     },
@@ -436,7 +436,7 @@
       "language": "HTML/CSS/JavaScript",
       "date": "1546300800",
       "image": "marco2012-website-static.png",
-      "skills": "",
+      "skills": "Bootstrap",
       "category": "Web",
       "id": 40
     },
