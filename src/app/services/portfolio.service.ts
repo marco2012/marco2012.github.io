@@ -1,4 +1,4 @@
-import { Injectable } from '@angular/core';
+import {Injectable} from '@angular/core';
 import {HttpClient} from "@angular/common/http";
 import {Observable, Subject} from "rxjs";
 import {Project} from "../models/project.model";
@@ -12,13 +12,14 @@ export class PortfolioService {
   projects: Project[] = [];
   projectsChanged = new Subject<Project[]>();
 
-  constructor(private httpClient: HttpClient) { }
+  constructor(private httpClient: HttpClient) {
+  }
 
-  getProjects(){
+  getProjects() {
     return this.projects;
   }
 
-  sortedProjects(projects: Project[]){
+  sortedProjects(projects: Project[]) {
     return projects.sort((a, b) => parseInt(b.date) - parseInt(a.date))
   }
 
@@ -29,11 +30,11 @@ export class PortfolioService {
 
   fetchProjects(): Observable<Project[]> {
     return this.httpClient
-      .get<{projects: Project[]}>("/assets/projects.json")
+      .get<{ projects: Project[] }>("/assets/projects.json")
       .pipe(
         map(res => res.projects),
         tap(res => this.setProjects(res))
-    );
+      );
   }
 
   filterProjects(searchText: string) {
@@ -42,8 +43,8 @@ export class PortfolioService {
     });
   }
 
-  filterAttribute(param: string, attr:string){
-    if (typeof param === "undefined" || param==="" || param.toLowerCase() === "all") {
+  filterAttribute(param: string, attr: string) {
+    if (typeof param === "undefined" || param === "" || param.toLowerCase() === "all") {
       return this.projects;
     }
     return this.sortedProjects(this.projects.filter(proj => proj[attr].toLowerCase() === param.toLowerCase()))

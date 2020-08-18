@@ -1,5 +1,5 @@
 import {Component, Input, OnInit} from '@angular/core';
-import {ActivatedRoute, Router} from "@angular/router";
+import {ActivatedRoute, Params, Router} from "@angular/router";
 
 @Component({
   selector: 'app-dropdown',
@@ -10,13 +10,18 @@ export class DropdownComponent implements OnInit {
 
   @Input() categoriesCount = {};
   @Input() languagesCount = {};
+  selectedCategory = "Category";
+  selectedLanguage = "Language";
 
-  constructor(private router: Router, private activatedRoute: ActivatedRoute) { }
-
-  ngOnInit() {
+  constructor(private router: Router, private activatedRoute: ActivatedRoute) {
   }
 
-  onChange(e){
+  ngOnInit() {
+    this.onQueryParamChange()
+    console.log(this.selectedLanguage)
+  }
+
+  onChange(e) {
     let param = {}
     switch (e.target.id) {
       case 'categorySelect':
@@ -33,6 +38,21 @@ export class DropdownComponent implements OnInit {
         queryParams: param,
         queryParamsHandling: 'merge'
       });
+  }
+
+  onQueryParamChange() {
+    this.activatedRoute.queryParams.subscribe((params: Params) => {
+      if (params.category) {
+        this.selectedCategory = params.category || "";
+      } else {
+        this.selectedCategory = "Category";
+      }
+      if (params.language) {
+        this.selectedLanguage = params.language || "";
+      } else {
+        this.selectedLanguage = "Language";
+      }
+    })
   }
 
 }

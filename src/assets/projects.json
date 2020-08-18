@@ -450,17 +450,6 @@
       "skills": "Telegram bot, Node JS, Database",
       "category": "Web",
       "id": 41
-    },
-    {
-      "title": "ExpenseManager",
-      "description": "React web app to manage expenses, includes Redux",
-      "link": "",
-      "language": "JavaScript",
-      "date": "1597741553",
-      "image": "gas-station.png",
-      "skills": "React",
-      "category": "Web",
-      "id": 42
     }
   ]
 }

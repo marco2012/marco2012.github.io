@@ -9,17 +9,19 @@
 
 <app-search (searchTextEvent)="onSearchTextChanged($event)"></app-search>
 
-<!--<app-dropdown-->
-<!--  [categoriesCount]="categoriesCount"-->
-<!--  [languagesCount]="languagesCount"></app-dropdown>-->
+<app-dropdown
+  [categoriesCount]="categoriesCount"
+  [languagesCount]="languagesCount">
+</app-dropdown>
 
-<app-pill [categoriesCount]="categoriesCount"></app-pill>
+<!--<app-pill [categoriesCount]="categoriesCount"></app-pill>-->
 
 <div
   *ngIf="projects.length === 0"
   class="flex items-center content-center justify-center pt-12">
   <p class="avenir-medium text-xl text-gray-800">No projects found.</p>
 </div>
+
 <div class="flex flex-wrap mt-2 mx-2 py-6">
   <app-card
     *ngFor="let p of projects;"
