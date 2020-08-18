@@ -36,7 +36,7 @@ export class ResumeComponent implements OnInit, AfterViewInit {
     ),
     new SkillItem(
       "Object-Oriented Programming",
-      "icon-oop.svg"
+      "icon_oop.svg"
     ),
     new SkillItem(
       "LaTeX, Entity-Relationship (ER), Unified Modeling Language (UML), XML",
@@ -51,7 +51,7 @@ export class ResumeComponent implements OnInit, AfterViewInit {
       "icon-intellij_idea.svg"
     ),
     new SkillItem(
-      "Business Process Management, Robotic Process Automation",
+      "Business Process Management, Robotic Process Automation, Process Mining",
       "icon-robot.svg"
     ),
     new SkillItem(
