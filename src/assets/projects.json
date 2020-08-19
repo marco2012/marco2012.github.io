@@ -409,7 +409,7 @@
     },
     {
       "title": "SmartRPA",
-      "description": "Tool to automatically develop software robots directly from the user’s observed behavior, without the manual intervention of human users. Automatically find the best way to perform a specific user task. Includes cross-platform action logger, high-level event abstraction, generation of abstract process diagrams, selection of the most frequent user behaviour, ability to change editable fields, generation of executable RPA script.",
+      "description": "Tool to automatically develop software robots directly from the user’s observed behavior, without the manual intervention of human users. Includes cross-platform action logger, high-level event abstraction, generation of abstract process diagrams, selection of the most frequent user behaviour, ability to change editable fields, generation of executable RPA script.",
       "link": "https://github.com/bpm-diag/smartRPA",
       "language": "Python",
       "date": "1585699200",
@@ -447,9 +447,20 @@
       "language": "HTML/CSS/JavaScript",
       "date": "1517443200",
       "image": "gas-station.png",
-      "skills": "Telegram bot, Node JS, Database",
+      "skills": "Telegram bot, Node.js, Database",
       "category": "Web",
       "id": 41
+    },
+    {
+      "title": "ExpenseManager",
+      "description": "React web app to manage expenses. Uses Redux to handle the store.",
+      "link": "https://github.com/marco2012/ExpenseManager",
+      "language": "HTML/CSS/JavaScript",
+      "date": "1597835788",
+      "image": "ExpenseManager.png",
+      "skills": "React",
+      "category": "Web",
+      "id": 42
     }
   ]
 }
