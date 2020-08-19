@@ -453,7 +453,7 @@
     },
     {
       "title": "ExpenseManager",
-      "description": "React web app to manage expenses. Uses Redux to handle the store.",
+      "description": "React web app to manage expenses. Uses Redux to handle the state.",
       "link": "https://github.com/marco2012/ExpenseManager",
       "language": "HTML/CSS/JavaScript",
       "date": "1597835788",
