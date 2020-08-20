@@ -18,7 +18,6 @@ export class DropdownComponent implements OnInit {
 
   ngOnInit() {
     this.onQueryParamChange()
-    console.log(this.selectedLanguage)
   }
 
   onChange(e) {

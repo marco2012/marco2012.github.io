@@ -249,7 +249,7 @@
       "language": "Python",
       "date": "1554754222",
       "image": "raspberrypi.png",
-      "skills": "",
+      "skills": "IoT",
       "category": "Python",
       "id": 23
     },
@@ -260,7 +260,7 @@
       "language": "Java",
       "date": "1516565422",
       "image": "ethgasprice.png",
-      "skills": "REST APIs, Android",
+      "skills": "REST APIs, Android, Cryptocurrency",
       "category": "App",
       "id": 24
     },
