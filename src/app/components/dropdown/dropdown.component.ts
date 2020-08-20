@@ -10,8 +10,10 @@ export class DropdownComponent implements OnInit {
 
   @Input() categoriesCount = {};
   @Input() languagesCount = {};
+  @Input() skillsCount? = {};
   selectedCategory = "Category";
   selectedLanguage = "Language";
+  selectedSkill = "Skill";
 
   constructor(private router: Router, private activatedRoute: ActivatedRoute) {
   }

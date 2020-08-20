@@ -3,6 +3,7 @@ import {Project} from "../../models/project.model";
 import {onlyUnique, PortfolioService} from "../../services/portfolio.service";
 import {Subscription} from "rxjs";
 import {ActivatedRoute, Params, Router} from "@angular/router";
+import {logger} from "codelyzer/util/logger";
 
 @Component({
   selector: 'app-portfolio',
@@ -13,6 +14,7 @@ export class PortfolioComponent implements OnInit, AfterViewInit {
   projects: Project[] = [];
   categoriesCount = {};
   languagesCount = {};
+  skillsCount = {};
   searchText: string = "";
   category: string = "";
   query: string = "";
@@ -25,14 +27,28 @@ export class PortfolioComponent implements OnInit, AfterViewInit {
 
   ngOnInit() {
     this.onSearchTextChanged("");
-    this.countObjects('category', this.categoriesCount)
-    this.countObjects('language', this.languagesCount)
-    this.onQueryParamChange()
+    this.countObjects('category', this.categoriesCount);
+    this.countObjects('language', this.languagesCount);
+    this.onQueryParamChange();
+    // this.countSkills();
   }
 
   ngAfterViewInit() {
     // this.elementRef.nativeElement.ownerDocument.body.style.backgroundColor = 'white';
     // this.elementRef.nativeElement.ownerDocument.body.style.backgroundImage = '';
+  }
+
+  countSkills() {
+    // flatten skills, remove empty strings and trim
+    const skills = [].concat.apply([], [].concat.apply([],
+      this.projects.map(p => p.skills.split(','))
+      )
+    ).filter(s => s !== '').map(s => s.trim());
+    //count occurrentes
+    skills.reduce((countMap, word) => {
+      countMap[word] = ++countMap[word] || 1;
+      return countMap;
+    }, this.skillsCount);
   }
 
   countObjects(object: string, saveDict) {

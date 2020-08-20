@@ -24,6 +24,7 @@ import {ResumeRowComponent} from './pages/resume/resume-row/resume-row.component
 import {CustomReuseStrategy} from "./shared/routing";
 import {DropdownComponent} from './components/dropdown/dropdown.component';
 import { ConnectionsComponent } from './components/connections/connections.component';
+import { SelectComponent } from './components/dropdown/select/select.component';
 
 const routes: Routes = [
   {path: '', component: HomeComponent},
@@ -52,6 +53,7 @@ const routes: Routes = [
     ResumeRowComponent,
     DropdownComponent,
     ConnectionsComponent,
+    SelectComponent,
   ],
   imports: [
     BrowserModule,
