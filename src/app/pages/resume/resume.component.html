@@ -11,9 +11,9 @@
       <img class="mr-4" width="32px" src="/assets/icons/icon-profile.svg" alt="">
       <p class="text-2xl avenir-demi">Profile</p>
     </div>
-    <p class="mb-4 text-lg xsm:text-base xl:text-lg text-justify text-gray-700 avenir-regular"> I'm a computer engineer
-      graduated
-      at Sapienza University of Rome. I'm really passionate about developing exciting things with a good team. A great
+    <p class="mb-4 text-lg text-justify text-gray-700 avenir-regular">
+      I'm a computer engineer graduated from Sapienza University of Rome. I'm really passionate about developing
+      exciting things with a good team. A great
       design is where I start. Always looking for new challenges.
     </p>
     <div class="flex flex-row text-blue-650">
@@ -36,18 +36,18 @@
     </div>
     <!--    <app-resume-row-->
     <!--      title="Software Engineer"-->
-    <!--      subtitle="Department of Computer, Control, Management Engineering - Sapienza Università di Roma"-->
+    <!--      subtitle="DIAG - Sapienza Università di Roma"-->
     <!--      year="Sep 2020 - Dec 2020"-->
     <!--      subtitle2="Roma, Italy"-->
-    <!--      description="Developer of SmartRPA, a Python tool to train Robotic Process Automation routines."-->
+    <!--      description="Software Engineer at Department of Computer, Control, Management Engineering. Developer of SmartRPA, a Robotic Process Automation python tool to automatically select and enact the best routine to automate by means of a software robot. Includes JavaScript browser extension, Office JavaScript add-in, cross-platform Action Logger, support for XML files."-->
     <!--      icon="icon-sapienza.svg"-->
     <!--    ></app-resume-row>-->
     <app-resume-row
       title="Segreteria Didattica"
-      subtitle="Department of Computer, Control, Management Engineering - Sapienza Università di Roma"
+      subtitle="DIAG - Sapienza Università di Roma"
       subtitle2="Roma, Italy"
       year="Jan 2020 - Jul 2020"
-      description="Worked in Segreteria Didattica at DIAG."
+      description="Worked in Segreteria Didattica at Department of Computer, Control, Management Engineering."
       icon="icon-sapienza.svg"
       single_highlight="true"
     ></app-resume-row>
@@ -174,7 +174,7 @@
     </div>
     <div class="py-2 resume-block">
       <p class="text-xl mb-3">Software and Tools</p>
-      <ul class="text-lg xsm:text-base" style="list-style-type: none;" *ngFor="let skill of other_skills">
+      <ul class="text-lg" style="list-style-type: none;" *ngFor="let skill of other_skills">
         <li class="custom-programming-list">
           <img class="opacity-icon mr-3" src="/assets/icons/{{skill.icon}}" alt="" style="max-width: 20px;">
           {{skill.title}}
