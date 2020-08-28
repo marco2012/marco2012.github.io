@@ -62,6 +62,13 @@ export class ResumeComponent implements OnInit, AfterViewInit {
   ];
   resumeItems: ResumeItem[] = [
     new ResumeItem(
+      "Git Intermediate Techniques",
+      "LinkedIn",
+      "Aug 2020",
+      "https://www.dropbox.com/s/gvydwjpdm7pveq5/Git%20Intermediate%20Techniques.pdf?dl=0",
+      "",
+      "icon-linkedin_light.svg"),
+    new ResumeItem(
       "Advanced Java Programming",
       "LinkedIn",
       "Aug 2020",
