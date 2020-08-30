@@ -34,8 +34,7 @@
               "node_modules/aos/dist/aos.css",
               "node_modules/@angular/material/prebuilt-themes/indigo-pink.css"
             ],
-            "scripts": [],
-            "es5BrowserSupport": true
+            "scripts": []
           },
           "configurations": {
             "production": {
@@ -148,5 +147,8 @@
       }
     }
   },
-  "defaultProject": "tailwind-angular8"
+  "defaultProject": "tailwind-angular8",
+  "cli": {
+    "analytics": false
+  }
 }
