@@ -39,6 +39,10 @@ export class ResumeComponent implements OnInit, AfterViewInit, OnDestroy {
       "icon_oop.svg"
     ),
     new SkillItem(
+      "Algorithms, Data Structures",
+      "icon_rubik.svg"
+    ),
+    new SkillItem(
       "LaTeX, Entity-Relationship (ER), Unified Modeling Language (UML), XML",
       "icon-oop.svg"
     ),
@@ -47,12 +51,12 @@ export class ResumeComponent implements OnInit, AfterViewInit, OnDestroy {
       "icon-ethernet.svg"
     ),
     new SkillItem(
-      "IntelliJ IDEA, WebStorm, PyCharm, Visual Studio Code, Eclipse, NetBeans, Android Studio, XCode",
-      "icon-intellij_idea.svg"
-    ),
-    new SkillItem(
       "Business Process Management, Robotic Process Automation, Process Mining",
       "icon-robot.svg"
+    ),
+    new SkillItem(
+      "IntelliJ IDEA, WebStorm, PyCharm, Visual Studio Code, Eclipse, NetBeans, Android Studio, XCode",
+      "icon-intellij_idea.svg"
     ),
     new SkillItem(
       "Docker, Git, Gradle, Maven, Apache, Firebase, Virtual Machines, Adobe Creative Suite",

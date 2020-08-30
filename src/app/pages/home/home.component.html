@@ -1,45 +1,47 @@
-<app-header invert="true"></app-header>
-<div
-  class="home-class select-none container h-screen overflow-hidden mx-auto text-gray-700 py-8 lg:py-16 px-6 xsm:px-2 sm:px-12 md:px-32 lg:px-48 xl:px-64">
-  <div class="flex justify-between text-white">
-    <div>
-      <div class="avenir-medium text-2xl py-2 text-shadow-md">
-        <p>Hello, I'm</p>
-      </div>
-      <div class="avenir-bold text-5xl text-white py-2 text-shadow-lg">
-        <p>Marco Lupia</p>
-      </div>
-      <div class="avenir-medium text-2xl py-2 text-shadow-lg">
-        <p>Computer Engineer</p>
-      </div>
-      <div class="avenir-medium text-xl mt-8 mb-2 py-2 text-shadow-lg">
-        <p>Find me on</p>
+<div>
+  <app-header invert="true"></app-header>
+  <div
+    class="home-class select-none container h-screen overflow-hidden mx-auto text-gray-700 py-8 lg:py-16 px-6 xsm:px-2 sm:px-12 md:px-32 lg:px-48 xl:px-64">
+    <div class="flex justify-between text-white">
+      <div>
+        <div class="avenir-medium text-2xl py-2 text-shadow-md">
+          <p>Hello, I'm</p>
+        </div>
+        <div class="avenir-bold text-5xl text-white py-2 text-shadow-lg">
+          <p>Marco Lupia</p>
+        </div>
+        <div class="avenir-medium text-2xl py-2 text-shadow-lg">
+          <p>Computer Engineer</p>
+        </div>
+        <div class="avenir-medium text-xl mt-8 mb-2 py-2 text-shadow-lg">
+          <p>Find me on</p>
+        </div>
+
+        <app-connections invert="true"></app-connections>
+
+        <div class="flex flex-row mt-12 py-2">
+          <a
+            routerLink="/resume"
+            class="inline-block mt-2 mr-3 card__btn avenir-medium text-gray-900 bg-gray-200 outline-none shadow-lg"
+            style="width: 140px;">Resume</a>
+          <a
+            routerLink="/portfolio"
+            class="inline-block mt-2 card__btn avenir-medium text-gray-900 bg-gray-200 outline-none shadow-lg"
+            style="width: 140px;">Portfolio</a>
+        </div>
       </div>
 
-      <app-connections invert="true"></app-connections>
 
-      <div class="flex flex-row mt-12 py-2">
-        <a
-          routerLink="/resume"
-          class="inline-block mt-2 mr-3 card__btn avenir-medium text-gray-900 bg-gray-200 outline-none shadow-lg"
-          style="width: 140px;">Resume</a>
-        <a
-          routerLink="/portfolio"
-          class="inline-block mt-2 card__btn avenir-medium text-gray-900 bg-gray-200 outline-none shadow-lg"
-          style="width: 140px;">Portfolio</a>
-      </div>
+      <!--  <div class="thumb">-->
+      <!--    <div class="left">-->
+      <!--    </div>-->
+      <!--    <img id="cover" src="https://about.canva.com/wp-content/uploads/sites/3/2015/01/children_bookcover.png">-->
+      <!--    <div class="divider">-->
+      <!--    </div>-->
+      <!--    <div class="bottom">-->
+      <!--    </div>-->
+      <!--  </div>-->
+      <!--  </div>-->
     </div>
-
-
-    <!--  <div class="thumb">-->
-    <!--    <div class="left">-->
-    <!--    </div>-->
-    <!--    <img id="cover" src="https://about.canva.com/wp-content/uploads/sites/3/2015/01/children_bookcover.png">-->
-    <!--    <div class="divider">-->
-    <!--    </div>-->
-    <!--    <div class="bottom">-->
-    <!--    </div>-->
-    <!--  </div>-->
-    <!--  </div>-->
   </div>
 </div>
