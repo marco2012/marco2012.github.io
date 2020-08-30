@@ -1,13 +1,12 @@
 <ngx-spinner
-    *ngIf="loading"
-    class="loading-overlay"
-    bdColor = "rgba(255,255,255, 1)"
-    size = "medium"
-    color = "#979798"
-    type = "pacman"
-    [fullScreen] = "true">
-    <p class="avenir-medium">Loading projects...</p>
+  *ngIf="loading"
+  class="loading-overlay"
+  bdColor="rgba(255,255,255, 1)"
+  size="medium"
+  color="#979798"
+  type="pacman"
+  [fullScreen]="true">
+  <p class="avenir-medium">Loading projects...</p>
 </ngx-spinner>
 
-<app-header></app-header>
 <router-outlet></router-outlet>

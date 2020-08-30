@@ -1,4 +1,4 @@
-import {AfterViewInit, Component, ElementRef, Input, OnDestroy, OnInit, Output} from '@angular/core';
+import {AfterViewInit, Component, ElementRef, Input, OnDestroy, OnInit, Output, ViewEncapsulation} from '@angular/core';
 import {Project} from "../../models/project.model";
 import {onlyUnique, PortfolioService} from "../../services/portfolio.service";
 import {Subscription} from "rxjs";
@@ -8,9 +8,9 @@ import {logger} from "codelyzer/util/logger";
 @Component({
   selector: 'app-portfolio',
   templateUrl: './portfolio.component.html',
-  styleUrls: ['./portfolio.component.scss']
+  styleUrls: ['./portfolio.component.scss'],
 })
-export class PortfolioComponent implements OnInit, AfterViewInit {
+export class PortfolioComponent implements OnInit {
   projects: Project[] = [];
   categoriesCount = {};
   languagesCount = {};
@@ -31,11 +31,6 @@ export class PortfolioComponent implements OnInit, AfterViewInit {
     this.countObjects('language', this.languagesCount);
     this.onQueryParamChange();
     // this.countSkills();
-  }
-
-  ngAfterViewInit() {
-    // this.elementRef.nativeElement.ownerDocument.body.style.backgroundColor = 'white';
-    // this.elementRef.nativeElement.ownerDocument.body.style.backgroundImage = '';
   }
 
   countSkills() {

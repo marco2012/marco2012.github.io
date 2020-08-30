@@ -3,7 +3,7 @@
     class="flex flex-col max-w-screen-xl px-4 mx-auto md:items-center md:justify-between md:flex-row md:px-6 lg:px-8 open">
     <div class="p-4 flex flex-row items-center justify-between">
       <a routerLink="" rel="home">
-        <img width="160" src="/assets/images/logo11_transparent.png" alt="" style="filter: invert()">
+        <img width="160" src="/assets/images/logo11_transparent.png" alt="" [ngClass]="{'invert': !invert}">
       </a>
       <button class="md:hidden rounded-lg focus:outline-none" (click)="onClick()">
         <svg fill="currentColor" viewBox="0 0 20 20" class="w-6 h-6">
@@ -19,22 +19,24 @@
     <nav class="flex-col flex-grow pb-4 md:pb-0 md:flex md:justify-end md:flex-row"
          [ngClass]="open ? 'flex' : 'hidden'">
       <a
-        class="avenir-medium px-4 py-2 mt-2 text-sm font-semibold text-gray-900 rounded-lg dark-mode:bg-gray-700 dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 hover:text-gray-900 hover:bg-gray-200"
+        class="avenir-medium px-4 py-2 mt-2 text-sm font-semibold rounded-lg dark-mode:bg-gray-700 dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white md:mt-0 hover:text-gray-900 hover:bg-gray-200 hover:shadow-lg"
         routerLink="/"
-        routerLinkActive="text-gray-900 bg-gray-200 outline-none"
+        routerLinkActive="text-gray-900 bg-gray-200 outline-none shadow-lg"
         [routerLinkActiveOptions]="{exact: true}"
         (click)="onClick()"
       >Home</a>
       <a
-        class="avenir-medium px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 md:ml-4 hover:text-gray-900 hover:bg-gray-200"
+        class="avenir-medium px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white md:mt-0 md:ml-4 hover:text-gray-900 hover:bg-gray-200 hover:shadow-lg"
+        [ngClass]="(!invert)?'text-gray-900':'text-gray-100'"
         routerLink="/resume"
-        routerLinkActive="text-gray-900 bg-gray-200 outline-none"
+        routerLinkActive="text-gray-900 bg-gray-200 outline-none shadow-lg"
         (click)="onClick()"
       >Resume</a>
       <a
-        class="avenir-medium px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 md:ml-4 hover:text-gray-900 hover:bg-gray-200"
+        class="avenir-medium px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white md:mt-0 md:ml-4 hover:text-gray-900 hover:bg-gray-200 hover:shadow-lg"
+        [ngClass]="(!invert)?'text-gray-900':'text-gray-100'"
         routerLink="/portfolio"
-        routerLinkActive="text-gray-900 bg-gray-200 outline-none"
+        routerLinkActive="text-gray-900 bg-gray-200 outline-none shadow-lg"
         (click)="onClick()"
       >Portfolio</a>
     </nav>

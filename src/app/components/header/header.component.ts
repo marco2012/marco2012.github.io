@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, Input, OnDestroy, OnInit} from '@angular/core';
 import {Router} from "@angular/router";
 
 @Component({
@@ -8,13 +8,15 @@ import {Router} from "@angular/router";
 })
 export class HeaderComponent implements OnInit {
   open = false;
+  @Input() invert: boolean = false;
 
-  constructor() { }
+  constructor() {
+  }
 
   ngOnInit() {
   }
 
-  onClick(){
+  onClick() {
     this.open = !this.open;
   }
 

@@ -1,13 +1,13 @@
-import {AfterViewInit, Component, ElementRef, OnInit} from '@angular/core';
+import {AfterViewInit, Component, ElementRef, OnDestroy, OnInit} from '@angular/core';
 import {ResumeItem, SkillItem} from "../../models/resumeItem.model";
 import {ActivatedRoute} from "@angular/router";
 
 @Component({
   selector: 'app-resume',
   templateUrl: './resume.component.html',
-  styleUrls: ['./resume.component.scss']
+  styleUrls: ['./resume.component.scss'],
 })
-export class ResumeComponent implements OnInit, AfterViewInit {
+export class ResumeComponent implements OnInit, AfterViewInit, OnDestroy {
 
   other_skills: SkillItem[] = [
     new SkillItem(
@@ -148,6 +148,7 @@ export class ResumeComponent implements OnInit, AfterViewInit {
   }
 
   ngAfterViewInit() {
+    document.querySelector('body').classList.add('resume');
     // this.elementRef.nativeElement.ownerDocument.body.style.backgroundColor = 'white';
     // this.elementRef.nativeElement.ownerDocument.body.style.backgroundImage = '';
     this.route.fragment.subscribe((fragment: string) => {
@@ -157,6 +158,10 @@ export class ResumeComponent implements OnInit, AfterViewInit {
         }, 100)
       }
     })
+  }
+
+  ngOnDestroy() {
+    document.querySelector('body').classList.remove('resume');
   }
 
 }
