@@ -1,7 +1,4 @@
 module.exports = {
-  future: {
-    removeDeprecatedGapUtilities: true,
-  },
   prefix: '',
   important: false,
   separator: ':',
@@ -494,7 +491,5 @@ module.exports = {
     zIndex: ['responsive'],
   },
   corePlugins: {},
-  plugins: [
-    require('tailwindcss-textshadow')
-  ],
+  plugins: [],
 }
