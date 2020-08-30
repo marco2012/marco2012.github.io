@@ -29,7 +29,7 @@
        class="avenir-regular text-justify text-gray-700 py-2 whitespace-pre-line"
        [ngClass]="small_description ? 'text-lg' : 'text-base'">{{description}}</p>
     <details *ngIf="description && expanded_description">
-      <summary>List of Exams</summary>
+      <summary class="outline-none cursor-pointer">List of Exams</summary>
       <p class="avenir-regular text-justify text-gray-700 py-2"
          [ngClass]="small_description ? 'text-lg' : 'text-base'">{{description}}</p>
     </details>
