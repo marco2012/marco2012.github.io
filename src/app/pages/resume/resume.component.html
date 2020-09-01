@@ -9,7 +9,7 @@
   <!-- PROFILE -->
   <div id="profile" class="resume-block resume-card">
     <div class="p-6">
-      <div class="mb-4 flex flex-row">
+      <div class="mb-4 flex flex-row items-center">
         <img class="mr-4" width="32px" src="/assets/icons/icon-profile.svg" alt="">
         <p class="text-2xl avenir-demi">Profile</p>
       </div>
@@ -18,7 +18,7 @@
         exciting things with a good team. A great
         design is where I start. Always looking for new challenges.
       </p>
-      <div class="flex flex-row text-blue-650">
+      <div class="flex flex-row text-blue-650 items-center">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="fill-current mr-1 w-5">
           <path
             d="M 12 2 C 6.477 2 2 6.477 2 12 C 2 17.523 6.477 22 12 22 C 17.523 22 22 17.523 22 12 C 22 6.477 17.523 2 12 2 z M 12 4 C 16.418 4 20 7.582 20 12 C 20 16.418 16.418 20 12 20 C 7.582 20 4 16.418 4 12 C 4 7.582 7.582 4 12 4 z M 11 7 L 11 13.585938 L 8.7070312 11.292969 L 7.2929688 12.707031 L 12 17.414062 L 16.707031 12.707031 L 15.292969 11.292969 L 13 13.585938 L 13 7 L 11 7 z"/>
@@ -34,7 +34,7 @@
   <!--  <hr class="my-8" style="border-top: 1px solid #F1F1F1;">-->
   <div class="p-5 resume-card">
     <div class="p-6">
-      <div class="mb-4 flex flex-row">
+      <div class="mb-4 flex flex-row items-center">
         <img class="mr-4" width="32px" src="/assets/icons/icon-resume.svg" alt="">
         <p class="text-2xl avenir-demi">Experience</p>
       </div>
@@ -79,7 +79,7 @@
   <!-- EDUCATION -->
   <div id="education" class="resume-card" style="padding: 20px;">
     <div class="p-6">
-      <div class="mb-4 flex flex-row">
+      <div class="mb-4 flex flex-row items-center">
         <img class="mr-4" width="32px" src="/assets/icons/icon-education.svg" alt="">
         <p class="text-2xl avenir-demi">Education</p>
       </div>
@@ -127,56 +127,37 @@
   <!-- PROFESSIONAL SKILLS -->
   <div class="resume-card" id="professional_skills">
     <div class="p-6">
-      <div class="p-5 mb-2 flex flex-row">
+      <div class="p-5 mb-2 flex flex-row items-center">
         <img class="mr-4" width="32px" src="/assets/icons/icon-code.svg" alt="">
         <p class="text-2xl avenir-demi">Professional Skills</p>
       </div>
       <div class="py-2 resume-block">
         <p class="text-xl mb-3 font-semibold">Programming Languages</p>
-        <ul class="skills-list">
-          <li class="pb-1"><i class="opacity-icon mr-2 devicon-python-plain"></i> Python</li>
-          <li class="pb-1"><i class="opacity-icon mr-2 devicon-java-plain"></i> Java</li>
-          <li class="pb-1"><i class="opacity-icon mr-2 devicon-javascript-plain"></i> JavaScript</li>
-          <li class="pb-1"><i class="opacity-icon mr-2 devicon-typescript-plain"></i> TypeScript</li>
-          <li class="pb-1"><i class="opacity-icon mr-2 devicon-mysql-plain"></i> SQL</li>
-          <li class="pb-1"><i class="opacity-icon mr-2 devicon-swift-plain"></i> Swift</li>
-          <li class="pb-1"><i class="opacity-icon mr-2 devicon-c-plain"></i> C</li>
-          <li class="pb-1"><i class="opacity-icon mr-2 devicon-cplusplus-plain"></i> C++</li>
-          <li class="pb-1 flex flex-row"><img class="mr-2" src="/assets/icons/icon-scala.svg" alt="scala" width="16px"/>Scala
-          </li>
-          <li class="pb-1"><i class="opacity-icon mr-2 devicon-ruby-plain"></i> Ruby</li>
-          <li class="pb-1"><i class="opacity-icon mr-2 devicon-devicon-plain"></i> Assembly</li>
-          <li class="pb-1"><i class="opacity-icon mr-2 devicon-apple-plain"></i> AppleScript</li>
-        </ul>
+        <div *ngFor="let language of programmingLanguages; let i = index">
+          <div class="col-md-6" [ngClass]="{'left-style': i%2 === 0, 'right-style': i%2 !== 0 }">
+            <div class="flex flex-row pb-3 text-lg">
+              <img class="opacity-icon mr-3 custom-programming-list-img" src="/assets/icons/{{language.icon}}" alt="">
+              {{language.title}}
+            </div>
+          </div>
+        </div>
       </div>
       <div class="py-2 resume-block">
         <p class="text-xl mb-3 font-semibold">Frameworks</p>
-        <ul class="skills-list">
-          <li class="custom-programming-list"><img class="opacity-icon mr-2" src="/assets/icons/icon-spring.png" alt=""
-                                                   style="max-width: 20px;"> Spring
-          </li>
-          <li class="custom-programming-list"><img class="opacity-icon mr-2" src="/assets/icons/icon-ibernate.png"
-                                                   alt=""
-                                                   style="max-width: 20px;"> Hibernate
-          </li>
-          <li class="custom-programming-list"><i class="opacity-icon mr-2 devicon-nodejs-plain"></i> Node.js</li>
-          <li class="custom-programming-list"><i class="opacity-icon mr-2 devicon-angularjs-plain"></i> Angular</li>
-          <li class="custom-programming-list"><i class="opacity-icon mr-2 devicon-react-original"></i>React</li>
-          <li class="custom-programming-list">
-            <img class="opacity-icon mr-2" src="/assets/icons/icon-flutter.svg" alt="" style="max-width: 20px;"> Flutter
-          </li>
-          <li class="custom-programming-list"><i class="opacity-icon mr-2 devicon-bootstrap-plain"></i> Bootstrap</li>
-          <li class="custom-programming-list">
-            <img class="opacity-icon mr-2" src="/assets/icons/icon-opencl.png" alt="" style="max-width: 20px;"> OpenCL
-          </li>
-          <li class="custom-programming-list"><i class="opacity-icon mr-2 devicon-rails-plain"></i> Ruby on Rails</li>
-        </ul>
+        <div *ngFor="let framework of frameworks; let i = index">
+          <div class="col-md-6" [ngClass]="{'left-style': i%2 === 0, 'right-style': i%2 !== 0 }">
+            <div class="flex flex-row pb-3 text-lg">
+              <img class="opacity-icon mr-3 custom-programming-list-img" src="/assets/icons/{{framework.icon}}" alt="">
+              {{framework.title}}
+            </div>
+          </div>
+        </div>
       </div>
       <div class="py-2 resume-block">
         <p class="text-xl mb-3 font-semibold">Software and Tools</p>
         <ul class="text-lg" style="list-style-type: none;" *ngFor="let skill of other_skills">
           <li class="custom-programming-list">
-            <img class="opacity-icon mr-3" src="/assets/icons/{{skill.icon}}" alt="" style="max-width: 20px;">
+            <img class="opacity-icon mr-3 custom-programming-list-img" src="/assets/icons/{{skill.icon}}" alt="">
             {{skill.title}}
           </li>
         </ul>
@@ -187,7 +168,7 @@
   <!-- PERSONAL SKILLS -->
   <div id="personal_skills" class="resume-block resume-card">
     <div class="p-6">
-      <div class="mb-4 flex flex-row">
+      <div class="mb-4 flex flex-row items-center">
         <img class="mr-4" width="32px" src="/assets/icons/icon-skills.svg" alt="">
         <p class="text-2xl avenir-demi">Personal skills</p>
       </div>
@@ -207,7 +188,7 @@
   <!-- LANGUAGES -->
   <div id="languages" class="resume-block resume-card">
     <div class="p-6">
-      <div class="mb-4 flex flex-row">
+      <div class="mb-4 flex flex-row items-center">
         <img class="mr-4 content-center" width="32px" src="/assets/icons/icon-language.svg" alt="">
         <div class="flex flex-col">
           <p class="text-2xl avenir-demi">Languages</p>
@@ -248,7 +229,7 @@
   <!--   PUBLICATIONS-->
   <div id="publications" class="resume-block resume-card">
     <div class="p-6">
-      <div class="mb-4 flex flex-row">
+      <div class="mb-4 flex flex-row items-center">
         <img class="mr-4" width="32px" src="/assets/icons/icon-paper.svg" alt="">
         <p class="text-2xl avenir-demi">Publications</p>
       </div>
@@ -264,7 +245,7 @@
   <!-- CERTIFICATES -->
   <div class="p-5 resume-card" id="certificates">
     <div class="p-6">
-      <div class="mb-4 flex flex-row">
+      <div class="mb-4 flex flex-row items-center">
         <img class="mr-4" width="32px" src="/assets/icons/icon-certificate.svg" alt="">
         <p class="text-2xl avenir-demi">Certificates</p>
       </div>

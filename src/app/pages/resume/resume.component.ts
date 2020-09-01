@@ -9,6 +9,98 @@ import {ActivatedRoute} from "@angular/router";
 })
 export class ResumeComponent implements OnInit, AfterViewInit, OnDestroy {
 
+  programmingLanguages: SkillItem[] = [
+    new SkillItem(
+      "Python",
+      "icon-python.svg"
+    ),
+    new SkillItem(
+      "Java",
+      "icon-java.svg"
+    ),
+    new SkillItem(
+      "JavaScript",
+      "icon-javascript.svg"
+    ),
+    new SkillItem(
+      "TypeScript",
+      "icon-typescript.svg"
+    ),
+    new SkillItem(
+      "SQL",
+      "icon-mysql.svg"
+    ),
+    new SkillItem(
+      "Swift",
+      "icon-swift.svg"
+    ),
+    new SkillItem(
+      "C",
+      "icon-c.svg"
+    ),
+    new SkillItem(
+      "C++",
+      "icon-cplusplus.svg"
+    ),
+    new SkillItem(
+      "Scala",
+      "icon-scala.svg"
+    ),
+    new SkillItem(
+      "Ruby",
+      "icon-ruby.svg"
+    ),
+    new SkillItem(
+      "Assembly",
+      "icon-assembly.svg"
+    ),
+    new SkillItem(
+      "AppleScript",
+      "icon-apple.svg"
+    ),
+  ]
+  frameworks: SkillItem[] = [
+    new SkillItem(
+      "Spring",
+      "icon-spring.svg"
+    ),
+    new SkillItem(
+      "Hibernate",
+      "icon-ibernate.png"
+    ),
+    new SkillItem(
+      "Node.js",
+      "icon-node.svg"
+    ),
+    new SkillItem(
+      "Angular",
+      "icon-angular.svg"
+    ),
+    new SkillItem(
+      "React",
+      "icon-react.svg"
+    ),
+    new SkillItem(
+      "Flutter",
+      "icon-flutter.svg"
+    ),
+    new SkillItem(
+      "Bootstrap",
+      "icon-bootstrap.svg"
+    ),
+    new SkillItem(
+      "OpenCL",
+      "icon-opencl.png"
+    ),
+    new SkillItem(
+      "Ruby on Rails",
+      "icon-rubyonrails.svg"
+    ),
+    new SkillItem(
+      "Express",
+      "icon-express.png"
+    ),
+  ]
   other_skills: SkillItem[] = [
     new SkillItem(
       "iOS, Android, Hybrid application development",

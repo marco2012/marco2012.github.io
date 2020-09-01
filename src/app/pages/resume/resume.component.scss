@@ -1,17 +1,14 @@
-.skills-list {
-  list-style-type: none;
-  columns: 2;
-  -webkit-columns: 2;
-  -moz-columns: 2;
-  font-size: 1.125rem;
-  margin-bottom: 4px;
-  padding-bottom: 4px;
-}
 
 .custom-programming-list {
   display: flex;
   flex-direction: row;
   padding-bottom: 0.625rem;
+}
+
+.custom-programming-list-img {
+  height: 20px !important;
+  width: 20px !important;
+  max-width: 20px;
 }
 
 .opacity-icon {
@@ -20,14 +17,6 @@
 
 .resume-block {
   padding: 0.4rem 1rem 0.4rem 1rem;
-}
-
-.resume-block:hover, .resume-block:active {
-  //  background-color: #fafafa;
-  //  border-radius: 16px;
-  //  -moz-box-shadow: inset 0 0 2px #e8e8e8;
-  //  -webkit-box-shadow: inset 0 0 2px #e8e8e8;
-  //  box-shadow: inset 0 0 2px #e8e8e8;
 }
 
 .resume-card {
@@ -43,4 +32,14 @@
   transition: all 300ms;
   background-color: #FCFCFC;
   //box-shadow: 0 0.1rem 0.1rem rgba(0, 0, 0, 0.2);
+}
+
+.left-style {
+  float: left;
+  width: 45%;
+}
+
+.right-style {
+  float: right;
+  width: 45%;
 }
