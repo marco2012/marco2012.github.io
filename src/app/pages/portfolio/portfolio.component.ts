@@ -10,7 +10,7 @@ import {logger} from "codelyzer/util/logger";
   templateUrl: './portfolio.component.html',
   styleUrls: ['./portfolio.component.scss'],
 })
-export class PortfolioComponent implements OnInit {
+export class PortfolioComponent implements OnInit, AfterViewInit, OnDestroy {
   projects: Project[] = [];
   categoriesCount = {};
   languagesCount = {};
@@ -31,6 +31,14 @@ export class PortfolioComponent implements OnInit {
     this.countObjects('language', this.languagesCount);
     this.onQueryParamChange();
     // this.countSkills();
+  }
+
+  ngAfterViewInit() {
+    document.querySelector('body').classList.add('portfolio');
+  }
+
+  ngOnDestroy() {
+    document.querySelector('body').classList.remove('portfolio');
   }
 
   countSkills() {

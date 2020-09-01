@@ -1,3 +1,11 @@
 .invert {
   filter: invert(1)
 }
+
+.grow {
+  transition: all .1s ease-in-out;
+}
+
+.grow:hover {
+  transform: scale(1.05);
+}

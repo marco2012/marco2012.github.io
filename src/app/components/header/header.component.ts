@@ -14,6 +14,9 @@ export class HeaderComponent implements OnInit {
   }
 
   ngOnInit() {
+    if (this.invert) {
+      document.getElementById("menu_svg").setAttribute("fill", "white");
+    }
   }
 
   onClick() {
