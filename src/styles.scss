@@ -109,11 +109,10 @@ body {
 }
 
 body.home {
-  // sea
-  //background: url(https://images.unsplash.com/photo-1496737018672-b1a6be2e949c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2982&q=80) no-repeat;
-  // circuit
+  margin: 0;
+  height: 100%;
+  overflow: hidden;
   background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(/assets/images/circuit.jpeg) no-repeat;
-  //background: url(/assets/images/circuit.jpeg) no-repeat;
   background-size: cover;
   -webkit-background-size: cover;
   -moz-background-size: cover;
