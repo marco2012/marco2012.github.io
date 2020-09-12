@@ -1,7 +1,7 @@
 <app-header></app-header>
 <div
-  class="flex flex-col avenir-medium pb-4 select-none mx-auto w-11/12 sm:w-3/4 md:w-3/5 xl:w-2/4">
-
+  class="flex flex-col avenir-medium pb-4 select-none mx-auto w-11/12 sm:w-3/4 md:w-3/5 xl:w-2/4"
+>
   <div class="flex items-center justify-center pb-4">
     <p class="text-4xl avenir-bold">Resume</p>
   </div>
@@ -10,22 +10,32 @@
   <div id="profile" class="resume-block resume-card">
     <div class="p-6">
       <div class="mb-4 flex flex-row items-center">
-        <img class="mr-4" width="32px" src="/assets/icons/icon-profile.svg" alt="">
+        <img
+          class="mr-4"
+          width="32px"
+          src="/assets/icons/icon-profile.svg"
+          alt=""
+        />
         <p class="text-2xl avenir-demi">Profile</p>
       </div>
       <p class="mb-4 text-lg text-justify text-gray-700 avenir-regular">
-        I'm a computer engineer graduated from Sapienza University of Rome. I'm really passionate about developing
-        exciting things with a good team. A great
-        design is where I start. Always looking for new challenges.
+        I'm a computer engineer graduated from Sapienza University of Rome. I'm
+        really passionate about developing exciting things with a good team. A
+        great design is where I start. Always looking for new challenges.
       </p>
       <div class="flex flex-row text-blue-650 items-center">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="fill-current mr-1 w-5">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 24 24"
+          class="fill-current mr-1 w-5"
+        >
           <path
-            d="M 12 2 C 6.477 2 2 6.477 2 12 C 2 17.523 6.477 22 12 22 C 17.523 22 22 17.523 22 12 C 22 6.477 17.523 2 12 2 z M 12 4 C 16.418 4 20 7.582 20 12 C 20 16.418 16.418 20 12 20 C 7.582 20 4 16.418 4 12 C 4 7.582 7.582 4 12 4 z M 11 7 L 11 13.585938 L 8.7070312 11.292969 L 7.2929688 12.707031 L 12 17.414062 L 16.707031 12.707031 L 15.292969 11.292969 L 13 13.585938 L 13 7 L 11 7 z"/>
+            d="M 12 2 C 6.477 2 2 6.477 2 12 C 2 17.523 6.477 22 12 22 C 17.523 22 22 17.523 22 12 C 22 6.477 17.523 2 12 2 z M 12 4 C 16.418 4 20 7.582 20 12 C 20 16.418 16.418 20 12 20 C 7.582 20 4 16.418 4 12 C 4 7.582 7.582 4 12 4 z M 11 7 L 11 13.585938 L 8.7070312 11.292969 L 7.2929688 12.707031 L 12 17.414062 L 16.707031 12.707031 L 15.292969 11.292969 L 13 13.585938 L 13 7 L 11 7 z"
+          />
         </svg>
-        <a
-          href="https://www.dropbox.com/s/wyyi67kfwmzbok9/CV_lupia.pdf?dl=1">Download
-          CV</a>
+        <a href="https://www.dropbox.com/s/wyyi67kfwmzbok9/CV_lupia.pdf?dl=1"
+          >Download CV</a
+        >
       </div>
     </div>
   </div>
@@ -35,7 +45,12 @@
   <div class="p-5 resume-card">
     <div class="p-6">
       <div class="mb-4 flex flex-row items-center">
-        <img class="mr-4" width="32px" src="/assets/icons/icon-resume.svg" alt="">
+        <img
+          class="mr-4"
+          width="32px"
+          src="/assets/icons/icon-resume.svg"
+          alt=""
+        />
         <p class="text-2xl avenir-demi">Experience</p>
       </div>
       <!--    <app-resume-row-->
@@ -77,10 +92,15 @@
   </div>
 
   <!-- EDUCATION -->
-  <div id="education" class="resume-card" style="padding: 20px;">
+  <div id="education" class="resume-card" style="padding: 20px">
     <div class="p-6">
       <div class="mb-4 flex flex-row items-center">
-        <img class="mr-4" width="32px" src="/assets/icons/icon-education.svg" alt="">
+        <img
+          class="mr-4"
+          width="32px"
+          src="/assets/icons/icon-education.svg"
+          alt=""
+        />
         <p class="text-2xl avenir-demi">Education</p>
       </div>
       <app-resume-row
@@ -123,16 +143,31 @@
   <div class="resume-card" id="professional_skills">
     <div class="p-6">
       <div class="p-5 mb-2 flex flex-row items-center">
-        <img class="mr-4" width="32px" src="/assets/icons/icon-code.svg" alt="">
+        <img
+          class="mr-4"
+          width="32px"
+          src="/assets/icons/icon-code.svg"
+          alt=""
+        />
         <p class="text-2xl avenir-demi">Professional Skills</p>
       </div>
       <div class="py-2 resume-block">
         <p class="text-xl mb-3 font-semibold">Programming Languages</p>
         <div *ngFor="let language of programmingLanguages; let i = index">
-          <div class="col-md-6" [ngClass]="{'left-style': i%2 === 0, 'right-style': i%2 !== 0 }">
+          <div
+            class="col-md-6"
+            [ngClass]="{
+              'left-style': i % 2 === 0,
+              'right-style': i % 2 !== 0
+            }"
+          >
             <div class="flex flex-row pb-3 text-lg">
-              <img class="opacity-icon mr-3 custom-programming-list-img" src="/assets/icons/{{language.icon}}" alt="">
-              {{language.title}}
+              <img
+                class="opacity-icon mr-3 custom-programming-list-img"
+                src="/assets/icons/{{ language.icon }}"
+                alt=""
+              />
+              {{ language.title }}
             </div>
           </div>
         </div>
@@ -140,20 +175,38 @@
       <div class="py-2 resume-block">
         <p class="text-xl mb-3 font-semibold">Frameworks</p>
         <div *ngFor="let framework of frameworks; let i = index">
-          <div class="col-md-6" [ngClass]="{'left-style': i%2 === 0, 'right-style': i%2 !== 0 }">
+          <div
+            class="col-md-6"
+            [ngClass]="{
+              'left-style': i % 2 === 0,
+              'right-style': i % 2 !== 0
+            }"
+          >
             <div class="flex flex-row pb-3 text-lg">
-              <img class="opacity-icon mr-3 custom-programming-list-img" src="/assets/icons/{{framework.icon}}" alt="">
-              {{framework.title}}
+              <img
+                class="opacity-icon mr-3 custom-programming-list-img"
+                src="/assets/icons/{{ framework.icon }}"
+                alt=""
+              />
+              {{ framework.title }}
             </div>
           </div>
         </div>
       </div>
       <div class="py-2 resume-block">
         <p class="text-xl mb-3 font-semibold">Software and Tools</p>
-        <ul class="text-lg" style="list-style-type: none;" *ngFor="let skill of other_skills">
+        <ul
+          class="text-lg"
+          style="list-style-type: none"
+          *ngFor="let skill of other_skills"
+        >
           <li class="custom-programming-list">
-            <img class="opacity-icon mr-3 custom-programming-list-img" src="/assets/icons/{{skill.icon}}" alt="">
-            {{skill.title}}
+            <img
+              class="opacity-icon mr-3 custom-programming-list-img"
+              src="/assets/icons/{{ skill.icon }}"
+              alt=""
+            />
+            {{ skill.title }}
           </li>
         </ul>
       </div>
@@ -164,7 +217,12 @@
   <div id="personal_skills" class="resume-block resume-card">
     <div class="p-6">
       <div class="mb-4 flex flex-row items-center">
-        <img class="mr-4" width="32px" src="/assets/icons/icon-skills.svg" alt="">
+        <img
+          class="mr-4"
+          width="32px"
+          src="/assets/icons/icon-skills.svg"
+          alt=""
+        />
         <p class="text-2xl avenir-demi">Personal skills</p>
       </div>
       <app-resume-row
@@ -184,12 +242,20 @@
   <div id="languages" class="resume-block resume-card">
     <div class="p-6">
       <div class="mb-4 flex flex-row items-center">
-        <img class="mr-4 content-center" width="32px" src="/assets/icons/icon-language.svg" alt="">
+        <img
+          class="mr-4 content-center"
+          width="32px"
+          src="/assets/icons/icon-language.svg"
+          alt=""
+        />
         <div class="flex flex-col">
           <p class="text-2xl avenir-demi">Languages</p>
-          <a class="text-base lg:text:lg xl:text:lg text-gray-700"
-             href="https://www.coe.int/en/web/common-european-framework-reference-languages/table-1-cefr-3.3-common-reference-levels-global-scale"
-             target="_blank">CEFR Reference</a>
+          <a
+            class="text-base lg:text:lg xl:text:lg text-gray-700"
+            href="https://www.coe.int/en/web/common-european-framework-reference-languages/table-1-cefr-3.3-common-reference-levels-global-scale"
+            target="_blank"
+            >CEFR Reference</a
+          >
         </div>
       </div>
       <div class="flex justify-around">
@@ -225,7 +291,12 @@
   <div id="publications" class="resume-block resume-card">
     <div class="p-6">
       <div class="mb-4 flex flex-row items-center">
-        <img class="mr-4" width="32px" src="/assets/icons/icon-paper.svg" alt="">
+        <img
+          class="mr-4"
+          width="32px"
+          src="/assets/icons/icon-paper.svg"
+          alt=""
+        />
         <p class="text-2xl avenir-demi">Publications</p>
       </div>
       <app-resume-row
@@ -242,17 +313,22 @@
   <div class="p-5 resume-card" id="certificates">
     <div class="p-6">
       <div class="mb-4 flex flex-row items-center">
-        <img class="mr-4" width="32px" src="/assets/icons/icon-certificate.svg" alt="">
+        <img
+          class="mr-4"
+          width="32px"
+          src="/assets/icons/icon-certificate.svg"
+          alt=""
+        />
         <p class="text-2xl avenir-demi">Certificates</p>
       </div>
       <app-resume-row
-        *ngFor="let item of resumeItems;"
-        title="{{item.title}}"
-        subtitle="{{item.subtitle}}"
-        date="{{item.date}}"
-        link="{{item.link}}"
-        credential_id="{{item.id}}"
-        icon="{{item.icon}}"
+        *ngFor="let item of resumeItems"
+        title="{{ item.title }}"
+        subtitle="{{ item.subtitle }}"
+        date="{{ item.date }}"
+        link="{{ item.link }}"
+        credential_id="{{ item.id }}"
+        icon="{{ item.icon }}"
       ></app-resume-row>
     </div>
   </div>
