@@ -25,6 +25,9 @@
   </div>
 
   <div class="flex flex-col">
+    <p *ngIf="subtitle3" class="avenir-regular text-justify text-gray-700 py-2 whitespace-pre-line">
+      {{subtitle3}}
+    </p>
     <p *ngIf="description && !expanded_description"
        class="avenir-regular text-justify text-gray-700 py-2 whitespace-pre-line"
        [ngClass]="small_description ? 'text-lg' : 'text-base'">{{description}}</p>

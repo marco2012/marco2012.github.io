@@ -77,7 +77,7 @@ export class ResumeComponent implements OnInit, AfterViewInit, OnDestroy {
       "icon-angular.svg"
     ),
     new SkillItem(
-      "React",
+      "React.js",
       "icon-react.svg"
     ),
     new SkillItem(
@@ -103,7 +103,15 @@ export class ResumeComponent implements OnInit, AfterViewInit, OnDestroy {
   ]
   other_skills: SkillItem[] = [
     new SkillItem(
-      "iOS, Android, Hybrid application development",
+      "Algorithms, Data Structures",
+      "icon_rubik.svg"
+    ),
+    new SkillItem(
+      "Cloud computing (Amazon Web Services)",
+      "icon_aws.svg"
+    ),
+    new SkillItem(
+      "Mobile Application development (iOS / Android / hybrid)",
       "icon-app_symbol.svg"
     ),
     new SkillItem(
@@ -111,11 +119,11 @@ export class ResumeComponent implements OnInit, AfterViewInit, OnDestroy {
       "icon-db.svg"
     ),
     new SkillItem(
-      "HTML / CSS / jQuery, Full Stack Web Development",
+      "Full Stack development (Back-end / Front-end), Web Application development (HTML / CSS)",
       "icon-web.svg"
     ),
     new SkillItem(
-      "Agile (Scrum), Waterfall methodologies",
+      "Agile (Scrum), DevOps methodologies",
       "icon-circular_arrows.svg"
     ),
     new SkillItem(
@@ -129,10 +137,6 @@ export class ResumeComponent implements OnInit, AfterViewInit, OnDestroy {
     new SkillItem(
       "Object-Oriented Programming",
       "icon_oop.svg"
-    ),
-    new SkillItem(
-      "Algorithms, Data Structures",
-      "icon_rubik.svg"
     ),
     new SkillItem(
       "LaTeX, Entity-Relationship (ER), Unified Modeling Language (UML), XML",
