@@ -102,24 +102,24 @@ export class ResumeComponent implements OnInit, AfterViewInit, OnDestroy {
     ),
   ]
   other_skills: SkillItem[] = [
-    new SkillItem(
-      "Algorithms, Data Structures",
-      "icon_rubik.svg"
-    ),
+    // new SkillItem(
+    //   "Algorithms, Data Structures",
+    //   "icon_rubik.svg"
+    // ),
     new SkillItem(
       "Cloud computing (Amazon Web Services)",
       "icon_aws.svg"
     ),
     new SkillItem(
-      "Mobile Application development (iOS / Android / hybrid)",
+      "Mobile Application development (Native iOS/Android, React Native, Flutter)",
       "icon-app_symbol.svg"
     ),
     new SkillItem(
-      "Database (SQL / MySQL / PostgreSQL / Oracle / NoSQL)",
+      "Database (Oracle, MySQL, PostgreSQL, MongoDB, CouchDB\n)",
       "icon-db.svg"
     ),
     new SkillItem(
-      "Full Stack development (Back-end / Front-end), Web Application development (HTML / CSS)",
+      "Full Stack development (Back-end / Front-end), Web Application development (HTML, CSS, Bootstrap, TailWindCSS)",
       "icon-web.svg"
     ),
     new SkillItem(
@@ -131,7 +131,7 @@ export class ResumeComponent implements OnInit, AfterViewInit, OnDestroy {
       "icon-rest_api.svg"
     ),
     new SkillItem(
-      "MVC, Observer, Facade design patterns",
+      "Model View Controller design pattern",
       "icon-patterns.svg"
     ),
     new SkillItem(
@@ -143,7 +143,7 @@ export class ResumeComponent implements OnInit, AfterViewInit, OnDestroy {
       "icon-oop.svg"
     ),
     new SkillItem(
-      "Network administration (Cisco Packet Tracer/Wireshark)",
+      "Network administration (Cisco Packet Tracer, Wireshark)",
       "icon-ethernet.svg"
     ),
     new SkillItem(
@@ -155,7 +155,7 @@ export class ResumeComponent implements OnInit, AfterViewInit, OnDestroy {
       "icon-intellij_idea.svg"
     ),
     new SkillItem(
-      "Docker, Git, Gradle, Maven, Apache, Firebase, Virtual Machines, Adobe Creative Suite",
+      "Docker, Git, Pandas, Gradle, Maven, Apache, Firebase, Virtual Machines, Adobe Creative Suite",
       "icon-more.svg"
     ),
 
