@@ -1,6 +1,16 @@
 <app-header></app-header>
 <div
-  class="flex flex-col avenir-medium pb-4 select-none mx-auto w-11/12 sm:w-3/4 md:w-3/5 xl:w-2/4"
+  class="
+    flex flex-col
+    avenir-medium
+    pb-4
+    select-none
+    mx-auto
+    w-11/12
+    sm:w-3/4
+    md:w-3/5
+    xl:w-2/4
+  "
 >
   <div class="flex items-center justify-center pb-4">
     <p class="text-4xl avenir-bold">Resume</p>
@@ -18,14 +28,23 @@
         />
         <p class="text-2xl avenir-demi">Summary</p>
       </div>
-      <div class="mb-4 text-base lg:text-lg text-justify text-gray-700 avenir-regular whitespace-pre-line">
-        • Master of Science in Engineering in Computer Science from Sapienza University of Rome.<br>
-        • I'm really passionate about developing exciting things with a good team. A great design is where I start.
-        Always looking for new challenges.<br>
-        • Interested in cybersecurity, full-stack development, mobile application development, product design, human
-        computer interaction, cryptocurrencies, finance, volunteering, tutoring.
+      <div
+        class="
+          mb-4
+          text-base
+          lg:text-lg
+          text-justify text-gray-700
+          avenir-regular
+          whitespace-pre-line
+        "
+      >
+        • I'm really passionate about developing exciting things with a good
+        team. A great design is where I start. Always looking for new
+        challenges.<br />
+        • Interested in risk management, project management, full-stack
+        development, UI/UX, finance, tutoring.
       </div>
-      <div class="flex flex-row text-blue-650 items-center">
+      <!-- <div class="flex flex-row text-blue-650 items-center">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 24 24"
@@ -36,9 +55,9 @@
           />
         </svg>
         <a href="https://www.dropbox.com/s/icvd4neqtw9i8ua/cv_lupia.pdf?dl=1"
-        >Download CV</a
+          >Download CV</a
         >
-      </div>
+      </div> -->
     </div>
   </div>
 
@@ -55,6 +74,29 @@
         />
         <p class="text-2xl avenir-demi">Experience</p>
       </div>
+      <app-resume-row
+        title="Deloitte"
+        subtitle="Analyst"
+        year="Sep 2021 - present"
+        subtitle2="Roma, Italy"
+        description=""
+        icon="icon-deloitte.png"
+      ></app-resume-row>
+      <app-resume-row
+        title="Reply"
+        subtitle="Consultant"
+        year="Jan 2021 - Aug 2021"
+        subtitle2="Roma, Italy"
+        description="Design and implementation of digital solutions on Microsoft Azure.
+• Full stack development in ASP.NET Core and Angular
+• Microsoft SQL Server, Entity Framework Core, LINQ
+• Designed REST APIs for microservices with Swagger documentation
+• Identity and access management, Azure Active Directory, AD B2C, OpenID
+• Configured Azure DevOps pipelines for CI/CD
+• Developed Azure Functions to perform scheduled tasks
+• Created ARM templates to deploy Azure resources"
+        icon="icon-reply.jpg"
+      ></app-resume-row>
       <app-resume-row
         title="DIAG - Sapienza Università di Roma"
         subtitle="Software Engineer"
@@ -85,14 +127,14 @@
 • Etherscan bot: Telegram bot (JavaScript) in JavaScript to keep multiple crypto wallets under control."
         icon="icon-vikings.svg"
       ></app-resume-row>
-      <app-resume-row
+      <!-- <app-resume-row
         title="Logilux"
         subtitle="Steward"
         subtitle2="Roma, Italy"
         year="Jan 2018 - Sep 2018"
         description="• Worked as steward for different companies in many international congresses."
         icon="icon-logilux.png"
-      ></app-resume-row>
+      ></app-resume-row> -->
     </div>
   </div>
 
@@ -117,8 +159,7 @@
         thesis_link="SmartRPA"
         icon="icon-sapienza.svg"
         expanded_description="true"
-        subtitle3="• Student-collaboration scholarship, assigned to the best 45 students based on merit
-• Exam bonus, awarded to 10% of students with the best results by number of ECTS and grades"
+        subtitle3="• Student-collaboration scholarship, assigned to the best 45 students based on merit"
       ></app-resume-row>
       <app-resume-row
         title="Bachelor of Science in Ingegneria Informatica e Automatica"
@@ -221,7 +262,7 @@
   </div>
 
   <!-- PERSONAL SKILLS -->
-  <div id="personal_skills" class="resume-block resume-card">
+  <!-- <div id="personal_skills" class="resume-block resume-card">
     <div class="p-6">
       <div class="mb-4 flex flex-row items-center">
         <img
@@ -240,7 +281,7 @@
         small_description="false"
       ></app-resume-row>
     </div>
-  </div>
+  </div> -->
 
   <!-- LANGUAGES -->
   <div id="languages" class="resume-block resume-card">
@@ -258,24 +299,24 @@
             class="text-base lg:text:lg xl:text:lg text-gray-700"
             href="https://www.coe.int/en/web/common-european-framework-reference-languages/table-1-cefr-3.3-common-reference-levels-global-scale"
             target="_blank"
-          >CEFR Reference</a
+            >CEFR Reference</a
           >
         </div>
       </div>
       <div class="flex justify-around">
-        <div class="p-1">
-          <app-resume-row
-            title="Italian"
-            subtitle="Native speaker"
-            icon="icon-italy.svg"
-          ></app-resume-row>
-          <app-resume-row
-            title="English"
-            subtitle="C2 - Proficient"
-            icon="icon-usa.svg"
-          ></app-resume-row>
-        </div>
-        <div class="p-1">
+        <!-- <div class="p-1"> -->
+        <app-resume-row
+          title="Italian"
+          subtitle="Native speaker"
+          icon="icon-italy.svg"
+        ></app-resume-row>
+        <app-resume-row
+          title="English"
+          subtitle="C2 - Proficient"
+          icon="icon-usa.svg"
+        ></app-resume-row>
+        <!-- </div> -->
+        <!-- <div class="p-1">
           <app-resume-row
             title="French"
             subtitle="A2 - Basic"
@@ -286,7 +327,7 @@
             subtitle="A2 - Basic"
             icon="icon-spain.svg"
           ></app-resume-row>
-        </div>
+        </div> -->
       </div>
     </div>
   </div>
@@ -303,6 +344,12 @@
         />
         <p class="text-2xl avenir-demi">Publications</p>
       </div>
+      <app-resume-row
+        title="Reactive Synthesis of Software Robots in RPA from User Interface Logs"
+        subtitle="Simone Agostinelli, Marco Lupia, Andrea Marrella and Massimo Mecella"
+        subtitle2="Computers in Industry: Special Issue on Robotic Process Automation"
+        date="Nov 2020"
+      ></app-resume-row>
       <app-resume-row
         title="Automated Generation of Executable RPA Scripts from User Interface Logs"
         subtitle="Simone Agostinelli, Marco Lupia, Andrea Marrella and Massimo Mecella"
@@ -358,7 +405,7 @@
         <p class="text-2xl avenir-demi">Certificates</p>
       </div>
       <app-resume-row
-        *ngFor="let item of resumeItems"
+        *ngFor="let item of resumeItemsVisible"
         title="{{ item.title }}"
         subtitle="{{ item.subtitle }}"
         date="{{ item.date }}"
@@ -366,6 +413,18 @@
         credential_id="{{ item.id }}"
         icon="{{ item.icon }}"
       ></app-resume-row>
+      <details>
+        <summary class="outline-none cursor-pointer py-2">Show all</summary>
+        <app-resume-row
+          *ngFor="let item of resumeItemsHidden"
+          title="{{ item.title }}"
+          subtitle="{{ item.subtitle }}"
+          date="{{ item.date }}"
+          link="{{ item.link }}"
+          credential_id="{{ item.id }}"
+          icon="{{ item.icon }}"
+        ></app-resume-row>
+      </details>
     </div>
   </div>
 </div>
