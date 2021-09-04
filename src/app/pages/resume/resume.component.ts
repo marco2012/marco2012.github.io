@@ -69,6 +69,14 @@ export class ResumeComponent implements OnInit, AfterViewInit, OnDestroy {
       "icon-asp.svg"
     ),
     new SkillItem(
+      "Angular",
+      "icon-angular.svg"
+    ),
+    new SkillItem(
+      "Node.js",
+      "icon-node.svg"
+    ),
+    new SkillItem(
       "Spring",
       "icon-spring.svg"
     ),
@@ -76,25 +84,17 @@ export class ResumeComponent implements OnInit, AfterViewInit, OnDestroy {
     //   "Hibernate",
     //   "icon-ibernate.png"
     // ),
-    new SkillItem(
-      "Node.js",
-      "icon-node.svg"
-    ),
-    new SkillItem(
-      "Angular",
-      "icon-angular.svg"
-    ),
     // new SkillItem(
     //   "React.js",
     //   "icon-react.svg"
     // ),
     new SkillItem(
-      "Flutter",
-      "icon-flutter.svg"
-    ),
-    new SkillItem(
       "Bootstrap",
       "icon-bootstrap.svg"
+    ),
+    new SkillItem(
+      "Flutter",
+      "icon-flutter.svg"
     ),
     // new SkillItem(
     //   "OpenCL",
@@ -123,7 +123,7 @@ export class ResumeComponent implements OnInit, AfterViewInit, OnDestroy {
       "icon-web.svg"
     ),
     new SkillItem(
-      "Database (Microsoft SQL Server, MySQL, PostgreSQL, MongoDB\n)",
+      "Database (Microsoft SQL Server, MySQL, PostgreSQL, MongoDB)",
       "icon-db.svg"
     ),
     new SkillItem(
@@ -163,7 +163,7 @@ export class ResumeComponent implements OnInit, AfterViewInit, OnDestroy {
     //   "icon-intellij_idea.svg"
     // ),
     new SkillItem(
-      "Git, Docker, Kubernetes, Pandas, Gradle, Maven, Apache, Firebase, Virtual Machines, Adobe Creative Suite",
+      "Git, Docker, Kubernetes, Pandas, Gradle, Maven, Apache, Firebase, Virtual Machines, Adobe Experience Cloud, Google Platform",
       "icon-more.svg"
     ),
 
@@ -224,7 +224,7 @@ export class ResumeComponent implements OnInit, AfterViewInit, OnDestroy {
       "https://learndigital.withgoogle.com/digitaltraining/validate-certificate-code",
       "XG7 Q85 4C7",
       "icon-google_light.svg",
-      true),
+      false),
     new ResumeItem(
       "EF Standard English Test – CEFR Level C2",
       "EF Standard English Test",
