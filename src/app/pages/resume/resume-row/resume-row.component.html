@@ -18,14 +18,24 @@
         />
       </div>
       <div class="flex flex-col">
-        <p class="text-lg xl:text-xl">{{ title }}</p>
+        <p class="text-md lg:text-lg xl:text-xl">{{ title }}</p>
         <p
           *ngIf="subtitle"
-          class="text-base lg:text:lg xl:text:lg text-gray-700"
+          class="text-sm md:text-base lg:text:lg xl:text:lg text-gray-700"
         >
           {{ subtitle }}
         </p>
-        <p *ngIf="subtitle2" class="text-base text-gray-700 avenir-italic">
+        <p
+          *ngIf="subtitle2"
+          class="
+            text-sm
+            md:text-base
+            lg:text:lg
+            xl:text:lg
+            text-gray-700
+            avenir-italic
+          "
+        >
           {{ subtitle2 }}
         </p>
         <p *ngIf="year" class="text-sm text-gray-600">
@@ -61,27 +71,37 @@
       *ngIf="description && !expanded_description"
       class="
         avenir-regular
-        text-justify text-gray-700
+        md:text-justify
+        text-gray-700
         p-2
         whitespace-pre-line
         pl
+        text-md
+        xl:text-lg
       "
-      [ngClass]="small_description ? 'text-lg' : 'text-base'"
     >
       {{ description }}
     </p>
     <details *ngIf="description && expanded_description">
       <summary class="outline-none cursor-pointer pl">List of Exams</summary>
       <p
-        class="avenir-regular text-justify text-gray-700 py-2 pl"
-        [ngClass]="small_description ? 'text-lg' : 'text-base'"
+        class="
+          avenir-regular
+          md:text-justify
+          text-gray-700
+          py-2
+          pl
+          whitespace-pre-line
+          text-md
+          xl:text-lg
+        "
       >
         {{ description }}
       </p>
     </details>
-    <div *ngIf="thesis" class="avenir-medium text-justify pl">
+    <div *ngIf="thesis" class="avenir-medium md:text-justify pl">
       <a
-        class="text-base lg:text:lg xl:text:lg text-gray-700"
+        class="text-md xl:text:lg text-gray-700"
         routerLink="/portfolio"
         [queryParams]="{ query: thesis_link }"
         >Thesis: {{ thesis }}</a

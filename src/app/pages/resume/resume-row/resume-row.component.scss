@@ -22,6 +22,9 @@ summary::-webkit-details-marker {
   color: transparent;
 }
 
-.pl {
-  padding-left: 60px;
+// md
+@media (min-width: 1024px) {
+  .pl {
+    padding-left: 60px;
+  }
 }

@@ -8,7 +8,8 @@
     mx-auto
     w-11/12
     sm:w-3/4
-    md:w-3/5
+    md:w-4/5
+    lg:w-3/5
     xl:w-2/4
   "
 >
@@ -26,21 +27,21 @@
           src="/assets/icons/icon-profile.svg"
           alt=""
         />
-        <p class="text-2xl avenir-demi">Summary</p>
+        <p class="text-xl md:text-2xl avenir-demi">Summary</p>
       </div>
       <div
         class="
           mb-4
-          text-base
-          lg:text-lg
-          text-justify text-gray-700
+          text-md
+          xl:text-lg
+          md:text-justify
+          text-gray-700
           avenir-regular
           whitespace-pre-line
         "
       >
-        • I'm really passionate about developing exciting things with a good
-        team. A great design is where I start. Always looking for new
-        challenges.<br />
+        • Passionate about developing exciting things with a good team. A great
+        design is where I start. Always looking for new challenges.<br />
         • Interested in cloud computing, risk management, project management,
         product design, problem solving, cryptocurrencies, marketing.
       </div>
@@ -72,7 +73,7 @@
           src="/assets/icons/icon-resume.svg"
           alt=""
         />
-        <p class="text-2xl avenir-demi">Professional Experience</p>
+        <p class="text-xl md:text-2xl avenir-demi">Professional Experience</p>
       </div>
       <app-resume-row
         title="Deloitte"
@@ -153,13 +154,25 @@
           src="/assets/icons/icon-education.svg"
           alt=""
         />
-        <p class="text-2xl avenir-demi">Education</p>
+        <p class="text-xl md:text-2xl avenir-demi">Education</p>
       </div>
       <app-resume-row
         title="Master of Science in Engineering in Computer Science"
         subtitle="Sapienza University of Rome"
         year="2018 - 2020"
-        description="Algorithm Design, Artificial Intelligence, Capacity Planning, Computer and Network Security, Cyber and Computer Law, Data Management, Distributed Systems, Formal Methods, Human Computer Interaction, Laboratory of Network Design and Configuration (Cisco Packet Tracer), Mobile Applications and Cloud Computing (Java/Swift), Neural Networks (Python), Process Management and Mining, Software Engineering, Visual Analytics (Javascript)"
+        description="- Algorithm Design
+- Artificial Intelligence
+- Capacity Planning
+- Computer and Network Security
+- Cyber and Computer Law, Data Management
+- Distributed Systems, Formal Methods
+- Human Computer Interaction
+- Laboratory of Network Design and Configuration (Cisco Packet Tracer)
+- Mobile Applications and Cloud Computing (Java/Swift)
+- Neural Networks (Python)
+- Process Management and Mining
+- Software Engineering
+- Visual Analytics (Javascript)"
         thesis="Automated Generation of Executable Robotic Process Automation Scripts from User Interface Logs"
         thesis_link="SmartRPA"
         icon="icon-sapienza.svg"
@@ -171,13 +184,29 @@
         title="Bachelor of Science in Computer and System Engineering"
         subtitle="Sapienza University of Rome"
         year="2015 - 2018"
-        description="Algoritmi e Strutture Dati, Basi di Dati, Linguaggi e Tecnologie per il Web,
-            Modelli, Progettazione del Software, Programmazione Funzionale e Parallela,
-            Programmazione orientata agli Oggetti, Python, Reti di Calcolatori, Sistemi di
-            Calcolo I & II, Tecniche di Programmazione, Telecomunicazioni,
-            Analisi Matematica I & II, Calcolo delle Probabilità e Statistica, Controlli
-            Automatici, Economia e Organizzazione Aziendale, Elettronica, Geometria,
-            Management, Ricerca Operativa, Teoria dei Sistemi"
+        description="
+- Algoritmi e Strutture Dati
+- Basi di Dati, 
+- Linguaggi e Tecnologie per il Web
+- Modelli
+- Progettazione del Software
+- Programmazione Funzionale e Parallela
+- Programmazione Orientata agli Oggetti
+- Python
+- Reti di Calcolatori
+- Sistemi di Calcolo I & II
+- Tecniche di Programmazione
+- Telecomunicazioni
+- Analisi Matematica I & II
+- Calcolo delle Probabilità e Statistica
+- Controlli Automatici
+- Economia e Organizzazione Aziendale
+- Elettronica
+- Geometria 
+- Management
+- Ricerca Operativa
+- Teoria dei Sistemi
+- Lingua inglese"
         thesis="SmartGasStation - Progetto e Realizzazione di una Web Application
       per Localizzare le Stazioni di Rifornimento più Economiche nelle Vicinanze"
         thesis_link="SmartGasStation"
@@ -204,11 +233,11 @@
           src="/assets/icons/icon-code.svg"
           alt=""
         />
-        <p class="text-2xl avenir-demi">Skills</p>
+        <p class="text-xl md:text-2xl avenir-demi">Skills</p>
       </div>
 
-      <div class="py-2 resume-block">
-        <p class="text-xl mb-3 font-semibold">Languages</p>
+      <!-- <div class="py-2 resume-block">
+        <p class="text-lg lg:text-xl mb-3 font-semibold">Languages</p>
         <div *ngFor="let language of programmingLanguages; let i = index">
           <div
             class="col-md-6"
@@ -217,7 +246,7 @@
               'right-style': i % 2 !== 0
             }"
           >
-            <div class="flex flex-row pb-3 text-lg">
+            <div class="flex flex-row pb-3 text-md lg:text-lg">
               <img
                 class="opacity-icon mr-3 custom-programming-list-img"
                 src="/assets/icons/{{ language.icon }}"
@@ -228,8 +257,9 @@
           </div>
         </div>
       </div>
+
       <div class="py-2 resume-block">
-        <p class="text-xl mb-3 font-semibold">Frameworks</p>
+        <p class="text-lg lg:text-xl mb-3 font-semibold">Frameworks</p>
         <div *ngFor="let framework of frameworks; let i = index">
           <div
             class="col-md-6"
@@ -238,7 +268,7 @@
               'right-style': i % 2 !== 0
             }"
           >
-            <div class="flex flex-row pb-3 text-lg">
+            <div class="flex flex-row pb-3 text-md lg:text-lg">
               <img
                 class="opacity-icon mr-3 custom-programming-list-img"
                 src="/assets/icons/{{ framework.icon }}"
@@ -248,11 +278,39 @@
             </div>
           </div>
         </div>
-      </div>
+      </div>-->
+
       <div class="py-4 resume-block">
-        <p class="text-xl mb-3 font-semibold">Software, Tools and Other</p>
+        <!-- <mat-grid-list cols="2" rowHeight="2:1">
+          <mat-grid-tile>1</mat-grid-tile>
+          <mat-grid-tile>2</mat-grid-tile>
+          <mat-grid-tile>3</mat-grid-tile>
+          <mat-grid-tile>4</mat-grid-tile>
+        </mat-grid-list> -->
+
+        <p class="text-lg lg:text-xl mb-3 font-semibold">Frameworks</p>
         <ul
-          class="text-lg"
+          class="text-md lg:text-lg two-cols"
+          style="list-style-type: none"
+          *ngFor="let framework of frameworks"
+        >
+          <li>
+            <img
+              class="opacity-icon mr-3 custom-programming-list-img"
+              src="/assets/icons/{{ framework.icon }}"
+              alt=""
+            />
+            <p>{{ framework.title }}</p>
+          </li>
+        </ul>
+      </div>
+
+      <div class="py-4 resume-block">
+        <p class="text-lg lg:text-xl mb-3 font-semibold">
+          Software, Tools and Other
+        </p>
+        <ul
+          class="text-md lg:text-lg"
           style="list-style-type: none"
           *ngFor="let skill of other_skills"
         >
@@ -279,7 +337,7 @@
           src="/assets/icons/icon-skills.svg"
           alt=""
         />
-        <p class="text-2xl avenir-demi">Personal skills</p>
+        <p class="text-xl md:text-2xl avenir-demi">Personal skills</p>
       </div>
       <app-resume-row
         title=""
@@ -302,7 +360,7 @@
           alt=""
         />
         <div class="flex flex-col">
-          <p class="text-2xl avenir-demi">Languages</p>
+          <p class="text-xl md:text-2xl avenir-demi">Languages</p>
           <a
             class="text-base lg:text:lg xl:text:lg text-gray-700"
             href="https://www.coe.int/en/web/common-european-framework-reference-languages/table-1-cefr-3.3-common-reference-levels-global-scale"
@@ -317,6 +375,7 @@
           title="Italian"
           subtitle="Native speaker"
           icon="icon-italy.svg"
+          class="pr-2 md:pr-0"
         ></app-resume-row>
         <app-resume-row
           title="English"
@@ -350,7 +409,7 @@
           src="/assets/icons/icon-certificate.svg"
           alt=""
         />
-        <p class="text-2xl avenir-demi">Certificates</p>
+        <p class="text-xl md:text-2xl avenir-demi">Certificates</p>
       </div>
       <app-resume-row
         *ngFor="let item of resumeItemsVisible"
@@ -386,7 +445,7 @@
           src="/assets/icons/icon-paper.svg"
           alt=""
         />
-        <p class="text-2xl avenir-demi">Publications</p>
+        <p class="text-xl md:text-2xl avenir-demi">Publications</p>
       </div>
       <app-resume-row
         title="SmartRPA: A Tool to Reactively Synthesize Software Robots from User Interface Logs"
@@ -412,7 +471,7 @@
           src="/assets/icons/icon-university.svg"
           alt=""
         />
-        <p class="text-2xl avenir-demi">Academic Research</p>
+        <p class="text-xl md:text-2xl avenir-demi">Academic Research</p>
       </div>
       <app-resume-row
         title="WannaCry"

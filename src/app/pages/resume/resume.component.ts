@@ -65,7 +65,7 @@ export class ResumeComponent implements OnInit, AfterViewInit, OnDestroy {
       "icon-asp.svg"
     ),
     new SkillItem(
-      "Entity Framework Core",
+      "EF Core",
       "icon-asp.svg"
     ),
     new SkillItem(
