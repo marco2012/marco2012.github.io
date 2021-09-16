@@ -2,7 +2,8 @@
   padding: 1rem;
 }
 
-.resume-block:hover, .resume-block:active {
+.resume-block:hover,
+.resume-block:active {
   background-color: #fafafa;
   border-radius: 16px;
   -moz-box-shadow: inset 0 0 2px #e8e8e8;
@@ -19,4 +20,8 @@ summary {
 summary::-webkit-details-marker {
   background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/3/right-arrow.svg);
   color: transparent;
+}
+
+.pl {
+  padding-left: 60px;
 }

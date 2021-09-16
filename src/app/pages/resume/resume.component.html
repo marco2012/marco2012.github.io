@@ -44,7 +44,7 @@
         • Interested in cloud computing, risk management, project management,
         product design, problem solving, cryptocurrencies, marketing.
       </div>
-      <!-- <div class="flex flex-row text-blue-650 items-center">
+      <div class="flex flex-row text-blue-650 items-center">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 24 24"
@@ -54,14 +54,14 @@
             d="M 12 2 C 6.477 2 2 6.477 2 12 C 2 17.523 6.477 22 12 22 C 17.523 22 22 17.523 22 12 C 22 6.477 17.523 2 12 2 z M 12 4 C 16.418 4 20 7.582 20 12 C 20 16.418 16.418 20 12 20 C 7.582 20 4 16.418 4 12 C 4 7.582 7.582 4 12 4 z M 11 7 L 11 13.585938 L 8.7070312 11.292969 L 7.2929688 12.707031 L 12 17.414062 L 16.707031 12.707031 L 15.292969 11.292969 L 13 13.585938 L 13 7 L 11 7 z"
           />
         </svg>
-        <a href="https://www.dropbox.com/s/icvd4neqtw9i8ua/cv_lupia.pdf?dl=1"
-          >Download CV</a
+        <a href="/assets/documents/marco_lupia_resume.pdf" target="_blank"
+          >Download resume</a
         >
-      </div> -->
+      </div>
     </div>
   </div>
 
-  <!-- EXPERIENCE -->
+  <!-- PROFESSIONAL EXPERIENCE -->
   <!--  <hr class="my-8" style="border-top: 1px solid #F1F1F1;">-->
   <div class="p-5 resume-card">
     <div class="p-6">
@@ -72,7 +72,7 @@
           src="/assets/icons/icon-resume.svg"
           alt=""
         />
-        <p class="text-2xl avenir-demi">Experience</p>
+        <p class="text-2xl avenir-demi">Professional Experience</p>
       </div>
       <app-resume-row
         title="Deloitte"
@@ -85,19 +85,21 @@
 • Conducted experience personalization and A/B testing activities"
         icon="icon-deloitte.png"
       ></app-resume-row>
+      <hr />
       <app-resume-row
         title="Reply"
         subtitle="Consultant"
         year="Jan 2021 - Aug 2021"
         subtitle2="Roma, Italy"
-        description="Designed and implemented of cloud solutions on Microsoft Azure.
-• Full stack development in ASP.NET Core and Angular, Microsoft SQL Server, Entity Framework Core
-• Configured Azure Infrastructure, Azure DevOps pipelines for CI/CD, Azure Functions for scheduled tasks, ARM templates to deploy Azure resources
-• Identity and access management, Active Directory and Azure AD B2C, MFA
-• Developed REST APIs for microservices with Swagger documentation
-• Produced customer facing documentation, requirements processing according to client needs"
+        description="Designed and implemented cloud solutions on Microsoft Azure
+• Full stack development in Angular (JavaScript), ASP.NET Core (C#), Entity Framework Core, Microsoft SQL Server
+• Produced customer facing documentation, processed requirements according to client needs
+• Configured Azure Infrastructure, Azure DevOps pipelines for CI/CD, Azure Functions for scheduled tasks, ARM templates to deploy resources
+• Identity and access management, Active Directory, Azure AD B2C, MFA
+• Developed REST APIs for microservices with Swagger documentation"
         icon="icon-reply.jpg"
       ></app-resume-row>
+      <hr />
       <app-resume-row
         title="DIAG - Sapienza University of Rome"
         subtitle="Software Engineer"
@@ -109,6 +111,7 @@
 • Presented at RPA Forum of 18th Int. Conference on Business Process Management in Sevilla, Spain."
         icon="icon-sapienza.svg"
       ></app-resume-row>
+      <hr />
       <app-resume-row
         title="DIAG - Sapienza University of Rome"
         subtitle="Segreteria Didattica"
@@ -117,6 +120,7 @@
         description="• Student-collaboration scholarship in Segreteria Didattica at Department of Computer, Control, Management Engineering."
         icon="icon-sapienza.svg"
       ></app-resume-row>
+      <hr />
       <app-resume-row
         title="Vikings, Inc."
         subtitle="Co-Founder, Software Engineer"
@@ -162,6 +166,7 @@
         expanded_description="true"
         subtitle3="• Student-collaboration scholarship, assigned to the best 45 students based on merit"
       ></app-resume-row>
+      <hr />
       <app-resume-row
         title="Bachelor of Science in Computer and System Engineering"
         subtitle="Sapienza University of Rome"
@@ -179,6 +184,7 @@
         icon="icon-sapienza.svg"
         expanded_description="true"
       ></app-resume-row>
+      <hr />
       <app-resume-row
         title="Diploma Liceo Scientifico"
         subtitle="Renato Cartesio"
@@ -198,8 +204,9 @@
           src="/assets/icons/icon-code.svg"
           alt=""
         />
-        <p class="text-2xl avenir-demi">Professional Skills</p>
+        <p class="text-2xl avenir-demi">Skills</p>
       </div>
+
       <div class="py-2 resume-block">
         <p class="text-xl mb-3 font-semibold">Languages</p>
         <div *ngFor="let language of programmingLanguages; let i = index">
@@ -333,67 +340,6 @@
     </div>
   </div>
 
-  <!--   PUBLICATIONS-->
-  <div id="publications" class="resume-block resume-card">
-    <div class="p-6">
-      <div class="mb-4 flex flex-row items-center">
-        <img
-          class="mr-4"
-          width="32px"
-          src="/assets/icons/icon-paper.svg"
-          alt=""
-        />
-        <p class="text-2xl avenir-demi">Publications</p>
-      </div>
-      <app-resume-row
-        title="SmartRPA: A Tool to Reactively Synthesize Software Robots from User Interface Logs"
-        subtitle="Simone Agostinelli, Marco Lupia, Andrea Marrella and Massimo Mecella"
-        subtitle2="18th Int. Conference on Business Process Management (RPA Forum) - Springer"
-        date="Jul 2021"
-        link="https://www.springerprofessional.de/en/smartrpa-a-tool-to-reactively-synthesize-software-robots-from-us/19259790"
-      ></app-resume-row>
-      <app-resume-row
-        title="Automated Generation of Executable RPA Scripts from User Interface Logs"
-        subtitle="Simone Agostinelli, Marco Lupia, Andrea Marrella and Massimo Mecella"
-        subtitle2="18th Int. Conference on Business Process Management (RPA Forum) - Springer"
-        date="Sep 2020"
-        link="https://doi.org/10.1007/978-3-030-58779-6_8"
-      ></app-resume-row>
-    </div>
-  </div>
-
-  <div id="academic_research" class="resume-block resume-card">
-    <div class="p-6">
-      <div class="mb-4 flex flex-row items-center">
-        <img
-          class="mr-4"
-          width="32px"
-          src="/assets/icons/icon-university.svg"
-          alt=""
-        />
-        <p class="text-2xl avenir-demi">Academic Research</p>
-      </div>
-      <app-resume-row
-        title="WannaCry"
-        subtitle="Marco Lupia, Francesca Fraioli"
-        date="Sep 2019"
-        link="https://www.dropbox.com/s/dr0n88258jzt2zi/Cyber_and_Computer_Law.pdf?dl=1"
-      ></app-resume-row>
-      <app-resume-row
-        title="Simulation and Monte Carlo methods for Finance"
-        subtitle="Marco Lupia"
-        date="Jun 2019"
-        link="https://www.dropbox.com/s/hndpkuc1iaknx5d/Probabilistic_models_for_finance.pdf?dl=1"
-      ></app-resume-row>
-      <app-resume-row
-        title="Direct Feedback Alignment Provides Learning in Deep Neural Networks"
-        subtitle="Marco Lupia, Francesca Fraioli"
-        date="Apr 2019"
-        link="https://www.dropbox.com/s/6xlggxyv46hc1n3/Neural_Networks___Direct_Feedback_Alignment.pdf?dl=1"
-      ></app-resume-row>
-    </div>
-  </div>
-
   <!-- CERTIFICATES -->
   <div class="p-5 resume-card" id="certificates">
     <div class="p-6">
@@ -427,6 +373,65 @@
           icon="{{ item.icon }}"
         ></app-resume-row>
       </details>
+    </div>
+  </div>
+
+  <!--   PUBLICATIONS-->
+  <div id="publications" class="resume-block resume-card">
+    <div class="p-6">
+      <div class="mb-4 flex flex-row items-center">
+        <img
+          class="mr-4"
+          width="32px"
+          src="/assets/icons/icon-paper.svg"
+          alt=""
+        />
+        <p class="text-2xl avenir-demi">Publications</p>
+      </div>
+      <app-resume-row
+        title="SmartRPA: A Tool to Reactively Synthesize Software Robots from User Interface Logs"
+        subtitle2="33rd Int. Conf. on Advanced Information Systems Engineering (CAiSE Forum) - Springer"
+        date="Jul 2021"
+        link="https://www.springerprofessional.de/en/smartrpa-a-tool-to-reactively-synthesize-software-robots-from-us/19259790"
+      ></app-resume-row>
+      <app-resume-row
+        title="Automated Generation of Executable RPA Scripts from User Interface Logs"
+        subtitle2="18th Int. Conference on Business Process Management (RPA Forum) - Springer"
+        date="Sep 2020"
+        link="https://doi.org/10.1007/978-3-030-58779-6_8"
+      ></app-resume-row>
+    </div>
+  </div>
+
+  <div id="academic_research" class="resume-block resume-card">
+    <div class="p-6">
+      <div class="mb-4 flex flex-row items-center">
+        <img
+          class="mr-4"
+          width="32px"
+          src="/assets/icons/icon-university.svg"
+          alt=""
+        />
+        <p class="text-2xl avenir-demi">Academic Research</p>
+      </div>
+      <app-resume-row
+        title="WannaCry"
+        subtitle="Marco Lupia, Francesca Fraioli"
+        date="Sep 2019"
+        link="/assets/documents/papers/Cyber_and_Computer_Law.pdf"
+      ></app-resume-row>
+      <app-resume-row
+        title="Simulation and Monte Carlo methods for Finance"
+        subtitle="Marco Lupia"
+        date="Jun 2019"
+        link="/assets/documents/papers/Probabilistic_models_for_finance.pdf"
+      ></app-resume-row>
+      <app-resume-row
+        title="Direct Feedback Alignment Provides Learning in Deep Neural Networks"
+        subtitle="Marco Lupia, Francesca Fraioli"
+        date="Apr 2019"
+        link="/assets/documents/papers/Neural_Networks_Direct_Feedback_Alignment.pdf"
+      ></app-resume-row>
     </div>
   </div>
 </div>

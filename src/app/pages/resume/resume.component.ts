@@ -114,30 +114,30 @@ export class ResumeComponent implements OnInit, AfterViewInit, OnDestroy {
     //   "Algorithms, Data Structures",
     //   "icon_rubik.svg"
     // ),
+    // new SkillItem(
+    //   "Cloud computing (Microsoft Azure)",
+    //   "icon-microsoft.svg"
+    // ),
     new SkillItem(
-      "Cloud computing (Microsoft Azure)",
-      "icon-microsoft.svg"
-    ),
-    new SkillItem(
-      "Full Stack development, HTML, CSS, Bootstrap",
+      "Full Stack development, HTML, CSS, jQuery, REST, SOAP APIs, Swagger documentation, Postman",
       "icon-web.svg"
     ),
     new SkillItem(
-      "Database (Microsoft SQL Server, MySQL, PostgreSQL, MongoDB)",
+      "Microsoft SQL Server, MySQL, PostgreSQL, MongoDB, Firebase",
       "icon-db.svg"
     ),
+    // new SkillItem(
+    //   "Mobile Application development (Native iOS/Android, Flutter)",
+    //   "icon-app_symbol.svg"
+    // ),
     new SkillItem(
-      "Mobile Application development (Native iOS/Android, Flutter)",
-      "icon-app_symbol.svg"
-    ),
-    new SkillItem(
-      "Agile (Scrum) methodologies, DevOps, Microservices, Object-Oriented Programming",
+      "Agile (Scrum) methodologies, Git, DevOps, CI/CD, Microservices, Object-Oriented Programming",
       "icon-circular_arrows.svg"
     ),
-    new SkillItem(
-      "REST, SOAP APIs, Swagger documentation, Postman",
-      "icon-rest_api.svg"
-    ),
+    // new SkillItem(
+    //   "REST, SOAP APIs, Swagger documentation, Postman",
+    //   "icon-rest_api.svg"
+    // ),
     // new SkillItem(
     //   "Model View Controller design pattern",
     //   "icon-patterns.svg"
@@ -146,13 +146,17 @@ export class ResumeComponent implements OnInit, AfterViewInit, OnDestroy {
     //   "Object-Oriented Programming",
     //   "icon_oop.svg"
     // ),
+    // new SkillItem(
+    //   "LaTeX, Entity-Relationship (ER), Unified Modeling Language (UML), XML",
+    //   "icon-oop.svg"
+    // ),
+    // new SkillItem(
+    //   "Network administration (Cisco Packet Tracer, Wireshark)",
+    //   "icon-ethernet.svg"
+    // ),
     new SkillItem(
-      "LaTeX, Entity-Relationship (ER), Unified Modeling Language (UML), XML",
-      "icon-oop.svg"
-    ),
-    new SkillItem(
-      "Network administration (Cisco Packet Tracer, Wireshark)",
-      "icon-ethernet.svg"
+      "Adobe Experience Cloud, Google Marketing Platform, Tealium",
+      "icon-analytics.png"
     ),
     new SkillItem(
       "Business Process Management, Robotic Process Automation, Process Mining, Process Discovery",
@@ -163,7 +167,7 @@ export class ResumeComponent implements OnInit, AfterViewInit, OnDestroy {
     //   "icon-intellij_idea.svg"
     // ),
     new SkillItem(
-      "Git, Docker, Kubernetes, Pandas, Gradle, Maven, Apache, Firebase, Virtual Machines, Adobe Experience Cloud, Google Platform",
+      "Cloud computing (Microsoft Azure), Virtual Machines, Docker, Maven, Firebase, Pandas, LaTeX",
       "icon-more.svg"
     ),
 
@@ -181,7 +185,7 @@ export class ResumeComponent implements OnInit, AfterViewInit, OnDestroy {
       "Git Intermediate Techniques",
       "LinkedIn",
       "Aug 2020",
-      "https://www.dropbox.com/s/gvydwjpdm7pveq5/Git%20Intermediate%20Techniques.pdf?dl=0",
+      "/assets/documents/certificates/Git_Intermediate_Techniques.pdf",
       "",
       "icon-linkedin_light.svg",
       true),
@@ -189,7 +193,7 @@ export class ResumeComponent implements OnInit, AfterViewInit, OnDestroy {
       "Advanced Java Programming",
       "LinkedIn",
       "Aug 2020",
-      "https://www.dropbox.com/s/x6i8b65k4nr5tc3/Advanced%20Java%20Programming.pdf?dl=0",
+      "/assets/documents/certificates/Advanced_Java_Programming.pdf",
       "",
       "icon-linkedin_light.svg",
       true),
@@ -197,7 +201,7 @@ export class ResumeComponent implements OnInit, AfterViewInit, OnDestroy {
       "Building Full-Stack Apps with React and Spring",
       "LinkedIn",
       "Aug 2020",
-      "https://www.dropbox.com/s/c8tkvt4tza1eprp/Building%20Full-Stack%20Apps%20with%20React%20and%20Spring.pdf?dl=0",
+      "/assets/documents/certificates/Building_Full-Stack_Apps_with_React_and_Spring.pdf",
       "",
       "icon-linkedin_light.svg",
       true),
@@ -205,7 +209,7 @@ export class ResumeComponent implements OnInit, AfterViewInit, OnDestroy {
       "Ethical Hacking with JavaScript",
       "LinkedIn",
       "Aug 2020",
-      "https://www.dropbox.com/s/vbuhdvknu4jgarh/Ethical%20Hacking%20with%20JavaScript.pdf?dl=0",
+      "/assets/documents/certificates/Ethical_Hacking_with_JavaScript.pdf",
       "",
       "icon-linkedin_light.svg",
       true),
@@ -221,7 +225,7 @@ export class ResumeComponent implements OnInit, AfterViewInit, OnDestroy {
       "Fondamenti di Marketing Digitale",
       "Google Digital Technologies",
       "Jan 2020",
-      "https://learndigital.withgoogle.com/digitaltraining/validate-certificate-code",
+      "/assets/documents/certificates/fundamentals_of_digital_marketing.pdf",
       "XG7 Q85 4C7",
       "icon-google_light.svg",
       false),
