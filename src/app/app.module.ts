@@ -25,6 +25,8 @@ import {CustomReuseStrategy} from "./shared/routing";
 import {DropdownComponent} from './components/dropdown/dropdown.component';
 import {ConnectionsComponent} from './components/connections/connections.component';
 
+import { MatGridListModule } from '@angular/material';
+
 const routes: Routes = [
   {path: '', component: HomeComponent},
   {path: 'resume', component: ResumeComponent},
@@ -60,6 +62,7 @@ const routes: Routes = [
     HttpClientModule,
     BrowserAnimationsModule,
     NgxSpinnerModule,
+    MatGridListModule
   ],
   exports: [RouterModule],
   providers: [

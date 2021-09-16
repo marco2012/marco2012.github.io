@@ -281,36 +281,45 @@
       </div>-->
 
       <div class="py-4 resume-block">
-        <!-- <mat-grid-list cols="2" rowHeight="2:1">
-          <mat-grid-tile>1</mat-grid-tile>
-          <mat-grid-tile>2</mat-grid-tile>
-          <mat-grid-tile>3</mat-grid-tile>
-          <mat-grid-tile>4</mat-grid-tile>
-        </mat-grid-list> -->
+        <p class="text-lg lg:text-xl mb-3 font-semibold">Languages</p>
 
+        <mat-grid-list cols="2" rowHeight="40px">
+          <mat-grid-tile *ngFor="let language of programmingLanguages">
+            <img
+              class="opacity-icon mr-3 custom-programming-list-img"
+              src="/assets/icons/{{ language.icon }}"
+              alt=""
+            />
+            <p class="text-md lg:text-lg">{{ language.title }}</p>
+          </mat-grid-tile>
+        </mat-grid-list>
+      </div>
+
+      <hr class="my-4" />
+
+      <div class="py-4 resume-block">
         <p class="text-lg lg:text-xl mb-3 font-semibold">Frameworks</p>
-        <ul
-          class="text-md lg:text-lg two-cols"
-          style="list-style-type: none"
-          *ngFor="let framework of frameworks"
-        >
-          <li>
+
+        <mat-grid-list cols="2" rowHeight="40px">
+          <mat-grid-tile *ngFor="let framework of frameworks">
             <img
               class="opacity-icon mr-3 custom-programming-list-img"
               src="/assets/icons/{{ framework.icon }}"
               alt=""
             />
-            <p>{{ framework.title }}</p>
-          </li>
-        </ul>
+            <p class="text-md lg:text-lg">{{ framework.title }}</p>
+          </mat-grid-tile>
+        </mat-grid-list>
       </div>
+
+      <hr class="my-4" />
 
       <div class="py-4 resume-block">
         <p class="text-lg lg:text-xl mb-3 font-semibold">
           Software, Tools and Other
         </p>
         <ul
-          class="text-md lg:text-lg"
+          class="text-md xl:text-lg"
           style="list-style-type: none"
           *ngFor="let skill of other_skills"
         >
@@ -320,7 +329,7 @@
               src="/assets/icons/{{ skill.icon }}"
               alt=""
             />
-            {{ skill.title }}
+            <p class="md:text-justify">{{ skill.title }}</p>
           </li>
         </ul>
       </div>
