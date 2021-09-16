@@ -53,16 +53,17 @@ export class ResumeRowComponent implements OnInit {
     let ss = this.year.split(' - ')[0]
     let ee = this.year.split(' - ')[1]
     let d1 = new Date(ss)
-    let d2 = ee === "present" ? new Date() : new Date(ee)
+    let d2 = (ee === "present" || ee === "now") ? new Date() : new Date(ee)
 
     let m = this.monthDiff(d1, d2);
-    if (m < 12) {
+    if (m != null && !isNaN(m) && m < 12) {
       return ` (${m + 1} ${m == 0 ? 'month' : 'months'})`;
     } else {
       let y = this.getYears(d1, d2);
-      return ` (${y} ${y == 1 ? 'year' : 'years'})`;
+      if (y != null && !isNaN(y)) {
+        return ` (${y} ${y == 1 ? 'year' : 'years'})`;
+      }
     }
-        
   }
 
 }
