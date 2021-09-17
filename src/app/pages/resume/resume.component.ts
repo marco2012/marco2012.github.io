@@ -174,6 +174,14 @@ export class ResumeComponent implements OnInit, AfterViewInit, OnDestroy {
   ];
   resumeItems: ResumeItem[] = [
     new ResumeItem(
+      "Google Analytics",
+      "Google",
+      "Sep 2021",
+      "https://skillshop.exceedlms.com/student/award/mj3Yw4XsxVJ3oD1ybHzwdCMm",
+      "89604662",
+      "icon-google.svg",
+      false),
+    new ResumeItem(
       "Microsoft Certified: Azure fundamentals",
       "Microsoft",
       "Mar 2021",
@@ -181,6 +189,14 @@ export class ResumeComponent implements OnInit, AfterViewInit, OnDestroy {
       "",
       "icon-microsoft.svg",
       false),
+    new ResumeItem(
+      "REST API",
+      "HackerRank",
+      "Jul 2020",
+      "https://www.hackerrank.com/certificates/579ba2349a33",
+      "579BA2349A33",
+      "icon-hackerrank.svg",
+      true),
     new ResumeItem(
       "Git Intermediate Techniques",
       "LinkedIn",
@@ -213,14 +229,6 @@ export class ResumeComponent implements OnInit, AfterViewInit, OnDestroy {
       "",
       "icon-linkedin_light.svg",
       true),
-    new ResumeItem(
-      "REST API",
-      "HackerRank",
-      "Jul 2020",
-      "https://www.hackerrank.com/certificates/579ba2349a33",
-      "579BA2349A33",
-      "icon-hackerrank.svg",
-      false),
     new ResumeItem(
       "Fondamenti di Marketing Digitale",
       "Google Digital Technologies",
