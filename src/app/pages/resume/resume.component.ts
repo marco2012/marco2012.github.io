@@ -174,6 +174,22 @@ export class ResumeComponent implements OnInit, AfterViewInit, OnDestroy {
   ];
   resumeItems: ResumeItem[] = [
     new ResumeItem(
+      "Microsoft Certified: Azure fundamentals",
+      "Microsoft",
+      "Mar 2021",
+      "https://www.youracclaim.com/badges/5e71870d-f59d-4b04-be1e-4512ec12ed83?source=linked_in_profile",
+      "",
+      "icon-microsoft.svg",
+      false),
+    new ResumeItem(
+      "Google Campaign Manager",
+      "Google",
+      "Sep 2021",
+      "https://skillshop.exceedlms.com/student/award/Wd7gcCd65frQwJwXi1DHAWAa",
+      "89620252",
+      "icon-google.svg",
+      false),
+    new ResumeItem(
       "Google Analytics",
       "Google",
       "Sep 2021",
@@ -182,12 +198,12 @@ export class ResumeComponent implements OnInit, AfterViewInit, OnDestroy {
       "icon-google.svg",
       false),
     new ResumeItem(
-      "Microsoft Certified: Azure fundamentals",
-      "Microsoft",
-      "Mar 2021",
-      "https://www.youracclaim.com/badges/5e71870d-f59d-4b04-be1e-4512ec12ed83?source=linked_in_profile",
-      "",
-      "icon-microsoft.svg",
+      "Fondamenti di Marketing Digitale",
+      "Google Digital Technologies",
+      "Jan 2020",
+      "/assets/documents/certificates/fundamentals_of_digital_marketing.pdf",
+      "XG7 Q85 4C7",
+      "icon-google_light.svg",
       false),
     new ResumeItem(
       "REST API",
@@ -229,14 +245,6 @@ export class ResumeComponent implements OnInit, AfterViewInit, OnDestroy {
       "",
       "icon-linkedin_light.svg",
       true),
-    new ResumeItem(
-      "Fondamenti di Marketing Digitale",
-      "Google Digital Technologies",
-      "Jan 2020",
-      "/assets/documents/certificates/fundamentals_of_digital_marketing.pdf",
-      "XG7 Q85 4C7",
-      "icon-google_light.svg",
-      false),
     new ResumeItem(
       "EF Standard English Test – CEFR Level C2",
       "EF Standard English Test",
