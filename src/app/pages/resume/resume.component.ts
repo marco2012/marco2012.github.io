@@ -173,6 +173,14 @@ export class ResumeComponent implements OnInit, AfterViewInit, OnDestroy {
 
   ];
   resumeItems: ResumeItem[] = [
+    // new ResumeItem(
+    //   "AWS Certified: Cloud Practitioner",
+    //   "Microsoft",
+    //   "Sep 2021",
+    //   "",
+    //   "",
+    //   "icon-amazon.svg",
+    //   false),
     new ResumeItem(
       "Microsoft Certified: Azure fundamentals",
       "Microsoft",
@@ -204,6 +212,14 @@ export class ResumeComponent implements OnInit, AfterViewInit, OnDestroy {
       "/assets/documents/certificates/fundamentals_of_digital_marketing.pdf",
       "XG7 Q85 4C7",
       "icon-google_light.svg",
+      false),
+    new ResumeItem(
+      "Cambridge C1 Advanced – CEFR Level C1",
+      "Cambridge School of English",
+      "Jun 2015",
+      "",
+      "",
+      "icon-language_light.svg",
       false),
     new ResumeItem(
       "REST API",
@@ -251,14 +267,6 @@ export class ResumeComponent implements OnInit, AfterViewInit, OnDestroy {
       "Jun 2019",
       "https://www.efset.org/cert/hrVnQr",
       "hrVnQr",
-      "icon-language_light.svg",
-      false),
-    new ResumeItem(
-      "Cambridge C1 Advanced – CEFR Level C1",
-      "Cambridge School of English",
-      "Jun 2015",
-      "",
-      "",
       "icon-language_light.svg",
       false),
     // new ResumeItem(
