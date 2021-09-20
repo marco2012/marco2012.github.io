@@ -26,14 +26,14 @@ import {DropdownComponent} from './components/dropdown/dropdown.component';
 import {ConnectionsComponent} from './components/connections/connections.component';
 
 import { MatGridListModule } from '@angular/material';
+import { CVOpenerComponent } from './components/cvopener/cvopener.component';
 
 const routes: Routes = [
   {path: '', component: HomeComponent},
   {path: 'resume', component: ResumeComponent},
   {path: 'curriculum', redirectTo: 'resume'},
-  {path: 'cv', redirectTo: 'resume'},
-  {path: 'CV', redirectTo: 'resume'},
   {path: 'profile', redirectTo: 'resume'},
+  {path: 'cv', component: CVOpenerComponent},
   {path: 'portfolio', component: PortfolioComponent, resolve: [ProjectsResolverService], data: {preload: true}},
   {path: 'projects', redirectTo: 'portfolio'},
   {path: '**', redirectTo: '', pathMatch: 'full'},
@@ -54,6 +54,7 @@ const routes: Routes = [
     ResumeRowComponent,
     DropdownComponent,
     ConnectionsComponent,
+    CVOpenerComponent,
   ],
   imports: [
     BrowserModule,
