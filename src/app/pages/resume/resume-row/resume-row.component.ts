@@ -112,10 +112,10 @@ export class ResumeRowComponent implements OnInit {
 
     let ss = this.year.split(" - ")[0];
     let ee = this.year.split(" - ")[1];
+
     let d1 = this.dateFromStr(ss);
     let d2 =
       ee === "present" || ee === "now" ? new Date() : this.dateFromStr(ee);
-    console.log(ss, ee, d1, d2);
 
     let m = this.monthDiff(d1, d2);
     if (m != null && !isNaN(m) && m < 12) {
