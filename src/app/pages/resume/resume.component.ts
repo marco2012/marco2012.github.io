@@ -119,11 +119,11 @@ export class ResumeComponent implements OnInit, AfterViewInit, OnDestroy {
     //   "icon-microsoft.svg"
     // ),
     new SkillItem(
-      "Full Stack development, HTML, CSS, jQuery, REST, SOAP APIs, Swagger documentation, Postman",
+      "Full Stack development, HTML, CSS, jQuery, Bootstrap, REST, SOAP APIs, Swagger docs, Postman",
       "icon-web.svg"
     ),
     new SkillItem(
-      "Microsoft SQL Server, MySQL, PostgreSQL, MongoDB, Firebase",
+      "Microsoft SQL Server, MySQL, PostgreSQL, MongoDB, Firebase Realtime Database",
       "icon-db.svg"
     ),
     // new SkillItem(
@@ -131,7 +131,7 @@ export class ResumeComponent implements OnInit, AfterViewInit, OnDestroy {
     //   "icon-app_symbol.svg"
     // ),
     new SkillItem(
-      "Agile (Scrum) methodologies, Git, DevOps, CI/CD, Microservices, Object-Oriented Programming",
+      "Agile methodologies, Git, Jira, DevOps, CI/CD, Microservices, Object-Oriented Programming",
       "icon-circular_arrows.svg"
     ),
     // new SkillItem(
@@ -167,7 +167,7 @@ export class ResumeComponent implements OnInit, AfterViewInit, OnDestroy {
     //   "icon-intellij_idea.svg"
     // ),
     new SkillItem(
-      "Cloud computing (Microsoft Azure), Virtual Machines, Docker, Maven, Firebase, Pandas, LaTeX",
+      "Cloud computing (Microsoft Azure, Amazon Web Services), Virtual Machines, Docker, Maven, Firebase, Pandas, Numpy, LaTeX",
       "icon-more.svg"
     ),
 
