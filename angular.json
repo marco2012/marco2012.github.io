@@ -36,8 +36,6 @@
             ],
             "scripts": [],
             "es5BrowserSupport": true,
-            "branch": "master",
-            "cname": "marlup.me"
           },
           "configurations": {
             "production": {
