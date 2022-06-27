@@ -29,12 +29,12 @@ export class CardComponent implements OnInit {
   viewProject() {
     // @ts-ignore
     window.dataLayer.push({
-      'event': 'click',
+      'event': 'view_project',
       'event_category': 'click',
       'event_action': 'view project',
       'event_label': this.project.title
     });
-    window.location.href = this.project.link;
+    window.open(this.project.link, '_blank').focus();
   }
 
 }
