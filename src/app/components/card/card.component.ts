@@ -26,4 +26,15 @@ export class CardComponent implements OnInit {
     this.date = new Date(+this.project.date * 1000)
   }
 
+  viewProject() {
+    // @ts-ignore
+    window.dataLayer.push({
+      'event': 'click',
+      'event_category': 'click',
+      'event_action': 'view project',
+      'event_label': this.project.title
+    });
+    window.location.href = this.project.link;
+  }
+
 }
