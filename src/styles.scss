@@ -112,6 +112,19 @@
 //}
 //
 
+@font-face {
+  font-family: "iAWriterDuoS";
+  src: url(assets/font/iAWriterDuo/iAWriterDuoS-Regular.woff) format("woff");
+}
+@font-face {
+  font-family: "iAWriterDuoS";
+  src: url(assets/font/iAWriterDuo/iAWriterDuoS-Bold.woff) format("woff");
+}
+@font-face {
+  font-family: "iAWriterDuoS";
+  src: url(assets/font/iAWriterDuo/iAWriterDuoS-Italic.woff) format("woff");
+}
+
 body {
   background: white;
 }
@@ -145,3 +158,4 @@ body.portfolio {
   justify-content: flex-start !important ;
   align-items: flex-start !important;
 }
+

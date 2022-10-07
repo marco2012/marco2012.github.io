@@ -126,30 +126,30 @@ export class ResumeComponent implements OnInit, AfterViewInit, OnDestroy {
     //   "icon-amazon.svg",
     //   false),
     new ResumeItem(
-      "Microsoft Certified: Azure fundamentals",
+      "Google Ads Search & Display",
+      "Google",
+      "Oct 2022",
+      "https://skillshop.exceedlms.com/student/award/nx3Df7Dwk9XJ8Sov2WH61fLi",
+      "126671876",
+      "icon-google.svg",
+      false
+    ),
+    new ResumeItem(
+      "Google Analytics 4",
+      "Google",
+      "Sep 2022",
+      "https://skillshop.exceedlms.com/student/award/tedgoZGw53r8vwxUeGfnJfjY",
+      "126671876",
+      "icon-google.svg",
+      false
+    ),
+    new ResumeItem(
+      "Microsoft Certified: Azure fundamentals (AZ-900)",
       "Microsoft",
       "Mar 2021",
       "https://www.youracclaim.com/badges/5e71870d-f59d-4b04-be1e-4512ec12ed83?source=linked_in_profile",
       "",
       "icon-microsoft.svg",
-      false
-    ),
-    new ResumeItem(
-      "Google Campaign Manager",
-      "Google",
-      "Sep 2021",
-      "https://skillshop.exceedlms.com/student/award/Wd7gcCd65frQwJwXi1DHAWAa",
-      "89620252",
-      "icon-google.svg",
-      false
-    ),
-    new ResumeItem(
-      "Google Analytics",
-      "Google",
-      "Sep 2021",
-      "https://skillshop.exceedlms.com/student/award/mj3Yw4XsxVJ3oD1ybHzwdCMm",
-      "89604662",
-      "icon-google.svg",
       false
     ),
     new ResumeItem(
@@ -159,17 +159,17 @@ export class ResumeComponent implements OnInit, AfterViewInit, OnDestroy {
       "/assets/documents/certificates/fundamentals_of_digital_marketing.pdf",
       "XG7 Q85 4C7",
       "icon-google_light.svg",
-      false
+      true
     ),
-    new ResumeItem(
-      "EF Standard English Test – CEFR Level C2",
-      "EF Standard English Test",
-      "Jun 2019",
-      "https://www.efset.org/cert/hrVnQr",
-      "hrVnQr",
-      "icon-language_light.svg",
-      false
-    ),
+    // new ResumeItem(
+    //   "EF Standard English Test – CEFR Level C2",
+    //   "EF Standard English Test",
+    //   "Jun 2019",
+    //   "https://www.efset.org/cert/hrVnQr",
+    //   "hrVnQr",
+    //   "icon-language_light.svg",
+    //   false
+    // ),
     new ResumeItem(
       "Cambridge C1 Advanced – CEFR Level C1",
       "Cambridge School of English",
@@ -177,7 +177,7 @@ export class ResumeComponent implements OnInit, AfterViewInit, OnDestroy {
       "",
       "",
       "icon-language_light.svg",
-      true
+      false
     ),
     new ResumeItem(
       "REST API",
