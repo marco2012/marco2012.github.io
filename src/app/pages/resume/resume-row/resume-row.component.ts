@@ -1,4 +1,5 @@
 import { Component, Input, OnInit } from "@angular/core";
+import { intervalToDuration, formatDuration } from "date-fns";
 
 @Component({
   selector: "app-resume-row",
@@ -32,17 +33,17 @@ export class ResumeRowComponent implements OnInit {
     }
   }
 
-  private monthDiff(d1, d2) {
-    var months = (d2.getFullYear() - d1.getFullYear()) * 12;
-    months -= d1.getMonth();
-    months += d2.getMonth();
-    return months <= 0 ? 0 : months;
-  }
+  // private monthDiff(d1, d2) {
+  //   var months = (d2.getFullYear() - d1.getFullYear()) * 12;
+  //   months -= d1.getMonth();
+  //   months += d2.getMonth();
+  //   return months <= 0 ? 0 : months;
+  // }
 
-  private getYears(d1, d2) {
-    let y = d2.getFullYear() - d1.getFullYear();
-    return y;
-  }
+  // private getYears(d1, d2) {
+  //   let y = d2.getFullYear() - d1.getFullYear();
+  //   return y;
+  // }
 
   private monthToNumber(m) {
     let month = m.split(" ")[0];
@@ -111,20 +112,35 @@ export class ResumeRowComponent implements OnInit {
     if (this.year == null) return;
 
     let ss = this.year.split(" - ")[0];
-    let ee = this.year.split(" - ")[1];
+    let ee = this.year.split(" - ")[1].trim();
 
     let d1 = this.dateFromStr(ss);
     let d2 =
       ee === "present" || ee === "now" ? new Date() : this.dateFromStr(ee);
 
-    let m = this.monthDiff(d1, d2);
-    if (m != null && !isNaN(m) && m < 12) {
-      return ` (${m + 1} ${m == 0 ? "month" : "months"})`;
-    } else {
-      let y = this.getYears(d1, d2);
-      if (y != null && !isNaN(y)) {
-        return ` (${y} ${y == 1 ? "year" : "years"})`;
-      }
-    }
+    //   let m = this.monthDiff(d1, d2);
+    //   if (m != null && !isNaN(m) && m < 12) {
+    //     return ` (${m + 1} ${m == 0 ? "month" : "months"})`;
+    //   } else {
+    //     let y = this.getYears(d1, d2);
+    //     if (y != null && !isNaN(y)) {
+    //       return ` (${y} ${y == 1 ? "year" : "years"})`;
+    //     }
+    //   }
+
+    // https://stackoverflow.com/a/73010767
+    let totalDuration = intervalToDuration({
+      start: d1,
+      end: d2,
+    });
+
+    let textDuration =
+      "(" +
+      formatDuration(totalDuration, {
+        format: ["years", "months"],
+        delimiter: ", ",
+      }) +
+      ")";
+    return textDuration;
   }
 }

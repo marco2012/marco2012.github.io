@@ -190,11 +190,22 @@
     {
       "title": "Dana's Club",
       "description": "Website for Dana's Club, dance school in Rome.",
-      "link": "https://marco2012.github.com/danasclub/",
+      "link": "https://danasclub.it?utm_source=marlup&utm_medium=social&utm_campaign=profile",
+      "language": "HTML/CSS/JavaScript",
+      "date": "1664648207",
+      "image": "danas_club.jpg",
+      "skills": "HTML, JavaScript",
+      "category": "Web",
+      "id": 18
+    },
+    {
+      "title": "Dana's Club Old",
+      "description": "Website for Dana's Club, dance school in Rome.",
+      "link": "https://danasclub.it/old",
       "language": "HTML/CSS/JavaScript",
       "date": "1491072151",
       "image": "danas_club.jpg",
-      "skills": "",
+      "skills": "HTML, JavaScript",
       "category": "Web",
       "id": 18
     },
@@ -212,7 +223,7 @@
     {
       "title": "Icaro Onlus",
       "description": "Website for Icaro Onlus, enviromental agency.",
-      "link": "https://icaro-onlus.net",
+      "link": "https://icaro-onlus.wixsite.com/home",
       "language": "HTML/CSS/JavaScript",
       "date": "1483296151",
       "image": "icaro-onlus.jpg",
@@ -409,10 +420,10 @@
     },
     {
       "title": "SmartRPA",
-      "description": "Tool to automatically develop software robots directly from the user’s observed behavior, without the manual intervention of human users. Includes cross-platform action logger, high-level event abstraction, generation of abstract process diagrams, selection of the most frequent user behaviour, ability to change editable fields, generation of executable RPA script.",
+      "description": "Robotic Process Automation tool (Python, JavaScript) to record user actions into event logs and automatically generate executable RPA scripts for software robots",
       "link": "https://github.com/bpm-diag/smartRPA",
       "language": "Python",
-      "date": "1585699200",
+      "date": "1598984002",
       "image": "computerlogger.png",
       "skills": "Business Process Management, Robotic Process Automation, Process Mining",
       "category": "Python",

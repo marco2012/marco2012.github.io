@@ -16,9 +16,9 @@ import { ActivatedRoute } from "@angular/router";
 export class ResumeComponent implements OnInit, AfterViewInit, OnDestroy {
   programmingLanguages: SkillItem[] = [
     new SkillItem("Python", "icon-python.svg"),
-    new SkillItem("C#", "icon-c.svg"),
     new SkillItem("JavaScript", "icon-javascript.svg"),
     new SkillItem("TypeScript", "icon-typescript.svg"),
+    new SkillItem("C#", "icon-c.svg"),
     new SkillItem("Java", "icon-java.svg"),
     new SkillItem("SQL", "icon-mysql.svg"),
     new SkillItem("Swift", "icon-swift.svg"),
@@ -64,11 +64,15 @@ export class ResumeComponent implements OnInit, AfterViewInit, OnDestroy {
     //   "icon-microsoft.svg"
     // ),
     new SkillItem(
-      "Full Stack development, HTML, CSS, jQuery, Bootstrap, REST, SOAP APIs, Swagger docs, Postman",
+      "Adobe Experience Cloud (Analytics, Target, Launch, AEP Web SDK), Google Marketing Platform (UA, GA4, GA360, Google Tag Manager, Data Studio, BigQuery), Tealium iQ, Salesforce Marketing Cloud Personalization, Jupyter",
+      "icon-analytics.png"
+    ),
+    new SkillItem(
+      "Full Stack development, HTML, CSS, jQuery, Bootstrap, REST APIs, Swagger docs, Postman",
       "icon-web.svg"
     ),
     new SkillItem(
-      "Microsoft SQL Server, MySQL, PostgreSQL, MongoDB, Firebase Realtime Database",
+      "Microsoft SQL Server, MySQL, PostgreSQL, Firebase Realtime Database",
       "icon-db.svg"
     ),
     // new SkillItem(
@@ -100,10 +104,6 @@ export class ResumeComponent implements OnInit, AfterViewInit, OnDestroy {
     //   "icon-ethernet.svg"
     // ),
     new SkillItem(
-      "Adobe Experience Cloud, Google Marketing Platform, Tealium",
-      "icon-analytics.png"
-    ),
-    new SkillItem(
       "Business Process Management, Robotic Process Automation, Process Mining, Process Discovery",
       "icon-robot.svg"
     ),
@@ -125,6 +125,15 @@ export class ResumeComponent implements OnInit, AfterViewInit, OnDestroy {
     //   "",
     //   "icon-amazon.svg",
     //   false),
+    new ResumeItem(
+      "Adobe Certified: Analytics Developer Expert",
+      "Adobe",
+      "Oct 2022",
+      "https://www.credly.com/badges/f9b11668-0405-4a79-9e45-b57cdd1deba4/public_url",
+      "7KK73MC12JF41K58",
+      "icon-adobe.svg",
+      false
+    ),
     new ResumeItem(
       "Google Ads Search & Display",
       "Google",
@@ -153,7 +162,16 @@ export class ResumeComponent implements OnInit, AfterViewInit, OnDestroy {
       false
     ),
     new ResumeItem(
-      "Fondamenti di Marketing Digitale",
+      "EF Standard English Test – CEFR Level C2",
+      "EF Standard English Test",
+      "Jun 2019",
+      "https://www.efset.org/cert/hrVnQr",
+      "hrVnQr",
+      "icon-language_light.svg",
+      true
+    ),
+    new ResumeItem(
+      "Fundamentals of Digital Markets",
       "Google Digital Technologies",
       "Jan 2020",
       "/assets/documents/certificates/fundamentals_of_digital_marketing.pdf",
@@ -161,15 +179,6 @@ export class ResumeComponent implements OnInit, AfterViewInit, OnDestroy {
       "icon-google_light.svg",
       true
     ),
-    // new ResumeItem(
-    //   "EF Standard English Test – CEFR Level C2",
-    //   "EF Standard English Test",
-    //   "Jun 2019",
-    //   "https://www.efset.org/cert/hrVnQr",
-    //   "hrVnQr",
-    //   "icon-language_light.svg",
-    //   false
-    // ),
     new ResumeItem(
       "Cambridge C1 Advanced – CEFR Level C1",
       "Cambridge School of English",
@@ -247,6 +256,24 @@ export class ResumeComponent implements OnInit, AfterViewInit, OnDestroy {
       "",
       "icon-language_light.svg",
       true
+    ),
+  ];
+  platformItems: SkillItem[] = [
+    new SkillItem(
+      "Adobe Analytics",
+      "icon-adobe.svg"
+    ),
+    new SkillItem(
+      "Google Analytics",
+      "icon-google-analytics.svg"
+    ),
+    new SkillItem(
+      "Tealium iQ",
+      "icon-analytics.png"
+    ),
+    new SkillItem(
+      "Salesforce Marketing Cloud",
+      "icon-analytics.png"
     ),
   ];
 

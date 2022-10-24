@@ -63,7 +63,7 @@ const routes: Routes = [
     HttpClientModule,
     BrowserAnimationsModule,
     NgxSpinnerModule,
-    MatGridListModule
+    MatGridListModule,
   ],
   exports: [RouterModule],
   providers: [

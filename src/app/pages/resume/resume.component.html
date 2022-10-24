@@ -45,7 +45,7 @@
 
   <!-- PROFESSIONAL EXPERIENCE -->
   <!--  <hr class="my-8" style="border-top: 1px solid #F1F1F1;">-->
-  <div class="p-5 resume-card">
+  <div class="p-5 resume-card" id="experience">
     <div class="p-6">
       <div class="mb-4 flex flex-row items-center">
         <img
@@ -59,13 +59,13 @@
       <app-resume-row
         title="Deloitte"
         subtitle="Digital Marketing Analyst"
-        year="Aug 2021 - present"
+        year="Aug 2021 - present "
         subtitle2="Roma, Italy"
-        description="• Collected and analyzed customer's tracking requirements; identified KPIs to measure performance of digital marketing campaigns; produced documentation to implement analytics tracking
-        • Implemented and tested Web Analytics tracking in websites and mobile apps using Google Marketing Platform (UA, GA4, Google Tag Manager), Adobe Experience Platform (Launch, AEP Web SDK), Tealium iQ
+        description="• Collected and analyzed requirements from stakeholders; produced deliverables; identified KPIs to optimize the performance of digital marketing campaigns across multiple channels
+        • Implemented and tested analytics tracking in web and mobile properties using Google Marketing Platform (UA, GA4, Google Tag Manager), Adobe Experience Platform (Launch, AEP Web SDK), Tealium iQ
         • Developed data visualization dashboards in Adobe Analytics, Google Analytics, Data Studio
         • Custom code development in JavaScript, HTML, CSS. Data Analysis in SQL, BigQuery, Python
-        • Worked in multiple industries including Food & Drink, Transport, Fashion, Enterteinment, Retail"
+        • Worked across multiple industries including Food & Drink, Travel, Fashion, Entertainment, Retail"
         icon="icon-deloitte.png"
       ></app-resume-row>
       <hr class="my-2" />
@@ -93,8 +93,9 @@
 • Presented work at 18th Int. Conference on Business Process Management (RPA Forum) in Sevilla, Spain"
         icon="icon-sapienza.svg"
       ></app-resume-row>
-      <hr class="my-2" />
-      <app-resume-row
+      <details>
+        <summary class="outline-none cursor-pointer py-2">Show all</summary>
+        <app-resume-row
         title="DIAG - Sapienza University of Rome"
         subtitle="Segreteria Didattica"
         subtitle2="Roma, Italy"
@@ -122,6 +123,7 @@
         description="• Worked as steward for different companies in many international congresses."
         icon="icon-logilux.png"
       ></app-resume-row> -->
+      </details>
     </div>
   </div>
 
@@ -261,7 +263,7 @@
       </div>-->
 
       <div class="py-4 resume-block">
-        <p class="text-lg lg:text-xl pb-4 font-semibold">Languages</p>
+        <p class="text-lg lg:text-xl pb-4 font-semibold">Programming Languages</p>
 
         <mat-grid-list cols="2" rowHeight="40px">
           <mat-grid-tile *ngFor="let language of programmingLanguages">
@@ -288,6 +290,23 @@
               alt=""
             />
             <p class="text-md lg:text-lg">{{ framework.title }}</p>
+          </mat-grid-tile>
+        </mat-grid-list>
+      </div>
+
+      <hr class="my-4" />
+
+      <div class="py-4 resume-block">
+        <p class="text-lg lg:text-xl pb-4 font-semibold">Platforms</p>
+
+        <mat-grid-list cols="2" rowHeight="40px">
+          <mat-grid-tile *ngFor="let platform of platformItems">
+            <img
+              class="opacity-icon mr-3 custom-programming-list-img"
+              src="/assets/icons/{{ platform.icon }}"
+              alt=""
+            />
+            <p class="text-md lg:text-lg">{{ platform.title }}</p>
           </mat-grid-tile>
         </mat-grid-list>
       </div>
@@ -366,11 +385,14 @@
           icon="icon-italy.svg"
           class="pr-2 md:pr-0"
         ></app-resume-row>
-        <app-resume-row
+        <a href="https://www.efset.org/cert/hrVnQr" target="_blank">
+          <app-resume-row
           title="English"
           subtitle="C2 - Proficient"
           icon="icon-usa.svg"
         ></app-resume-row>
+        </a>
+        
         <!-- </div> -->
         <!-- <div class="p-1">
           <app-resume-row
