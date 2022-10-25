@@ -472,6 +472,17 @@
       "skills": "React",
       "category": "Web",
       "id": 42
+    },
+    {
+      "title": "EnergyCalc",
+      "description": "Web app to calculate the cost of energy",
+      "link": "https://marco2012.github.io/energyCalcWeb",
+      "language": "HTML/CSS/JavaScript",
+      "date": "1666679589",
+      "image": "EnergyCalc.png",
+      "skills": "HTML, JavaScript",
+      "category": "Web",
+      "id": 43
     }
   ]
 }
