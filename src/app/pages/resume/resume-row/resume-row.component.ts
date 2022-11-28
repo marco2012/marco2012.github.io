@@ -115,18 +115,7 @@ export class ResumeRowComponent implements OnInit {
     let ee = this.year.split(" - ")[1].trim();
 
     let d1 = this.dateFromStr(ss);
-    let d2 =
-      ee === "present" || ee === "now" ? new Date() : this.dateFromStr(ee);
-
-    //   let m = this.monthDiff(d1, d2);
-    //   if (m != null && !isNaN(m) && m < 12) {
-    //     return ` (${m + 1} ${m == 0 ? "month" : "months"})`;
-    //   } else {
-    //     let y = this.getYears(d1, d2);
-    //     if (y != null && !isNaN(y)) {
-    //       return ` (${y} ${y == 1 ? "year" : "years"})`;
-    //     }
-    //   }
+    let d2 = ee === "present" || ee === "now" ? new Date() : this.dateFromStr(ee);
 
     // https://stackoverflow.com/a/73010767
     let totalDuration = intervalToDuration({
@@ -134,13 +123,12 @@ export class ResumeRowComponent implements OnInit {
       end: d2,
     });
 
-    let textDuration =
-      "(" +
-      formatDuration(totalDuration, {
-        format: ["years", "months"],
-        delimiter: ", ",
-      }) +
-      ")";
-    return textDuration;
+    let totalDurationFormatted = formatDuration(totalDuration, {
+      format: ["years", "months"],
+      delimiter: ", ",
+    });
+
+    if (totalDurationFormatted === '') return '';
+    else return "(" + totalDurationFormatted + ")";
   }
 }
