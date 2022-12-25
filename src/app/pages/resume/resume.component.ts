@@ -64,7 +64,7 @@ export class ResumeComponent implements OnInit, AfterViewInit, OnDestroy {
     //   "icon-microsoft.svg"
     // ),
     new SkillItem(
-      "Adobe Experience Cloud (Analytics, Target, Launch, AEP Web SDK), Google Marketing Platform (UA, GA4, GA360, Google Tag Manager, Data Studio, BigQuery), Tealium iQ, Salesforce Marketing Cloud Personalization, Jupyter",
+      "Adobe Experience Cloud (Analytics, Target, Launch, AEP Web SDK), Google Marketing Platform (UA, GA4, GA360, Google Tag Manager, Data Studio, BigQuery), Tealium iQ, Jupyter",
       "icon-analytics.png"
     ),
     new SkillItem(

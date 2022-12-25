@@ -27,15 +27,18 @@ import {ConnectionsComponent} from './components/connections/connections.compone
 
 import { MatGridListModule } from '@angular/material';
 import { CVOpenerComponent } from './components/cvopener/cvopener.component';
+import { CookiePolicyComponent } from './pages/cookie-policy/cookie-policy.component';
 
 const routes: Routes = [
   {path: '', component: HomeComponent},
   {path: 'resume', component: ResumeComponent},
   {path: 'curriculum', redirectTo: 'resume'},
+  {path: 'cv', redirectTo: 'resume'},
   {path: 'profile', redirectTo: 'resume'},
-  {path: 'cv', component: CVOpenerComponent},
+  // {path: 'cv', component: CVOpenerComponent},
   {path: 'portfolio', component: PortfolioComponent, resolve: [ProjectsResolverService], data: {preload: true}},
   {path: 'projects', redirectTo: 'portfolio'},
+  {path: 'cookie-policy', component: CookiePolicyComponent},
   {path: '**', redirectTo: '', pathMatch: 'full'},
 ];
 
@@ -55,6 +58,7 @@ const routes: Routes = [
     DropdownComponent,
     ConnectionsComponent,
     CVOpenerComponent,
+    CookiePolicyComponent,
   ],
   imports: [
     BrowserModule,
