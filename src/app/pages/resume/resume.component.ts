@@ -138,7 +138,7 @@ export class ResumeComponent implements OnInit, AfterViewInit, OnDestroy {
       "Google Ads Search & Display",
       "Google",
       "Oct 2022",
-      "https://skillshop.exceedlms.com/student/award/nx3Df7Dwk9XJ8Sov2WH61fLi",
+      "https://skillshop.credential.net/50d0706f-4ebc-4a27-9d59-cb92819a6874",
       "126671876",
       "icon-google.svg",
       false
@@ -147,7 +147,7 @@ export class ResumeComponent implements OnInit, AfterViewInit, OnDestroy {
       "Google Analytics 4",
       "Google",
       "Sep 2022",
-      "https://skillshop.exceedlms.com/student/award/tedgoZGw53r8vwxUeGfnJfjY",
+      "https://skillshop.credential.net/c88353d1-7e05-4990-82d0-55a65cbf34aa",
       "126671876",
       "icon-google.svg",
       false
@@ -162,7 +162,7 @@ export class ResumeComponent implements OnInit, AfterViewInit, OnDestroy {
       false
     ),
     new ResumeItem(
-      "EF Standard English Test – CEFR Level C2",
+      "EF Standard English Test - CEFR Level C2",
       "EF Standard English Test",
       "Jun 2019",
       "https://www.efset.org/cert/hrVnQr",

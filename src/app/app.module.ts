@@ -28,6 +28,7 @@ import {ConnectionsComponent} from './components/connections/connections.compone
 import { MatGridListModule } from '@angular/material';
 import { CVOpenerComponent } from './components/cvopener/cvopener.component';
 import { CookiePolicyComponent } from './pages/cookie-policy/cookie-policy.component';
+import { LinkedinRedirectComponent } from './pages/linkedin-redirect/linkedin-redirect.component';
 
 const routes: Routes = [
   {path: '', component: HomeComponent},
@@ -39,6 +40,7 @@ const routes: Routes = [
   {path: 'portfolio', component: PortfolioComponent, resolve: [ProjectsResolverService], data: {preload: true}},
   {path: 'projects', redirectTo: 'portfolio'},
   {path: 'cookie-policy', component: CookiePolicyComponent},
+  {path: 'linkedin', component: LinkedinRedirectComponent},
   {path: '**', redirectTo: '', pathMatch: 'full'},
 ];
 
@@ -59,6 +61,7 @@ const routes: Routes = [
     ConnectionsComponent,
     CVOpenerComponent,
     CookiePolicyComponent,
+    LinkedinRedirectComponent,
   ],
   imports: [
     BrowserModule,
