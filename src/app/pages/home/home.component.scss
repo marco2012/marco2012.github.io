@@ -85,3 +85,12 @@
 .grow:hover {
   transform: scale(1.03);
 }
+
+@media (max-width: 768px) {
+  .flex {
+    display: block;
+  }
+  .card__btn {
+    margin-bottom: 10px;
+  }
+}
