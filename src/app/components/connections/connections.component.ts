@@ -15,4 +15,13 @@ export class ConnectionsComponent implements OnInit {
   ngOnInit() {
   }
 
+  clickConnection(name: string, url: string) {
+    // @ts-ignore
+    window.dataLayer.push({
+      'event': 'click_'+name,
+      'detail': 'connections button',
+    });
+    window.open(url, '_blank').focus();
+  }
+
 }

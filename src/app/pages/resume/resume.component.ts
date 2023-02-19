@@ -30,7 +30,7 @@ export class ResumeComponent implements OnInit, AfterViewInit, OnDestroy {
   ];
   frameworks: SkillItem[] = [
     new SkillItem("ASP.NET Core", "icon-asp.svg"),
-    new SkillItem("EF Core", "icon-asp.svg"),
+    new SkillItem("Entity Framework Core", "icon-asp.svg"),
     new SkillItem("Angular", "icon-angular.svg"),
     new SkillItem("Node.js", "icon-node.svg"),
     new SkillItem("Spring", "icon-spring.svg"),
@@ -64,11 +64,11 @@ export class ResumeComponent implements OnInit, AfterViewInit, OnDestroy {
     //   "icon-microsoft.svg"
     // ),
     new SkillItem(
-      "Adobe Experience Cloud (Analytics, Target, Launch, AEP Web SDK), Google Marketing Platform (UA, GA4, GA360, Google Tag Manager, Data Studio, BigQuery), Tealium iQ, Jupyter",
+      "Adobe Analytics, Adobe Target, Adobe Launch, Adobe Experience Platform, Customer Journey Analytics,Tealium iQ, Google Analytics, Google Tag Manager, Data Studio, BigQuery, Google Ads",
       "icon-analytics.png"
     ),
     new SkillItem(
-      "Full Stack development, HTML, CSS, jQuery, Bootstrap, REST APIs, Swagger docs, Postman",
+      "HTML, CSS, jQuery, Bootstrap, REST APIs, Swagger docs, Postman, WordPress",
       "icon-web.svg"
     ),
     new SkillItem(

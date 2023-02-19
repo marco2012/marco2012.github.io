@@ -30,9 +30,7 @@ export class CardComponent implements OnInit {
     // @ts-ignore
     window.dataLayer.push({
       'event': 'view_project',
-      'event_category': 'click',
-      'event_action': 'view project',
-      'event_label': this.project.title
+      'detail': this.project.title
     });
     window.open(this.project.link, '_blank').focus();
   }
