@@ -17,23 +17,24 @@ export class ResumeComponent implements OnInit, AfterViewInit, OnDestroy {
   programmingLanguages: SkillItem[] = [
     new SkillItem("Python", "icon-python.svg"),
     new SkillItem("JavaScript", "icon-javascript.svg"),
-    new SkillItem("TypeScript", "icon-typescript.svg"),
+    // new SkillItem("TypeScript", "icon-typescript.svg"),
     new SkillItem("C#", "icon-c.svg"),
     new SkillItem("Java", "icon-java.svg"),
     new SkillItem("SQL", "icon-mysql.svg"),
-    new SkillItem("Swift", "icon-swift.svg"),
+    // new SkillItem("Swift", "icon-swift.svg"),
     new SkillItem("C", "icon-c.svg"),
-    new SkillItem("Scala", "icon-scala.svg"),
-    new SkillItem("Ruby", "icon-ruby.svg"),
-    new SkillItem("Assembly", "icon-assembly.svg"),
-    new SkillItem("AppleScript", "icon-apple.svg"),
+    // new SkillItem("Scala", "icon-scala.svg"),
+    // new SkillItem("Ruby", "icon-ruby.svg"),
+    // new SkillItem("Assembly", "icon-assembly.svg"),
+    // new SkillItem("AppleScript", "icon-apple.svg"),
   ];
   frameworks: SkillItem[] = [
     new SkillItem("ASP.NET Core", "icon-asp.svg"),
     new SkillItem("Entity Framework Core", "icon-asp.svg"),
     new SkillItem("Angular", "icon-angular.svg"),
     new SkillItem("Node.js", "icon-node.svg"),
-    new SkillItem("Spring", "icon-spring.svg"),
+    new SkillItem("Pandas", "icon-pandas.svg"),
+    // new SkillItem("Spring", "icon-spring.svg"),
     // new SkillItem(
     //   "Hibernate",
     //   "icon-ibernate.png"
@@ -43,12 +44,12 @@ export class ResumeComponent implements OnInit, AfterViewInit, OnDestroy {
     //   "icon-react.svg"
     // ),
     new SkillItem("Bootstrap", "icon-bootstrap.svg"),
-    new SkillItem("Flutter", "icon-flutter.svg"),
+    // new SkillItem("Flutter", "icon-flutter.svg"),
     // new SkillItem(
     //   "OpenCL",
     //   "icon-opencl.png"
     // ),
-    new SkillItem("Ruby on Rails", "icon-rubyonrails.svg"),
+    // new SkillItem("Ruby on Rails", "icon-rubyonrails.svg"),
     // new SkillItem(
     //   "Express",
     //   "icon-express.png"
@@ -117,14 +118,15 @@ export class ResumeComponent implements OnInit, AfterViewInit, OnDestroy {
     ),
   ];
   resumeItems: ResumeItem[] = [
-    // new ResumeItem(
-    //   "AWS Certified: Cloud Practitioner",
-    //   "Microsoft",
-    //   "Sep 2021",
-    //   "",
-    //   "",
-    //   "icon-amazon.svg",
-    //   false),
+    new ResumeItem(
+      "Adobe Certified: Real-Time CDP Expert",
+      "Adobe",
+      "July 2023",
+      "https://www.credly.com/badges/57b02656-76c8-44a5-8b68-78315d95f28b/linked_in_profile",
+      "",
+      "icon-adobe.svg",
+      false
+    ),
     new ResumeItem(
       "Adobe Certified: Analytics Developer Expert",
       "Adobe",
@@ -264,15 +266,19 @@ export class ResumeComponent implements OnInit, AfterViewInit, OnDestroy {
       "icon-adobe.svg"
     ),
     new SkillItem(
+      "Customer Journey Analytics",
+      "icon-adobe.svg"
+    ),
+    new SkillItem(
+      "Adobe Experience Platform",
+      "icon-adobe.svg"
+    ),
+    new SkillItem(
       "Google Analytics",
       "icon-google-analytics.svg"
     ),
     new SkillItem(
       "Tealium iQ",
-      "icon-analytics.png"
-    ),
-    new SkillItem(
-      "Salesforce Marketing Cloud",
       "icon-analytics.png"
     ),
   ];
