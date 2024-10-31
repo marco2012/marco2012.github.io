@@ -88,17 +88,17 @@ function App() {
             icon: "adobe.png",
         },
         {
-            title: "Customer Journey Analytics",
-            subtitle: "Adobe",
-            date: "2024",
-            link: "https://www.credly.com/badges/c0a83f2f-eeea-448d-9b69-bf9511a9e109/linked_in_profile",
-            icon: "adobe.png",
-        },
-        {
             title: "Adobe Analytics",
             subtitle: "Adobe",
             date: "2023",
             link: "https://www.credly.com/badges/30e8d9b1-f9e3-4d15-bef7-64f60ec55f11/linked_in_profile",
+            icon: "adobe.png",
+        },
+        {
+            title: "Customer Journey Analytics",
+            subtitle: "Adobe",
+            date: "2024",
+            link: "https://www.credly.com/badges/c0a83f2f-eeea-448d-9b69-bf9511a9e109/linked_in_profile",
             icon: "adobe.png",
         },
         {
@@ -180,6 +180,7 @@ function App() {
                 data={experienceData}
                 icon={<MdOutlineWorkOutline />}
                 title="Experience"
+                limit={4}
             />
 
             <Section

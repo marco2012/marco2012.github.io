@@ -11,11 +11,13 @@ function ProfileSection({ title, description, isDarkTheme }) {
                 animate={{ opacity: 1 }}
                 transition={{ duration: 0.8 }}
             >
-                <img
-                    src="logo_icon.webp"
+                <motion.img
+                    src={`${process.env.PUBLIC_URL}/logo_icon.webp`}
                     alt="Profile"
                     className="rounded-full w-20 h-20 mr-4"
                     style={{ filter: isDarkTheme ? "none" : "invert()" }}
+                    whileHover={{ rotate: 180, transition: { duration: 0.3 } }} // Rotate on mouse hover
+                    // whileTap={{ rotate: 180, transition: { duration: 0.3 } }} // Rotate on click
                 />
                 <div>
                     <h1 className="text-xl font-bold text-gray-800 dark:text-gray-200">
@@ -26,7 +28,7 @@ function ProfileSection({ title, description, isDarkTheme }) {
                             Digital Marketing Consultant
                         </span>{" "}
                         <span className="font-thin">at</span>{" "}
-                        <span className="font-medium">Deloitte</span>
+                        <span className="font-bold">Deloitte</span>
                     </p>
                 </div>
             </motion.div>
