@@ -5,8 +5,15 @@ export const ThemeContext = createContext();
 
 export const ThemeProvider = ({ children }) => {
     const [isDarkTheme, setIsDarkTheme] = useState(() => {
+        // Check the user's OS theme preference
         const savedTheme = localStorage.getItem("isDarkTheme");
-        return savedTheme ? JSON.parse(savedTheme) : true;
+        if (savedTheme !== null) {
+            return JSON.parse(savedTheme);
+        }
+        const prefersDarkScheme = window.matchMedia(
+            "(prefers-color-scheme: dark)"
+        ).matches;
+        return prefersDarkScheme;
     });
 
     const toggleTheme = () => {
