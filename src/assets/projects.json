@@ -1,12 +1,11 @@
-{
-  "projects": [
+[
     {
       "title": "Instabot Library",
       "description": "Fork of a popular Instagram API library with additional features implemented, including:<br>- Stories download and upload, <br>- Like users that viewed your story, <br>- Like users based on location feed, <br>- Approve or reject pending follow requests for private accounts.",
       "link": "https://github.com/marco2012/instabot",
       "language": "Python",
       "date": "1554123661",
-      "image": "instabot_library.png",
+      "image": "instabot_library.webp",
       "skills": "REST APIs",
       "category": "Python",
       "id": 1
@@ -17,7 +16,7 @@
       "link": "",
       "language": "Python",
       "date": "1554123661",
-      "image": "instabot_script.png",
+      "image": "instabot_script.webp",
       "skills": "REST APIs",
       "category": "Python",
       "id": 2
@@ -28,7 +27,7 @@
       "link": "https://github.com/marco2012/xerosploit",
       "language": "Python",
       "date": "1553795061",
-      "image": "xerosploit.png",
+      "image": "xerosploit.webp",
       "skills": "Bash",
       "category": "Python",
       "id": 3
@@ -39,7 +38,7 @@
       "link": "https://github.com/marco2012/InflationCalc#inflation-calculator",
       "language": "Swift",
       "date": "1546347661",
-      "image": "inflation_calculator.png",
+      "image": "inflation_calculator.webp",
       "skills": "REST APIs, iOS",
       "category": "App",
       "id": 4
@@ -50,7 +49,7 @@
       "link": "https://github.com/marco2012/BookShare",
       "language": "Swift",
       "date": "1546347661",
-      "image": "bookshare.jpg",
+      "image": "bookshare.webp",
       "skills": "REST APIs, iOS, Firebase, Database, Maps, AR",
       "category": "App",
       "id": 5
@@ -61,7 +60,7 @@
       "link": "https://github.com/marco2012/CurrencyConvert",
       "language": "Swift",
       "date": "1556041461",
-      "image": "currencyconvert.jpg",
+      "image": "currencyconvert.webp",
       "skills": "REST APIs, iOS",
       "category": "App",
       "id": 6
@@ -72,7 +71,7 @@
       "link": "https://github.com/marco2012/LedConvert",
       "language": "Swift",
       "date": "1552067061",
-      "image": "led_convert.png",
+      "image": "led_convert.webp",
       "skills": "iOS",
       "category": "App",
       "id": 7
@@ -83,7 +82,7 @@
       "link": "https://github.com/marco2012/Wallpapers",
       "language": "Swift",
       "date": "1537465461",
-      "image": "wallpapers.jpg",
+      "image": "wallpapers.webp",
       "skills": "REST APIs, iOS",
       "category": "App",
       "id": 8
@@ -94,7 +93,7 @@
       "link": "https://github.com/marco2012/Secrets",
       "language": "Swift",
       "date": "1537465461",
-      "image": "secrets.jpg",
+      "image": "secrets.webp",
       "skills": "REST APIs, iOS",
       "category": "App",
       "id": 9
@@ -105,7 +104,7 @@
       "link": "https://github.com/marco2012/EnergyCost",
       "language": "Swift",
       "date": "1545673461",
-      "image": "energy_cost.jpg",
+      "image": "energy_cost.webp",
       "skills": "iOS",
       "category": "App",
       "id": 10
@@ -116,7 +115,7 @@
       "link": "https://github.com/marco2012/ChuckNorrisFacts",
       "language": "Swift",
       "date": "1545673461",
-      "image": "chucknorrisfacts.jpg",
+      "image": "chucknorrisfacts.webp",
       "skills": "REST APIs, iOS",
       "category": "App",
       "id": 11
@@ -127,7 +126,7 @@
       "link": "https://github.com/marco2012/Puma",
       "language": "Objective C",
       "date": "1519839861",
-      "image": "puma.jpg",
+      "image": "puma.webp",
       "skills": "Jailbreak",
       "category": "Other",
       "id": 12
@@ -138,7 +137,7 @@
       "link": "https://github.com/marco2012/CalcShake",
       "language": "Objective C",
       "date": "1521222261",
-      "image": "calculator.png",
+      "image": "calculator.webp",
       "skills": "Jailbreak",
       "category": "Other",
       "id": 13
@@ -149,7 +148,7 @@
       "link": "https://marco2012.github.io/cydia/",
       "language": "Web",
       "date": "1519839861",
-      "image": "cydia.png",
+      "image": "cydia.webp",
       "skills": "Jailbreak",
       "category": "Web",
       "id": 14
@@ -160,7 +159,7 @@
       "link": "https://github.com/marco2012/GlobalTerrorism",
       "language": "Web",
       "date": "1527878551   ",
-      "image": "globalterrorism.jpg",
+      "image": "globalterrorism.webp",
       "skills": "JavaScript, D3.js",
       "category": "Web",
       "id": 15
@@ -171,7 +170,7 @@
       "link": "https://github.com/marco2012/SmartGasStation",
       "language": "Rails",
       "date": "1527878551",
-      "image": "smartgasstation.jpg",
+      "image": "smartgasstation.webp",
       "skills": "REST APIs, Database, Ruby On Rails",
       "category": "Web",
       "id": 16
@@ -180,9 +179,9 @@
       "title": "Eventi Storici",
       "description": "Node.js project to find all the historical events that occurred on a particular date in the past. Events are stored in NoSQL database (CouchDB) through a RabbitMQ queue running on Docker and they can be automatically shared to Dropbox, Twitter and Telegram using different APIs.",
       "link": "https://github.com/marco2012/Eventi-Storici#-eventi-storici",
-      "language": "HTML/CSS/JavaScript",
+      "language": "HTML/JS",
       "date": "1518120622",
-      "image": "eventistorici.jpg",
+      "image": "eventistorici.webp",
       "skills": "REST APIs, Database, AI, Docker",
       "category": "Web",
       "id": 17
@@ -191,9 +190,9 @@
       "title": "Dana's Club",
       "description": "Website for Dana's Club, dance school in Rome.",
       "link": "https://danasclub.it?utm_source=marlup&utm_medium=social&utm_campaign=profile",
-      "language": "HTML/CSS/JavaScript",
+      "language": "HTML/JS",
       "date": "1664648207",
-      "image": "danas_club.jpg",
+      "image": "danas_club.webp",
       "skills": "HTML, JavaScript",
       "category": "Web",
       "id": 18
@@ -202,9 +201,9 @@
       "title": "Dana's Club Old",
       "description": "Website for Dana's Club, dance school in Rome.",
       "link": "https://danasclub.it/old",
-      "language": "HTML/CSS/JavaScript",
+      "language": "HTML/JS",
       "date": "1491072151",
-      "image": "danas_club.jpg",
+      "image": "danas_club.webp",
       "skills": "HTML, JavaScript",
       "category": "Web",
       "id": 18
@@ -213,20 +212,20 @@
       "title": "AraMusic",
       "description": "Website for AraMusic, a music school near Rome.",
       "link": "https://marco2012.github.io/aramusic/",
-      "language": "HTML/CSS/JavaScript",
+      "language": "HTML/JS",
       "date": "1558512853",
-      "image": "aramusic.png",
+      "image": "aramusic.webp",
       "skills": "",
       "category": "Web",
       "id": 19
     },
     {
-      "title": "Icaro Onlus",
+      "title": "Icaro OdV",
       "description": "Website for Icaro Onlus, enviromental agency.",
-      "link": "https://icaro-onlus.wixsite.com/home",
-      "language": "HTML/CSS/JavaScript",
+      "link": "https://icaro-odv.it",
+      "language": "HTML/JS",
       "date": "1483296151",
-      "image": "icaro-onlus.jpg",
+      "image": "icaro-onlus.webp",
       "skills": "",
       "category": "Web",
       "id": 20
@@ -235,9 +234,9 @@
       "title": "B&B Pegaso",
       "description": "Website for B&B Pegaso, a bed and breakfast in Rome.",
       "link": "https://bebpegaso.wixsite.com/home",
-      "language": "HTML/CSS/JavaScript",
+      "language": "HTML/JS",
       "date": "1501612951",
-      "image": "bed_pegaso.jpg",
+      "image": "bed_pegaso.webp",
       "skills": "",
       "category": "Web",
       "id": 21
@@ -246,9 +245,9 @@
       "title": "Agenzia Immobiliare",
       "description": "Website for an estate agency in Ostia, Rome.",
       "link": "http://frimm.altervista.org/",
-      "language": "HTML/CSS/JavaScript",
+      "language": "HTML/JS",
       "date": "1454352151",
-      "image": "frimm.jpg",
+      "image": "frimm.webp",
       "skills": "Wordpress",
       "category": "Web",
       "id": 22
@@ -259,7 +258,7 @@
       "link": "https://github.com/marco2012/raspberrypi",
       "language": "Python",
       "date": "1554754222",
-      "image": "raspberrypi.png",
+      "image": "raspberrypi.webp",
       "skills": "IoT",
       "category": "Python",
       "id": 23
@@ -270,7 +269,7 @@
       "link": "https://play.google.com/store/apps/details?id=me.t00r.ethgasprice&hl=en",
       "language": "Java",
       "date": "1516565422",
-      "image": "ethgasprice.png",
+      "image": "ethgasprice.webp",
       "skills": "REST APIs, Android, Cryptocurrency",
       "category": "App",
       "id": 24
@@ -281,7 +280,7 @@
       "link": "https://github.com/marco2012/AISee",
       "language": "Java",
       "date": "1499026222",
-      "image": "aisee.jpg",
+      "image": "aisee.webp",
       "skills": "Android, AI",
       "category": "App",
       "id": 25
@@ -292,7 +291,7 @@
       "link": "https://github.com/marco2012/Cups",
       "language": "Java",
       "date": "1529439022",
-      "image": "cups.jpg",
+      "image": "cups.webp",
       "skills": "Android",
       "category": "App",
       "id": 26
@@ -303,7 +302,7 @@
       "link": "https://github.com/marco2012/TetherFree",
       "language": "Java",
       "date": "1495656622",
-      "image": "tetherfree.png",
+      "image": "tetherfree.webp",
       "skills": "Android, Root",
       "category": "App",
       "id": 27
@@ -314,10 +313,10 @@
       "link": "https://github.com/marco2012/AutoWiFi",
       "language": "AppleScript",
       "date": "1554235822",
-      "image": "applescript.png",
+      "image": "applescript.webp",
       "skills": "Automation",
       "category": "Other",
-      "id": 28
+      "id": 28  
     },
     {
       "title": "CobSpreaBot",
@@ -325,7 +324,7 @@
       "link": "https://cobspreadbot.wixsite.com/cobspreadbot",
       "language": "JavaScript",
       "date": "1516479022",
-      "image": "cobspreadbot.png",
+      "image": "cobspreadbot.webp",
       "skills": "REST APIs, Telegram bot, Cryptocurrency, Node.js, Firebase, Databse",
       "category": "Other",
       "id": 29
@@ -336,7 +335,7 @@
       "link": "https://t.me/aule_bot",
       "language": "JavaScript",
       "date": "1516479022",
-      "image": "aulebot.jpeg",
+      "image": "aulebot.webp",
       "skills": "REST APIs, Telegram bot, Node.js",
       "category": "Other",
       "id": 30
@@ -347,7 +346,7 @@
       "link": "https://t.me/etherscan_wallet_bot",
       "language": "JavaScript",
       "date": "1516479022",
-      "image": "etherscanbot.jpeg",
+      "image": "etherscanbot.webp",
       "skills": "REST APIs, Telegram bot, Cryptocurrency, Node.js",
       "category": "Other",
       "id": 31
@@ -358,7 +357,7 @@
       "link": "https://github.com/marco2012/TravelCost",
       "language": "Swift",
       "date": "1559391206",
-      "image": "travelcost.jpeg",
+      "image": "travelcost.webp",
       "skills": "iOS",
       "category": "App",
       "id": 32
@@ -369,7 +368,7 @@
       "link": "https://github.com/marco2012/TripCost",
       "language": "Dart",
       "date": "1564661592",
-      "image": "tripcost.jpeg",
+      "image": "tripcost.webp",
       "skills": "Flutter",
       "category": "App",
       "id": 33
@@ -380,7 +379,7 @@
       "link": "https://github.com/marco2012/InflationCalcFlutter",
       "language": "Dart",
       "date": "1564661592",
-      "image": "inflation_calc_flutter.jpeg",
+      "image": "inflation_calc_flutter.webp",
       "skills": "Flutter",
       "category": "App",
       "id": 34
@@ -391,7 +390,7 @@
       "link": "",
       "language": "Python",
       "date": "1564661592",
-      "image": "bomba_anarchica.png",
+      "image": "bomba_anarchica.webp",
       "skills": "Alexa",
       "category": "Python",
       "id": 35
@@ -400,9 +399,9 @@
       "title": "APS Progetto Cratere",
       "description": "Website made with Bootstrap 4 for an association.",
       "link": "https://www.progettocratere.org/",
-      "language": "HTML/CSS/JavaScript",
+      "language": "HTML/JS",
       "date": "1572610166",
-      "image": "progetto_cratere.jpg",
+      "image": "progetto_cratere.webp",
       "skills": "Bootstrap",
       "category": "Web",
       "id": 36
@@ -413,7 +412,7 @@
       "link": "https://github.com/marco2012/Prontuario",
       "language": "Dart",
       "date": "1588000930",
-      "image": "prontuario.jpeg",
+      "image": "prontuario.webp",
       "skills": "Flutter, Firebase, Databse",
       "category": "App",
       "id": 37
@@ -424,8 +423,8 @@
       "link": "https://github.com/bpm-diag/smartRPA",
       "language": "Python",
       "date": "1598984002",
-      "image": "computerlogger.png",
-      "skills": "Business Process Management, Robotic Process Automation, Process Mining",
+      "image": "computerlogger.webp",
+      "skills": "RPA, Process Mining",
       "category": "Python",
       "id": 38
     },
@@ -435,7 +434,7 @@
       "link": "https://github.com/marco2012/ecommerce",
       "language": "TypeScript",
       "date": "1593366057",
-      "image": "ecommerce.png",
+      "image": "ecommerce.webp",
       "skills": "Full-stack, REST APIs, Database, Angular, Spring Boot, Maven",
       "category": "Web",
       "id": 39
@@ -444,9 +443,9 @@
       "title": "Marco2012 website",
       "description": "Static website built with Bootstrap and JavaScript",
       "link": "https://marco2012.github.io/website-static/",
-      "language": "HTML/CSS/JavaScript",
+      "language": "HTML/JS",
       "date": "1546300800",
-      "image": "marco2012-website-static.png",
+      "image": "marco2012-website-static.webp",
       "skills": "Bootstrap",
       "category": "Web",
       "id": 40
@@ -455,9 +454,9 @@
       "title": "Prezzi Carburante Bot",
       "description": "Telegram bot to find the prices of nearby gas stations.",
       "link": "https://github.com/marco2012/prezzi_carburante_bot",
-      "language": "HTML/CSS/JavaScript",
+      "language": "HTML/JS",
       "date": "1517443200",
-      "image": "gas-station.png",
+      "image": "gas-station.webp",
       "skills": "Telegram bot, Node.js, Database",
       "category": "Web",
       "id": 41
@@ -466,9 +465,9 @@
       "title": "ExpenseManager",
       "description": "React web app to manage expenses. Uses Redux to handle the state.",
       "link": "https://github.com/marco2012/ExpenseManager",
-      "language": "HTML/CSS/JavaScript",
+      "language": "HTML/JS",
       "date": "1597835788",
-      "image": "ExpenseManager.png",
+      "image": "ExpenseManager.webp",
       "skills": "React",
       "category": "Web",
       "id": 42
@@ -477,12 +476,11 @@
       "title": "EnergyCalc",
       "description": "Web app to calculate the cost of energy",
       "link": "https://marco2012.github.io/energyCalcWeb?utm_source=marlup&utm_medium=social&utm_campaign=profile",
-      "language": "HTML/CSS/JavaScript",
+      "language": "HTML/JS",
       "date": "1666679589",
-      "image": "EnergyCalc.png",
+      "image": "EnergyCalc.webp",
       "skills": "HTML, JavaScript",
       "category": "Web",
       "id": 43
     }
   ]
-}

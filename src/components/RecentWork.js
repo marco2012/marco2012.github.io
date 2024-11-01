@@ -2,8 +2,9 @@ import React from "react";
 import { motion } from "framer-motion";
 import { LiaAtomSolid } from "react-icons/lia";
 import { GoArrowRight } from "react-icons/go";
+import { Link } from "react-router-dom";
 
-const Projects = ({ data }) => {
+const RecentWork = ({ data }) => {
     return (
         <div className="mt-10 space-x-4">
             <h2 className="text-md uppercase tracking-widest text-gray-800 dark:text-gray-200 flex items-center">
@@ -25,22 +26,20 @@ const Projects = ({ data }) => {
                                     className="text-md text-gray-800 dark:text-gray-200 cursor-pointer"
                                     whileHover={{ x: 6 }} // Move title slightly to the right on hover
                                 >
-                                    <a
-                                        href={project.link}
-                                        target="_blank"
-                                        rel="noopener noreferrer"
-                                        className=""
-                                    >
-                                        <span
-                                            className={
-                                                project.title.includes("more")
-                                                    ? "italic"
-                                                    : ""
-                                            }
-                                        >
+                                    {project.title.includes("more") ? (
+                                        <Link to="/projects" className="italic">
                                             {project.title}
-                                        </span>
-                                    </a>
+                                        </Link>
+                                    ) : (
+                                        <a
+                                            href={project.link}
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                            className=""
+                                        >
+                                            <span>{project.title}</span>
+                                        </a>
+                                    )}
                                 </motion.span>
                                 <a
                                     href={project.link}
@@ -59,4 +58,4 @@ const Projects = ({ data }) => {
     );
 };
 
-export default Projects;
+export default RecentWork;
