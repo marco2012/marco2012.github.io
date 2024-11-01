@@ -22,7 +22,7 @@ function Projects() {
 
     return (
         <motion.div className="min-h-screen px-6 text-gray-800 dark:text-gray-200">
-            <div className="max-w-xl mx-auto px-6">
+            <div className="max-w-xl mx-auto">
                 <NavBar btnLink="/" btnImage={<GoHomeFill />} animate={false} />
                 <div className="flex justify-center">
                     <IntroSection
@@ -76,7 +76,7 @@ function Projects() {
             </div>
 
             <div
-                className="my-8 grid gap-6 justify-items-center mx-20"
+                className="my-8 grid gap-6 justify-items-center lg:mx-20"
                 style={{
                     gridTemplateColumns:
                         "repeat(auto-fill, minmax(320px, 1fr))",

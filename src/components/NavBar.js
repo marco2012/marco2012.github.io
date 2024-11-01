@@ -21,13 +21,13 @@ const NavBar = ({ btnLink, btnImage, animate = true }) => {
                         {/* <div className="flex">{ctime}</div> */}
                         <NavLink
                             to={btnLink}
-                            className="p-1 rounded-full transition-colors hover:bg-white/[0.06] hover:scale-125 text-lg"
+                            className="p-1 rounded-full transition-colors hover:bg-white/[0.06] hover:scale-125 text-md"
                         >
                             {btnImage}
                         </NavLink>
-                        <span className="absolute -bottom-8 left-1/2 -translate-x-1/2 text-[11px] opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap">
+                        {/* <span className="absolute -bottom-8 left-1/2 -translate-x-1/2 text-[11px] opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap">
                             {btnLink.includes("projects") ? "Projects" : "Home"}
-                        </span>
+                        </span> */}
                     </div>
                 </div>
                 <div className="h-3.5 w-[1px] bg-black/[0.2] dark:bg-white/[0.2] hidden sm:block"></div>
