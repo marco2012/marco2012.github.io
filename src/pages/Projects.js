@@ -77,6 +77,10 @@ function Projects() {
 
             <div
                 className="my-8 grid gap-6 justify-items-center lg:mx-20"
+                // This property defines the column structure of the grid.
+                // "repeat(auto-fill, minmax(320px, 1fr))" means:
+                // - auto-fill: Fill the row with as many columns as possible.
+                // - minmax(320px, 1fr): Each column should be at least 320px wide, but can grow to take up available space (1fr).
                 style={{
                     gridTemplateColumns:
                         "repeat(auto-fill, minmax(320px, 1fr))",
