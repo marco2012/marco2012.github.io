@@ -16,11 +16,11 @@ import { SiAdobe } from "react-icons/si";
 import { FaGoogle } from "react-icons/fa";
 import { CiShoppingTag } from "react-icons/ci";
 import { FaConfluence } from "react-icons/fa";
-import { SiScrumalliance } from "react-icons/si";
 import { FaGit } from "react-icons/fa";
 import { VscAzure } from "react-icons/vsc";
 import { DiScrum } from "react-icons/di";
 import { SiPostman } from "react-icons/si";
+import { GrUserManager } from "react-icons/gr";
 
 const Skills = () => {
     const languages = [
@@ -69,29 +69,45 @@ const Skills = () => {
     ];
     const digitalSkills = [
         {
-            name: "AEP, AJO, CJA, Analytics, Launch",
+            name: "Real-time CDP",
             icon: <SiAdobe />,
         },
         {
-            name: "Google Analytics, Tag Manager",
+            name: "Journey Optimizer",
+            icon: <SiAdobe />,
+        },
+        {
+            name: "Analytics/CJA",
+            icon: <SiAdobe />,
+        },
+        {
+            name: "Launch",
+            icon: <SiAdobe />,
+        },
+        {
+            name: "Google Analytics",
             icon: <FaGoogle />,
         },
         {
-            name: "Tealium, Data Visualization",
+            name: "Tag Manager",
+            icon: <FaGoogle />,
+        },
+        {
+            name: "Tealium",
+            icon: <CiShoppingTag />,
+        },
+        {
+            name: "Data Visualization",
             icon: <CiShoppingTag />,
         },
     ];
     const tools = [
         {
-            name: "Agile",
+            name: "Agile/Scrum",
             icon: <DiScrum />,
         },
         {
-            name: "Jira",
-            icon: <SiScrumalliance />,
-        },
-        {
-            name: "Confluence",
+            name: "Jira/Confluence",
             icon: <FaConfluence />,
         },
         {
@@ -99,12 +115,16 @@ const Skills = () => {
             icon: <FaGit />,
         },
         {
-            name: "Azure",
+            name: "Azure Cloud",
             icon: <VscAzure />,
         },
         {
             name: "REST APIs",
             icon: <SiPostman />,
+        },
+        {
+            name: "Project Management",
+            icon: <GrUserManager />,
         },
     ];
     return (
@@ -120,10 +140,16 @@ const Skills = () => {
             </motion.h2>
             <div className="flex mt-2 space-x-4 border-l border-gray-400 cursor-default">
                 <div className="h-full"></div> {/* Vertical line */}
-                <div className="flex flex-col space-y-3">
-                    <SkillsItem title="Languages" data={languages} />
+                <div className="flex flex-col gap-6">
+                    <SkillsItem
+                        title="Programming Languages"
+                        data={languages}
+                    />
                     <SkillsItem title="Frameworks" data={frameworks} />
-                    <SkillsItem title="Digital Skills" data={digitalSkills} />
+                    <SkillsItem
+                        title="Digital Marketing"
+                        data={digitalSkills}
+                    />
                     <SkillsItem title="Tools" data={tools} />
                 </div>
             </div>

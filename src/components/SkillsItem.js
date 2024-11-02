@@ -9,18 +9,20 @@ function SkillsItem({ title, data }) {
             className="flex-1 text-gray-800 dark:text-gray-200 flex items-center flex-wrap"
             whileHover={{ x: 6 }}
         >
-            <div className="w-full">
-                <span className="font-semibold text-sm">{title}</span>
+            <div className="w-full mb-2">
+                <span className="font-semibold text-sm uppercase">{title}</span>
             </div>
-            {data.map((language, index) => (
-                <div key={index} className="text-sm flex items-center">
-                    <span className="mr-1">{language.icon}</span>
-                    {language.name}
-                    <span className="mx-1">
-                        {index < data.length - 1 && " | "}
-                    </span>
-                </div>
-            ))}
+            <div className="grid grid-cols-2 sm:grid-cols-3 gap-3 w-full">
+                {data.map((language, index) => (
+                    <div
+                        key={index}
+                        className="text-sm flex items-center w-full"
+                    >
+                        <span className="mr-1">{language.icon}</span>
+                        {language.name}
+                    </div>
+                ))}
+            </div>
         </motion.div>
     );
 }
