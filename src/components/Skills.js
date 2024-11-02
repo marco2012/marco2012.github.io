@@ -121,10 +121,10 @@ const Skills = () => {
             <div className="flex mt-2 space-x-4 border-l border-gray-400 cursor-default">
                 <div className="h-full"></div> {/* Vertical line */}
                 <div className="flex flex-col space-y-3">
-                    <SkillsItem title="Languages:" data={languages} />
-                    <SkillsItem title="Frameworks:" data={frameworks} />
-                    <SkillsItem title="Digital Skills:" data={digitalSkills} />
-                    <SkillsItem title="Tools:" data={tools} />
+                    <SkillsItem title="Languages" data={languages} />
+                    <SkillsItem title="Frameworks" data={frameworks} />
+                    <SkillsItem title="Digital Skills" data={digitalSkills} />
+                    <SkillsItem title="Tools" data={tools} />
                 </div>
             </div>
         </div>

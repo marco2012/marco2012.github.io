@@ -7,8 +7,11 @@ function SkillsItem({ title, data }) {
             animate={{ opacity: 1, x: 0 }}
             transition={{ delay: 0.1 }}
             className="flex-1 text-gray-800 dark:text-gray-200 flex items-center flex-wrap"
+            whileHover={{ x: 6 }}
         >
-            <span className="font-semibold text-sm mr-1">{title}</span>
+            <div className="w-full">
+                <span className="font-semibold text-sm">{title}</span>
+            </div>
             {data.map((language, index) => (
                 <div key={index} className="text-sm flex items-center">
                     <span className="mr-1">{language.icon}</span>
