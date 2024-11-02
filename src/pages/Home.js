@@ -175,7 +175,7 @@ function Home() {
                 title="Education"
             />
 
-            {/* <Skills /> */}
+            <Skills />
 
             <Section
                 data={certificatesData}
