@@ -21,21 +21,21 @@ function Home() {
             date: "2021-now",
             title: "Deloitte",
             location: "Rome",
-            icon: "deloitte.png",
+            icon: "deloitte.webp",
         },
         {
             subtitle: "Full Stack Developer",
             date: "2021",
             title: "Reply",
             location: "Rome",
-            icon: "reply.png",
+            icon: "reply.webp",
         },
         {
             subtitle: "Software Engineer",
             date: "2020",
             title: "Sapienza University",
             location: "Rome",
-            icon: "sapienza.png",
+            icon: "sapienza.webp",
         },
     ];
     const educationData = [
@@ -44,14 +44,14 @@ function Home() {
             subtitle: "Sapienza University",
             date: "2018-2020",
             location: "Rome",
-            icon: "sapienza.png",
+            icon: "sapienza.webp",
         },
         {
             title: "BSc in Computer and Systems Engineering",
             subtitle: "Sapienza University",
             date: "2015-2018",
             location: "Rome",
-            icon: "sapienza.png",
+            icon: "sapienza.webp",
         },
     ];
     const certificatesData = [
@@ -60,49 +60,49 @@ function Home() {
             subtitle: "Adobe",
             date: "2024",
             link: "https://www.credly.com/badges/57b02656-76c8-44a5-8b68-78315d95f28b/linked_in_profile",
-            icon: "adobe.png",
+            icon: "adobe.webp",
         },
         {
             title: "Journey Optimizer",
             subtitle: "Adobe",
             date: "2024",
             link: "https://www.credly.com/badges/6549672f-2ad1-4da7-b3d3-3bc0d448d308/linked_in_profile",
-            icon: "adobe.png",
+            icon: "adobe.webp",
         },
         {
             title: "Adobe Analytics",
             subtitle: "Adobe",
             date: "2023",
             link: "https://www.credly.com/badges/30e8d9b1-f9e3-4d15-bef7-64f60ec55f11/linked_in_profile",
-            icon: "adobe.png",
+            icon: "adobe.webp",
         },
         {
             title: "Customer Journey Analytics",
             subtitle: "Adobe",
             date: "2024",
             link: "https://www.credly.com/badges/c0a83f2f-eeea-448d-9b69-bf9511a9e109/linked_in_profile",
-            icon: "adobe.png",
+            icon: "adobe.webp",
         },
         {
             title: "Google Analytics",
             subtitle: "Google",
             date: "2023",
             link: "https://skillshop.credential.net/73d77d62-630b-484c-b801-81fa96ed3639",
-            icon: "google.png",
+            icon: "google.webp",
         },
         {
             title: "Azure Fundamentals",
             subtitle: "Microsoft",
             date: "2021",
             link: "https://www.credly.com/badges/5e71870d-f59d-4b04-be1e-4512ec12ed83",
-            icon: "microsoft.png",
+            icon: "microsoft.webp",
         },
         {
             title: "English C2",
             subtitle: "EF Set",
             date: "2019",
             link: "https://cert.efset.org/hrVnQr",
-            icon: "ef.png",
+            icon: "ef.webp",
         },
     ];
     const publicationsData = [
@@ -113,7 +113,7 @@ function Home() {
             date: "07/2021",
             location: "Springer",
             link: "https://www.springerprofessional.de/en/smartrpa-a-tool-to-reactively-synthesize-software-robots-from-us/19259790",
-            icon: "springer.png",
+            icon: "springer.webp",
         },
         {
             title: "Automated Generation of Executable RPA Scripts from User Interface Logs",
@@ -122,7 +122,7 @@ function Home() {
             date: "09/2020",
             location: "Springer",
             link: "https://link.springer.com/chapter/10.1007/978-3-030-58779-6_8",
-            icon: "springer.png",
+            icon: "springer.webp",
         },
     ];
     const projects = [
@@ -176,7 +176,7 @@ function Home() {
                 title="Education"
             />
 
-            <Skills />
+            {/* <Skills /> */}
 
             <Section
                 data={certificatesData}

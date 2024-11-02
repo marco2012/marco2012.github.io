@@ -16,7 +16,7 @@ function About({ title, subtitle, description, showAbout }) {
                 transition={{ duration: 0.8 }}
             >
                 <motion.img
-                    src={`${process.env.PUBLIC_URL}/logo_icon.webp`}
+                    src={`${process.env.PUBLIC_URL}/logo.webp`}
                     alt="Profile"
                     className="rounded-full w-20 h-20 mr-4"
                     style={{ filter: isDarkTheme ? "none" : "invert()" }}

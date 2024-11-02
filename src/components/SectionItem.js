@@ -32,8 +32,8 @@ const SectionItem = ({ item }) => (
                 } md:text-md text-gray-800 dark:text-gray-200 italic flex items-center`}
             >
                 <img
-                    src={`${process.env.PUBLIC_URL}/${item.icon}`}
-                    alt="icon"
+                    src={require(`../assets/logo/${item.icon}`)}
+                    alt={item.icon}
                     className="w-4 mr-1 dark:invert"
                 />
                 {item.subtitle}

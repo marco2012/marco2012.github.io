@@ -10,8 +10,9 @@ const ProjectCard = ({ project }) => {
         <div className="project-card max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-neutral-800 dark:border-slate-700">
             <img
                 className="rounded-t-lg"
-                src={`${process.env.PUBLIC_URL}/images/${project.image}`}
-                alt=""
+                // src={`${process.env.PUBLIC_URL}/images/${project.image}`}
+                src={require(`../assets/images/${project.image}`)}
+                alt={project.image}
             />
             <div className="p-5 flex-grow">
                 <div className="text-sm text-gray-700 dark:text-slate-200 flex items-center justify-between">
