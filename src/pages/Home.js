@@ -12,6 +12,8 @@ import About from "../components/About";
 import NavBar from "../components/NavBar";
 import { GrProjects } from "react-icons/gr";
 import Footer from "../components/Footer";
+import Skills from "../components/Skills";
+
 function Home() {
     const experienceData = [
         {
@@ -147,7 +149,7 @@ function Home() {
     ];
 
     return (
-        <motion.div className="min-h-screen px-6 max-w-xl mx-auto text-gray-800 dark:text-gray-200">
+        <motion.div className="min-h-screen px-6 max-w-2xl mx-auto text-gray-800 dark:text-gray-200">
             <NavBar
                 btnLink="/projects"
                 btnImage={<GrProjects />}
@@ -173,6 +175,8 @@ function Home() {
                 icon={<MdOutlineSchool />}
                 title="Education"
             />
+
+            <Skills />
 
             <Section
                 data={certificatesData}

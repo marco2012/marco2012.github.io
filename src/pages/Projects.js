@@ -22,7 +22,7 @@ function Projects() {
 
     return (
         <motion.div className="min-h-screen px-6 text-gray-800 dark:text-gray-200">
-            <div className="max-w-xl mx-auto">
+            <div className="max-w-2xl mx-auto">
                 <NavBar btnLink="/" btnImage={<GoHomeFill />} animate={false} />
                 <div className="flex justify-center">
                     <IntroSection
@@ -46,7 +46,7 @@ function Projects() {
                         type="search"
                         id="default-search"
                         className="block w-full rounded-md border-0 py-1.5 pl-7 pr-20 text-gray-900 dark:text-gray-100 bg-white dark:bg-neutral-800 ring-1 ring-inset ring-gray-300 dark:ring-gray-700 placeholder:text-gray-400 dark:placeholder:text-gray-500 focus:ring-2 focus:ring-inset focus:ring-indigo-600 dark:focus:ring-indigo-400 sm:text-sm/6"
-                        placeholder="Search Projects..."
+                        placeholder=" Projects..."
                         required
                         onChange={(e) => setSearchQuery(e.target.value)}
                     />
@@ -58,7 +58,7 @@ function Projects() {
                             defaultValue=""
                             onChange={(e) => setSearchQuery(e.target.value)}
                         >
-                            <option value="">All Languages</option>
+                            <option value="">All</option>
                             {[
                                 ...new Set(
                                     projectsData.map(({ language }) => language)
@@ -87,7 +87,7 @@ function Projects() {
                 }}
             >
                 {filteredProjects
-                    .sort((a, b) => b.date - a.date)
+                    .sort((a, b) => new Date(b.date) - new Date(a.date))
                     .map((p, index) => (
                         <motion.div
                             key={index}
@@ -97,7 +97,7 @@ function Projects() {
                                 y: -10,
                                 transition: { duration: 0.1 },
                             }}
-                            transition={{ delay: index * 0.1 }}
+                            transition={{ delay: index * 0.06 }}
                             className="transform transition-transform duration-300 hover:shadow-lg"
                         >
                             <ProjectCard project={p} />

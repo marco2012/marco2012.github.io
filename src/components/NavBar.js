@@ -16,20 +16,21 @@ const NavBar = ({ btnLink, btnImage, animate = true }) => {
             transition={animate ? { duration: 0.6 } : {}} // Duration of the slide-in if animate is true
         >
             <div className="w-full bg-white/40 dark:bg-black/40 text-gray-300 border-2 border-black/[0.1] dark:border-white/[0.1] backdrop-blur-xl rounded-full px-3 sm:px-5 py-2.5 inline-flex items-center gap-2 sm:gap-4 transition-all duration-300 justify-evenly">
-                <div className="group relative">
-                    <div className="flex items-center gap-2 text-[13px] font-mono text-gray-800 dark:text-gray-200 transition-colors cursor-pointer">
-                        {/* <div className="flex">{ctime}</div> */}
-                        <NavLink
-                            to={btnLink}
-                            className="p-1 rounded-full transition-colors hover:bg-white/[0.06] hover:scale-125 text-md"
-                        >
+                <NavLink
+                    to={btnLink}
+                    className="p-1 rounded-full transition-colors hover:bg-white/[0.06] hover:scale-125 text-md"
+                >
+                    <div className="group relative">
+                        <div className="flex items-center gap-2 text-[13px] font-mono text-gray-800 dark:text-gray-200 transition-colors cursor-pointer">
+                            {/* <div className="flex">{ctime}</div> */}
                             {btnImage}
-                        </NavLink>
-                        {/* <span className="absolute -bottom-8 left-1/2 -translate-x-1/2 text-[11px] opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap">
+                            {/* <span className="absolute -bottom-8 left-1/2 -translate-x-1/2 text-[11px] opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap">
                             {btnLink.includes("projects") ? "Projects" : "Home"}
                         </span> */}
+                        </div>
                     </div>
-                </div>
+                </NavLink>
+
                 <div className="h-3.5 w-[1px] bg-black/[0.2] dark:bg-white/[0.2] hidden sm:block"></div>
                 <div className="flex items-center">
                     <div
