@@ -23,7 +23,7 @@ const RecentWork = ({ data }) => {
                                 transition={{ delay: index * 0.1 }}
                             >
                                 <motion.span
-                                    className="text-md text-gray-800 dark:text-gray-200 cursor-pointer"
+                                    className="text-md text-gray-800 dark:text-gray-200 hover:text-gray-500 dark:hover:text-gray-400 cursor-pointer"
                                     whileHover={{ x: 6 }} // Move title slightly to the right on hover
                                 >
                                     {project.title.includes("more") ? (

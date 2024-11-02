@@ -10,7 +10,7 @@ const NavBar = ({ btnLink, btnImage, animate = true }) => {
 
     return (
         <motion.nav
-            className="mt-8 max-w-xl mx-auto" // Added w-full for full width
+            className="mt-8 max-w-2xl mx-auto" // Added w-full for full width
             initial={animate ? { opacity: 0, y: -30 } : {}} // Start off-screen from the top if animate is true
             animate={animate ? { opacity: 1, y: 0 } : {}} // Animate to on-screen if animate is true
             transition={animate ? { duration: 0.6 } : {}} // Duration of the slide-in if animate is true

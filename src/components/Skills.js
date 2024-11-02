@@ -29,12 +29,16 @@ const Skills = () => {
             icon: <FaPython />,
         },
         {
-            name: "Java",
-            icon: <FaJava />,
-        },
-        {
             name: "JavaScript",
             icon: <RiJavascriptFill />,
+        },
+        {
+            name: "SQL",
+            icon: <FaDatabase />,
+        },
+        {
+            name: "Java",
+            icon: <FaJava />,
         },
         {
             name: "C#",
@@ -43,10 +47,6 @@ const Skills = () => {
         {
             name: "C",
             icon: <PiFileCppDuotone />,
-        },
-        {
-            name: "SQL",
-            icon: <FaDatabase />,
         },
     ];
     const frameworks = [
