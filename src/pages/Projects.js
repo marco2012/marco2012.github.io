@@ -8,7 +8,7 @@ import NavBar from "../components/NavBar";
 import ProjectCard from "../components/ProjectCard";
 import projectsData from "../assets/projects.json";
 import { IoIosSearch } from "react-icons/io";
-
+import ScrollToTop from "../components/ScrollToTop";
 function Projects() {
     const { isDarkTheme } = useContext(ThemeContext);
 
@@ -22,6 +22,7 @@ function Projects() {
 
     return (
         <motion.div className="min-h-screen px-6 text-gray-800 dark:text-gray-200">
+            <ScrollToTop />
             <div className="max-w-2xl mx-auto">
                 <NavBar btnLink="/" btnImage={<GoHomeFill />} animate={false} />
                 <div className="flex justify-center">
@@ -46,7 +47,7 @@ function Projects() {
                         type="search"
                         id="default-search"
                         className="block w-full rounded-md border-0 py-1.5 pl-7 pr-20 text-gray-900 dark:text-gray-100 bg-white dark:bg-neutral-800 ring-1 ring-inset ring-gray-300 dark:ring-gray-700 placeholder:text-gray-400 dark:placeholder:text-gray-500 focus:ring-2 focus:ring-inset focus:ring-indigo-600 dark:focus:ring-indigo-400 sm:text-sm/6"
-                        placeholder=" Projects..."
+                        placeholder=" search projects"
                         required
                         onChange={(e) => setSearchQuery(e.target.value)}
                     />

@@ -41,14 +41,9 @@ const RecentWork = ({ data }) => {
                                         </a>
                                     )}
                                 </motion.span>
-                                <a
-                                    href={project.link}
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                    className=""
-                                >
+                                <Link to="/projects">
                                     <GoArrowRight />
-                                </a>
+                                </Link>
                             </motion.li>
                         ))}
                     </ul>
