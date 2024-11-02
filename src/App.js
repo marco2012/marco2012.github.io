@@ -7,6 +7,9 @@ import Home from "./pages/Home";
 import Projects from "./pages/Projects";
 import { ThemeProvider } from "./contexts/ThemeContext";
 import TagManager from "react-gtm-module";
+import NotFound from "./pages/NotFound";
+import { GrProjects } from "react-icons/gr";
+import Footer from "./components/Footer";
 
 function App() {
     useEffect(() => {
@@ -19,10 +22,12 @@ function App() {
         <ThemeProvider>
             <Router>
                 <Routes>
-                    <Route path="/" element={<Home />} />
-                    <Route path="/projects" element={<Projects />} />
+                    <Route exact path="/" element={<Home />} />
+                    <Route exact path="/projects" element={<Projects />} />
+                    <Route path="*" element={<NotFound />} />
                 </Routes>
             </Router>
+            <Footer />
         </ThemeProvider>
     );
 }

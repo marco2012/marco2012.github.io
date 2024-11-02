@@ -1,6 +1,5 @@
 import React, { useState, useContext } from "react";
 import { motion } from "framer-motion";
-import Footer from "../components/Footer";
 import IntroSection from "../components/About";
 import { ThemeContext } from "../contexts/ThemeContext";
 import { GoHomeFill } from "react-icons/go";
@@ -105,8 +104,6 @@ function Projects() {
                         </motion.div>
                     ))}
             </div>
-
-            <Footer />
         </motion.div>
     );
 }

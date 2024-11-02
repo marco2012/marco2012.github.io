@@ -11,7 +11,6 @@ import RecentWork from "../components/RecentWork";
 import About from "../components/About";
 import NavBar from "../components/NavBar";
 import { GrProjects } from "react-icons/gr";
-import Footer from "../components/Footer";
 import Skills from "../components/Skills";
 
 function Home() {
@@ -191,8 +190,6 @@ function Home() {
             />
 
             <RecentWork data={projects} />
-
-            <Footer />
         </motion.div>
     );
 }
