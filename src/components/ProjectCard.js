@@ -1,19 +1,22 @@
 import React from "react";
 import "./ProjectCard.css"; // Import the CSS file
-import { BsThreeDots } from "react-icons/bs";
 import { CiCalendar } from "react-icons/ci";
 import { FaArrowRightLong } from "react-icons/fa6";
 import { FaCode } from "react-icons/fa6";
+import LazyLoad from "react-lazyload";
 
 const ProjectCard = ({ project }) => {
     return (
         <div className="project-card max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-neutral-800 dark:border-slate-700">
-            <img
-                className="rounded-t-lg"
-                // src={`${process.env.PUBLIC_URL}/images/${project.image}`}
-                src={require(`../assets/images/${project.image}`)}
-                alt={project.image}
-            />
+            <LazyLoad height={200}>
+                <img
+                    className="rounded-t-lg"
+                    // src={`${process.env.PUBLIC_URL}/images/${project.image}`}
+                    src={require(`../assets/images/${project.image}`)}
+                    alt={project.image}
+                />{" "}
+            </LazyLoad>
+
             <div className="p-5 flex-grow">
                 <div className="text-sm text-gray-700 dark:text-slate-200 flex items-center justify-between">
                     <span className="flex items-center">
