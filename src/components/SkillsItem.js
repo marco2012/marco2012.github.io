@@ -10,13 +10,15 @@ function SkillsItem({ title, data }) {
             whileHover={{ x: 6 }}
         >
             <div className="w-full mb-2">
-                <span className="font-semibold text-sm uppercase">{title}</span>
+                <span className="font-semibold text-sm sm:text-base uppercase">
+                    {title}
+                </span>
             </div>
             <div className="grid grid-cols-2 sm:grid-cols-3 gap-3 w-full">
                 {data.map((language, index) => (
                     <div
                         key={index}
-                        className="text-sm flex items-center w-full"
+                        className="text-sm sm:text-base flex items-center w-full"
                     >
                         <span className="mr-1">{language.icon}</span>
                         {language.name}

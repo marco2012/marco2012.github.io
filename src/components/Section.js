@@ -14,7 +14,7 @@ const Section = ({ data, icon, title, limit = 3 }) => {
     return (
         <div className="mt-12">
             <motion.h2
-                className="text-md uppercase tracking-widest text-gray-800 dark:text-gray-200 flex items-center"
+                className="text-base uppercase tracking-widest text-gray-800 dark:text-gray-200 flex items-center"
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ duration: 0.8 }}

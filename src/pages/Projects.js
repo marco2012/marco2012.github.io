@@ -10,6 +10,7 @@ import { IoIosSearch } from "react-icons/io";
 import ScrollToTop from "../components/ScrollToTop";
 import TagManager from "react-gtm-module";
 import { IoIosArrowDropupCircle } from "react-icons/io";
+import { BsSuitcaseLg } from "react-icons/bs";
 
 function Projects() {
     TagManager.dataLayer({
@@ -59,6 +60,7 @@ function Projects() {
                         subtitle={`Check out my ${filteredProjects.length} projects`}
                         isDarkTheme={isDarkTheme}
                         showAbout={false}
+                        icon={<BsSuitcaseLg size={64} />}
                     />
                 </div>
             </div>

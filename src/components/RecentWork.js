@@ -7,7 +7,7 @@ import { Link } from "react-router-dom";
 const RecentWork = ({ data }) => {
     return (
         <div className="mt-10 space-x-4">
-            <h2 className="text-md uppercase tracking-widest text-gray-800 dark:text-gray-200 flex items-center">
+            <h2 className="text-base uppercase tracking-widest text-gray-800 dark:text-gray-200 flex items-center">
                 <LiaAtomSolid className="mr-2" />
                 <span className="font-semibold">Recent work</span>
             </h2>
@@ -23,7 +23,7 @@ const RecentWork = ({ data }) => {
                                 transition={{ delay: index * 0.1 }}
                             >
                                 <motion.span
-                                    className="text-md text-gray-800 dark:text-gray-200 hover:text-gray-500 dark:hover:text-gray-400 cursor-pointer"
+                                    className="text-base text-gray-800 dark:text-gray-200 hover:text-gray-500 dark:hover:text-gray-400 cursor-pointer"
                                     whileHover={{ x: 6 }} // Move title slightly to the right on hover
                                 >
                                     {project.title.includes("more") ? (

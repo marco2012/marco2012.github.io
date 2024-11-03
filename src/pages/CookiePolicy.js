@@ -2,6 +2,9 @@ import React from "react";
 import NavBar from "../components/NavBar";
 import { GoHomeFill } from "react-icons/go";
 import TagManager from "react-gtm-module";
+import About from "../components/About";
+import { FaCookieBite } from "react-icons/fa6";
+import { MdOutlineCookie } from "react-icons/md";
 
 function CookiePolicy() {
     TagManager.dataLayer({
@@ -15,15 +18,16 @@ function CookiePolicy() {
     });
     return (
         <div className="max-w-2xl px-6 mx-auto text-gray-800 dark:text-gray-200 text-justify hyphens-auto">
-            <NavBar btnLink="/" btnImage={<GoHomeFill />} animate={false} />
-            <h1 className="text-center my-8 text-xl font-bold">
-                Cookie Policy
-            </h1>
-            <div className="text-right italic my-8 text-sm">
-                <p>
-                    Effective Date: 03-Nov-2024 <br />
-                    Last Updated: 03-Nov-2024
-                </p>
+            <div className="max-w-2xl mx-auto mb-6">
+                <NavBar btnLink="/" btnImage={<GoHomeFill />} animate={false} />
+                <div className="flex justify-center">
+                    <About
+                        title="Cookie Policy"
+                        subtitle="Last Updated: 2024-11-03"
+                        showAbout={false}
+                        icon={<MdOutlineCookie size={64} />}
+                    />
+                </div>
             </div>
             <div>
                 <h2 className="font-bold">What are cookies?</h2>
