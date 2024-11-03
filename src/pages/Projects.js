@@ -1,6 +1,6 @@
 import React, { useState, useContext } from "react";
 import { motion } from "framer-motion";
-import IntroSection from "../components/About";
+import About from "../components/About";
 import { ThemeContext } from "../contexts/ThemeContext";
 import { GoHomeFill } from "react-icons/go";
 import NavBar from "../components/NavBar";
@@ -8,7 +8,19 @@ import ProjectCard from "../components/ProjectCard";
 import projectsData from "../assets/projects.json";
 import { IoIosSearch } from "react-icons/io";
 import ScrollToTop from "../components/ScrollToTop";
+import TagManager from "react-gtm-module";
+
 function Projects() {
+    TagManager.dataLayer({
+        dataLayer: {
+            event: "pageview",
+            page: {
+                url: "/projects",
+                title: "Projects",
+            },
+        },
+    });
+
     const { isDarkTheme } = useContext(ThemeContext);
 
     const [searchQuery, setSearchQuery] = useState("");
@@ -25,7 +37,7 @@ function Projects() {
             <div className="max-w-2xl mx-auto">
                 <NavBar btnLink="/" btnImage={<GoHomeFill />} animate={false} />
                 <div className="flex justify-center">
-                    <IntroSection
+                    <About
                         title="My Projects"
                         subtitle={`Check out my ${filteredProjects.length} projects`}
                         isDarkTheme={isDarkTheme}
@@ -48,8 +60,30 @@ function Projects() {
                         className="block w-full rounded-md border-0 py-1.5 pl-7 pr-20 text-gray-900 dark:text-gray-100 bg-white dark:bg-neutral-800 ring-1 ring-inset ring-gray-300 dark:ring-gray-700 placeholder:text-gray-400 dark:placeholder:text-gray-500 focus:ring-2 focus:ring-inset focus:ring-indigo-600 dark:focus:ring-indigo-400 sm:text-sm/6"
                         placeholder=" search projects"
                         required
-                        onChange={(e) => setSearchQuery(e.target.value)}
+                        value={searchQuery}
+                        onChange={(e) => {
+                            const query = e.target.value;
+                            setSearchQuery(query);
+                            const url = new URL(window.location);
+                            if (query) {
+                                url.hash = `${
+                                    url.hash.split("?")[0]
+                                }?q=${query}`;
+                            } else {
+                                url.hash = url.hash.split("?")[0];
+                            }
+                            window.history.pushState({}, "", url);
+                        }}
                     />
+                    {(() => {
+                        const urlParams = new URLSearchParams(
+                            window.location.hash.split("?")[1]
+                        );
+                        const query = urlParams.get("q");
+                        if (query && query !== searchQuery) {
+                            setSearchQuery(query);
+                        }
+                    })()}
                     <div className="absolute inset-y-0 right-0 flex items-center justify-end">
                         <select
                             id="language"

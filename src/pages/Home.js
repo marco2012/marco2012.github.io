@@ -12,8 +12,20 @@ import About from "../components/About";
 import NavBar from "../components/NavBar";
 import { GrProjects } from "react-icons/gr";
 import Skills from "../components/Skills";
+import TagManager from "react-gtm-module";
 
 function Home() {
+    // analytics
+    TagManager.dataLayer({
+        dataLayer: {
+            event: "pageview",
+            page: {
+                url: "/",
+                title: "Resume",
+            },
+        },
+    });
+
     const experienceData = [
         {
             subtitle: "Digital Marketing Consultant",
@@ -149,18 +161,21 @@ function Home() {
 
     return (
         <motion.div className="min-h-screen px-6 max-w-2xl mx-auto text-gray-800 dark:text-gray-200">
-            <NavBar
-                btnLink="/projects"
-                btnImage={<GrProjects />}
-                animate={false}
-            />
-
-            <About
-                title="Hello, I'm Marco."
-                subtitle="Digital Marketing Consultant at Deloitte"
-                description="I'm a software engineer passioned about building impactful projects with a focus on design. Looking for new challenges to expand my skills and creativity."
-                showAbout={true}
-            />
+            <div className="max-w-2xl mx-auto">
+                <NavBar
+                    btnLink="/projects"
+                    btnImage={<GrProjects />}
+                    animate={false}
+                />{" "}
+                <div className="flex flex-col items-center justify-center">
+                    <About
+                        title="Hello, I'm Marco."
+                        subtitle="Digital Marketing Consultant at Deloitte"
+                        description="I'm a software engineer passioned about building impactful projects with a focus on design. Looking for new challenges to expand my skills and creativity."
+                        showAbout={true}
+                    />
+                </div>
+            </div>
 
             <Section
                 data={experienceData}

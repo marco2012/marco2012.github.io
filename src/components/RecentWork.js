@@ -42,7 +42,7 @@ const RecentWork = ({ data }) => {
                                     )}
                                 </motion.span>
                                 <Link to="/projects">
-                                    <GoArrowRight />
+                                    <GoArrowRight className="mr-2" />
                                 </Link>
                             </motion.li>
                         ))}

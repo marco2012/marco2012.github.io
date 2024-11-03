@@ -21,6 +21,7 @@ import { VscAzure } from "react-icons/vsc";
 import { DiScrum } from "react-icons/di";
 import { SiPostman } from "react-icons/si";
 import { GrUserManager } from "react-icons/gr";
+import { MdSpaceDashboard } from "react-icons/md";
 
 const Skills = () => {
     const languages = [
@@ -73,7 +74,12 @@ const Skills = () => {
             icon: <SiAdobe />,
         },
         {
-            name: "Journey Optimizer",
+            name: (
+                <>
+                    <span className="hidden sm:inline">Journey Optimizer</span>
+                    <span className="sm:hidden">AJO</span>
+                </>
+            ),
             icon: <SiAdobe />,
         },
         {
@@ -82,6 +88,10 @@ const Skills = () => {
         },
         {
             name: "Launch",
+            icon: <SiAdobe />,
+        },
+        {
+            name: "Target",
             icon: <SiAdobe />,
         },
         {
@@ -97,8 +107,8 @@ const Skills = () => {
             icon: <CiShoppingTag />,
         },
         {
-            name: "Data Visualization",
-            icon: <CiShoppingTag />,
+            name: "Data Analysis",
+            icon: <MdSpaceDashboard />,
         },
     ];
     const tools = [

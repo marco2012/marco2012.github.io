@@ -4,7 +4,12 @@ import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import "@fontsource/jetbrains-mono";
+import TagManager from "react-gtm-module";
 
+//https://stackoverflow.com/questions/66406770/react-router-render-component-twice
+TagManager.initialize({
+    gtmId: "GTM-W9VG6TN",
+});
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
     <React.StrictMode>
