@@ -12,7 +12,7 @@ const SectionItem = ({ item }) => (
             <span
                 className={`${
                     item.title.length > 40 ? "text-xs" : "text-sm"
-                } md:text-md font-bold block`}
+                } sm:text-base font-bold block`}
             >
                 {item.link ? (
                     <a
@@ -29,7 +29,7 @@ const SectionItem = ({ item }) => (
             <span
                 className={`${
                     item.subtitle.length > 40 ? "text-xs" : "text-sm"
-                } md:text-md text-gray-800 dark:text-gray-200 italic flex items-center`}
+                } sm:text-base text-gray-800 dark:text-gray-200 italic flex items-center`}
             >
                 <img
                     src={require(`../assets/logo/${item.icon}`)}
@@ -40,7 +40,7 @@ const SectionItem = ({ item }) => (
             </span>
         </motion.div>
         <div className="text-right">
-            <span className="text-xs sm:text-md text-gray-800 dark:text-gray-200">
+            <span className="text-xs sm:text-sm text-gray-800 dark:text-gray-200">
                 {item.date}
             </span>
             <span className="block text-xs mt-1 text-gray-400 dark:text-gray-400 min-w-20">

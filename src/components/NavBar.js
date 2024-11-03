@@ -6,7 +6,7 @@ import SocialLinks from "./SocialLinks";
 import { NavLink } from "react-router-dom";
 
 const NavBar = ({ btnLink, btnImage, animate = true }) => {
-    const { toggleTheme } = useContext(ThemeContext);
+    const { isDarkTheme, toggleTheme } = useContext(ThemeContext);
 
     return (
         <motion.nav
@@ -57,6 +57,12 @@ const NavBar = ({ btnLink, btnImage, animate = true }) => {
                                     : "rotate(90deg)";
                             icon.style.transform = currentRotation;
                         }
+                        window.dataLayer = window.dataLayer || [];
+                        window.dataLayer.push({
+                            event: "event",
+                            event_name: "switch_theme",
+                            details: !isDarkTheme ? "dark" : "light",
+                        });
                     }}
                 >
                     <MdOutlineWbSunny id="theme-icon" />

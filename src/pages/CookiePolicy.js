@@ -1,10 +1,20 @@
 import React from "react";
 import NavBar from "../components/NavBar";
 import { GoHomeFill } from "react-icons/go";
+import TagManager from "react-gtm-module";
 
 function CookiePolicy() {
+    TagManager.dataLayer({
+        dataLayer: {
+            event: "pageview",
+            page: {
+                url: "/cookie-policy",
+                title: "Cookie Policy",
+            },
+        },
+    });
     return (
-        <div className="max-w-2xl mx-auto text-gray-800 dark:text-gray-200 text-justify hyphens-auto">
+        <div className="max-w-2xl px-6 mx-auto text-gray-800 dark:text-gray-200 text-justify hyphens-auto">
             <NavBar btnLink="/" btnImage={<GoHomeFill />} animate={false} />
             <h1 className="text-center my-8 text-xl font-bold">
                 Cookie Policy
@@ -60,22 +70,13 @@ function CookiePolicy() {
             <div className="cky-audit-table-element"></div>
             &nbsp;
             <h2 className="mb-2 font-bold">Manage cookie preferences</h2>
-            <a
-                className="my-8"
-                style={{
-                    padding: "8px 30px",
-                    background: "#F8F9FA",
-                    color: "#858A8F",
-                    border: "1px solid #DEE2E6",
-                    boxSizing: "border-box",
-                    borderRadius: "2px",
-                    cursor: "pointer",
-                }}
+            <button
+                className="cky-banner-element rounded-md border border-transparent py-2 px-4 flex items-center text-center text-sm transition-all text-slate-800 dark:text-slate-200 bg-slate-200 dark:bg-slate-600 hover:bg-slate-400 focus:bg-slate-300 active:bg-slate-300 disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
+                type="button"
             >
                 Cookie Settings
-            </a>{" "}
+            </button>
             <br />
-            &nbsp;
             <div>
                 <p>
                     You can change your cookie preferences any time by clicking
@@ -96,6 +97,7 @@ function CookiePolicy() {
                         Chrome:{" "}
                         <a
                             target="_blank"
+                            rel="noreferrer"
                             href="https://support.google.com/accounts/answer/32050"
                         >
                             https://support.google.com/accounts/answer/32050
@@ -105,6 +107,7 @@ function CookiePolicy() {
                         Safari:{" "}
                         <a
                             target="_blank"
+                            rel="noreferrer"
                             href="https://support.apple.com/en-in/guide/safari/sfri11471/mac"
                         >
                             https://support.apple.com/en-in/guide/safari/sfri11471/mac
@@ -114,6 +117,7 @@ function CookiePolicy() {
                         Firefox:{" "}
                         <a
                             target="_blank"
+                            rel="noreferrer"
                             href="https://support.mozilla.org/en-US/kb/clear-cookies-and-site-data-firefox?redirectslug=delete-cookies-remove-info-websites-stored&amp;redirectlocale=en-US"
                         >
                             https://support.mozilla.org/en-US/kb/clear-cookies-and-site-data-firefox?redirectslug=delete-cookies-remove-info-websites-stored&amp;redirectlocale=en-US
@@ -123,6 +127,7 @@ function CookiePolicy() {
                         Internet Explorer:{" "}
                         <a
                             target="_blank"
+                            rel="noreferrer"
                             href="https://support.microsoft.com/en-us/topic/how-to-delete-cookie-files-in-internet-explorer-bca9446f-d873-78de-77ba-d42645fa52fc"
                         >
                             https://support.microsoft.com/en-us/topic/how-to-delete-cookie-files-in-internet-explorer-bca9446f-d873-78de-77ba-d42645fa52fc

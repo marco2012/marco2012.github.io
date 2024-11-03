@@ -1,4 +1,4 @@
-import React, { useState, useContext } from "react";
+import React, { useState, useContext, useEffect } from "react";
 import { motion } from "framer-motion";
 import About from "../components/About";
 import { ThemeContext } from "../contexts/ThemeContext";
@@ -9,6 +9,7 @@ import projectsData from "../assets/projects.json";
 import { IoIosSearch } from "react-icons/io";
 import ScrollToTop from "../components/ScrollToTop";
 import TagManager from "react-gtm-module";
+import { IoIosArrowDropupCircle } from "react-icons/io";
 
 function Projects() {
     TagManager.dataLayer({
@@ -30,6 +31,22 @@ function Projects() {
                 field.toLowerCase().includes(searchQuery.toLowerCase())
             )
     );
+
+    const [showScrollTop, setShowScrollTop] = useState(false);
+    useEffect(() => {
+        const handleScroll = () => {
+            if (window.scrollY > 300) {
+                setShowScrollTop(true);
+            } else {
+                setShowScrollTop(false);
+            }
+        };
+        window.addEventListener("scroll", handleScroll);
+        return () => window.removeEventListener("scroll", handleScroll);
+    }, []);
+    const scrollToTop = () => {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+    };
 
     return (
         <motion.div className="min-h-screen px-6 text-gray-800 dark:text-gray-200">
@@ -138,6 +155,15 @@ function Projects() {
                         </motion.div>
                     ))}
             </div>
+
+            {showScrollTop && (
+                <button
+                    onClick={scrollToTop}
+                    className="fixed bottom-3 right-3 bg-slate-500 dark:bg-slate-600 text-gray-200 dark:text-gray-200 rounded-full shadow-lg focus:outline-none"
+                >
+                    <IoIosArrowDropupCircle className="w-10 h-10" />
+                </button>
+            )}
         </motion.div>
     );
 }
