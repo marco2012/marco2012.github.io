@@ -2,6 +2,8 @@ import React from "react";
 import SocialLinks from "./SocialLinks";
 import { IoIosLink } from "react-icons/io";
 import { motion } from "framer-motion";
+import { FaCookieBite } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 function Footer() {
     return (
@@ -12,11 +14,14 @@ function Footer() {
             animate={{ opacity: 1, y: 0 }} // Animate to on-screen
             transition={{ duration: 0.6 }} // Duration of the slide-in
         >
-            <div className="flex space-x-2">
+            <div className="flex items-center space-x-2">
                 <span className="p-1 rounded-full transition-colors hover:bg-white/[0.06]">
                     <IoIosLink />
                 </span>
                 <SocialLinks />
+                <Link to="/cookie-policy">
+                    <FaCookieBite className="hover:scale-125 ml-1" />
+                </Link>
             </div>
             <div>Made in 🇮🇹</div>
         </motion.div>

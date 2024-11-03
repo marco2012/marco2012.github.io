@@ -2,6 +2,7 @@ import React from "react";
 import { FaGithub } from "react-icons/fa";
 import { FaLinkedinIn } from "react-icons/fa6";
 import { FaGoogleScholar } from "react-icons/fa6";
+
 function SocialLinks() {
     return (
         <span className="flex items-center space-x-2">

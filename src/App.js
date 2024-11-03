@@ -8,7 +8,7 @@ import Projects from "./pages/Projects";
 import { ThemeProvider } from "./contexts/ThemeContext";
 import NotFound from "./pages/NotFound";
 import Footer from "./components/Footer";
-
+import CookiePolicy from "./pages/CookiePolicy";
 function App() {
     return (
         <ThemeProvider>
@@ -16,10 +16,15 @@ function App() {
                 <Routes>
                     <Route exact path="/" element={<Home />} />
                     <Route exact path="/projects" element={<Projects />} />
+                    <Route
+                        exact
+                        path="/cookie-policy"
+                        element={<CookiePolicy />}
+                    />
                     <Route path="*" element={<NotFound />} />
                 </Routes>
+                <Footer />
             </HashRouter>
-            <Footer />
         </ThemeProvider>
     );
 }
