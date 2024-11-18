@@ -159,12 +159,16 @@ function Projects() {
             </div>
 
             {showScrollTop && (
-                <button
+                <motion.button
                     onClick={scrollToTop}
                     className="fixed bottom-3 right-3 bg-slate-500 dark:bg-slate-600 text-gray-200 dark:text-gray-200 rounded-full shadow-lg focus:outline-none"
+                    initial={{ opacity: 0 }}
+                    animate={{ opacity: 1 }}
+                    exit={{ opacity: 0 }}
+                    transition={{ duration: 0.5 }}
                 >
                     <IoIosArrowDropupCircle className="w-10 h-10" />
-                </button>
+                </motion.button>
             )}
         </motion.div>
     );

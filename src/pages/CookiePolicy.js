@@ -3,7 +3,6 @@ import NavBar from "../components/NavBar";
 import { GoHomeFill } from "react-icons/go";
 import TagManager from "react-gtm-module";
 import About from "../components/About";
-import { FaCookieBite } from "react-icons/fa6";
 import { MdOutlineCookie } from "react-icons/md";
 
 function CookiePolicy() {

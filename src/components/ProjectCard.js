@@ -7,10 +7,13 @@ import LazyLoad from "react-lazyload";
 
 const ProjectCard = ({ project }) => {
     return (
-        <div className="project-card max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-neutral-800 dark:border-slate-700">
+        <div
+            className="project-card max-w-sm bg-white border border-gray-200 rounded-xl shadow dark:bg-neutral-800 dark:border-black"
+            style={{ minWidth: "360px" }}
+        >
             <LazyLoad height={200}>
                 <img
-                    className="rounded-t-lg"
+                    className="rounded-t-xl"
                     // src={`${process.env.PUBLIC_URL}/images/${project.image}`}
                     src={require(`../assets/images/${project.image}`)}
                     alt={project.image}
@@ -34,7 +37,7 @@ const ProjectCard = ({ project }) => {
                     {project.title}
                 </h5>
                 <p
-                    className="mb-3 text-sm text-gray-700 dark:text-slate-200"
+                    className="mb-3 text-base text-gray-700 dark:text-slate-200"
                     dangerouslySetInnerHTML={{ __html: project.description }}
                 ></p>
             </div>

@@ -169,7 +169,7 @@ function Home() {
                 />{" "}
                 <div className="flex flex-col items-center justify-center">
                     <About
-                        title="Hello, I'm Marco."
+                        title="Hello, I'm Marco"
                         subtitle="Digital Marketing Consultant at Deloitte"
                         description="I'm a software engineer passioned about building impactful projects with a focus on design. Looking for new challenges to expand my skills and creativity."
                         showAbout={true}

@@ -58,7 +58,7 @@ function About({ title, subtitle, description, showAbout, icon = null }) {
                         <IoInformationCircleOutline className="mr-2" />
                         <span className="font-semibold">About</span>
                     </h2>
-                    <p className="mt-2 text-sm sm:text-base leading-relaxed text-gray-800 dark:text-gray-200 text-justify hyphens-auto">
+                    <p className="mt-2 text-base leading-relaxed text-gray-800 dark:text-gray-200 text-justify hyphens-auto">
                         {description}
                     </p>
                 </motion.div>

@@ -5,7 +5,7 @@ import { FaGoogleScholar } from "react-icons/fa6";
 
 function SocialLinks() {
     return (
-        <span className="flex items-center space-x-2">
+        <span className="flex items-center space-x-2 text-sm sm:text-base">
             <a
                 href="https://www.linkedin.com/in/marco-lupia"
                 target="_blank"

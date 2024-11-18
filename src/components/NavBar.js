@@ -21,7 +21,7 @@ const NavBar = ({ btnLink, btnImage, animate = true }) => {
                     className="p-1 rounded-full transition-colors hover:bg-white/[0.06] hover:scale-125 text-base"
                 >
                     <div className="group relative">
-                        <div className="flex items-center gap-2 text-[13px] font-mono text-gray-800 dark:text-gray-200 transition-colors cursor-pointer">
+                        <div className="flex items-center gap-2 text-sm sm:text-base font-mono text-gray-800 dark:text-gray-200 transition-colors cursor-pointer">
                             {/* <div className="flex">{ctime}</div> */}
                             {btnImage}
                             {/* <span className="absolute -bottom-8 left-1/2 -translate-x-1/2 text-[11px] opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap">
@@ -43,7 +43,7 @@ const NavBar = ({ btnLink, btnImage, animate = true }) => {
                 {/* <div className="h-3.5 w-[1px] bg-white/[0.08]"></div> */}
                 <div className="h-3.5 w-[1px] bg-black/[0.2] dark:bg-white/[0.2] hidden sm:block"></div>
                 <button
-                    className="p-1 rounded-full group relative text-gray-800 dark:text-gray-200 "
+                    className="p-1 rounded-full group relative text-gray-800 dark:text-gray-200 text-sm sm:text-base"
                     tabIndex="0"
                     style={{ transform: "none" }}
                     onClick={() => {

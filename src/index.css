@@ -3,7 +3,9 @@
 @tailwind utilities;
 
 body {
-    font-family: "JetBrains Mono", monospace;
+    /* @import url("https://fonts.cdnfonts.com/css/progress-3");
+    font-family: "Progress", sans-serif; */
+    /* font-family: "JetBrains Mono", monospace; */
     margin: 0;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;

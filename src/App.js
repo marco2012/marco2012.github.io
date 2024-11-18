@@ -9,6 +9,7 @@ import { ThemeProvider } from "./contexts/ThemeContext";
 import NotFound from "./pages/NotFound";
 import Footer from "./components/Footer";
 import CookiePolicy from "./pages/CookiePolicy";
+
 function App() {
     return (
         <ThemeProvider>
