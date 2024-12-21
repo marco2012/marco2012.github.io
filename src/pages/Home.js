@@ -35,19 +35,19 @@ function Home() {
             icon: "deloitte.webp",
         },
         {
-            subtitle: "Full Stack Developer",
+            subtitle: "Full Stack Cloud Developer",
             date: "2021",
             title: "Reply",
             location: "Rome",
             icon: "reply.webp",
         },
-        {
-            subtitle: "Software Engineer",
-            date: "2020",
-            title: "Sapienza University",
-            location: "Rome",
-            icon: "sapienza.webp",
-        },
+        // {
+        //     subtitle: "Software Engineer",
+        //     date: "2020",
+        //     title: "Sapienza University",
+        //     location: "Rome",
+        //     icon: "sapienza.webp",
+        // },
     ];
     const educationData = [
         {
@@ -56,6 +56,8 @@ function Home() {
             date: "2018-2020",
             location: "Rome",
             icon: "sapienza.webp",
+            details:
+                "• Designed process mining algorithms to build SmartRPA, a tool to generate software robots that emulate observed user behavior</br>• Presented academic research at RPA Forum and CAiSE Forum which lead to the publication of 3 papers cited 100+ times",
         },
         {
             title: "BSc in Computer and Systems Engineering",
@@ -118,10 +120,18 @@ function Home() {
     ];
     const publicationsData = [
         {
+            title: "Reactive synthesis of software robots in RPA from user interface logs",
+            subtitle: "Computers in Industry",
+            date: "06/2022",
+            location: "Springer",
+            link: "https://www.sciencedirect.com/science/article/abs/pii/S016636152200118X",
+            icon: "springer.webp",
+        },
+        {
             title: "SmartRPA: A Tool to Reactively Synthesize Software Robots from User Interface Logs",
             subtitle:
                 "33rd Int. Conf. on Advanced Information Systems Engineering (CAiSE Forum)",
-            date: "07/2021",
+            date: "06/2021",
             location: "Springer",
             link: "https://www.springerprofessional.de/en/smartrpa-a-tool-to-reactively-synthesize-software-robots-from-us/19259790",
             icon: "springer.webp",
@@ -167,11 +177,13 @@ function Home() {
                     btnImage={<GrProjects />}
                     animate={false}
                 />{" "}
-                <div className="flex flex-col items-center justify-center">
+                <div className="flex flex-col">
                     <About
                         title="Hello, I'm Marco"
                         subtitle="Digital Marketing Consultant at Deloitte"
-                        description="I'm a software engineer passioned about building impactful projects with a focus on design. Looking for new challenges to expand my skills and creativity."
+                        description="Computer Engineer with 4+ years of experience delivering impactful, data-driven solutions through advanced technology
+implementations and cross-functional collaboration. Expertise in Adobe and Google ecosystems, with strong skills in Python,
+JavaScript, SQL, and data analysis and visualization, driving measurable success by aligning technical solutions with business goals."
                         showAbout={true}
                     />
                 </div>

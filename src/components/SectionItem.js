@@ -38,6 +38,12 @@ const SectionItem = ({ item }) => (
                 />
                 {item.subtitle}
             </span>
+            {item.details && (
+                <div
+                    className="text-sm text-justify"
+                    dangerouslySetInnerHTML={{ __html: item.details }}
+                ></div>
+            )}
         </motion.div>
         <div className="text-right">
             <span className="text-xs sm:text-sm text-gray-800 dark:text-gray-200">

@@ -22,6 +22,9 @@ import { DiScrum } from "react-icons/di";
 import { SiPostman } from "react-icons/si";
 import { GrUserManager } from "react-icons/gr";
 import { MdSpaceDashboard } from "react-icons/md";
+import { SiTableau } from "react-icons/si";
+import { MdOutlineSpaceDashboard } from "react-icons/md";
+import { SiSemrush } from "react-icons/si";
 
 const Skills = () => {
     const languages = [
@@ -109,6 +112,18 @@ const Skills = () => {
         {
             name: "Data Analysis",
             icon: <MdSpaceDashboard />,
+        },
+        {
+            name: "Tableau",
+            icon: <SiTableau />,
+        },
+        {
+            name: "Power BI",
+            icon: <MdOutlineSpaceDashboard />,
+        },
+        {
+            name: "SemRush",
+            icon: <SiSemrush />,
         },
     ];
     const tools = [

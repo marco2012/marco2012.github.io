@@ -37,10 +37,10 @@ function About({ title, subtitle, description, showAbout, icon = null }) {
                     </motion.div>
                 )}
                 <div>
-                    <h1 className="text-xl font-bold text-gray-800 dark:text-gray-200">
+                    <h1 className="text-2xl font-bold text-gray-800 dark:text-gray-200">
                         {title}
                     </h1>
-                    <p className="text-base text-gray-800 dark:text-gray-200">
+                    <p className="text-lg text-gray-800 dark:text-gray-200">
                         {subtitle}
                     </p>
                 </div>
