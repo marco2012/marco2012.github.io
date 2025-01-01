@@ -4,6 +4,7 @@ import { IoIosLink } from "react-icons/io";
 import { motion } from "framer-motion";
 import { FaCookieBite } from "react-icons/fa";
 import { Link } from "react-router-dom";
+import { FaReact } from "react-icons/fa";
 
 function Footer() {
     return (
@@ -23,7 +24,9 @@ function Footer() {
                     <FaCookieBite className="hover:scale-125 ml-1" />
                 </Link>
             </div>
-            <div>Made in 🇮🇹</div>
+            <div className="flex items-center">
+                Made with <FaReact className="mx-1" /> in 🇮🇹
+            </div>
         </motion.div>
     );
 }

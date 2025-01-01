@@ -14,10 +14,10 @@ const ProjectCard = ({ project }) => {
             <LazyLoad height={200}>
                 <img
                     className="rounded-t-xl"
-                    // src={`${process.env.PUBLIC_URL}/images/${project.image}`}
+                    style={{ minHeight: "220px" }}
                     src={require(`../assets/images/${project.image}`)}
                     alt={project.image}
-                />{" "}
+                />
             </LazyLoad>
 
             <div className="p-5 flex-grow">

@@ -1,5 +1,15 @@
 [
     {
+        "title": "Historical Inflation Calculator",
+        "description": "Calculate historical inflation rates",
+        "link": "https://marlup.top/historicalInflationCalc/",
+        "language": "HTML/JS",
+        "date": "2024-06-01",
+        "image": "historical_inflation_calc.webp",
+        "skills": "HTML, JavaScript",
+        "category": "JavaScript"
+    },
+    {
         "title": "Instabot Library",
         "description": "Enhanced fork of Instagram API library adding features for story management, user interaction automation, and private account management. Includes functionality for downloading/uploading stories and managing follow requests.",
         "link": "https://github.com/marco2012/instabot",
