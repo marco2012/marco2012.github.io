@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.af5fd16c.css",
-    "main.js": "/static/js/main.67a22fb1.js",
+    "main.css": "/static/css/main.7c3bf951.css",
+    "main.js": "/static/js/main.1f10c6b7.js",
     "static/js/453.2ddb282f.chunk.js": "/static/js/453.2ddb282f.chunk.js",
     "static/media/404.gif": "/static/media/404.d4d3847e01366b77ae2f.gif",
     "static/media/computer-bg.webp": "/static/media/computer-bg.a78a64a8a35d2ac38319.webp",
@@ -67,6 +67,7 @@
     "static/media/sapienza.webp": "/static/media/sapienza.2c6356b7d2f1cd9f719a.webp",
     "static/media/jetbrains-mono-latin-ext-400-normal.woff2": "/static/media/jetbrains-mono-latin-ext-400-normal.e83b764e84e73968db26.woff2",
     "static/media/logo1.webp": "/static/media/logo1.43162880f197a9adc173.webp",
+    "static/media/historical_inflation_calc.webp": "/static/media/historical_inflation_calc.9c15934b81900a782f11.webp",
     "static/media/cups.webp": "/static/media/cups.52b592872d65d5b406a8.webp",
     "static/media/raspberrypi.webp": "/static/media/raspberrypi.277a23f0c434b7680f45.webp",
     "static/media/jetbrains-mono-cyrillic-400-normal.woff": "/static/media/jetbrains-mono-cyrillic-400-normal.5b36ec97fd93af26fc0c.woff",
@@ -95,12 +96,12 @@
     "static/media/adobe.webp": "/static/media/adobe.b0f6f5ffe525357cf19f.webp",
     "static/media/microsoft.webp": "/static/media/microsoft.917a0b37b905b20534f2.webp",
     "static/media/arrow_up.webp": "/static/media/arrow_up.306c5c2b380d315900fc.webp",
-    "main.af5fd16c.css.map": "/static/css/main.af5fd16c.css.map",
-    "main.67a22fb1.js.map": "/static/js/main.67a22fb1.js.map",
+    "main.7c3bf951.css.map": "/static/css/main.7c3bf951.css.map",
+    "main.1f10c6b7.js.map": "/static/js/main.1f10c6b7.js.map",
     "453.2ddb282f.chunk.js.map": "/static/js/453.2ddb282f.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.af5fd16c.css",
-    "static/js/main.67a22fb1.js"
+    "static/css/main.7c3bf951.css",
+    "static/js/main.1f10c6b7.js"
   ]
 }
