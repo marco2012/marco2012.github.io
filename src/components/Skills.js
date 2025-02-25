@@ -14,9 +14,7 @@ import { SiDotnet } from "react-icons/si";
 import { SiPandas } from "react-icons/si";
 import { SiAdobe } from "react-icons/si";
 import { FaGoogle } from "react-icons/fa";
-import { CiShoppingTag } from "react-icons/ci";
 import { FaConfluence } from "react-icons/fa";
-import { FaGit } from "react-icons/fa";
 import { VscAzure } from "react-icons/vsc";
 import { DiScrum } from "react-icons/di";
 import { SiPostman } from "react-icons/si";
@@ -25,6 +23,11 @@ import { MdSpaceDashboard } from "react-icons/md";
 import { SiTableau } from "react-icons/si";
 import { MdOutlineSpaceDashboard } from "react-icons/md";
 import { SiSemrush } from "react-icons/si";
+import { IoLogoFirebase } from "react-icons/io5";
+import { SiGoogleadmob } from "react-icons/si";
+import { SiGoogletagmanager } from "react-icons/si";
+import { FaTag } from "react-icons/fa";
+import { FaGithub } from "react-icons/fa6";
 
 const Skills = () => {
     const languages = [
@@ -73,14 +76,14 @@ const Skills = () => {
     ];
     const digitalSkills = [
         {
-            name: "Real-time CDP",
+            name: "Real-time CDP (AEP)",
             icon: <SiAdobe />,
         },
         {
             name: (
                 <>
                     <span className="hidden sm:inline">Journey Optimizer</span>
-                    <span className="sm:hidden">AJO</span>
+                    <span className="sm:hidden">Journey Optimizer</span>
                 </>
             ),
             icon: <SiAdobe />,
@@ -103,11 +106,11 @@ const Skills = () => {
         },
         {
             name: "Tag Manager",
-            icon: <FaGoogle />,
+            icon: <SiGoogletagmanager />,
         },
         {
             name: "Tealium",
-            icon: <CiShoppingTag />,
+            icon: <FaTag />,
         },
         {
             name: "Data Analysis",
@@ -137,7 +140,7 @@ const Skills = () => {
         },
         {
             name: "Git",
-            icon: <FaGit />,
+            icon: <FaGithub />,
         },
         {
             name: "Azure Cloud",
@@ -150,6 +153,14 @@ const Skills = () => {
         {
             name: "Project Management",
             icon: <GrUserManager />,
+        },
+        {
+            name: "Firebase",
+            icon: <IoLogoFirebase />,
+        },
+        {
+            name: "AdMob",
+            icon: <SiGoogleadmob />,
         },
     ];
     return (

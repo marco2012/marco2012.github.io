@@ -28,17 +28,24 @@ function Home() {
 
     const experienceData = [
         {
+            subtitle: "AdTech Solutions Engineer",
+            date: "03/2025 - now",
+            title: "Google",
+            location: "Dublin, Ireland",
+            icon: "google.webp",
+        },
+        {
             subtitle: "Digital Marketing Consultant",
-            date: "2021-now",
+            date: "08/2021 - 03/2025",
             title: "Deloitte",
-            location: "Rome",
+            location: "Rome, Italy",
             icon: "deloitte.webp",
         },
         {
             subtitle: "Full Stack Cloud Developer",
-            date: "2021",
+            date: "01/2021 - 08/2021",
             title: "Reply",
-            location: "Rome",
+            location: "Rome, Italy",
             icon: "reply.webp",
         },
         // {
@@ -54,7 +61,7 @@ function Home() {
             title: "MSc in Engineering in Computer Science",
             subtitle: "Sapienza University",
             date: "2018-2020",
-            location: "Rome",
+            location: "Rome, Italy",
             icon: "sapienza.webp",
             details:
                 "• Designed process mining algorithms to build SmartRPA, a tool to generate software robots that emulate observed user behavior</br>• Presented academic research at RPA Forum and CAiSE Forum which lead to the publication of 3 papers cited 100+ times",
@@ -63,7 +70,7 @@ function Home() {
             title: "BSc in Computer and Systems Engineering",
             subtitle: "Sapienza University",
             date: "2015-2018",
-            location: "Rome",
+            location: "Rome, Italy",
             icon: "sapienza.webp",
         },
     ];
@@ -180,10 +187,15 @@ function Home() {
                 <div className="flex flex-col">
                     <About
                         title="Hello, I'm Marco"
-                        subtitle="Digital Marketing Consultant at Deloitte"
-                        description="Computer Engineer with 4+ years of experience delivering impactful, data-driven solutions through advanced technology
-implementations and cross-functional collaboration. Expertise in Adobe and Google ecosystems, with strong skills in Python,
-JavaScript, SQL, and data analysis and visualization, driving measurable success by aligning technical solutions with business goals."
+                        subtitle={
+                            experienceData[0].subtitle +
+                            " at " +
+                            experienceData[0].title
+                        }
+                        description={`Computer Engineer with ${
+                            new Date().getFullYear() - 2021
+                        }+ years of experience delivering impactful, data-driven solutions. Expert in Google and Adobe ecosystems, with strong skills in Python,
+                            JavaScript, SQL, data analysis and visualization, driving measurable success by aligning technical solutions with business goals.`}
                         showAbout={true}
                     />
                 </div>

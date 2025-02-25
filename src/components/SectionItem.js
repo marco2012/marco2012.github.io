@@ -49,7 +49,7 @@ const SectionItem = ({ item }) => (
             <span className="text-xs sm:text-sm text-gray-800 dark:text-gray-200">
                 {item.date}
             </span>
-            <span className="block text-xs mt-1 text-gray-400 dark:text-gray-400 min-w-20">
+            <span className="block text-xs sm:text-sm mt-1 text-gray-500 dark:text-gray-400 min-w-20">
                 {item.location}
             </span>
         </div>
