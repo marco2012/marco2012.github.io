@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.e2946151.css",
-    "main.js": "/static/js/main.ef52f991.js",
+    "main.js": "/static/js/main.a4d8c8c4.js",
     "static/js/453.2ddb282f.chunk.js": "/static/js/453.2ddb282f.chunk.js",
     "static/media/404.gif": "/static/media/404.d4d3847e01366b77ae2f.gif",
     "static/media/computer-bg.webp": "/static/media/computer-bg.a78a64a8a35d2ac38319.webp",
@@ -88,8 +88,8 @@
     "static/media/reply.webp": "/static/media/reply.7500ea4a9cc9edba1ece.webp",
     "static/media/jetbrains-mono-cyrillic-ext-400-normal.woff": "/static/media/jetbrains-mono-cyrillic-ext-400-normal.fe91ef32cce4c8826b65.woff",
     "static/media/jetbrains-mono-cyrillic-ext-400-normal.woff2": "/static/media/jetbrains-mono-cyrillic-ext-400-normal.7347c7bfed47f1ef0b25.woff2",
-    "static/media/loc.webp": "/static/media/loc.2595d4475b7ad166a7e0.webp",
     "index.html": "/index.html",
+    "static/media/loc.webp": "/static/media/loc.2595d4475b7ad166a7e0.webp",
     "static/media/deloitte.webp": "/static/media/deloitte.f9dcb97b5d03158f839b.webp",
     "static/media/google.webp": "/static/media/google.ef201d6263d045b532e7.webp",
     "static/media/cambridge.webp": "/static/media/cambridge.9f6c69690fefbf2a46fe.webp",
@@ -97,11 +97,11 @@
     "static/media/microsoft.webp": "/static/media/microsoft.917a0b37b905b20534f2.webp",
     "static/media/arrow_up.webp": "/static/media/arrow_up.306c5c2b380d315900fc.webp",
     "main.e2946151.css.map": "/static/css/main.e2946151.css.map",
-    "main.ef52f991.js.map": "/static/js/main.ef52f991.js.map",
+    "main.a4d8c8c4.js.map": "/static/js/main.a4d8c8c4.js.map",
     "453.2ddb282f.chunk.js.map": "/static/js/453.2ddb282f.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.e2946151.css",
-    "static/js/main.ef52f991.js"
+    "static/js/main.a4d8c8c4.js"
   ]
 }
