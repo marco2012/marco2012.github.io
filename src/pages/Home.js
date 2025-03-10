@@ -192,11 +192,13 @@ function Home() {
                             " at " +
                             experienceData[0].title
                         }
-                        description={`Computer Engineer with ${
+                        description={`Result-oriented Computer Engineer with ${
                             new Date().getFullYear() - 2021
-                        }+ years of experience delivering impactful, data-driven solutions. Expert in Google and Adobe ecosystems, with strong skills in Python,
-                            JavaScript, SQL, data analysis and visualization, driving measurable success by aligning technical solutions with business goals.`}
+                        }+ years of experience delivering impactful, data-driven solutions by aligning tech
+requirements with business goals. Expert in Google and Adobe systems, with strong skills in Python, JavaScript, SQL,
+data analysis, driving measurable success and cross-functional collaboration.`}
                         showAbout={true}
+                        showLinks={true}
                     />
                 </div>
             </div>

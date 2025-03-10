@@ -2,8 +2,16 @@ import React, { useContext } from "react";
 import { ThemeContext } from "../contexts/ThemeContext";
 import { motion } from "framer-motion";
 import { IoInformationCircleOutline } from "react-icons/io5";
+import SocialLinks from "./SocialLinks";
 
-function About({ title, subtitle, description, showAbout, icon = null }) {
+function About({
+    title,
+    subtitle,
+    description,
+    showAbout,
+    icon = null,
+    showLinks = false,
+}) {
     const { isDarkTheme } = useContext(ThemeContext);
 
     return (
@@ -43,6 +51,7 @@ function About({ title, subtitle, description, showAbout, icon = null }) {
                     <p className="text-lg text-gray-800 dark:text-gray-200">
                         {subtitle}
                     </p>
+                    {showLinks && <SocialLinks />}
                 </div>
             </motion.div>
 
