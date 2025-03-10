@@ -9,6 +9,7 @@ import { ThemeProvider } from "./contexts/ThemeContext";
 import NotFound from "./pages/NotFound";
 import Footer from "./components/Footer";
 import CookiePolicy from "./pages/CookiePolicy";
+import Linkedin from "./pages/Linkedin";
 
 function App() {
     return (
@@ -22,6 +23,7 @@ function App() {
                         path="/cookie-policy"
                         element={<CookiePolicy />}
                     />
+                    <Route exact path="/linkedin" element={<Linkedin />} />
                     <Route path="*" element={<NotFound />} />
                 </Routes>
                 <Footer />

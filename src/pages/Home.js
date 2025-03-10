@@ -198,7 +198,7 @@ function Home() {
 requirements with business goals. Expert in Google and Adobe systems, with strong skills in Python, JavaScript, SQL,
 data analysis, driving measurable success and cross-functional collaboration.`}
                         showAbout={true}
-                        showLinks={true}
+                        showLinks={false}
                     />
                 </div>
             </div>
