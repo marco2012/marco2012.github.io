@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Redirecting...</title>
+        <script>
+            (function () {
+                // Capture the attempted path and query string
+                var attemptedPath =
+                    window.location.pathname + window.location.search;
+                // Redirect to the SPA with hash-based routing
+                window.location.replace(
+                    window.location.origin + "/#" + attemptedPath
+                );
+            })();
+        </script>
+    </head>
+    <body>
+        <p>Redirecting to our site...</p>
+    </body>
+</html>
