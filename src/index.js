@@ -11,16 +11,6 @@ TagManager.initialize({
     gtmId: "GTM-W9VG6TN",
 });
 
-// Client-side redirect: if URL doesn't contain a hash, add one for GitHub Pages routing
-if (!window.location.hash && window.location.pathname !== "/") {
-    const newUrl =
-        window.location.origin +
-        "/#" +
-        window.location.pathname +
-        window.location.search;
-    window.location.replace(newUrl);
-}
-
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
     <React.StrictMode>
