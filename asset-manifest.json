@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.e2946151.css",
-    "main.js": "/static/js/main.a4d8c8c4.js",
+    "main.css": "/static/css/main.fdaa74de.css",
+    "main.js": "/static/js/main.8162614d.js",
     "static/js/453.2ddb282f.chunk.js": "/static/js/453.2ddb282f.chunk.js",
     "static/media/404.gif": "/static/media/404.d4d3847e01366b77ae2f.gif",
     "static/media/computer-bg.webp": "/static/media/computer-bg.a78a64a8a35d2ac38319.webp",
@@ -16,6 +16,7 @@
     "static/media/danas_club.webp": "/static/media/danas_club.30d01f95ba3a10d63c1b.webp",
     "static/media/smartgasstation.webp": "/static/media/smartgasstation.d808f00bb17c38f9a353.webp",
     "static/media/progetto_cratere.webp": "/static/media/progetto_cratere.5d9b0f67dc2d666e91fd.webp",
+    "static/media/resumehelper.webp": "/static/media/resumehelper.53c3e4366c0ec2137f9b.webp",
     "static/media/aramusic.webp": "/static/media/aramusic.3a7cac798aeebee57e90.webp",
     "static/media/circuit_cover.webp": "/static/media/circuit_cover.13c7f4c1c77d535b581a.webp",
     "static/media/circuit.webp": "/static/media/circuit.803d79700f14f92220c9.webp",
@@ -76,6 +77,7 @@
     "static/media/gas-station.webp": "/static/media/gas-station.99f0a40bebadd4810ff5.webp",
     "static/media/logo2_transparent.webp": "/static/media/logo2_transparent.3b12d23f2fdac70f050a.webp",
     "static/media/logo1_slim.webp": "/static/media/logo1_slim.fb8df434949a244a3995.webp",
+    "static/media/daftie.webp": "/static/media/daftie.30fea59696f9c20c776d.webp",
     "static/media/jetbrains-mono-greek-400-normal.woff": "/static/media/jetbrains-mono-greek-400-normal.449c5e33a2bb82fa67e2.woff",
     "static/media/jetbrains-mono-vietnamese-400-normal.woff": "/static/media/jetbrains-mono-vietnamese-400-normal.fac3ebe1fb24270f2e31.woff",
     "static/media/logo2.webp": "/static/media/logo2.017ab96e49e59d25df4c.webp",
@@ -96,12 +98,12 @@
     "static/media/adobe.webp": "/static/media/adobe.b0f6f5ffe525357cf19f.webp",
     "static/media/microsoft.webp": "/static/media/microsoft.917a0b37b905b20534f2.webp",
     "static/media/arrow_up.webp": "/static/media/arrow_up.306c5c2b380d315900fc.webp",
-    "main.e2946151.css.map": "/static/css/main.e2946151.css.map",
-    "main.a4d8c8c4.js.map": "/static/js/main.a4d8c8c4.js.map",
+    "main.fdaa74de.css.map": "/static/css/main.fdaa74de.css.map",
+    "main.8162614d.js.map": "/static/js/main.8162614d.js.map",
     "453.2ddb282f.chunk.js.map": "/static/js/453.2ddb282f.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.e2946151.css",
-    "static/js/main.a4d8c8c4.js"
+    "static/css/main.fdaa74de.css",
+    "static/js/main.8162614d.js"
   ]
 }
