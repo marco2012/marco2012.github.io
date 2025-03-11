@@ -4,6 +4,7 @@ import { CiCalendar } from "react-icons/ci";
 import { FaArrowRightLong } from "react-icons/fa6";
 import { FaCode } from "react-icons/fa6";
 import LazyLoad from "react-lazyload";
+import { BsThreeDots } from "react-icons/bs";
 
 const ProjectCard = ({ project }) => {
     return (
@@ -41,27 +42,24 @@ const ProjectCard = ({ project }) => {
                     dangerouslySetInnerHTML={{ __html: project.description }}
                 ></p>
             </div>
-            <div className="mb-4 ml-4">
-                {/* <div className="ml-2 mb-2 text-sm text-gray-700 dark:text-slate-200 flex items-center justify-between">
-                    <span className="flex items-center">
-                        <BsThreeDots className="mr-1" /> {project.skills}
-                    </span>
-                    <span className="flex items-center mr-4">
-                        <CiCalendar className="mr-1" />{" "}
-                        {new Date(project.date).toLocaleString("en-US", {
-                            month: "numeric",
-                            year: "numeric",
-                        })}
-                    </span>
-                </div> */}
+            <div className="mb-4 ml-4 flex items-center justify-between">
                 <button
                     className="rounded-md border border-transparent py-2 px-4 flex items-center text-center text-sm transition-all text-slate-600 bg-slate-200 hover:bg-slate-400 focus:bg-slate-300 active:bg-slate-300 disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
                     type="button"
                     onClick={() => window.open(project.link, "_blank")}
+                    disabled={!project.link}
                 >
                     View Project
                     <FaArrowRightLong className="ml-2" />
                 </button>
+                {project.skills && (
+                    <div
+                        className="text-sm text-gray-500 dark:text-slate-200 flex items-center mr-4 text-right"
+                        style={{ maxWidth: "180px" }}
+                    >
+                        <BsThreeDots className="mr-1" /> {project.skills}
+                    </div>
+                )}
             </div>
         </div>
     );

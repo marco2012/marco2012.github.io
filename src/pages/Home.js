@@ -64,7 +64,7 @@ function Home() {
             location: "Rome, Italy",
             icon: "sapienza.webp",
             details:
-                "• Designed process mining algorithms to build SmartRPA, a tool to generate software robots that emulate observed user behavior</br>• Presented academic research at RPA Forum and CAiSE Forum which lead to the publication of 3 papers cited 100+ times",
+                '• Designed process mining algorithms to build <a href="https://github.com/bpm-diag/smartRPA" target="_blank" rel="noopener noreferrer" class="text-blue-800">SmartRPA</a>, a tool to generate software robots that emulate observed user behavior</br>• Presented academic research at RPA Forum and CAiSE Forum which lead to the publication of 3 papers <a href="https://scholar.google.com/citations?user=D139cEIAAAAJ&hl=it&oi=ao" target="_blank" rel="noopener noreferrer" class="text-blue-800">cited 100+ times</a>',
         },
         {
             title: "BSc in Computer and Systems Engineering",
@@ -186,17 +186,35 @@ function Home() {
                 />{" "}
                 <div className="flex flex-col">
                     <About
-                        title="Hello, I'm Marco"
-                        subtitle={
-                            experienceData[0].subtitle +
-                            " at " +
-                            experienceData[0].title
+                        title={
+                            <>
+                                Hello, I'm <strong>Marco</strong>
+                            </>
                         }
-                        description={`Result-oriented Computer Engineer with ${
-                            new Date().getFullYear() - 2021
-                        }+ years of experience delivering impactful, data-driven solutions by aligning tech
-requirements with business goals. Expert in Google and Adobe systems, with strong skills in Python, JavaScript, SQL,
-data analysis, driving measurable success and cross-functional collaboration.`}
+                        subtitle={
+                            <>
+                                {experienceData[0].subtitle} at{" "}
+                                <strong>{experienceData[0].title}</strong>
+                            </>
+                        }
+                        description={
+                            <>
+                                Result-oriented{" "}
+                                <strong>Computer Engineer</strong> with{" "}
+                                {new Date().getFullYear() - 2021}+ years of
+                                experience delivering{" "}
+                                <strong>
+                                    impactful, data-driven solutions
+                                </strong>{" "}
+                                by aligning tech requirements with business
+                                goals. Expert in <strong>Google</strong> and{" "}
+                                <strong>Adobe</strong> systems, with strong
+                                skills in Python, JavaScript, SQL, data
+                                analysis, driving{" "}
+                                <strong>measurable success</strong> and
+                                cross-functional collaboration.
+                            </>
+                        }
                         showAbout={true}
                         showLinks={false}
                     />

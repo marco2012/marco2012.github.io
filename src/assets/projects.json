@@ -1,5 +1,15 @@
 [
     {
+        "title": "ResumeHelper",
+        "description": "Custom GPT that analyzes a candidate's resume against a job description and provides a match score with improvement suggestions.",
+        "link": "",
+        "language": "Web",
+        "date": "2025-03-10",
+        "image": "resumehelper.webp",
+        "skills": "ChatGPT",
+        "category": "Web"
+    },
+    {
         "title": "Historical Inflation Calculator",
         "description": "Calculate historical inflation rates",
         "link": "https://marlup.top/historicalInflationCalc/",
@@ -150,7 +160,7 @@
         "category": "Web"
     },
     {
-        "title": "Global terrorism",
+        "title": "Global threats",
         "description": "Visual analytics project using D3.js for analyzing worldwide terrorism attacks since 1975. Features interactive maps and dynamic charts for data visualization.",
         "link": "https://github.com/marco2012/GlobalTerrorism",
         "language": "Web",
@@ -306,7 +316,7 @@
         "language": "JavaScript",
         "date": "2018-01-20",
         "image": "cobspreadbot.webp",
-        "skills": "REST APIs, Telegram bot, Cryptocurrency, Node.js, Firebase, Databse",
+        "skills": "REST APIs, crypto, Node.js, Firebase, Databse",
         "category": "Other"
     },
     {
@@ -316,7 +326,7 @@
         "language": "JavaScript",
         "date": "2018-01-20",
         "image": "aulebot.webp",
-        "skills": "REST APIs, Telegram bot, Node.js",
+        "skills": "REST APIs, Node.js",
         "category": "Other"
     },
     {
@@ -326,7 +336,7 @@
         "language": "JavaScript",
         "date": "2018-01-20",
         "image": "etherscanbot.webp",
-        "skills": "REST APIs, Telegram bot, Cryptocurrency, Node.js",
+        "skills": "REST APIs, crypto, Node.js",
         "category": "Other"
     },
     {
@@ -406,7 +416,7 @@
         "language": "TypeScript",
         "date": "2020-06-28",
         "image": "ecommerce.webp",
-        "skills": "Full-stack, REST APIs, Database, Angular, Spring Boot, Maven",
+        "skills": "REST APIs, DB, Angular, Spring Boot",
         "category": "Web"
       },
       {
@@ -426,7 +436,7 @@
         "language": "HTML/JS",
         "date": "2018-02-01",
         "image": "gas-station.webp",
-        "skills": "Telegram bot, Node.js, Database",
+        "skills": "Node.js, Database",
         "category": "Web"
       },
       {

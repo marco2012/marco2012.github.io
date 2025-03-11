@@ -28,6 +28,11 @@ import { SiGoogleadmob } from "react-icons/si";
 import { SiGoogletagmanager } from "react-icons/si";
 import { FaTag } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa6";
+import { FaGears } from "react-icons/fa6";
+import { IoIosPeople } from "react-icons/io";
+import { GrStakeholder } from "react-icons/gr";
+import { IoPeople } from "react-icons/io5";
+import { RiOrganizationChart } from "react-icons/ri";
 
 const Skills = () => {
     const languages = [
@@ -150,10 +155,7 @@ const Skills = () => {
             name: "REST APIs",
             icon: <SiPostman />,
         },
-        {
-            name: "Project Management",
-            icon: <GrUserManager />,
-        },
+
         {
             name: "Firebase",
             icon: <IoLogoFirebase />,
@@ -161,6 +163,32 @@ const Skills = () => {
         {
             name: "AdMob",
             icon: <SiGoogleadmob />,
+        },
+    ];
+    const businessSkills = [
+        {
+            name: "Project Management",
+            icon: <GrUserManager />,
+        },
+        {
+            name: "Stakeholder Management",
+            icon: <GrStakeholder />,
+        },
+        {
+            name: "Process optimization",
+            icon: <FaGears />,
+        },
+        {
+            name: "Cross-functional coordination",
+            icon: <IoIosPeople />,
+        },
+        {
+            name: "Leadership",
+            icon: <IoPeople />,
+        },
+        {
+            name: "Organization",
+            icon: <RiOrganizationChart />,
         },
     ];
     return (
@@ -187,6 +215,7 @@ const Skills = () => {
                         data={digitalSkills}
                     />
                     <SkillsItem title="Tools" data={tools} />
+                    <SkillsItem title="Business" data={businessSkills} />
                 </div>
             </div>
         </div>
