@@ -111,6 +111,13 @@ function Home() {
             icon: "google.webp",
         },
         {
+            title: "Google Ads Search",
+            subtitle: "Google",
+            date: "2023",
+            link: "https://skillshop.credential.net/ed422f7d-5fb0-48ac-aabe-ee010f9f1d2b",
+            icon: "google.webp",
+        },
+        {
             title: "Azure Fundamentals",
             subtitle: "Microsoft",
             date: "2021",
