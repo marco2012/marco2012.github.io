@@ -9,7 +9,8 @@ import { ThemeProvider } from "./contexts/ThemeContext";
 import NotFound from "./pages/NotFound";
 import Footer from "./components/Footer";
 import CookiePolicy from "./pages/CookiePolicy";
-import Linkedin from "./pages/Linkedin";
+import Redirect from "./pages/Redirect";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
 
 function App() {
     return (
@@ -23,7 +24,30 @@ function App() {
                         path="/cookie-policy"
                         element={<CookiePolicy />}
                     />
-                    <Route exact path="/linkedin" element={<Linkedin />} />
+                    <Route
+                        exact
+                        path="/linkedin"
+                        element={
+                            <Redirect
+                                title={"LinkedIn"}
+                                icon={<FaLinkedin />}
+                                redirectUrl={
+                                    "https://www.linkedin.com/in/marco-lupia/"
+                                }
+                            />
+                        }
+                    />
+                    <Route
+                        exact
+                        path="/github"
+                        element={
+                            <Redirect
+                                title={"GitHub"}
+                                icon={<FaGithub />}
+                                redirectUrl={"https://github.com/marco2012"}
+                            />
+                        }
+                    />
                     <Route path="*" element={<NotFound />} />
                 </Routes>
                 <Footer />
