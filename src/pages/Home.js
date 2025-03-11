@@ -107,7 +107,7 @@ function Home() {
             title: "Google Analytics",
             subtitle: "Google",
             date: "2023",
-            link: "https://skillshop.credential.net/73d77d62-630b-484c-b801-81fa96ed3639",
+            link: "https://skillshop.credential.net/b0b9b5f3-ad88-4968-a596-0dc537dfce33",
             icon: "google.webp",
         },
         {
