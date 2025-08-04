@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.fdaa74de.css",
-    "main.js": "/static/js/main.152f433c.js",
+    "main.css": "/static/css/main.73051a27.css",
+    "main.js": "/static/js/main.55085df9.js",
     "static/js/453.2ddb282f.chunk.js": "/static/js/453.2ddb282f.chunk.js",
     "static/media/404.gif": "/static/media/404.d4d3847e01366b77ae2f.gif",
     "static/media/computer-bg.webp": "/static/media/computer-bg.a78a64a8a35d2ac38319.webp",
@@ -44,6 +44,7 @@
     "static/media/wallpapers.webp": "/static/media/wallpapers.cd05b8957eaf6760dbbd.webp",
     "static/media/applescript.webp": "/static/media/applescript.465e63610d47e3bc9bbe.webp",
     "static/media/aisee.webp": "/static/media/aisee.07c02bcbd37d1c656320.webp",
+    "static/media/uber.webp": "/static/media/uber.c12277f8d8b75de34dd4.webp",
     "static/media/logo3.webp": "/static/media/logo3.21af68eba64bb3c75f95.webp",
     "static/media/energy_cost.webp": "/static/media/energy_cost.8eb19c97860f7845b2ae.webp",
     "static/media/logo1_transparent.webp": "/static/media/logo1_transparent.4ca6d280fe7edce7fad3.webp",
@@ -84,9 +85,11 @@
     "static/media/jetbrains-mono-cyrillic-400-normal.woff2": "/static/media/jetbrains-mono-cyrillic-400-normal.f69e1e24f04a6ce942c0.woff2",
     "static/media/ef.webp": "/static/media/ef.bff10030420cb185dc7e.webp",
     "static/media/jetbrains-mono-greek-400-normal.woff2": "/static/media/jetbrains-mono-greek-400-normal.3a4578ae9901384175e2.woff2",
+    "static/media/ibkr.webp": "/static/media/ibkr.792174d8c1139367ea4c.webp",
     "static/media/jetbrains-mono-vietnamese-400-normal.woff2": "/static/media/jetbrains-mono-vietnamese-400-normal.aa664ef15f2e285e9dda.woff2",
     "static/media/gray-bg.webp": "/static/media/gray-bg.9979ec8f98163528ecdb.webp",
     "static/media/logo.webp": "/static/media/logo.a6c60771c17531e8cd08.webp",
+    "static/media/revolut.webp": "/static/media/revolut.273b5ebc050342d2c353.webp",
     "static/media/reply.webp": "/static/media/reply.7500ea4a9cc9edba1ece.webp",
     "static/media/jetbrains-mono-cyrillic-ext-400-normal.woff": "/static/media/jetbrains-mono-cyrillic-ext-400-normal.fe91ef32cce4c8826b65.woff",
     "static/media/jetbrains-mono-cyrillic-ext-400-normal.woff2": "/static/media/jetbrains-mono-cyrillic-ext-400-normal.7347c7bfed47f1ef0b25.woff2",
@@ -98,12 +101,12 @@
     "static/media/adobe.webp": "/static/media/adobe.b0f6f5ffe525357cf19f.webp",
     "static/media/microsoft.webp": "/static/media/microsoft.917a0b37b905b20534f2.webp",
     "static/media/arrow_up.webp": "/static/media/arrow_up.306c5c2b380d315900fc.webp",
-    "main.fdaa74de.css.map": "/static/css/main.fdaa74de.css.map",
-    "main.152f433c.js.map": "/static/js/main.152f433c.js.map",
+    "main.73051a27.css.map": "/static/css/main.73051a27.css.map",
+    "main.55085df9.js.map": "/static/js/main.55085df9.js.map",
     "453.2ddb282f.chunk.js.map": "/static/js/453.2ddb282f.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.fdaa74de.css",
-    "static/js/main.152f433c.js"
+    "static/css/main.73051a27.css",
+    "static/js/main.55085df9.js"
   ]
 }
