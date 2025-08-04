@@ -24,7 +24,7 @@ function Referrals() {
         {
             title: "N26",
             description: "Join N26 for seamless banking and exclusive perks.",
-            link: "https://n26.com/en-eu/invite/marcolupia",
+            link: "https://n26.com/r/marcol4958",
             icon: <FaMoneyCheckAlt />,
         },
         {
