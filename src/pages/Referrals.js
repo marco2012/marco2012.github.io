@@ -22,6 +22,12 @@ function Referrals() {
             icon: <FaMoneyCheckAlt />,
         },
         {
+            title: "N26",
+            description: "Join N26 for seamless banking and exclusive perks.",
+            link: "https://n26.com/en-eu/invite/marcolupia",
+            icon: <FaMoneyCheckAlt />,
+        },
+        {
             title: "Uber",
             description: "Join Uber for exclusive discounts on your trips.",
             link: "https://referrals.uber.com/refer?id=bx87hgdt5cdg",
