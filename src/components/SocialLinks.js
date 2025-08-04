@@ -1,7 +1,6 @@
 import React from "react";
-import { FaGithub } from "react-icons/fa";
-import { FaLinkedinIn } from "react-icons/fa6";
-import { FaGoogleScholar } from "react-icons/fa6";
+import { FaGithub, FaUserFriends } from "react-icons/fa";
+import { FaLinkedinIn, FaGoogleScholar } from "react-icons/fa6";
 
 function SocialLinks() {
     return (
@@ -29,6 +28,13 @@ function SocialLinks() {
                 className="p-1 rounded-full transition-colors hover:bg-white/[0.06] hover:scale-125"
             >
                 <FaGoogleScholar className="transition-transform duration-200" />
+            </a>
+            <a
+                href="/#/referrals"
+                rel="noopener noreferrer"
+                className="p-1 rounded-full transition-colors hover:bg-white/[0.06] hover:scale-125"
+            >
+                <FaUserFriends className="transition-transform duration-200" />
             </a>
         </span>
     );
