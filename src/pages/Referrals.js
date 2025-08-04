@@ -11,7 +11,7 @@ function Referrals() {
             title: "Interactive Brokers",
             description:
                 "Sign up for Interactive Brokers and enjoy low-cost trading.",
-            link: "/#/ibkr",
+            link: "https://ibkr.com/referral/marco4788",
             icon: <FaMoneyCheckAlt />,
         },
         {
