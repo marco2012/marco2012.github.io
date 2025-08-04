@@ -53,7 +53,7 @@ function App() {
                     />
                     <Route
                         exact
-                        path="/ibkr"
+                        path="/ib"
                         element={
                             <Redirect
                                 title={"Interactive Brokers"}
