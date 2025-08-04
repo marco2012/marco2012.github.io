@@ -11,6 +11,7 @@ import Footer from "./components/Footer";
 import CookiePolicy from "./pages/CookiePolicy";
 import Redirect from "./pages/Redirect";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
+import { FaRegMoneyBill1 } from "react-icons/fa6";
 
 function App() {
     return (
@@ -45,6 +46,32 @@ function App() {
                                 title={"GitHub"}
                                 icon={<FaGithub />}
                                 redirectUrl={"https://github.com/marco2012"}
+                            />
+                        }
+                    />
+                    <Route
+                        exact
+                        path="/ibkr"
+                        element={
+                            <Redirect
+                                title={"Interactive Brokers"}
+                                icon={<FaRegMoneyBill1 />}
+                                redirectUrl={
+                                    "https://ibkr.com/referral/marco4788"
+                                }
+                            />
+                        }
+                    />
+                    <Route
+                        exact
+                        path="/revolut"
+                        element={
+                            <Redirect
+                                title={"Revolut"}
+                                icon={<FaRegMoneyBill1 />}
+                                redirectUrl={
+                                    "https://revolut.com/referral/?referral-code=marcolupia!AUG1-25-AR-L3&geo-redirect"
+                                }
                             />
                         }
                     />

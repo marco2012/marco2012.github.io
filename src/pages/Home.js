@@ -28,7 +28,7 @@ function Home() {
 
     const experienceData = [
         {
-            subtitle: "AdTech Solutions Engineer",
+            subtitle: "Ad Tech Solutions Engineer",
             date: "03/2025 - now",
             title: "Google",
             location: "Dublin, Ireland",
@@ -64,7 +64,7 @@ function Home() {
             location: "Rome, Italy",
             icon: "sapienza.webp",
             details:
-                '• Designed process mining algorithms to build <a href="https://github.com/bpm-diag/smartRPA" target="_blank" rel="noopener noreferrer" class="text-blue-800">SmartRPA</a>, a tool to generate software robots that emulate observed user behavior</br>• Presented academic research at RPA Forum and CAiSE Forum which lead to the publication of 3 papers <a href="https://scholar.google.com/citations?user=D139cEIAAAAJ&hl=it&oi=ao" target="_blank" rel="noopener noreferrer" class="text-blue-800">cited 100+ times</a>',
+                '• Designed algorithms to build <a href="https://github.com/bpm-diag/smartRPA" target="_blank" rel="noopener noreferrer" class="text-blue-800">SmartRPA</a>, a tool to generate sw robots that emulate observed user behavior</br>• Presented academic research at RPA Forum and CAiSE Forum and published 3 papers <a href="https://scholar.google.com/citations?user=D139cEIAAAAJ&hl=it&oi=ao" target="_blank" rel="noopener noreferrer" class="text-blue-800">cited 100+ times</a>',
         },
         {
             title: "BSc in Computer and Systems Engineering",
