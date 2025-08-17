@@ -28,7 +28,7 @@ function Home() {
 
     const experienceData = [
         {
-            subtitle: "Ad Tech Solutions Engineer",
+            subtitle: "Ad Tech Solutions Engineer, Mobile Apps",
             date: "03/2025 - now",
             title: "Google",
             location: "Dublin, Ireland",
