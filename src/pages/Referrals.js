@@ -2,7 +2,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import NavBar from "../components/NavBar";
 import About from "../components/About";
-import { GrProjects } from "react-icons/gr";
+import { GoHomeFill } from "react-icons/go";
 import { FaMoneyCheckAlt, FaUserFriends } from "react-icons/fa";
 
 function Referrals() {
@@ -33,12 +33,18 @@ function Referrals() {
             link: "https://referrals.uber.com/refer?id=bx87hgdt5cdg",
             icon: <FaMoneyCheckAlt />,
         },
+        {
+            title: "YNAB",
+            description: "Get a free month of YNAB budgeting app and take control of your finances.",
+            link: "https://ynab.com/referral/?ref=kgrp1OKSmNQ8CCR1&sponsor_name=Marco&utm_source=customer_referral",
+            icon: <FaMoneyCheckAlt />,
+        },
     ];
 
     return (
         <motion.div className="min-h-screen px-6 max-w-2xl mx-auto text-gray-800 dark:text-gray-200">
             <div className="max-w-2xl mx-auto">
-                <NavBar btnLink="/" btnImage={<GrProjects />} animate={false} />
+                <NavBar btnLink="/" btnImage={<GoHomeFill />} animate={false} />
                 <About
                     title="Referrals"
                     subtitle={`Explore these referral links to enjoy exclusive
