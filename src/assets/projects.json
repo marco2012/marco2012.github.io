@@ -1,5 +1,25 @@
 [
     {
+        "title": "MergeGarden",
+        "description": "Merge connected tiles to create higher numbers and achieve the highest score in this addictive puzzle game!",
+        "link": "https://mergegarden.top?utm_source=marlup",
+        "language": "JavaScript",
+        "date": "2025-09-01",
+        "image": "mergegarden.webp",
+        "skills": "React Native",
+        "category": "Web"
+    },
+    {
+        "title": "AlphaTrace",
+        "description": "Portfolio backtesting tool for testing investment strategies using historical data.",
+        "link": "https://github.com/marco2012/alphatrace",
+        "language": "Web",
+        "date": "2025-09-01",
+        "image": "alphatrace.webp",
+        "skills": "React",
+        "category": "Web"
+    },
+    {
         "title": "ResumeHelper",
         "description": "Custom GPT that analyzes a candidate's resume against a job description and provides a match score with improvement suggestions.",
         "link": "",
@@ -375,7 +395,7 @@
         "link": "",
         "language": "Python",
         "date": "2019-08-01",
-        "image": "bomba_anarchica.webp",
+        "image": "alexa.webp",
         "skills": "Alexa",
         "category": "Python"
       },
