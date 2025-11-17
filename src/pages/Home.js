@@ -13,6 +13,7 @@ import NavBar from "../components/NavBar";
 import { GrProjects } from "react-icons/gr";
 import Skills from "../components/Skills";
 import TagManager from "react-gtm-module";
+import projectsData from "../assets/projects.json";
 
 function Home() {
     // analytics
@@ -28,10 +29,11 @@ function Home() {
 
     const experienceData = [
         {
-            subtitle: "Ad Tech Solutions Engineer, Mobile Apps",
+            subtitle: "Ad Tech Solutions Engineer, AdMob",
             date: "03/2025 - now",
             title: "Google",
             location: "Dublin, Ireland",
+            countryCode: "IE",
             icon: "google.webp",
         },
         {
@@ -39,6 +41,7 @@ function Home() {
             date: "08/2021 - 03/2025",
             title: "Deloitte",
             location: "Rome, Italy",
+            countryCode: "IT",
             icon: "deloitte.webp",
         },
         {
@@ -46,6 +49,7 @@ function Home() {
             date: "01/2021 - 08/2021",
             title: "Reply",
             location: "Rome, Italy",
+            countryCode: "IT",
             icon: "reply.webp",
         },
         // {
@@ -160,23 +164,17 @@ function Home() {
             icon: "springer.webp",
         },
     ];
+    // Get the last 4 projects sorted by date (newest first)
+    const recentProjects = projectsData
+        .sort((a, b) => new Date(b.date) - new Date(a.date))
+        .slice(0, 4)
+        .map((project) => ({
+            title: project.title,
+            link: project.link,
+        }));
+
     const projects = [
-        {
-            title: "SmartRPA",
-            link: "https://github.com/bpm-diag/SmartRPA",
-        },
-        {
-            title: "Dana's Club",
-            link: "https://danasclub.it/?utm_source=marlup&utm_medium=social&utm_campaign=profile",
-        },
-        {
-            title: "Icaro OdV",
-            link: "https://icaro-odv.it/",
-        },
-        {
-            title: "EnergyCalc",
-            link: "https://marco2012.github.io/energyCalcWeb/?utm_source=marlup&utm_medium=social&utm_campaign=profile",
-        },
+        ...recentProjects,
         {
             title: "more...",
             link: "https://github.com/marco2012?tab=repositories",

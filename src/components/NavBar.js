@@ -15,7 +15,7 @@ const NavBar = ({ btnLink, btnImage, animate = true }) => {
             animate={animate ? { opacity: 1, y: 0 } : {}} // Animate to on-screen if animate is true
             transition={animate ? { duration: 0.6 } : {}} // Duration of the slide-in if animate is true
         >
-            <div className="w-full bg-white/40 dark:bg-black/40 text-gray-300 border-2 border-black/[0.1] dark:border-white/[0.1] backdrop-blur-xl rounded-full px-3 sm:px-5 py-2.5 inline-flex items-center gap-2 sm:gap-4 transition-all duration-300 justify-evenly">
+            <div className="w-full bg-white/40 dark:bg-neutral-900/40 text-gray-300 border-2 border-black/[0.1] dark:border-white/[0.1] backdrop-blur-xl rounded-full px-3 sm:px-5 py-2.5 inline-flex items-center gap-2 sm:gap-4 transition-all duration-300 justify-evenly">
                 <NavLink
                     to={btnLink}
                     className="p-1 rounded-full transition-colors hover:bg-white/[0.06] hover:scale-125 text-base"

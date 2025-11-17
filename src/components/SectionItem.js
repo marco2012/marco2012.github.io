@@ -1,6 +1,17 @@
 import React from "react";
 import { motion } from "framer-motion";
 
+// Helper function to convert country code to flag emoji
+const getCountryFlag = (countryCode) => {
+    if (!countryCode) return "";
+    // Convert country code to flag emoji using Unicode regional indicator symbols
+    const codePoints = countryCode
+        .toUpperCase()
+        .split("")
+        .map((char) => 127397 + char.charCodeAt());
+    return String.fromCodePoint(...codePoints);
+};
+
 const SectionItem = ({ item }) => (
     <motion.div
         className="flex justify-between mt-2"
@@ -49,7 +60,10 @@ const SectionItem = ({ item }) => (
             <span className="text-xs sm:text-sm text-gray-800 dark:text-gray-200">
                 {item.date}
             </span>
-            <span className="block text-xs sm:text-sm mt-1 text-gray-500 dark:text-gray-400 min-w-20">
+            <span className="block text-xs sm:text-sm mt-1 text-gray-500 dark:text-gray-400 min-w-20 flex items-center justify-end">
+                {item.countryCode && (
+                    <span className="mr-1">{getCountryFlag(item.countryCode)}</span>
+                )}
                 {item.location}
             </span>
         </div>

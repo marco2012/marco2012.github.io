@@ -11,7 +11,7 @@ body {
     margin: 0;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    background-color: black;
+    background-color: #1a1a1a;
     color: white;
     min-width: 320px;
 }
