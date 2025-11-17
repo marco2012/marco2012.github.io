@@ -1,5 +1,25 @@
 [
     {
+        "title": "Hindu AI",
+        "description": "Embark on a Divine Journey Through Hindu Mythology",
+        "link": "https://pingpong-games.github.io/HinduAI-Website/",
+        "language": "React",
+        "date": "2025-11-01",
+        "image": "hindu_ai.webp",
+        "skills": "React Native",
+        "category": "Web"
+    },
+    {
+        "title": "Hindu Bubbles",
+        "description": "Embark on a Divine Journey Through Hindu Mythology",
+        "link": "https://pingpong-games.github.io/hindu-bubbles-website/",
+        "language": "Unity",
+        "date": "2025-11-01",
+        "image": "hindu_bubbles.webp",
+        "skills": "Unity",
+        "category": "Game"
+    },
+    {
         "title": "MergeGarden",
         "description": "Merge connected tiles to create higher numbers and achieve the highest score in this addictive puzzle game!",
         "link": "https://mergegarden.top?utm_source=marlup",
@@ -12,7 +32,7 @@
     {
         "title": "AlphaTrace",
         "description": "Portfolio backtesting tool for testing investment strategies using historical data.",
-        "link": "https://github.com/marco2012/alphatrace",
+        "link": "https://marlup.top/alphatrace/",
         "language": "Web",
         "date": "2025-09-01",
         "image": "alphatrace.webp",
