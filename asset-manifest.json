@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.73051a27.css",
-    "main.js": "/static/js/main.0d610aca.js",
+    "main.css": "/static/css/main.0462cfe6.css",
+    "main.js": "/static/js/main.2038d679.js",
     "static/js/453.2ddb282f.chunk.js": "/static/js/453.2ddb282f.chunk.js",
     "static/media/404.gif": "/static/media/404.d4d3847e01366b77ae2f.gif",
     "static/media/computer-bg.webp": "/static/media/computer-bg.a78a64a8a35d2ac38319.webp",
@@ -28,6 +28,7 @@
     "static/media/aulebot.webp": "/static/media/aulebot.b101a26cd8a19158bf53.webp",
     "static/media/ExpenseManager.webp": "/static/media/ExpenseManager.79d84e8a2082c99642e8.webp",
     "static/media/prontuario.webp": "/static/media/prontuario.ac24f57b75025f0a3599.webp",
+    "static/media/hindu_bubbles.webp": "/static/media/hindu_bubbles.c2fbc7c4307a71dc9e9d.webp",
     "static/media/mergegarden.webp": "/static/media/mergegarden.8f32b0841d981dd45113.webp",
     "static/media/computerlogger.webp": "/static/media/computerlogger.a732bee99e76e9726cda.webp",
     "static/media/instabot_script.webp": "/static/media/instabot_script.8980720fd0a227f5c2d2.webp",
@@ -39,6 +40,7 @@
     "static/media/cydia.webp": "/static/media/cydia.d87360622cff42ea2328.webp",
     "static/media/alphatrace.webp": "/static/media/alphatrace.7237f7eebdea868a521c.webp",
     "static/media/inflation_calculator.webp": "/static/media/inflation_calculator.66695e275002186ab30f.webp",
+    "static/media/hindu_ai.webp": "/static/media/hindu_ai.aeba3fa76355811d4fe2.webp",
     "static/media/resumehelper.webp": "/static/media/resumehelper.2f94e356461f6df0ea14.webp",
     "static/media/logo3_transparent.webp": "/static/media/logo3_transparent.6e06981c3bdd4101857e.webp",
     "static/media/alexa.webp": "/static/media/alexa.6a83a36f114e782e77a7.webp",
@@ -103,12 +105,12 @@
     "static/media/adobe.webp": "/static/media/adobe.b0f6f5ffe525357cf19f.webp",
     "static/media/microsoft.webp": "/static/media/microsoft.917a0b37b905b20534f2.webp",
     "static/media/arrow_up.webp": "/static/media/arrow_up.306c5c2b380d315900fc.webp",
-    "main.73051a27.css.map": "/static/css/main.73051a27.css.map",
-    "main.0d610aca.js.map": "/static/js/main.0d610aca.js.map",
+    "main.0462cfe6.css.map": "/static/css/main.0462cfe6.css.map",
+    "main.2038d679.js.map": "/static/js/main.2038d679.js.map",
     "453.2ddb282f.chunk.js.map": "/static/js/453.2ddb282f.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.73051a27.css",
-    "static/js/main.0d610aca.js"
+    "static/css/main.0462cfe6.css",
+    "static/js/main.2038d679.js"
   ]
 }
