@@ -23,7 +23,7 @@ function CookiePolicy() {
                     <About
                         title="Cookie Policy"
                         subtitle="Last Updated: 2024-11-03"
-                        showAbout={false}
+                        showAboutHeader={false}
                         icon={<MdOutlineCookie size={64} />}
                     />
                 </div>

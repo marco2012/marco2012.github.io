@@ -3,7 +3,7 @@ import ReactDOM from "react-dom/client";
 import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
-import "@fontsource/jetbrains-mono";
+import "@fontsource/geist-sans";
 import TagManager from "react-gtm-module";
 
 //https://stackoverflow.com/questions/66406770/react-router-render-component-twice

@@ -4,6 +4,7 @@
   "homepage": "https://marlup.top/#/",
   "private": true,
   "dependencies": {
+    "@fontsource/geist-sans": "^5.2.5",
     "@fontsource/jetbrains-mono": "^5.1.1",
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",

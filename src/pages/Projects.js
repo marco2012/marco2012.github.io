@@ -81,7 +81,7 @@ function Projects() {
                         title="My Projects"
                         subtitle={`Check out my ${filteredProjects.length} projects`}
                         isDarkTheme={isDarkTheme}
-                        showAbout={false}
+                        showAboutHeader={false}
                         icon={<BsSuitcaseLg size={64} />}
                     />
                 </div>

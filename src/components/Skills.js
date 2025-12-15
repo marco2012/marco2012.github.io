@@ -4,7 +4,6 @@ import { FaCode } from "react-icons/fa6";
 import { FaPython } from "react-icons/fa";
 import { FaJava } from "react-icons/fa";
 import { RiJavascriptFill } from "react-icons/ri";
-import { SiCsharp } from "react-icons/si";
 import { PiFileCppDuotone } from "react-icons/pi";
 import { FaDatabase } from "react-icons/fa";
 import SkillsItem from "./SkillsItem";
@@ -33,6 +32,7 @@ import { IoIosPeople } from "react-icons/io";
 import { GrStakeholder } from "react-icons/gr";
 import { IoPeople } from "react-icons/io5";
 import { RiOrganizationChart } from "react-icons/ri";
+import { TbBrandCSharp } from "react-icons/tb";
 
 const Skills = () => {
     const languages = [
@@ -54,7 +54,7 @@ const Skills = () => {
         },
         {
             name: "C#",
-            icon: <SiCsharp />,
+            icon: <TbBrandCSharp />,
         },
         {
             name: "C",

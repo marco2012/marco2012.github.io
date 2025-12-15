@@ -63,7 +63,7 @@ function Referrals() {
                     subtitle={`Explore these referral links to enjoy exclusive
                         benefits.`}
                     isDarkTheme={false}
-                    showAbout={false}
+                    showAboutHeader={false}
                     icon={<FaUserFriends size={64} />}
                 />
                 <div className="flex flex-col mt-8">

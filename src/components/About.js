@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React, { useContext, useState } from "react";
 import { ThemeContext } from "../contexts/ThemeContext";
 import { motion } from "framer-motion";
 import { IoInformationCircleOutline } from "react-icons/io5";
@@ -8,11 +8,12 @@ function About({
     title,
     subtitle,
     description,
-    showAbout,
     icon = null,
     showLinks = false,
+    showAboutHeader = true,
 }) {
     const { isDarkTheme } = useContext(ThemeContext);
+    const [isExpanded, setIsExpanded] = useState(false);
 
     return (
         <>
@@ -55,19 +56,30 @@ function About({
                 </div>
             </motion.div>
 
-            {showAbout && (
+            {showAboutHeader && (
+            <motion.div
+                className="mt-10 cursor-pointer"
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ duration: 0.8 }}
+                onClick={() => setIsExpanded(!isExpanded)}
+                whileHover={{ y: -6, transition: { duration: 0.2 } }}
+            >
+                <h2 className="text-base uppercase tracking-widest text-gray-800 dark:text-gray-200 flex items-center">
+                    <IoInformationCircleOutline className="mr-2" />
+                    <span className="font-semibold">About</span>
+                </h2>
+            </motion.div>
+            )}
+
+            {isExpanded && showAboutHeader && (
                 <motion.div
-                    className="mt-10"
-                    initial={{ opacity: 0 }}
-                    animate={{ opacity: 1 }}
-                    transition={{ duration: 0.8 }}
-                    whileHover={{ y: -6, transition: { duration: 0.2 } }} // Move up on mouse hover with increased speed
+                    className="mt-2"
+                    initial={{ opacity: 0, height: 0 }}
+                    animate={{ opacity: 1, height: "auto" }}
+                    transition={{ duration: 0.3 }}
                 >
-                    <h2 className="text-base uppercase tracking-widest text-gray-800 dark:text-gray-200 flex items-center">
-                        <IoInformationCircleOutline className="mr-2" />
-                        <span className="font-semibold">About</span>
-                    </h2>
-                    <p className="mt-2 text-base leading-relaxed text-gray-800 dark:text-gray-200 text-justify hyphens-auto">
+                    <p className="text-base leading-relaxed text-gray-800 dark:text-gray-200 text-justify hyphens-auto">
                         {description}
                     </p>
                 </motion.div>
