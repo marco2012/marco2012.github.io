@@ -5,6 +5,7 @@ import { SiRevolut } from "react-icons/si";
 import { FaArrowRightLong } from "react-icons/fa6";
 import { Card, CardContent } from "../components/ui/card";
 import FixedHeader from "../components/FixedHeader";
+import { FaCar } from "react-icons/fa";
 
 function Referrals() {
     const referrals = [
@@ -26,21 +27,13 @@ function Referrals() {
             color: "from-purple-500 to-purple-600",
             bgColor: "bg-purple-50 dark:bg-purple-950/20",
         },
-        {
-            title: "N26",
-            description: "Join N26 for seamless banking and exclusive perks.",
-            link: "https://n26.com/r/marcol4958",
-            icon: <FaCreditCard />,
-            color: "from-indigo-500 to-indigo-600",
-            bgColor: "bg-indigo-50 dark:bg-indigo-950/20",
-        },
         // {
-        //     title: "Uber",
-        //     description: "Join Uber for exclusive discounts on your trips.",
-        //     link: "https://referrals.uber.com/refer?id=bx87hgdt5cdg",
-        //     icon: <FaCar />,
-        //     color: "from-black to-gray-800",
-        //     bgColor: "bg-gray-50 dark:bg-gray-900/20",
+        //     title: "N26",
+        //     description: "Join N26 for seamless banking and exclusive perks.",
+        //     link: "https://n26.com/r/marcol4958",
+        //     icon: <FaCreditCard />,
+        //     color: "from-indigo-500 to-indigo-600",
+        //     bgColor: "bg-indigo-50 dark:bg-indigo-950/20",
         // },
         {
             title: "YNAB",
@@ -49,6 +42,14 @@ function Referrals() {
             icon: <FaWallet />,
             color: "from-green-500 to-green-600",
             bgColor: "bg-green-50 dark:bg-green-950/20",
+        },
+        {
+            title: "Uber",
+            description: "Join Uber for exclusive discounts on your trips.",
+            link: "https://referrals.uber.com/refer?id=bx87hgdt5cdg",
+            icon: <FaCar />,
+            color: "from-black to-gray-800",
+            bgColor: "bg-gray-50 dark:bg-gray-900/20",
         },
     ];
 

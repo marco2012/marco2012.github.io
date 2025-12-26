@@ -6,7 +6,7 @@ import { FaReact } from "react-icons/fa";
 function Footer() {
     return (
         <motion.div
-            className="mt-20 mb-10 max-w-2xl mx-auto px-6 flex flex-col sm:flex-row items-center justify-between text-gray-500 dark:text-gray-400 text-sm font-mono gap-4"
+            className="mt-6 mb-6 max-w-2xl mx-auto px-6 flex flex-col sm:flex-row items-center justify-between text-gray-500 dark:text-gray-400 text-xs font-mono gap-4"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.6 }}

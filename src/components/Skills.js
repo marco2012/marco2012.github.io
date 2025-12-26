@@ -3,7 +3,6 @@ import { motion } from "framer-motion";
 import { FaPython } from "react-icons/fa";
 import { FaJava } from "react-icons/fa";
 import { RiJavascriptFill } from "react-icons/ri";
-import { PiFileCppDuotone } from "react-icons/pi";
 import { FaDatabase } from "react-icons/fa";
 import SkillsItem from "./SkillsItem";
 import { FaReact } from "react-icons/fa";

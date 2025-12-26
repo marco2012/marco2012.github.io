@@ -6,7 +6,7 @@ import { Button } from "./ui/button";
 import { MdOutlineWbSunny } from "react-icons/md";
 import { IoMoonOutline } from "react-icons/io5";
 import { GrProjects } from "react-icons/gr";
-import { FaStar, FaGithub, FaLinkedin } from "react-icons/fa";
+import { FaStar, FaGithub, FaLinkedin, FaHome } from "react-icons/fa";
 import { FaGoogleScholar } from "react-icons/fa6";
 
 const FixedHeader = () => {
@@ -57,7 +57,24 @@ const FixedHeader = () => {
                     </Button>
                 </div>
 
-                <div className="flex flex-wrap gap-x-3 gap-y-2 text-sm sm:text-base font-medium items-center">
+                <div className="flex flex-wrap gap-x-3 gap-y-3 sm:gap-y-2 text-sm sm:text-base font-medium items-center">
+                    {isActive("/") ? (
+                        <span className="text-gray-900 dark:text-gray-100 flex items-center gap-2">
+                            <FaHome />
+                            Home
+                        </span>
+                    ) : (
+                        <Link
+                            to="/"
+                            className="text-gray-500 dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-100 transition-colors flex items-center gap-2"
+                        >
+                            <FaHome />
+                            Home
+                        </Link>
+                    )}
+                    
+                    <span className="text-gray-300 dark:text-gray-600">/</span>
+                    
                     {isActive("/projects") ? (
                         <span className="text-gray-900 dark:text-gray-100 flex items-center gap-2">
                             <GrProjects />

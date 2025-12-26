@@ -179,7 +179,7 @@ function Home() {
             <header className="mb-10">
                 <motion.div
                     id="about"
-                    className="mt-10 w-full text-md text-gray-800 dark:text-gray-300 leading-relaxed"
+                    className="mt-8 w-full text-md text-gray-800 dark:text-gray-300 leading-relaxed"
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
                     transition={{ delay: 0.3, duration: 0.5 }}
