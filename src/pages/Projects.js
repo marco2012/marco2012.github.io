@@ -80,7 +80,7 @@ function Projects() {
             <ScrollToTop />
             
             <div className="max-w-3xl mx-auto">
-                <header className="mb-20">
+                <header className="mb-12">
                     <div className="flex justify-between items-start">
                         <Link to="/">
                             <motion.h1 
@@ -166,17 +166,8 @@ function Projects() {
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ delay: 0.3 }}
                 >
-                    <div className="mb-8">
-                        <h2 className="text-sm uppercase tracking-widest text-gray-500 dark:text-gray-400 mb-2">
-                            All Projects
-                        </h2>
-                        <p className="text-gray-600 dark:text-gray-400">
-                            {filteredProjects.length} projects found
-                        </p>
-                    </div>
-
                     {/* Search and Filter Bar */}
-                    <div className="mb-12">
+                    <div className="mb-10">
                         <div className="relative rounded-xl shadow-sm bg-white dark:bg-neutral-800 border border-gray-200 dark:border-neutral-700">
                             <div className="flex items-center relative min-h-[48px] p-1">
                                 <div className="pointer-events-none absolute inset-y-0 left-0 flex items-center pl-4 z-10">
@@ -194,9 +185,7 @@ function Projects() {
                                         setSearchQuery(query);
                                         const url = new URL(window.location);
                                         if (query) {
-                                            url.hash = `${
-                                                url.hash.split("?")[0]
-                                            }?q=${query}`;
+                                            url.hash = `${url.hash.split("?")[0]}?q=${query}`;
                                         } else {
                                             url.hash = url.hash.split("?")[0];
                                         }
@@ -270,12 +259,15 @@ function Projects() {
                                 )}
                             </AnimatePresence>
                         </div>
+                        <p className="mt-2 mb-6 text-center text-xs sm:text-sm text-gray-600 dark:text-gray-400">
+                            {filteredProjects.length} projects found
+                        </p>
                     </div>
                 </motion.div>
             </div>
 
             {filteredProjects.length > 0 ? (
-                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 justify-items-center">
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 justify-items-center">
                     {filteredProjects
                         .sort((a, b) => new Date(b.date) - new Date(a.date))
                         .map((p, index) => (

@@ -1,13 +1,13 @@
 [
     {
         "title": "Hindu AI",
-        "description": "Embark on a Divine Journey Through Hindu Mythology",
+        "description": "Hindu AI Assistant",
         "link": "https://pingpong-games.github.io/HinduAI-Website/",
         "language": "React",
         "date": "2025-11-01",
         "image": "hindu_ai.webp",
         "skills": "React Native",
-        "category": "Web"
+        "category": "App"
     },
     {
         "title": "Hindu Bubbles",
@@ -27,7 +27,7 @@
         "date": "2025-09-01",
         "image": "mergegarden.webp",
         "skills": "React Native",
-        "category": "Web"
+        "category": "Game"
     },
     {
         "title": "AlphaTrace",

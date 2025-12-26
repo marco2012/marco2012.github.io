@@ -299,7 +299,7 @@ function Home() {
                 <div>
                     <Section
                         data={recentProjects}
-                        title="Projects"
+                        title="Recent Projects"
                         limit={4}
                     />
                     <div className="mt-8">
