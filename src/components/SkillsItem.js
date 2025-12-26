@@ -21,7 +21,7 @@ function SkillsItem({ title, data }) {
                     <Badge
                         key={index}
                         variant="secondary"
-                        className="text-sm py-1 px-3 flex items-center gap-2 bg-gray-100 dark:bg-neutral-700 hover:bg-gray-200 dark:hover:bg-neutral-600 text-gray-800 dark:text-gray-200 transition-colors"
+                        className="text-sm py-1 px-3 flex items-center gap-2 bg-gray-100 dark:bg-neutral-700 hover:bg-gray-200 dark:hover:bg-neutral-600 text-gray-800 dark:text-gray-200 transition-colors font-normal"
                     >
                         <span className="text-lg">{language.icon}</span>
                         {language.name}

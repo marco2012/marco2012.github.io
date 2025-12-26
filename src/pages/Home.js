@@ -1,18 +1,14 @@
-import React, { useContext } from "react";
+import React from "react";
 import { motion } from "framer-motion";
 import "../index.css";
 import Section from "../components/Section";
 import Skills from "../components/Skills";
 import TagManager from "react-gtm-module";
 import projectsData from "../assets/projects.json";
-import { ThemeContext } from "../contexts/ThemeContext";
-import { MdOutlineWbSunny } from "react-icons/md";
-import { IoMoonOutline } from "react-icons/io5";
 import { Button } from "../components/ui/button";
 import { Link } from "react-router-dom";
-import { FaGithub, FaLinkedin, FaStar } from "react-icons/fa";
-import { FaGoogleScholar } from "react-icons/fa6";
 import { GrProjects } from "react-icons/gr";
+import FixedHeader from "../components/FixedHeader";
 
 function Home() {
     // analytics
@@ -26,8 +22,6 @@ function Home() {
         },
     });
 
-    const { isDarkTheme, toggleTheme } = useContext(ThemeContext);
-
     const experienceData = [
         {
             subtitle: "Ad Tech Solutions Engineer, AdMob",
@@ -37,7 +31,7 @@ function Home() {
             countryCode: "IE",
             icon: "google.webp",
             details:
-                "• Optimizing AdMob monetization strategies for the largest mobile app publishers in EMEA, driving revenue growth",
+                "• Optimizing AdMob monetization strategies for top EMEA mobile app publishers to increase revenue.",
         },
         {
             subtitle: "Digital Marketing Consultant",
@@ -47,7 +41,7 @@ function Home() {
             countryCode: "IT",
             icon: "deloitte.webp",
             details:
-                "• Partnered with cross-functional teams across industries to elevate the performance of digital marketing campaigns through data-driven strategies",
+                "• Optimized digital marketing performance through cross-functional collaboration and data-driven strategy.",
         },
         {
             subtitle: "Full Stack Cloud Developer",
@@ -180,87 +174,12 @@ function Home() {
         }));
 
     return (
-        <motion.div className="min-h-screen px-6 py-12 sm:py-20 max-w-3xl mx-auto text-gray-900 dark:text-gray-100 font-sans">
-            <header className="mb-20">
-                <div className="flex justify-between items-start">
-                    <motion.h1 
-                        className="text-4xl sm:text-5xl font-bold tracking-tight mb-6"
-                        initial={{ opacity: 0, y: -20 }}
-                        animate={{ opacity: 1, y: 0 }}
-                        transition={{ duration: 0.5 }}
-                    >
-                        Marco Lupia
-                    </motion.h1>
-                    
-                    <Button
-                        variant="ghost"
-                        size="icon"
-                        className="rounded-full hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors"
-                        onClick={() => toggleTheme()}
-                    >
-                        {isDarkTheme ? (
-                            <MdOutlineWbSunny className="w-5 h-5" />
-                        ) : (
-                            <IoMoonOutline className="w-5 h-5" />
-                        )}
-                    </Button>
-                </div>
-
-                <motion.div 
-                    className="flex flex-wrap gap-x-3 gap-y-2 text-sm sm:text-base text-gray-500 dark:text-gray-400 font-medium items-center"
-                    initial={{ opacity: 0 }}
-                    animate={{ opacity: 1 }}
-                    transition={{ delay: 0.2, duration: 0.5 }}
-                >
-                    <Link 
-                        to="/projects"
-                        className="hover:text-gray-900 dark:hover:text-gray-100 transition-colors flex items-center gap-2"
-                    >
-                        <GrProjects />
-                        Projects
-                    </Link>
-                    <span className="text-gray-300 dark:text-gray-600">/</span>
-                    <Link 
-                        to="/referrals"
-                        className="hover:text-gray-900 dark:hover:text-gray-100 transition-colors flex items-center gap-2"
-                    >
-                        <FaStar />
-                        Referrals
-                    </Link>
-                    <span className="text-gray-300 dark:text-gray-600">/</span>
-                    <a 
-                        href="https://github.com/marco2012" 
-                        target="_blank" 
-                        rel="noopener noreferrer"
-                        className="hover:text-gray-900 dark:hover:text-gray-100 transition-colors flex items-center gap-2"
-                    >
-                        <FaGithub />
-                        GitHub
-                    </a>
-                    <span className="text-gray-300 dark:text-gray-600">/</span>
-                    <a 
-                        href="https://www.linkedin.com/in/marco-lupia" 
-                        target="_blank" 
-                        rel="noopener noreferrer"
-                        className="hover:text-gray-900 dark:hover:text-gray-100 transition-colors flex items-center gap-2"
-                    >
-                        <FaLinkedin />
-                        LinkedIn
-                    </a>
-                    <span className="text-gray-300 dark:text-gray-600">/</span>
-                    <a 
-                        href="https://scholar.google.com/citations?user=D139cEIAAAAJ" 
-                        target="_blank" 
-                        rel="noopener noreferrer"
-                        className="hover:text-gray-900 dark:hover:text-gray-100 transition-colors flex items-center gap-2"
-                    >
-                        <FaGoogleScholar />
-                        Scholar
-                    </a>
-                </motion.div>
-                
+        <motion.div className="min-h-screen px-6 pt-32 pb-12 sm:pb-20 max-w-3xl mx-auto text-gray-900 dark:text-gray-100 font-sans">
+            <FixedHeader />
+            <header className="mb-12">
                 <motion.div
-                    className="mt-8 max-w-xl text-lg text-gray-600 dark:text-gray-400 leading-relaxed"
+                    id="about"
+                    className="mt-8 w-full text-lg text-gray-600 dark:text-gray-400 leading-relaxed"
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
                     transition={{ delay: 0.3, duration: 0.5 }}
@@ -271,7 +190,7 @@ function Home() {
                 </motion.div>
             </header>
 
-            <div className="space-y-20">
+            <div className="space-y-12 sm:space-y-14">
                 <Section
                     data={experienceData}
                     title="Experience"

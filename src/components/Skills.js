@@ -1,6 +1,5 @@
 import React from "react";
 import { motion } from "framer-motion";
-import { FaCode } from "react-icons/fa6";
 import { FaPython } from "react-icons/fa";
 import { FaJava } from "react-icons/fa";
 import { RiJavascriptFill } from "react-icons/ri";

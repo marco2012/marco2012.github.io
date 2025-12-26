@@ -38,79 +38,82 @@ const SectionItem = ({ item }) => (
             </div>
         )}
 
-        <div className="flex-grow flex flex-row justify-between items-start gap-4">
-            <div className="space-y-1.5 flex-grow min-w-0">
-                <div className="font-medium text-gray-900 dark:text-gray-100 leading-none truncate">
-                    {item.link ? (
-                        item.link.startsWith("/") ? (
-                            <Link
-                                to={item.link}
-                                className="hover:text-gray-600 dark:hover:text-gray-300 transition-colors"
-                            >
-                                {item.title}
-                            </Link>
-                        ) : (
-                            <a
-                                href={item.link}
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className="hover:text-gray-600 dark:hover:text-gray-300 transition-colors"
-                            >
-                                {item.title}
-                            </a>
-                        )
-                    ) : (
-                        item.title
-                    )}
-                </div>
-                {item.subtitle && (
-                    <div className="text-gray-500 dark:text-gray-300 text-sm leading-snug">
+        <div className="flex-grow flex flex-col gap-2">
+            <div className="flex flex-row justify-between items-start gap-4">
+                <div className="space-y-1.5 flex-grow min-w-0">
+                    <div className="font-medium text-gray-900 dark:text-gray-100 leading-none truncate">
                         {item.link ? (
                             item.link.startsWith("/") ? (
                                 <Link
                                     to={item.link}
-                                    className="hover:text-gray-700 dark:hover:text-gray-300 transition-colors"
+                                    className="hover:text-gray-600 dark:hover:text-gray-300 transition-colors"
                                 >
-                                    {item.subtitle}
+                                    {item.title}
                                 </Link>
                             ) : (
                                 <a
                                     href={item.link}
                                     target="_blank"
                                     rel="noopener noreferrer"
-                                    className="hover:text-gray-700 dark:hover:text-gray-300 transition-colors"
+                                    className="hover:text-gray-600 dark:hover:text-gray-300 transition-colors"
                                 >
-                                    {item.subtitle}
+                                    {item.title}
                                 </a>
                             )
                         ) : (
-                            item.subtitle
+                            item.title
                         )}
                     </div>
-                )}
-                {item.details && (
-                    <div
-                        className="text-sm text-gray-500 dark:text-gray-300 pt-1 leading-relaxed max-w-xl"
-                        dangerouslySetInnerHTML={{ __html: item.details }}
-                    ></div>
-                )}
+                    {item.subtitle && (
+                        <div className="text-gray-500 dark:text-gray-300 text-sm leading-snug">
+                            {item.link ? (
+                                item.link.startsWith("/") ? (
+                                    <Link
+                                        to={item.link}
+                                        className="hover:text-gray-700 dark:hover:text-gray-300 transition-colors"
+                                    >
+                                        {item.subtitle}
+                                    </Link>
+                                ) : (
+                                    <a
+                                        href={item.link}
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        className="hover:text-gray-700 dark:hover:text-gray-300 transition-colors"
+                                    >
+                                        {item.subtitle}
+                                    </a>
+                                )
+                            ) : (
+                                item.subtitle
+                            )}
+                        </div>
+                    )}
+                </div>
+
+                <div className="flex-shrink-0 flex flex-col items-end gap-0.5 text-right">
+                    <div className="text-xs text-gray-500 dark:text-gray-300">
+                        {item.date}
+                    </div>
+                    {item.location && (
+                        <div className="text-xs text-gray-500 dark:text-gray-300 flex items-center justify-end gap-1.5">
+                            {item.countryCode && (
+                                <span className="text-base leading-none" role="img" aria-label={`Flag of ${item.countryCode}`}>
+                                    {getCountryFlag(item.countryCode)}
+                                </span>
+                            )}
+                            <span>{item.location}</span>
+                        </div>
+                    )}
+                </div>
             </div>
 
-            <div className="flex-shrink-0 flex flex-col items-end gap-0.5 text-right">
-                <div className="text-xs text-gray-500 dark:text-gray-300">
-                    {item.date}
-                </div>
-                {item.location && (
-                    <div className="text-xs text-gray-500 dark:text-gray-300 flex items-center justify-end gap-1.5">
-                        {item.countryCode && (
-                            <span className="text-base leading-none" role="img" aria-label={`Flag of ${item.countryCode}`}>
-                                {getCountryFlag(item.countryCode)}
-                            </span>
-                        )}
-                        <span>{item.location}</span>
-                    </div>
-                )}
-            </div>
+            {item.details && (
+                <div
+                    className="text-sm text-gray-500 dark:text-gray-300 leading-relaxed max-w-3xl"
+                    dangerouslySetInnerHTML={{ __html: item.details }}
+                ></div>
+            )}
         </div>
     </motion.div>
 );
