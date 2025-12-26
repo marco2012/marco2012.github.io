@@ -1,6 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
-import { FaChartLine, FaCreditCard, FaWallet } from "react-icons/fa";
+import { FaChartLine, FaWallet } from "react-icons/fa";
 import { SiRevolut } from "react-icons/si";
 import { FaArrowRightLong } from "react-icons/fa6";
 import { Card, CardContent } from "../components/ui/card";
