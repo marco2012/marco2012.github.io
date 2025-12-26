@@ -79,7 +79,7 @@ function Projects() {
         <motion.div className="min-h-screen px-6 py-12 sm:py-20 max-w-7xl mx-auto text-gray-900 dark:text-gray-100 font-sans">
             <ScrollToTop />
             
-            <div className="max-w-3xl mx-auto">
+            <div className="max-w-3xl w-full mx-auto">
                 <header className="mb-12">
                     <div className="flex justify-between items-start">
                         <Link to="/">

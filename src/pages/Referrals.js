@@ -149,14 +149,14 @@ function Referrals() {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.3 }}
             >
-                <div className="mb-8">
+                {/* <div className="mb-8">
                     <h2 className="text-sm uppercase tracking-widest text-gray-500 dark:text-gray-400 mb-2">
                         Referrals
                     </h2>
                     <p className="text-gray-600 dark:text-gray-400">
                         Explore these referral links to enjoy exclusive benefits
                     </p>
-                </div>
+                </div> */}
 
                 <div className="flex flex-col">
                     <div className="grid gap-6 md:grid-cols-2">
