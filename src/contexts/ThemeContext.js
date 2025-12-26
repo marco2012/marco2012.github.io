@@ -26,7 +26,7 @@ export const ThemeProvider = ({ children }) => {
 
     useEffect(() => {
         document.body.classList.toggle("dark", isDarkTheme);
-        document.body.style.backgroundColor = isDarkTheme ? "#1a1a1a" : "#fff";
+        document.body.style.backgroundColor = isDarkTheme ? "#09090B" : "#fff";
     }, [isDarkTheme]);
 
     return (

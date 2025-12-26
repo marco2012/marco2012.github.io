@@ -1,17 +1,21 @@
 import React, { useState, useContext, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import About from "../components/About";
 import { ThemeContext } from "../contexts/ThemeContext";
-import { GoHomeFill } from "react-icons/go";
-import NavBar from "../components/NavBar";
 import ProjectCard from "../components/ProjectCard";
 import projectsData from "../assets/projects.json";
 import { IoIosSearch } from "react-icons/io";
 import ScrollToTop from "../components/ScrollToTop";
 import TagManager from "react-gtm-module";
 import { IoIosArrowDropupCircle } from "react-icons/io";
-import { BsSuitcaseLg } from "react-icons/bs";
 import { FaFilter, FaTimes } from "react-icons/fa";
+import { Input } from "../components/ui/input";
+import { Button } from "../components/ui/button";
+import { MdOutlineWbSunny } from "react-icons/md";
+import { IoMoonOutline } from "react-icons/io5";
+import { Link } from "react-router-dom";
+import { FaGithub, FaLinkedin, FaStar } from "react-icons/fa";
+import { FaGoogleScholar } from "react-icons/fa6";
+import { GrProjects } from "react-icons/gr";
 
 function Projects() {
     TagManager.dataLayer({
@@ -24,7 +28,7 @@ function Projects() {
         },
     });
 
-    const { isDarkTheme } = useContext(ThemeContext);
+    const { isDarkTheme, toggleTheme } = useContext(ThemeContext);
 
     const [searchQuery, setSearchQuery] = useState("");
     const [selectedCategory, setSelectedCategory] = useState("");
@@ -72,137 +76,206 @@ function Projects() {
     };
 
     return (
-        <motion.div className="min-h-screen px-6 text-gray-800 dark:text-gray-200">
+        <motion.div className="min-h-screen px-6 py-12 sm:py-20 max-w-7xl mx-auto text-gray-900 dark:text-gray-100 font-sans">
             <ScrollToTop />
-            <div className="max-w-2xl mx-auto">
-                <NavBar btnLink="/" btnImage={<GoHomeFill />} animate={false} />
-                <div className="flex justify-center">
-                    <About
-                        title="My Projects"
-                        subtitle={`Check out my ${filteredProjects.length} projects`}
-                        isDarkTheme={isDarkTheme}
-                        showAboutHeader={false}
-                        icon={<BsSuitcaseLg size={64} />}
-                    />
-                </div>
-            </div>
-
-            {/* Search and Filter Bar */}
-            <div className="max-w-2xl mx-auto mt-8">
-                <motion.div
-                    className="relative mt-2 rounded-xl shadow-lg bg-white/80 dark:bg-neutral-800/80 backdrop-blur-sm border border-gray-200 dark:border-neutral-700"
-                    initial={{ opacity: 0, y: -10 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 0.3 }}
-                >
-                    <div className="flex items-center relative min-h-[48px]">
-                        <div className="pointer-events-none absolute inset-y-0 left-0 flex items-center pl-4 z-10">
-                            <span className="text-gray-500 dark:text-gray-400 sm:text-sm">
-                                <IoIosSearch />
-                            </span>
-                        </div>
-                        <input
-                            type="search"
-                            id="default-search"
-                            className="flex-1 rounded-xl border-0 py-3 pl-12 pr-4 text-gray-900 dark:text-gray-100 bg-transparent placeholder:text-gray-400 dark:placeholder:text-gray-500 focus:ring-2 focus:ring-indigo-600 dark:focus:ring-indigo-400 sm:text-sm"
-                            placeholder="Search projects..."
-                            value={searchQuery}
-                            onChange={(e) => {
-                                const query = e.target.value;
-                                setSearchQuery(query);
-                                const url = new URL(window.location);
-                                if (query) {
-                                    url.hash = `${
-                                        url.hash.split("?")[0]
-                                    }?q=${query}`;
-                                } else {
-                                    url.hash = url.hash.split("?")[0];
-                                }
-                                window.history.pushState({}, "", url);
-                            }}
-                        />
-                        {searchQuery && (
-                            <button
-                                onClick={() => setSearchQuery("")}
-                                className="mr-2 p-1 rounded-full hover:bg-gray-200 dark:hover:bg-neutral-700 transition-colors z-10"
+            
+            <div className="max-w-3xl mx-auto">
+                <header className="mb-20">
+                    <div className="flex justify-between items-start">
+                        <Link to="/">
+                            <motion.h1 
+                                className="text-4xl sm:text-5xl font-bold tracking-tight mb-6 hover:text-gray-600 dark:hover:text-gray-300 transition-colors"
+                                initial={{ opacity: 0, y: -20 }}
+                                animate={{ opacity: 1, y: 0 }}
+                                transition={{ duration: 0.5 }}
                             >
-                                <FaTimes className="text-gray-500 dark:text-gray-400" />
-                            </button>
-                        )}
-                        <button
-                            onClick={() => setShowFilters(!showFilters)}
-                            className={`mr-4 px-4 py-2 rounded-lg flex items-center gap-2 text-sm font-medium transition-colors duration-150 z-10 ${
-                                selectedCategory
-                                    ? "bg-indigo-600 text-white"
-                                    : "bg-gray-100 dark:bg-neutral-700 text-gray-700 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-neutral-600"
-                            }`}
+                                Marco Lupia
+                            </motion.h1>
+                        </Link>
+                        
+                        <Button
+                            variant="ghost"
+                            size="icon"
+                            className="rounded-full hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors"
+                            onClick={() => toggleTheme()}
                         >
-                            <FaFilter />
-                            Filters
-                        </button>
+                            {isDarkTheme ? (
+                                <MdOutlineWbSunny className="w-5 h-5" />
+                            ) : (
+                                <IoMoonOutline className="w-5 h-5" />
+                            )}
+                        </Button>
                     </div>
-                    <AnimatePresence>
-                        {showFilters && (
-                            <motion.div
-                                initial={{ opacity: 0, height: 0 }}
-                                animate={{ opacity: 1, height: "auto" }}
-                                exit={{ opacity: 0, height: 0 }}
-                                transition={{ duration: 0.2, ease: "easeInOut" }}
-                                className="border-t border-gray-200 dark:border-neutral-700 overflow-hidden"
-                            >
-                                <div className="p-4">
-                                    <div className="flex flex-wrap gap-2">
-                                        <button
-                                            onClick={() => setSelectedCategory("")}
-                                            className={`px-4 py-2 rounded-lg text-sm font-medium transition-colors duration-150 ${
-                                                !selectedCategory
-                                                    ? "bg-indigo-600 text-white"
-                                                    : "bg-gray-100 dark:bg-neutral-700 text-gray-700 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-neutral-600"
-                                            }`}
-                                        >
-                                            All Categories
-                                        </button>
-                                        {categories.map((category) => (
-                                            <button
-                                                key={category}
-                                                onClick={() =>
-                                                    setSelectedCategory(category)
-                                                }
-                                                className={`px-4 py-2 rounded-lg text-sm font-medium transition-colors duration-150 ${
-                                                    selectedCategory === category
-                                                        ? "bg-indigo-600 text-white"
-                                                        : "bg-gray-100 dark:bg-neutral-700 text-gray-700 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-neutral-600"
-                                                }`}
-                                            >
-                                                {category}
-                                            </button>
-                                        ))}
-                                    </div>
-                                </div>
-                            </motion.div>
-                        )}
-                    </AnimatePresence>
-                </motion.div>
-                {filteredProjects.length > 0 && (
-                    <motion.p
-                        className="text-center mt-4 text-sm text-gray-600 dark:text-gray-400"
+
+                    <motion.div 
+                        className="flex flex-wrap gap-x-3 gap-y-2 text-sm sm:text-base text-gray-500 dark:text-gray-400 font-medium items-center"
                         initial={{ opacity: 0 }}
                         animate={{ opacity: 1 }}
-                        transition={{ delay: 0.2 }}
+                        transition={{ delay: 0.2, duration: 0.5 }}
                     >
-                        Showing <span className="font-semibold text-indigo-600 dark:text-indigo-400">{filteredProjects.length}</span> project{filteredProjects.length !== 1 ? "s" : ""}
-                    </motion.p>
-                )}
+                        <Link 
+                            to="/projects"
+                            className="text-gray-900 dark:text-gray-100 flex items-center gap-2"
+                        >
+                            <GrProjects />
+                            Projects
+                        </Link>
+                        <span className="text-gray-300 dark:text-gray-600">/</span>
+                        <Link 
+                            to="/referrals"
+                            className="hover:text-gray-900 dark:hover:text-gray-100 transition-colors flex items-center gap-2"
+                        >
+                            <FaStar />
+                            Referrals
+                        </Link>
+                        <span className="text-gray-300 dark:text-gray-600">/</span>
+                        <a 
+                            href="https://github.com/marco2012" 
+                            target="_blank" 
+                            rel="noopener noreferrer"
+                            className="hover:text-gray-900 dark:hover:text-gray-100 transition-colors flex items-center gap-2"
+                        >
+                            <FaGithub />
+                            GitHub
+                        </a>
+                        <span className="text-gray-300 dark:text-gray-600">/</span>
+                        <a 
+                            href="https://www.linkedin.com/in/marco-lupia" 
+                            target="_blank" 
+                            rel="noopener noreferrer"
+                            className="hover:text-gray-900 dark:hover:text-gray-100 transition-colors flex items-center gap-2"
+                        >
+                            <FaLinkedin />
+                            LinkedIn
+                        </a>
+                        <span className="text-gray-300 dark:text-gray-600">/</span>
+                        <a 
+                            href="https://scholar.google.com/citations?user=D139cEIAAAAJ" 
+                            target="_blank" 
+                            rel="noopener noreferrer"
+                            className="hover:text-gray-900 dark:hover:text-gray-100 transition-colors flex items-center gap-2"
+                        >
+                            <FaGoogleScholar />
+                            Scholar
+                        </a>
+                    </motion.div>
+                </header>
+
+                <motion.div
+                    initial={{ opacity: 0, y: 20 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ delay: 0.3 }}
+                >
+                    <div className="mb-8">
+                        <h2 className="text-sm uppercase tracking-widest text-gray-500 dark:text-gray-400 mb-2">
+                            All Projects
+                        </h2>
+                        <p className="text-gray-600 dark:text-gray-400">
+                            {filteredProjects.length} projects found
+                        </p>
+                    </div>
+
+                    {/* Search and Filter Bar */}
+                    <div className="mb-12">
+                        <div className="relative rounded-xl shadow-sm bg-white dark:bg-neutral-800 border border-gray-200 dark:border-neutral-700">
+                            <div className="flex items-center relative min-h-[48px] p-1">
+                                <div className="pointer-events-none absolute inset-y-0 left-0 flex items-center pl-4 z-10">
+                                    <span className="text-gray-500 dark:text-gray-400 sm:text-sm">
+                                        <IoIosSearch />
+                                    </span>
+                                </div>
+                                <Input
+                                    type="search"
+                                    className="flex-1 border-0 bg-transparent py-3 pl-10 pr-4 text-gray-900 dark:text-gray-100 placeholder:text-gray-400 dark:placeholder:text-gray-500 focus-visible:ring-0 focus-visible:ring-offset-0 sm:text-sm"
+                                    placeholder="Search projects..."
+                                    value={searchQuery}
+                                    onChange={(e) => {
+                                        const query = e.target.value;
+                                        setSearchQuery(query);
+                                        const url = new URL(window.location);
+                                        if (query) {
+                                            url.hash = `${
+                                                url.hash.split("?")[0]
+                                            }?q=${query}`;
+                                        } else {
+                                            url.hash = url.hash.split("?")[0];
+                                        }
+                                        window.history.pushState({}, "", url);
+                                    }}
+                                />
+                                {searchQuery && (
+                                    <Button
+                                        variant="ghost"
+                                        size="icon"
+                                        onClick={() => setSearchQuery("")}
+                                        className="mr-2 h-8 w-8 rounded-full hover:bg-gray-100 dark:hover:bg-neutral-700 transition-colors z-10"
+                                    >
+                                        <FaTimes className="text-gray-500 dark:text-gray-400" />
+                                    </Button>
+                                )}
+                                <Button
+                                    variant={selectedCategory ? "default" : "secondary"}
+                                    onClick={() => setShowFilters(!showFilters)}
+                                    className={`mr-2 gap-2 h-8 px-3 text-xs transition-colors duration-150 z-10 ${
+                                        selectedCategory
+                                            ? "bg-gray-900 dark:bg-gray-100 text-white dark:text-gray-900"
+                                            : "bg-gray-100 dark:bg-neutral-700 text-gray-700 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-neutral-600"
+                                    }`}
+                                >
+                                    <FaFilter className="w-3 h-3" />
+                                    Filters
+                                </Button>
+                            </div>
+                            <AnimatePresence>
+                                {showFilters && (
+                                    <motion.div
+                                        initial={{ opacity: 0, height: 0 }}
+                                        animate={{ opacity: 1, height: "auto" }}
+                                        exit={{ opacity: 0, height: 0 }}
+                                        transition={{ duration: 0.2, ease: "easeInOut" }}
+                                        className="border-t border-gray-200 dark:border-neutral-700 overflow-hidden"
+                                    >
+                                        <div className="p-4">
+                                            <div className="flex flex-wrap gap-2">
+                                                <Button
+                                                    variant={!selectedCategory ? "default" : "secondary"}
+                                                    size="sm"
+                                                    onClick={() => setSelectedCategory("")}
+                                                    className={`h-7 px-3 text-xs ${
+                                                        !selectedCategory
+                                                            ? "bg-gray-900 dark:bg-gray-100 text-white dark:text-gray-900"
+                                                            : "bg-gray-100 dark:bg-neutral-700 text-gray-700 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-neutral-600"
+                                                    }`}
+                                                >
+                                                    All Categories
+                                                </Button>
+                                                {categories.map((category) => (
+                                                    <Button
+                                                        key={category}
+                                                        variant={selectedCategory === category ? "default" : "secondary"}
+                                                        size="sm"
+                                                        onClick={() => setSelectedCategory(category)}
+                                                        className={`h-7 px-3 text-xs ${
+                                                            selectedCategory === category
+                                                                ? "bg-gray-900 dark:bg-gray-100 text-white dark:text-gray-900"
+                                                                : "bg-gray-100 dark:bg-neutral-700 text-gray-700 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-neutral-600"
+                                                        }`}
+                                                    >
+                                                        {category}
+                                                    </Button>
+                                                ))}
+                                            </div>
+                                        </div>
+                                    </motion.div>
+                                )}
+                            </AnimatePresence>
+                        </div>
+                    </div>
+                </motion.div>
             </div>
 
             {filteredProjects.length > 0 ? (
-                <div
-                    className="my-8 grid gap-6 justify-items-center max-w-7xl mx-auto px-4"
-                    style={{
-                        gridTemplateColumns:
-                            "repeat(auto-fill, minmax(min(100%, 360px), 1fr))",
-                    }}
-                >
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 justify-items-center">
                     {filteredProjects
                         .sort((a, b) => new Date(b.date) - new Date(a.date))
                         .map((p, index) => (
@@ -211,15 +284,14 @@ function Projects() {
                                 initial={{ opacity: 0, y: 20, scale: 0.95 }}
                                 animate={{ opacity: 1, y: 0, scale: 1 }}
                                 whileHover={{
-                                    y: -12,
-                                    scale: 1.02,
+                                    y: -8,
                                     transition: { duration: 0.2 },
                                 }}
                                 transition={{
                                     delay: index * 0.05,
                                     duration: 0.3,
                                 }}
-                                className="transform transition-all duration-300"
+                                className="w-full max-w-[360px]"
                             >
                                 <ProjectCard project={p} />
                             </motion.div>
@@ -232,7 +304,7 @@ function Projects() {
                     animate={{ opacity: 1 }}
                     transition={{ delay: 0.3 }}
                 >
-                    <div className="text-6xl mb-4">🔍</div>
+                    <div className="text-6xl mb-4 grayscale opacity-50">🔍</div>
                     <h3 className="text-xl font-semibold text-gray-800 dark:text-gray-200 mb-2">
                         No projects found
                     </h3>
@@ -240,30 +312,36 @@ function Projects() {
                         Try adjusting your search or filter criteria
                     </p>
                     {(searchQuery || selectedCategory) && (
-                        <button
+                        <Button
                             onClick={() => {
                                 setSearchQuery("");
                                 setSelectedCategory("");
                             }}
-                            className="mt-4 px-4 py-2 bg-indigo-600 text-white rounded-lg hover:bg-indigo-700 transition-colors"
+                            className="mt-4 bg-gray-900 dark:bg-gray-100 text-white dark:text-gray-900 hover:opacity-90"
                         >
                             Clear filters
-                        </button>
+                        </Button>
                     )}
                 </motion.div>
             )}
 
             {showScrollTop && (
-                <motion.button
-                    onClick={scrollToTop}
-                    className="fixed bottom-3 right-3 bg-slate-500 dark:bg-slate-600 text-gray-200 dark:text-gray-200 rounded-full shadow-lg focus:outline-none"
+                <motion.div
+                    className="fixed bottom-6 right-6 z-50"
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
                     exit={{ opacity: 0 }}
                     transition={{ duration: 0.5 }}
                 >
-                    <IoIosArrowDropupCircle className="w-10 h-10" />
-                </motion.button>
+                    <Button
+                        variant="secondary"
+                        size="icon"
+                        onClick={scrollToTop}
+                        className="bg-gray-900 dark:bg-gray-100 text-white dark:text-gray-900 hover:opacity-90 rounded-full shadow-lg w-12 h-12 p-0"
+                    >
+                        <IoIosArrowDropupCircle className="w-8 h-8" />
+                    </Button>
+                </motion.div>
             )}
         </motion.div>
     );

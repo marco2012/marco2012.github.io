@@ -192,19 +192,17 @@ const Skills = () => {
         },
     ];
     return (
-        <div className="mt-10">
+        <div>
             <motion.h2
-                className="text-base uppercase tracking-widest text-gray-800 dark:text-gray-200 flex items-center"
+                className="text-sm uppercase tracking-widest text-gray-500 dark:text-gray-400 mb-6 flex items-center gap-2 font-semibold"
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ duration: 0.8 }}
             >
-                <FaCode className="mr-2" />
-                <span className="font-semibold">Skills</span>
+                Skills
             </motion.h2>
-            <div className="flex mt-2 space-x-4 border-l border-gray-400 cursor-default">
-                <div className="h-full"></div> {/* Vertical line */}
-                <div className="flex flex-col gap-6">
+            <div className="flex flex-col mt-4 gap-6">
+                <div className="flex flex-col gap-8">
                     <SkillsItem
                         title="Programming Languages"
                         data={languages}

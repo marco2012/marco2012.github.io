@@ -1,19 +1,18 @@
-// src/App.js
-import React from "react";
+import React, { useContext } from "react";
 import { motion } from "framer-motion";
 import "../index.css";
 import Section from "../components/Section";
-import { MdOutlineWorkOutline } from "react-icons/md";
-import { PiCertificate } from "react-icons/pi";
-import { MdOutlineSchool } from "react-icons/md";
-import { PiBooksLight } from "react-icons/pi";
-import RecentWork from "../components/RecentWork";
-import About from "../components/About";
-import NavBar from "../components/NavBar";
-import { GrProjects } from "react-icons/gr";
 import Skills from "../components/Skills";
 import TagManager from "react-gtm-module";
 import projectsData from "../assets/projects.json";
+import { ThemeContext } from "../contexts/ThemeContext";
+import { MdOutlineWbSunny } from "react-icons/md";
+import { IoMoonOutline } from "react-icons/io5";
+import { Button } from "../components/ui/button";
+import { Link } from "react-router-dom";
+import { FaGithub, FaLinkedin, FaStar } from "react-icons/fa";
+import { FaGoogleScholar } from "react-icons/fa6";
+import { GrProjects } from "react-icons/gr";
 
 function Home() {
     // analytics
@@ -27,14 +26,18 @@ function Home() {
         },
     });
 
+    const { isDarkTheme, toggleTheme } = useContext(ThemeContext);
+
     const experienceData = [
         {
             subtitle: "Ad Tech Solutions Engineer, AdMob",
-            date: "03/2025 - now",
+            date: "03/2025 - Present",
             title: "Google",
             location: "Dublin, IE",
             countryCode: "IE",
             icon: "google.webp",
+            details:
+                "• Optimizing AdMob monetization strategies for the largest mobile app publishers in EMEA, driving revenue growth",
         },
         {
             subtitle: "Digital Marketing Consultant",
@@ -43,6 +46,8 @@ function Home() {
             location: "Rome, IT",
             countryCode: "IT",
             icon: "deloitte.webp",
+            details:
+                "• Partnered with cross-functional teams across industries to elevate the performance of digital marketing campaigns through data-driven strategies",
         },
         {
             subtitle: "Full Stack Cloud Developer",
@@ -51,30 +56,27 @@ function Home() {
             location: "Rome, IT",
             countryCode: "IT",
             icon: "reply.webp",
+            details:
+                "• Deployed scalable enterprise web applications on Azure Cloud",
         },
-        // {
-        //     subtitle: "Software Engineer",
-        //     date: "2020",
-        //     title: "Sapienza University",
-        //     location: "Rome",
-        //     icon: "sapienza.webp",
-        // },
     ];
     const educationData = [
         {
-            title: "MSc in Engineering in Computer Science",
-            subtitle: "Sapienza University",
-            date: "2018-2020",
+            title: "Sapienza University",
+            subtitle: "MSc in Engineering in Computer Science",
+            date: "2018 - 2020",
             location: "Rome, IT",
+            countryCode: "IT",
             icon: "sapienza.webp",
             details:
-                '• Designed algorithms to build <a href="https://github.com/bpm-diag/smartRPA" target="_blank" rel="noopener noreferrer" class="text-blue-800">SmartRPA</a>, a tool to generate sw robots that emulate observed user behavior</br>• Presented academic research at RPA Forum and CAiSE Forum and published 3 papers <a href="https://scholar.google.com/citations?user=D139cEIAAAAJ&hl=it&oi=ao" target="_blank" rel="noopener noreferrer" class="text-blue-800">cited 100+ times</a>',
+                '• Designed algorithms to build <a href="https://github.com/bpm-diag/smartRPA" target="_blank" rel="noopener noreferrer" class="text-blue-800 dark:text-blue-400">SmartRPA</a>, a tool to generate sw robots that emulate observed user behavior</br>• Presented academic research at RPA Forum and CAiSE Forum and published 3 papers <a href="https://scholar.google.com/citations?user=D139cEIAAAAJ&hl=it&oi=ao" target="_blank" rel="noopener noreferrer" class="text-blue-800 dark:text-blue-400">cited 100+ times</a>',
         },
         {
-            title: "BSc in Computer and Systems Engineering",
-            subtitle: "Sapienza University",
-            date: "2015-2018",
+            title: "Sapienza University",
+            subtitle: "BSc in Computer and Systems Engineering",
+            date: "2015 - 2018",
             location: "Rome, IT",
+            countryCode: "IT",
             icon: "sapienza.webp",
         },
     ];
@@ -138,26 +140,26 @@ function Home() {
     ];
     const publicationsData = [
         {
-            title: "Reactive synthesis of software robots in RPA from user interface logs",
-            subtitle: "Computers in Industry",
+            title: "Computers in Industry",
+            subtitle: "Reactive synthesis of software robots in RPA from user interface logs",
             date: "06/2022",
             location: "Springer",
             link: "https://www.sciencedirect.com/science/article/abs/pii/S016636152200118X",
             icon: "springer.webp",
         },
         {
-            title: "SmartRPA: A Tool to Reactively Synthesize Software Robots from User Interface Logs",
+            title: "CAiSE Forum",
             subtitle:
-                "33rd Int. Conf. on Advanced Information Systems Engineering (CAiSE Forum)",
+                "SmartRPA: A Tool to Reactively Synthesize Software Robots from User Interface Logs",
             date: "06/2021",
             location: "Springer",
             link: "https://www.springerprofessional.de/en/smartrpa-a-tool-to-reactively-synthesize-software-robots-from-us/19259790",
             icon: "springer.webp",
         },
         {
-            title: "Automated Generation of Executable RPA Scripts from User Interface Logs",
+            title: "RPA Forum",
             subtitle:
-                "18th Int. Conference on Business Process Management (RPA Forum) ",
+                "Automated Generation of Executable RPA Scripts from User Interface Logs",
             date: "09/2020",
             location: "Springer",
             link: "https://link.springer.com/chapter/10.1007/978-3-030-58779-6_8",
@@ -170,89 +172,147 @@ function Home() {
         .slice(0, 4)
         .map((project) => ({
             title: project.title,
+            subtitle: project.description,
+            date: new Date(project.date).getFullYear(),
             link: project.link,
+            location: project.category, // reusing location for category/type
+            iconComponent: <GrProjects />,
         }));
 
-    const projects = [
-        ...recentProjects,
-        {
-            title: "more...",
-            link: "https://github.com/marco2012?tab=repositories",
-        },
-    ];
-
     return (
-        <motion.div className="min-h-screen px-6 max-w-2xl mx-auto text-gray-800 dark:text-gray-200">
-            <div className="max-w-2xl mx-auto">
-                <NavBar
-                    btnLink="/projects"
-                    btnImage={<GrProjects />}
-                    animate={false}
-                />{" "}
-                <div className="flex flex-col">
-                    <About
-                        title={
-                            <>
-                                Hello, I'm <strong>Marco</strong>
-                            </>
-                        }
-                        subtitle={
-                            <>
-                                {experienceData[0].subtitle} at{" "}
-                                <strong>{experienceData[0].title}</strong>
-                            </>
-                        }
-                        description={
-                            <>
-                                Result-oriented{" "}
-                                <strong>Computer Engineer</strong> with{" "}
-                                {new Date().getFullYear() - 2021}+ years of
-                                experience delivering{" "}
-                                <strong>
-                                    impactful, data-driven solutions
-                                </strong>{" "}
-                                by aligning tech requirements with business
-                                goals. Expert in <strong>Google</strong> and{" "}
-                                <strong>Adobe</strong> systems, with strong
-                                skills in Python, JavaScript, SQL, data
-                                analysis, driving{" "}
-                                <strong>measurable success</strong> and
-                                cross-functional collaboration.
-                            </>
-                        }
-                        showLinks={false}
+        <motion.div className="min-h-screen px-6 py-12 sm:py-20 max-w-3xl mx-auto text-gray-900 dark:text-gray-100 font-sans">
+            <header className="mb-20">
+                <div className="flex justify-between items-start">
+                    <motion.h1 
+                        className="text-4xl sm:text-5xl font-bold tracking-tight mb-6"
+                        initial={{ opacity: 0, y: -20 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        transition={{ duration: 0.5 }}
+                    >
+                        Marco Lupia
+                    </motion.h1>
+                    
+                    <Button
+                        variant="ghost"
+                        size="icon"
+                        className="rounded-full hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors"
+                        onClick={() => toggleTheme()}
+                    >
+                        {isDarkTheme ? (
+                            <MdOutlineWbSunny className="w-5 h-5" />
+                        ) : (
+                            <IoMoonOutline className="w-5 h-5" />
+                        )}
+                    </Button>
+                </div>
+
+                <motion.div 
+                    className="flex flex-wrap gap-x-3 gap-y-2 text-sm sm:text-base text-gray-500 dark:text-gray-400 font-medium items-center"
+                    initial={{ opacity: 0 }}
+                    animate={{ opacity: 1 }}
+                    transition={{ delay: 0.2, duration: 0.5 }}
+                >
+                    <Link 
+                        to="/projects"
+                        className="hover:text-gray-900 dark:hover:text-gray-100 transition-colors flex items-center gap-2"
+                    >
+                        <GrProjects />
+                        Projects
+                    </Link>
+                    <span className="text-gray-300 dark:text-gray-600">/</span>
+                    <Link 
+                        to="/referrals"
+                        className="hover:text-gray-900 dark:hover:text-gray-100 transition-colors flex items-center gap-2"
+                    >
+                        <FaStar />
+                        Referrals
+                    </Link>
+                    <span className="text-gray-300 dark:text-gray-600">/</span>
+                    <a 
+                        href="https://github.com/marco2012" 
+                        target="_blank" 
+                        rel="noopener noreferrer"
+                        className="hover:text-gray-900 dark:hover:text-gray-100 transition-colors flex items-center gap-2"
+                    >
+                        <FaGithub />
+                        GitHub
+                    </a>
+                    <span className="text-gray-300 dark:text-gray-600">/</span>
+                    <a 
+                        href="https://www.linkedin.com/in/marco-lupia" 
+                        target="_blank" 
+                        rel="noopener noreferrer"
+                        className="hover:text-gray-900 dark:hover:text-gray-100 transition-colors flex items-center gap-2"
+                    >
+                        <FaLinkedin />
+                        LinkedIn
+                    </a>
+                    <span className="text-gray-300 dark:text-gray-600">/</span>
+                    <a 
+                        href="https://scholar.google.com/citations?user=D139cEIAAAAJ" 
+                        target="_blank" 
+                        rel="noopener noreferrer"
+                        className="hover:text-gray-900 dark:hover:text-gray-100 transition-colors flex items-center gap-2"
+                    >
+                        <FaGoogleScholar />
+                        Scholar
+                    </a>
+                </motion.div>
+                
+                <motion.div
+                    className="mt-8 max-w-xl text-lg text-gray-600 dark:text-gray-400 leading-relaxed"
+                    initial={{ opacity: 0 }}
+                    animate={{ opacity: 1 }}
+                    transition={{ delay: 0.3, duration: 0.5 }}
+                >
+                    <p>
+                        Result-oriented <strong>Computer Engineer</strong> with {new Date().getFullYear() - 2021}+ years of experience delivering impactful, data-driven solutions. Expert in <strong>Google</strong> and <strong>Adobe</strong> systems, with strong skills in Python, JavaScript, and SQL.
+                    </p>
+                </motion.div>
+            </header>
+
+            <div className="space-y-20">
+                <Section
+                    data={experienceData}
+                    title="Experience"
+                    limit={4}
+                />
+
+                <Section
+                    data={educationData}
+                    title="Education"
+                />
+
+                <Skills />
+
+                <Section
+                    data={certificatesData}
+                    title="Certificates"
+                    limit={certificatesData.length}
+                />
+
+                <Section
+                    data={publicationsData}
+                    title="Publications"
+                />
+
+                <div>
+                    <Section
+                        data={recentProjects}
+                        title="Projects"
+                        limit={4}
                     />
+                    <div className="mt-8">
+                        <Button
+                            asChild
+                            variant="outline"
+                            className="w-full sm:w-auto"
+                        >
+                            <Link to="/projects">View all projects</Link>
+                        </Button>
+                    </div>
                 </div>
             </div>
-
-            <Section
-                data={experienceData}
-                icon={<MdOutlineWorkOutline />}
-                title="Experience"
-                limit={4}
-            />
-
-            <Section
-                data={educationData}
-                icon={<MdOutlineSchool />}
-                title="Education"
-            />
-
-            <Skills />
-
-            <Section
-                data={certificatesData}
-                icon={<PiCertificate />}
-                title="Certificates"
-            />
-
-            <Section
-                data={publicationsData}
-                icon={<PiBooksLight />}
-                title="Publications"
-            />
-
-            <RecentWork data={projects} />
         </motion.div>
     );
 }

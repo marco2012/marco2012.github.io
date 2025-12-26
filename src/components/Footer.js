@@ -1,31 +1,29 @@
 import React from "react";
-import SocialLinks from "./SocialLinks";
-import { IoIosLink } from "react-icons/io";
 import { motion } from "framer-motion";
-import { FaCookieBite } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import { FaReact } from "react-icons/fa";
 
 function Footer() {
     return (
         <motion.div
-            // className="mt-10 text-left text-gray-800 dark:text-gray-200 text-xs flex items-center justify-between"
-            className="mt-10 mb-10 max-w-2xl mx-auto px-4 flex items-center justify-between text-gray-800 dark:text-gray-200 text-xs"
-            initial={{ opacity: 0, y: 30 }} // Start off-screen from the top
-            animate={{ opacity: 1, y: 0 }} // Animate to on-screen
-            transition={{ duration: 0.6 }} // Duration of the slide-in
+            className="mt-20 mb-10 max-w-2xl mx-auto px-6 flex flex-col sm:flex-row items-center justify-between text-gray-500 dark:text-gray-400 text-sm font-mono gap-4"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 0.6 }}
         >
-            <div className="flex items-center space-x-2">
-                <span className="p-1 rounded-full transition-colors hover:bg-white/[0.06]">
-                    <IoIosLink />
-                </span>
-                <SocialLinks />
-                <Link to="/cookie-policy">
-                    <FaCookieBite className="hover:scale-125 ml-1" />
+            <div className="flex items-center gap-4">
+                <span>© {new Date().getFullYear()} Marco Lupia</span>
+                <span className="text-gray-300 dark:text-gray-600">/</span>
+                <Link 
+                    to="/cookie-policy"
+                    className="hover:text-gray-900 dark:hover:text-gray-200 transition-colors"
+                >
+                    Cookie Policy
                 </Link>
             </div>
-            <div className="flex items-center">
-                Made with <FaReact className="mx-1" /> in 🇮🇹
+            
+            <div className="flex items-center gap-2">
+                Made with <FaReact className="animate-spin-slow" /> in 🇮🇹
             </div>
         </motion.div>
     );
