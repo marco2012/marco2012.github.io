@@ -12,8 +12,8 @@ function Footer() {
             transition={{ duration: 0.6 }}
         >
             <div className="flex items-center gap-4">
-                <span>© {new Date().getFullYear()} Marco Lupia</span>
-                <span className="text-gray-300 dark:text-gray-600">/</span>
+                {/* <span>© {new Date().getFullYear()} Marco Lupia</span> */}
+                {/* <span className="text-gray-300 dark:text-gray-600">/</span> */}
                 <Link 
                     to="/cookie-policy"
                     className="hover:text-gray-900 dark:hover:text-gray-200 transition-colors"

@@ -176,10 +176,10 @@ function Home() {
     return (
         <motion.div className="min-h-screen px-6 pt-32 pb-12 sm:pb-20 max-w-3xl mx-auto text-gray-900 dark:text-gray-100 font-sans">
             <FixedHeader />
-            <header className="mb-12">
+            <header className="mb-10">
                 <motion.div
                     id="about"
-                    className="mt-8 w-full text-lg text-gray-600 dark:text-gray-400 leading-relaxed"
+                    className="mt-10 w-full text-md text-gray-800 dark:text-gray-300 leading-relaxed"
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
                     transition={{ delay: 0.3, duration: 0.5 }}
@@ -204,17 +204,6 @@ function Home() {
 
                 <Skills />
 
-                <Section
-                    data={certificatesData}
-                    title="Certificates"
-                    limit={certificatesData.length}
-                />
-
-                <Section
-                    data={publicationsData}
-                    title="Publications"
-                />
-
                 <div>
                     <Section
                         data={recentProjects}
@@ -231,6 +220,19 @@ function Home() {
                         </Button>
                     </div>
                 </div>
+
+                <Section
+                    data={certificatesData}
+                    title="Certificates"
+                    limit={certificatesData.length}
+                />
+
+                <Section
+                    data={publicationsData}
+                    title="Publications"
+                />
+
+                
             </div>
         </motion.div>
     );

@@ -55,10 +55,10 @@ const Skills = () => {
             name: "C#",
             icon: <TbBrandCSharp />,
         },
-        {
-            name: "C",
-            icon: <PiFileCppDuotone />,
-        },
+        // {
+        //     name: "C",
+        //     icon: <PiFileCppDuotone />,
+        // },
     ];
     const frameworks = [
         {
@@ -79,6 +79,22 @@ const Skills = () => {
         },
     ];
     const digitalSkills = [
+        {
+            name: "AdMob",
+            icon: <SiGoogleadmob />,
+        },
+        {
+            name: "Google Analytics",
+            icon: <FaGoogle />,
+        },
+        {
+            name: "Tag Manager",
+            icon: <SiGoogletagmanager />,
+        },
+        {
+            name: "Firebase",
+            icon: <IoLogoFirebase />,
+        },
         {
             name: "Real-time CDP (AEP)",
             icon: <SiAdobe />,
@@ -104,14 +120,7 @@ const Skills = () => {
             name: "Target",
             icon: <SiAdobe />,
         },
-        {
-            name: "Google Analytics",
-            icon: <FaGoogle />,
-        },
-        {
-            name: "Tag Manager",
-            icon: <SiGoogletagmanager />,
-        },
+        
         {
             name: "Tealium",
             icon: <FaTag />,
@@ -155,14 +164,6 @@ const Skills = () => {
             icon: <SiPostman />,
         },
 
-        {
-            name: "Firebase",
-            icon: <IoLogoFirebase />,
-        },
-        {
-            name: "AdMob",
-            icon: <SiGoogleadmob />,
-        },
     ];
     const businessSkills = [
         {
