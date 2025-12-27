@@ -106,6 +106,18 @@ const FixedHeader = () => {
                             Referrals
                         </Link>
                     )}
+
+                     <span className="text-gray-300 dark:text-gray-600">/</span>
+                    
+                    <a
+                        href="https://www.linkedin.com/in/marco-lupia"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-gray-500 dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-100 transition-colors flex items-center gap-2"
+                    >
+                        <FaLinkedin />
+                        LinkedIn
+                    </a>
                     
                     <span className="text-gray-300 dark:text-gray-600">/</span>
                     
@@ -119,17 +131,7 @@ const FixedHeader = () => {
                         GitHub
                     </a>
                     
-                    <span className="text-gray-300 dark:text-gray-600">/</span>
-                    
-                    <a
-                        href="https://www.linkedin.com/in/marco-lupia"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-gray-500 dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-100 transition-colors flex items-center gap-2"
-                    >
-                        <FaLinkedin />
-                        LinkedIn
-                    </a>
+                   
                     
                     <span className="text-gray-300 dark:text-gray-600">/</span>
                     

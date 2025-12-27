@@ -41,7 +41,7 @@ function Home() {
             countryCode: "IT",
             icon: "deloitte.webp",
             details:
-                "• Optimized digital marketing performance through cross-functional collaboration and data-driven strategy.",
+                "• Implemented data-driven digital marketing strategies through cross-functional collaboration.",
         },
         {
             subtitle: "Full Stack Cloud Developer",
@@ -63,7 +63,7 @@ function Home() {
             countryCode: "IT",
             icon: "sapienza.webp",
             details:
-                '• Designed algorithms to build <a href="https://github.com/bpm-diag/smartRPA" target="_blank" rel="noopener noreferrer" class="text-blue-800 dark:text-blue-400">SmartRPA</a>, a tool to generate sw robots that emulate observed user behavior</br>• Presented academic research at RPA Forum and CAiSE Forum and published 3 papers <a href="https://scholar.google.com/citations?user=D139cEIAAAAJ&hl=it&oi=ao" target="_blank" rel="noopener noreferrer" class="text-blue-800 dark:text-blue-400">cited 100+ times</a>',
+                '• Designed algorithms to build <a href="https://github.com/bpm-diag/smartRPA" target="_blank" rel="noopener noreferrer" class="text-blue-800 dark:text-blue-400">SmartRPA</a>, a tool to generate sw robots that emulate observed user behavior. Presented academic research at RPA Forum and CAiSE Forum and published 3 papers <a href="https://scholar.google.com/citations?user=D139cEIAAAAJ&hl=it&oi=ao" target="_blank" rel="noopener noreferrer" class="text-blue-800 dark:text-blue-400">cited 100+ times</a>',
         },
         {
             title: "Sapienza University",
